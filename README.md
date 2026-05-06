@@ -2,8 +2,16 @@
 
 <div align="center">
 
+![GitHub stars](https://img.shields.io/github/stars/luantran-working/design-system-ui-preview?style=social)
+![GitHub forks](https://img.shields.io/github/forks/luantran-working/design-system-ui-preview?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/luantran-working/design-system-ui-preview?style=social)
+
 ![Design Systems](https://img.shields.io/badge/Design%20Systems-172+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![GitHub repo size](https://img.shields.io/github/repo-size/luantran-working/design-system-ui-preview)
+![GitHub last commit](https://img.shields.io/github/last-commit/luantran-working/design-system-ui-preview)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=luantran-working%2Fdesign-system-ui-preview&label=Visitors&countColor=%23263759&style=flat)
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)

@@ -12,7 +12,7 @@
 
 A beautiful, interactive web application to preview and explore 172+ design systems from leading tech companies and popular design frameworks.
 
-[Live Demo](#) • [Report Bug](../../issues) • [Request Feature](../../issues)
+[🌐 Live Demo](https://luantran-working.github.io/design-system-ui-preview) • [Report Bug](../../issues) • [Request Feature](../../issues)
 
 </div>
 
@@ -39,7 +39,7 @@ Design System UI Preview is a comprehensive collection of design systems from th
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/design-system-ui-preview.git
+   git clone https://github.com/luantran-working/design-system-ui-preview.git
    cd design-system-ui-preview
    ```
 
@@ -202,7 +202,7 @@ Design System UI Preview là bộ sưu tập toàn diện các hệ thống thi�
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/yourusername/design-system-ui-preview.git
+   git clone https://github.com/luantran-working/design-system-ui-preview.git
    cd design-system-ui-preview
    ```
 

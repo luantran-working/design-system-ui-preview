@@ -1,246 +1,353 @@
-# Design Systems Preview
+# 🎨 Design System UI Preview
 
-A website to preview 138+ design systems with live mockup pages. Each design system is rendered as a full landing page with colors, typography, buttons, and components applied from the original DESIGN.md files.
+<div align="center">
 
-## 🚀 Features
+![Design Systems](https://img.shields.io/badge/Design%20Systems-172+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-- **138+ Design Systems**: Preview design systems from Vercel, Stripe, GitHub, Apple, and many more
-- **Live Preview**: Full landing page mockup with hero, features, pricing, and footer sections
-- **Dynamic Styling**: CSS variables automatically generated from markdown files
-- **Font Loading**: Custom fonts loaded from Google Fonts with smart fallbacks
-- **Copy Markdown**: One-click copy of the entire DESIGN.md file
-- **Search**: Quick search to filter design systems
-- **Responsive**: Works on desktop, tablet, and mobile devices
+**[English](#english) | [Tiếng Việt](#tiếng-việt)**
 
-## 📁 Project Structure
+A beautiful, interactive web application to preview and explore 172+ design systems from leading tech companies and popular design frameworks.
 
-```
-open-design/
-├── preview/                      # Website files
-│   ├── index.html                # Main page with sidebar + iframe
-│   ├── template.html             # Landing page template
-│   ├── css/
-│   │   ├── main.css              # Sidebar and layout styles
-│   │   └── template.css          # Template mockup styles
-│   ├── js/
-│   │   ├── systems.js            # List of 138 design systems
-│   │   ├── parser.js             # Parse DESIGN.md → CSS variables
-│   │   ├── fonts.js              # Load custom fonts
-│   │   └── app.js                # Main application logic
-│   └── README.md                 # This file
-└── design-systems/               # Design system markdown files
-    ├── vercel/DESIGN.md
-    ├── stripe/DESIGN.md
-    ├── github/DESIGN.md
-    └── ... (135 more)
-```
+[Live Demo](#) • [Report Bug](../../issues) • [Request Feature](../../issues)
 
-## 🎯 How It Works
-
-1. **User selects a design system** from the sidebar (e.g., "Vercel")
-2. **App fetches** `../design-systems/vercel/DESIGN.md`
-3. **Parser extracts** design tokens:
-   - Colors (primary, text, background, borders)
-   - Typography (font-family, sizes, weights, letter-spacing)
-   - Buttons (radius, padding, shadows)
-   - Spacing system
-4. **CSS variables generated** and injected into the template
-5. **Custom fonts loaded** from Google Fonts (with fallbacks)
-6. **Template renders** with the design system applied
-
-## 🖥️ Local Development
-
-### Option 1: Simple HTTP Server (Python)
-
-```bash
-# Navigate to the preview folder
-cd preview
-
-# Start a local server
-python -m http.server 8000
-
-# Open browser
-# http://localhost:8000
-```
-
-### Option 2: Live Server (VS Code Extension)
-
-1. Install "Live Server" extension in VS Code
-2. Right-click on `preview/index.html`
-3. Select "Open with Live Server"
-
-### Option 3: Node.js HTTP Server
-
-```bash
-# Install http-server globally
-npm install -g http-server
-
-# Navigate to preview folder
-cd preview
-
-# Start server
-http-server -p 8000
-
-# Open browser
-# http://localhost:8000
-```
-
-## 🌐 Deploy to GitHub Pages
-
-### Step 1: Push to GitHub
-
-```bash
-# Initialize git (if not already)
-git init
-git add .
-git commit -m "Add design systems preview website"
-
-# Add remote and push
-git remote add origin https://github.com/YOUR_USERNAME/open-design.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 2: Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages**
-3. Under "Source", select:
-   - Branch: `main`
-   - Folder: `/preview`
-4. Click **Save**
-5. Wait 1-2 minutes for deployment
-
-### Step 3: Access Your Site
-
-Your site will be available at:
-```
-https://YOUR_USERNAME.github.io/open-design/
-```
-
-## 🎨 Supported Design Systems
-
-The website includes 138 design systems:
-
-**Developer Tools**: Vercel, GitHub, Linear, Cursor, Raycast, Warp, Framer, Figma, Notion, Supabase, PostHog, Sentry, Replicate, Resend, Mintlify, Sanity
-
-**AI & ML**: OpenAI, Claude, Mistral AI, Cohere, Together AI, ElevenLabs, Runway ML, Hugging Face, Ollama, X.AI, Minimax
-
-**Fintech**: Stripe, Coinbase, Revolut, Wise, Kraken, Binance
-
-**Consumer**: Apple, Airbnb, Uber, Spotify, Nike, Tesla, Starbucks, Duolingo, Discord, Pinterest, Shopify
-
-**Enterprise**: IBM, MongoDB, ClickHouse, HashiCorp, Material Design, Ant Design, shadcn/ui
-
-**Automotive**: Ferrari, Lamborghini, Bugatti, BMW, Renault, SpaceX
-
-**Design Styles**: Brutalism, Neobrutalism, Glassmorphism, Neumorphism, Claymorphism, Skeumorphism, Minimalism, and more
-
-## 🔧 Customization
-
-### Add a New Design System
-
-1. Create a new folder in `design-systems/`:
-   ```bash
-   mkdir design-systems/my-system
-   ```
-
-2. Add a `DESIGN.md` file with the design system details
-
-3. Update `preview/js/systems.js`:
-   ```javascript
-   { id: 'my-system', name: 'My System' }
-   ```
-
-4. Refresh the website - your new system will appear in the sidebar
-
-### Modify the Template
-
-Edit `preview/template.html` to change the landing page structure:
-- Add/remove sections
-- Change content
-- Modify layout
-
-The CSS variables will automatically apply to your changes.
-
-### Customize Styling
-
-- **Sidebar**: Edit `preview/css/main.css`
-- **Template**: Edit `preview/css/template.css`
-- **Parser logic**: Edit `preview/js/parser.js`
-
-## 📝 Technical Details
-
-### Parser Logic
-
-The parser extracts design tokens using regex patterns:
-
-- **Colors**: Matches `**Name** (\`#hex\`)` patterns
-- **Typography**: Parses markdown tables for font specs
-- **Buttons**: Extracts radius, padding, shadow from sections
-- **Spacing**: Finds base unit from spacing system
-
-### Font Mapping
-
-Custom fonts are mapped to Google Fonts:
-- `Geist` → `Inter`
-- `sohne-var` → `Inter`
-- `SFMono` → `Roboto Mono`
-- `system-ui` → Native system font
-
-### CSS Variables
-
-Generated variables include:
-```css
---primary-color
---text-color
---bg-color
---border-color
---font-primary
---heading-size
---heading-weight
---heading-spacing
---button-radius
---button-padding
---spacing-unit
-```
-
-## 🐛 Troubleshooting
-
-**Issue**: Design system not loading
-- Check browser console for errors
-- Verify the DESIGN.md file exists
-- Check file path is correct (case-sensitive)
-
-**Issue**: Fonts not displaying
-- Check internet connection (fonts load from Google Fonts)
-- Verify font name in DESIGN.md
-- Check browser console for font loading errors
-
-**Issue**: Styles not applying
-- Check if CSS variables are generated (inspect iframe)
-- Verify markdown format matches parser expectations
-- Check browser console for parsing errors
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! To add a new design system:
-
-1. Fork the repository
-2. Add your design system to `design-systems/`
-3. Update `systems.js`
-4. Submit a pull request
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub.
+</div>
 
 ---
 
-**Built with ❤️ using vanilla HTML, CSS, and JavaScript**
+## English
 
-Last updated: May 2026
+### 📖 Overview
+
+Design System UI Preview is a comprehensive collection of design systems from the world's most innovative companies and frameworks. Browse, preview, and copy design tokens from companies like Apple, Google, Airbnb, Stripe, and many more - all in one place.
+
+### ✨ Features
+
+- 🎯 **172+ Design Systems** - Curated collection from leading tech companies
+- 🖼️ **Live Preview** - Interactive landing pages for each design system
+- 🔍 **Smart Search** - Quickly find any design system
+- 📋 **Copy Design Tokens** - One-click copy of DESIGN.md files
+- 🎨 **Dynamic Theming** - Real-time CSS variable generation
+- 📱 **Responsive Design** - Works perfectly on all devices
+- ⚡ **Fast & Lightweight** - Pure vanilla JavaScript, no frameworks
+- 🔄 **Auto-Detection** - Automatically detects custom landing pages
+
+### 🚀 Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/design-system-ui-preview.git
+   cd design-system-ui-preview
+   ```
+
+2. **Open in browser**
+   ```bash
+   # Simply open index.html in your browser
+   # Or use a local server:
+   python -m http.server 8000
+   # Then visit http://localhost:8000
+   ```
+
+3. **Start exploring!**
+   - Browse design systems from the sidebar
+   - Click any system to preview its landing page
+   - Use the search bar to find specific systems
+   - Click "Copy Markdown" to get design tokens
+
+### 📂 Project Structure
+
+```
+design-system-ui-preview/
+├── index.html              # Main application entry
+├── template.html           # Template for dynamic design systems
+├── css/
+│   ├── main.css           # Application styles
+│   └── template.css       # Template styles with CSS variables
+├── js/
+│   ├── app.js             # Main application logic
+│   ├── systems.js         # Design systems data
+│   ├── parser.js          # DESIGN.md parser
+│   └── fonts.js           # Font loading utilities
+└── design-systems/
+    ├── apple/
+    │   ├── apple-landing.html
+    │   └── DESIGN.md
+    ├── google/
+    │   ├── google-landing.html
+    │   └── DESIGN.md
+    └── ... (172+ systems)
+```
+
+### 🎨 Featured Design Systems
+
+**Tech Giants:**
+- Apple, Google, Meta, Microsoft, Amazon
+- Netflix, Spotify, Uber, Airbnb, Tesla
+
+**Developer Tools:**
+- GitHub, GitLab, Vercel, Netlify
+- Figma, Sketch, Framer, InVision
+
+**AI & ML:**
+- OpenAI, Claude, Cohere, Mistral AI
+- Hugging Face, Ollama, ElevenLabs
+
+**Finance & Payments:**
+- Stripe, PayPal, Coinbase, Revolut
+- Visa, Mastercard, Square, Plaid
+
+**And 140+ more!**
+
+### 🛠️ Technology Stack
+
+- **Frontend:** Pure HTML5, CSS3, JavaScript (ES6+)
+- **Architecture:** Modular, component-based
+- **Styling:** CSS Variables, Flexbox, Grid
+- **Fonts:** Google Fonts integration
+- **No Dependencies:** Zero npm packages, no build process
+
+### 📝 How It Works
+
+1. **Auto-Detection:** The app automatically detects if a design system has a custom landing page
+2. **Fallback System:** If no landing page exists, it parses the DESIGN.md file
+3. **Dynamic Theming:** Extracts design tokens and generates CSS variables
+4. **Live Preview:** Renders the design system in an isolated iframe
+
+### 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Add a new design system:**
+   ```bash
+   # Create a new folder
+   mkdir design-systems/your-system
+   
+   # Add landing page
+   touch design-systems/your-system/your-system-landing.html
+   
+   # Add design tokens
+   touch design-systems/your-system/DESIGN.md
+   ```
+
+2. **Update systems.js:**
+   ```javascript
+   { id: 'your-system', name: 'Your System' }
+   ```
+
+3. **Submit a pull request**
+
+### 📋 Design System Format
+
+Each design system should include:
+
+- `{system-id}-landing.html` - Custom landing page (optional)
+- `DESIGN.md` - Design tokens in markdown format
+
+Example DESIGN.md structure:
+```markdown
+# System Name
+
+## Colors
+- Primary: #0066CC
+- Secondary: #FF6B6B
+
+## Typography
+- Font Family: Inter
+- Font Size: 16px
+
+## Buttons
+- Border Radius: 8px
+- Padding: 12px 24px
+```
+
+### 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### 🙏 Acknowledgments
+
+- Design systems from 172+ companies and frameworks
+- Design system data sourced from [nexu-io/open-design](https://github.com/nexu-io/open-design)
+- Inspired by the open-source design community
+- Built with ❤️ for designers and developers
+
+### 📧 Contact
+
+- Create an [Issue](../../issues) for bug reports or feature requests
+- Star ⭐ this repo if you find it useful!
+
+---
+
+## Tiếng Việt
+
+### 📖 Tổng Quan
+
+Design System UI Preview là bộ sưu tập toàn diện các hệ thống thiết kế từ những công ty sáng tạo nhất thế giới. Duyệt, xem trước và sao chép design tokens từ các công ty như Apple, Google, Airbnb, Stripe và nhiều hơn nữa - tất cả ở một nơi.
+
+### ✨ Tính Năng
+
+- 🎯 **172+ Hệ Thống Thiết Kế** - Bộ sưu tập được tuyển chọn từ các công ty công nghệ hàng đầu
+- 🖼️ **Xem Trước Trực Tiếp** - Landing page tương tác cho mỗi hệ thống thiết kế
+- 🔍 **Tìm Kiếm Thông Minh** - Nhanh chóng tìm bất kỳ hệ thống thiết kế nào
+- 📋 **Sao Chép Design Tokens** - Sao chép file DESIGN.md chỉ với một cú click
+- 🎨 **Chủ Đề Động** - Tạo CSS variables theo thời gian thực
+- 📱 **Thiết Kế Responsive** - Hoạt động hoàn hảo trên mọi thiết bị
+- ⚡ **Nhanh & Nhẹ** - JavaScript thuần túy, không cần framework
+- 🔄 **Tự Động Phát Hiện** - Tự động phát hiện landing page tùy chỉnh
+
+### 🚀 Bắt Đầu Nhanh
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/yourusername/design-system-ui-preview.git
+   cd design-system-ui-preview
+   ```
+
+2. **Mở trong trình duyệt**
+   ```bash
+   # Chỉ cần mở file index.html trong trình duyệt
+   # Hoặc sử dụng local server:
+   python -m http.server 8000
+   # Sau đó truy cập http://localhost:8000
+   ```
+
+3. **Bắt đầu khám phá!**
+   - Duyệt các hệ thống thiết kế từ thanh bên
+   - Click vào bất kỳ hệ thống nào để xem landing page
+   - Sử dụng thanh tìm kiếm để tìm hệ thống cụ thể
+   - Click "Copy Markdown" để lấy design tokens
+
+### 📂 Cấu Trúc Dự Án
+
+```
+design-system-ui-preview/
+├── index.html              # Điểm vào chính của ứng dụng
+├── template.html           # Template cho design systems động
+├── css/
+│   ├── main.css           # Styles của ứng dụng
+│   └── template.css       # Template styles với CSS variables
+├── js/
+│   ├── app.js             # Logic chính của ứng dụng
+│   ├── systems.js         # Dữ liệu design systems
+│   ├── parser.js          # Parser cho DESIGN.md
+│   └── fonts.js           # Tiện ích load fonts
+└── design-systems/
+    ├── apple/
+    │   ├── apple-landing.html
+    │   └── DESIGN.md
+    ├── google/
+    │   ├── google-landing.html
+    │   └── DESIGN.md
+    └── ... (172+ systems)
+```
+
+### 🎨 Hệ Thống Thiết Kế Nổi Bật
+
+**Các Gã Khổng Lồ Công Nghệ:**
+- Apple, Google, Meta, Microsoft, Amazon
+- Netflix, Spotify, Uber, Airbnb, Tesla
+
+**Công Cụ Developer:**
+- GitHub, GitLab, Vercel, Netlify
+- Figma, Sketch, Framer, InVision
+
+**AI & ML:**
+- OpenAI, Claude, Cohere, Mistral AI
+- Hugging Face, Ollama, ElevenLabs
+
+**Tài Chính & Thanh Toán:**
+- Stripe, PayPal, Coinbase, Revolut
+- Visa, Mastercard, Square, Plaid
+
+**Và hơn 140 hệ thống khác!**
+
+### 🛠️ Công Nghệ Sử Dụng
+
+- **Frontend:** HTML5, CSS3, JavaScript thuần túy (ES6+)
+- **Kiến Trúc:** Modular, component-based
+- **Styling:** CSS Variables, Flexbox, Grid
+- **Fonts:** Tích hợp Google Fonts
+- **Không Phụ Thuộc:** Không cần npm packages, không cần build process
+
+### 📝 Cách Hoạt Động
+
+1. **Tự Động Phát Hiện:** App tự động phát hiện nếu design system có landing page tùy chỉnh
+2. **Hệ Thống Fallback:** Nếu không có landing page, nó sẽ parse file DESIGN.md
+3. **Chủ Đề Động:** Trích xuất design tokens và tạo CSS variables
+4. **Xem Trước Trực Tiếp:** Render design system trong iframe độc lập
+
+### 🤝 Đóng Góp
+
+Chúng tôi hoan nghênh mọi đóng góp! Đây là cách bạn có thể giúp đỡ:
+
+1. **Thêm design system mới:**
+   ```bash
+   # Tạo folder mới
+   mkdir design-systems/your-system
+   
+   # Thêm landing page
+   touch design-systems/your-system/your-system-landing.html
+   
+   # Thêm design tokens
+   touch design-systems/your-system/DESIGN.md
+   ```
+
+2. **Cập nhật systems.js:**
+   ```javascript
+   { id: 'your-system', name: 'Your System' }
+   ```
+
+3. **Gửi pull request**
+
+### 📋 Định Dạng Design System
+
+Mỗi design system nên bao gồm:
+
+- `{system-id}-landing.html` - Landing page tùy chỉnh (tùy chọn)
+- `DESIGN.md` - Design tokens ở định dạng markdown
+
+Ví dụ cấu trúc DESIGN.md:
+```markdown
+# Tên Hệ Thống
+
+## Màu Sắc
+- Primary: #0066CC
+- Secondary: #FF6B6B
+
+## Typography
+- Font Family: Inter
+- Font Size: 16px
+
+## Buttons
+- Border Radius: 8px
+- Padding: 12px 24px
+```
+
+### 📄 Giấy Phép
+
+Dự án này được cấp phép theo giấy phép MIT - xem file [LICENSE](LICENSE) để biết chi tiết.
+
+### 🙏 Lời Cảm Ơn
+
+- Các hệ thống thiết kế từ 172+ công ty và frameworks
+- Dữ liệu design system được lấy từ [nexu-io/open-design](https://github.com/nexu-io/open-design)
+- Lấy cảm hứng từ cộng đồng thiết kế mã nguồn mở
+- Được xây dựng với ❤️ cho designers và developers
+
+### 📧 Liên Hệ
+
+- Tạo [Issue](../../issues) để báo lỗi hoặc đề xuất tính năng
+- Star ⭐ repo này nếu bạn thấy hữu ích!
+
+---
+
+<div align="center">
+
+**Made with ❤️ by the Design Community**
+
+[⬆ Back to Top](#-design-system-ui-preview)
+
+</div>

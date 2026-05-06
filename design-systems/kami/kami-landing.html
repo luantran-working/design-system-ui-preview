@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kami - Document Annotation for Education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kami-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">kami 紙</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Document Annotation for Education</p>
+        <h1 class="hero-title">Transform Every Document Into a Learning Experience</h1>
+        <p class="hero-subtitle">Annotate, collaborate, and engage with any document. Built for teachers, designed for students, trusted by schools worldwide.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free Trial</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>✓</span>
+          <span>Used by 10M+ educators and students</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Schools Worldwide</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500M+</div>
+          <div class="stat-label">Documents Annotated</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">01</p>
+        <h2 class="section-title">Powerful Annotation Tools</h2>
+        <p class="section-subtitle">Everything you need to mark up, comment, and collaborate on documents</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <h3 class="feature-title">Rich Markup Tools</h3>
+          <p class="feature-description">Highlight, underline, draw, add text boxes, and insert shapes. Full suite of annotation tools at your fingertips.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Real-Time Comments</h3>
+          <p class="feature-description">Leave feedback, ask questions, and have conversations directly on the document. Students see updates instantly.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3 class="feature-title">Voice & Video Notes</h3>
+          <p class="feature-description">Record audio feedback or video explanations. Perfect for personalized instruction and accessibility.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">Digital Assignments</h3>
+          <p class="feature-description">Create, distribute, and collect assignments seamlessly. Students complete work directly in the document.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Universal Format Support</h3>
+          <p class="feature-description">Works with PDFs, Word docs, PowerPoints, images, and more. No conversion needed.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Works Everywhere</h3>
+          <p class="feature-description">Browser extension, mobile apps, and LMS integration. Access your documents from any device.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">02</p>
+        <h2 class="section-title">Built for the Classroom</h2>
+        <p class="section-subtitle">Designed with educators and students in mind</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="education-icon">👩‍🏫</div>
+          <h3 class="education-title">For Teachers</h3>
+          <p class="education-description">Streamline your workflow with tools designed to save time and enhance instruction.</p>
+          <ul class="education-benefits">
+            <li>Create interactive lessons from any document</li>
+            <li>Provide personalized feedback at scale</li>
+            <li>Track student progress and engagement</li>
+            <li>Build reusable assignment templates</li>
+            <li>Integrate with Google Classroom, Canvas, Schoology</li>
+          </ul>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">🎓</div>
+          <h3 class="education-title">For Students</h3>
+          <p class="education-description">Engage with course materials in new ways and develop critical thinking skills.</p>
+          <ul class="education-benefits">
+            <li>Annotate readings and take digital notes</li>
+            <li>Collaborate with classmates on group work</li>
+            <li>Submit assignments without printing</li>
+            <li>Access materials on any device</li>
+            <li>Build a portfolio of annotated work</li>
+          </ul>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">🏫</div>
+          <h3 class="education-title">For Schools</h3>
+          <p class="education-description">Enterprise-grade security and management for district-wide deployment.</p>
+          <ul class="education-benefits">
+            <li>SSO and rostering integration</li>
+            <li>FERPA and COPPA compliant</li>
+            <li>Admin dashboard and usage analytics</li>
+            <li>Professional development resources</li>
+            <li>Dedicated support and training</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">03</p>
+        <h2 class="section-title">Complete Annotation Toolkit</h2>
+        <p class="section-subtitle">Professional-grade tools that are simple enough for any student</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🖊️</div>
+            <h3 class="tool-title">Markup & Drawing</h3>
+          </div>
+          <p class="tool-description">Express ideas visually with a complete set of drawing and annotation tools.</p>
+          <ul class="tool-features">
+            <li>Highlighters in multiple colors</li>
+            <li>Freehand drawing and shapes</li>
+            <li>Text boxes and sticky notes</li>
+            <li>Arrows and callouts</li>
+            <li>Stamps and symbols</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">📋</div>
+            <h3 class="tool-title">Forms & Fillable PDFs</h3>
+          </div>
+          <p class="tool-description">Complete forms, worksheets, and assignments directly in the document.</p>
+          <ul class="tool-features">
+            <li>Fill in text fields and checkboxes</li>
+            <li>Type directly on any document</li>
+            <li>Add signatures and initials</li>
+            <li>Save and submit completed forms</li>
+            <li>Create custom form templates</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🤝</div>
+            <h3 class="tool-title">Collaboration</h3>
+          </div>
+          <p class="tool-description">Work together in real-time or asynchronously with powerful sharing features.</p>
+          <ul class="tool-features">
+            <li>Share documents with individuals or classes</li>
+            <li>Real-time collaborative annotation</li>
+            <li>Comment threads and discussions</li>
+            <li>Version history and revision tracking</li>
+            <li>Permission controls and privacy settings</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">📊</div>
+            <h3 class="tool-title">Assessment & Feedback</h3>
+          </div>
+          <p class="tool-description">Evaluate student work efficiently with built-in grading and feedback tools.</p>
+          <ul class="tool-features">
+            <li>Rubric-based grading</li>
+            <li>Audio and video feedback</li>
+            <li>Reusable comment banks</li>
+            <li>Grade export to LMS</li>
+            <li>Student progress tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote">
+        <p class="quote-text">Kami has transformed how I provide feedback to my students. I can give personalized, detailed comments in half the time it used to take with paper. My students are more engaged and their work quality has improved dramatically.</p>
+        <div class="quote-author">
+          <div class="author-avatar">MR</div>
+          <div class="author-info">
+            <div class="author-name">Maria Rodriguez</div>
+            <div class="author-title">High School English Teacher, Austin ISD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">04</p>
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Free for teachers, affordable for schools</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Teacher</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/forever</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited documents</li>
+            <li>✓ All annotation tools</li>
+            <li>✓ Up to 50 students</li>
+            <li>✓ LMS integration</li>
+            <li>✓ Basic support</li>
+            <li>✓ Mobile apps</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Sign Up Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">School</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$2</span>
+              <span class="price-period">/student/year</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Teacher</li>
+            <li>✓ Unlimited students</li>
+            <li>✓ Advanced collaboration</li>
+            <li>✓ Admin dashboard</li>
+            <li>✓ SSO & rostering</li>
+            <li>✓ Priority support</li>
+            <li>✓ Professional development</li>
+            <li>✓ Usage analytics</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Request Quote</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">District</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in School</li>
+            <li>✓ District-wide deployment</li>
+            <li>✓ Dedicated account manager</li>
+            <li>✓ Custom training programs</li>
+            <li>✓ Advanced security</li>
+            <li>✓ SLA guarantee</li>
+            <li>✓ Custom integrations</li>
+            <li>✓ On-site support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">05</p>
+        <h2 class="section-title">Integrates With Your Workflow</h2>
+        <p class="section-subtitle">Works seamlessly with the tools you already use</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="education-icon">📚</div>
+          <h3 class="education-title">Learning Management Systems</h3>
+          <p class="education-description">Deep integration with popular LMS platforms for seamless assignment workflow.</p>
+          <ul class="education-benefits">
+            <li>Google Classroom</li>
+            <li>Canvas</li>
+            <li>Schoology</li>
+            <li>Blackboard</li>
+            <li>Moodle</li>
+          </ul>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">☁️</div>
+          <h3 class="education-title">Cloud Storage</h3>
+          <p class="education-description">Access and annotate documents from your favorite cloud storage services.</p>
+          <ul class="education-benefits">
+            <li>Google Drive</li>
+            <li>OneDrive</li>
+            <li>Dropbox</li>
+            <li>Box</li>
+            <li>iCloud</li>
+          </ul>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">🔐</div>
+          <h3 class="education-title">Identity & Access</h3>
+          <p class="education-description">Enterprise-grade security with single sign-on and automated provisioning.</p>
+          <ul class="education-benefits">
+            <li>Google SSO</li>
+            <li>Microsoft SSO</li>
+            <li>Clever</li>
+            <li>ClassLink</li>
+            <li>SAML 2.0</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="tools">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">06</p>
+        <h2 class="section-title">Proven Across Subjects</h2>
+        <p class="section-subtitle">Educators use Kami in every discipline</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">📖</div>
+            <h3 class="tool-title">English & Literature</h3>
+          </div>
+          <p class="tool-description">Close reading, literary analysis, and writing feedback made simple.</p>
+          <ul class="tool-features">
+            <li>Annotate texts for close reading exercises</li>
+            <li>Provide detailed feedback on essays</li>
+            <li>Create collaborative annotation projects</li>
+            <li>Build vocabulary and comprehension activities</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🔬</div>
+            <h3 class="tool-title">Science & Math</h3>
+          </div>
+          <p class="tool-description">Visual problem-solving and lab report annotation.</p>
+          <ul class="tool-features">
+            <li>Show work on math problems step-by-step</li>
+            <li>Annotate diagrams and scientific illustrations</li>
+            <li>Provide feedback on lab reports</li>
+            <li>Create interactive worksheets</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🌍</div>
+            <h3 class="tool-title">Social Studies</h3>
+          </div>
+          <p class="tool-description">Analyze primary sources and historical documents.</p>
+          <ul class="tool-features">
+            <li>Annotate historical documents and maps</li>
+            <li>Facilitate document-based questions</li>
+            <li>Create source analysis activities</li>
+            <li>Build interactive timelines</li>
+          </ul>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🎨</div>
+            <h3 class="tool-title">Arts & Languages</h3>
+          </div>
+          <p class="tool-description">Creative expression and language learning support.</p>
+          <ul class="tool-features">
+            <li>Critique artwork and design projects</li>
+            <li>Annotate foreign language texts</li>
+            <li>Provide audio pronunciation feedback</li>
+            <li>Create visual vocabulary builders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-num">07</p>
+        <h2 class="section-title">Trusted by Educators Worldwide</h2>
+        <p class="section-subtitle">See what teachers and students are saying</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <p class="education-description">"Kami has been a game-changer for my remote and hybrid classes. Students can collaborate on documents just like they would in person, and I can provide feedback without drowning in paper."</p>
+          <div class="quote-author">
+            <div class="author-avatar">JL</div>
+            <div class="author-info">
+              <div class="author-name">Jennifer Lee</div>
+              <div class="author-title">Middle School Science Teacher</div>
+            </div>
+          </div>
+        </div>
+        <div class="education-card">
+          <p class="education-description">"The voice comment feature is incredible for my ELL students. They can hear my pronunciation and explanations, which helps them understand the material so much better than written comments alone."</p>
+          <div class="quote-author">
+            <div class="author-avatar">DM</div>
+            <div class="author-info">
+              <div class="author-name">David Martinez</div>
+              <div class="author-title">ESL Instructor</div>
+            </div>
+          </div>
+        </div>
+        <div class="education-card">
+          <p class="education-description">"As a student, I love being able to annotate my readings digitally. I can organize my notes, search through them easily, and access them from anywhere. It's made studying so much more efficient."</p>
+          <div class="quote-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Patel</div>
+              <div class="author-title">High School Senior</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your Classroom?</h2>
+        <p class="cta-subtitle">Join millions of educators and students using Kami to make learning more engaging and effective.</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+        </div>
+        <p class="form-note">Free for teachers • No credit card required • Set up in minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#education">For Education</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#tutorials">Video Tutorials</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kami. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for next steps.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

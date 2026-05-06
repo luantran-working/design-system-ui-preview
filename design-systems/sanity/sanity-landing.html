@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanity - Headless CMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sanity-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Sanity</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-ghost">Sign In</button>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Content is data</h1>
+        <p class="hero-subtitle">Sanity is the platform for structured content that lets you build better digital experiences.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary">Start Building</button>
+          <button class="btn btn-secondary">View Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for modern teams</h2>
+        <p class="section-subtitle">Everything you need to manage structured content</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">Structured Content</h3>
+          <p class="feature-description">Define your content model with schemas. Query with GROQ, our open-source query language.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Real-time Collaboration</h3>
+          <p class="feature-description">Work together with your team in real-time. See changes as they happen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Customizable Studio</h3>
+          <p class="feature-description">Build custom editing experiences with React. Extend with plugins.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Global CDN</h3>
+          <p class="feature-description">Content delivered fast from edge locations worldwide.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">SOC 2 Type II certified with role-based access control.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Developer Experience</h3>
+          <p class="feature-description">TypeScript support, CLI tools, and comprehensive documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Section -->
+  <section class="code-section">
+    <div class="container">
+      <div class="code-window">
+        <pre><code>import {defineConfig} from 'sanity'
+import {deskTool} from 'sanity/desk'
+
+export default defineConfig({
+  name: 'default',
+  title: 'My Sanity Project',
+  projectId: 'your-project-id',
+  dataset: 'production',
+  plugins: [deskTool()],
+  schema: {
+    types: schemaTypes,
+  },
+})</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple pricing</h2>
+        <p class="section-subtitle">Start free, scale as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 class="pricing-name">Free</h3>
+          <div class="pricing-price">$0<span>/mo</span></div>
+          <ul class="pricing-features">
+            <li>Unlimited API requests</li>
+            <li>10GB bandwidth</li>
+            <li>500K documents</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn btn-primary" style="width: 100%;">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <h3 class="pricing-name">Team</h3>
+          <div class="pricing-price">$99<span>/mo</span></div>
+          <ul class="pricing-features">
+            <li>Everything in Free</li>
+            <li>100GB bandwidth</li>
+            <li>Unlimited documents</li>
+            <li>Priority support</li>
+            <li>Advanced roles</li>
+            <li>Custom workflows</li>
+          </ul>
+          <button class="btn btn-primary" style="width: 100%;">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <h3 class="pricing-name">Enterprise</h3>
+          <div class="pricing-price">Custom</div>
+          <ul class="pricing-features">
+            <li>Everything in Team</li>
+            <li>Dedicated support</li>
+            <li>SLA guarantee</li>
+            <li>Custom contracts</li>
+            <li>Advanced security</li>
+            <li>Training & onboarding</li>
+          </ul>
+          <button class="btn btn-primary" style="width: 100%;">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">PRODUCT</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#studio">Studio</a></li>
+            <li><a href="#plugins">Plugins</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">LEGAL</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sanity. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

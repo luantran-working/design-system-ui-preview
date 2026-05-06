@@ -1,0 +1,452 @@
+/* PlayStation Design System - Following DESIGN.md specifications */
+
+/* CSS Variables based on DESIGN.md tokens */
+:root {
+  /* Brand Primary */
+  --playstation-blue: #0070cc;
+  --console-black: #000000;
+  
+  /* Secondary & Accent */
+  --playstation-cyan: #1eaedb;
+  --link-hover-blue: #1883fd;
+  --dark-link-blue: #0068bd;
+  
+  /* Surface & Background */
+  --paper-white: #ffffff;
+  --ice-mist: #f5f7fa;
+  --divider-tint: #f3f3f3;
+  
+  /* Neutrals & Text */
+  --display-ink: #000000;
+  --deep-charcoal: #1f1f1f;
+  --body-gray: #6b6b6b;
+  --mute-gray: #cccccc;
+  --inverse-white: #ffffff;
+  
+  /* Semantic & Commerce */
+  --commerce-orange: #d53b00;
+  --commerce-orange-active: #aa2f00;
+  
+  /* Typography - SST font family */
+  --font-primary: 'Arial', 'Helvetica', ui-sans-serif, system-ui, sans-serif;
+  
+  /* Type Scale */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 18px;
+  --text-lg: 22px;
+  --text-xl: 28px;
+  --text-2xl: 44px;
+  --text-3xl: 54px;
+  
+  /* Spacing Scale */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 19px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  
+  /* Shadows */
+  --shadow-sm: rgba(0, 0, 0, 0.06) 0px 5px 9px 0px;
+  --shadow-md: rgba(0, 0, 0, 0.08) 0px 5px 9px 0px;
+  --shadow-lg: rgba(0, 0, 0, 0.16) 0px 5px 9px 0px;
+  --shadow-hero: rgba(0, 0, 0, 0.8) 0px 5px 9px 0px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 180ms ease;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--deep-charcoal);
+  background-color: var(--paper-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography - Weight 300 at large sizes */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--display-ink);
+}
+
+h1 { font-size: var(--text-3xl); letter-spacing: -0.1px; }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-48);
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--console-black);
+  padding: var(--space-16) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--inverse-white);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-32);
+}
+
+.nav-links a {
+  color: var(--inverse-white);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--link-hover-blue);
+}
+
+.nav-actions {
+  display: flex;
+  gap: var(--space-12);
+}
+
+/* Buttons - Pill shape with signature hover */
+.btn {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: var(--playstation-blue);
+  color: var(--inverse-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--playstation-cyan);
+  border: 2px solid var(--inverse-white);
+  box-shadow: 0 0 0 2px var(--playstation-blue);
+  transform: scale(1.2);
+}
+
+.btn-secondary {
+  background-color: var(--inverse-white);
+  color: var(--playstation-blue);
+  border: 2px outset var(--console-black);
+}
+
+.btn-secondary:hover {
+  background-color: var(--playstation-cyan);
+  color: var(--inverse-white);
+  border: 2px solid var(--inverse-white);
+  transform: scale(1.2);
+}
+
+.btn-ghost {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--inverse-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-ghost:hover {
+  background-color: var(--playstation-cyan);
+  border: 2px solid var(--inverse-white);
+  transform: scale(1.2);
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: var(--text-lg);
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--space-96) 0;
+  background: linear-gradient(180deg, #121314 0%, #000000 100%);
+  color: var(--inverse-white);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+  margin-bottom: var(--space-32);
+  color: var(--inverse-white);
+}
+
+.hero-subtitle {
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-48);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+}
+
+/* Features Section */
+.features {
+  padding: var(--space-96) 0;
+  background-color: var(--paper-white);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: var(--space-64);
+  color: var(--display-ink);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-32);
+}
+
+.feature-card {
+  background-color: var(--paper-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--ice-mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  border-bottom: 1px solid var(--divider-tint);
+}
+
+.feature-title {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  margin-bottom: var(--space-12);
+  color: var(--display-ink);
+  padding: var(--space-24) var(--space-24) 0;
+}
+
+.feature-description {
+  font-size: var(--text-sm);
+  color: var(--body-gray);
+  line-height: 1.5;
+  padding: 0 var(--space-24);
+  margin-bottom: var(--space-16);
+}
+
+.feature-card .btn {
+  margin: 0 var(--space-24) var(--space-24);
+}
+
+/* Pricing Section */
+.pricing {
+  padding: var(--space-96) 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-32);
+}
+
+.pricing-card {
+  background-color: var(--paper-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-48) var(--space-32);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.featured {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 2px, rgba(0, 0, 0, 0.04) 0px 2px 2px;
+}
+
+.pricing-name {
+  font-size: var(--text-xl);
+  font-weight: 300;
+  margin-bottom: var(--space-24);
+  color: var(--display-ink);
+}
+
+.pricing-price {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--display-ink);
+  margin-bottom: var(--space-32);
+  line-height: 1.0;
+  letter-spacing: -2.4px;
+}
+
+.pricing-price span {
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: var(--body-gray);
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: var(--space-32);
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: var(--space-8) 0;
+  font-size: var(--text-base);
+  color: var(--body-gray);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-96) 0 var(--space-32);
+  background-color: var(--playstation-blue);
+  color: var(--inverse-white);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-48);
+  margin-bottom: var(--space-48);
+}
+
+.footer-title {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  margin-bottom: var(--space-16);
+  color: var(--inverse-white);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-8);
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--inverse-white);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-32);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-24);
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-title {
+    font-size: var(--text-xl);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+  }
+  
+  .feature-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}

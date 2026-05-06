@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vercel - Develop. Preview. Ship.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vercel-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <svg width="76" height="16" viewBox="0 0 76 16" fill="currentColor">
+            <path d="M38 0L45.5 16H30.5L38 0Z"/>
+          </svg>
+          <span class="logo-text">Vercel</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-ghost">Contact Sales</button>
+          <button class="btn-dark">Start Deploying</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pill">Announcing Next.js 15</span>
+        </div>
+        <h1 class="hero-title">Develop. Preview. Ship.</h1>
+        <p class="hero-subtitle">Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.</p>
+        <div class="hero-cta">
+          <button class="btn-dark btn-large">Start Deploying</button>
+          <button class="btn-ghost btn-large">Get a Demo</button>
+        </div>
+        <div class="hero-trust">
+          <span class="trust-text">Trusted by teams from around the world</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-logos">
+        <div class="trust-logo">OpenAI</div>
+        <div class="trust-logo">Perplexity</div>
+        <div class="trust-logo">Cursor</div>
+        <div class="trust-logo">ChatGPT</div>
+        <div class="trust-logo">Anthropic</div>
+        <div class="trust-logo">Notion</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The complete workflow</h2>
+        <p class="section-subtitle">Build, preview, and ship with confidence</p>
+      </div>
+      <div class="workflow-steps">
+        <div class="workflow-step">
+          <div class="workflow-icon develop">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="workflow-title develop-text">Develop</h3>
+          <p class="workflow-description">Build when inspiration strikes. Vercel's frontend cloud gives you instant development environments that are always ready.</p>
+        </div>
+        <div class="workflow-arrow">→</div>
+        <div class="workflow-step">
+          <div class="workflow-icon preview">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="workflow-title preview-text">Preview</h3>
+          <p class="workflow-description">Share your work with unique preview URLs for every commit. Get feedback before shipping to production.</p>
+        </div>
+        <div class="workflow-arrow">→</div>
+        <div class="workflow-step">
+          <div class="workflow-icon ship">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3 class="workflow-title ship-text">Ship</h3>
+          <p class="workflow-description">Deploy to production with zero configuration. Vercel optimizes your site for speed and reliability automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">Instant Rollbacks</h3>
+          <p class="feature-description">Every deployment is immutable and atomic. Roll back to any previous version instantly with zero downtime.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Edge Network</h3>
+          <p class="feature-description">Deploy to our global edge network. Your content is served from the location closest to your users.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Real-time Collaboration</h3>
+          <p class="feature-description">Share preview deployments with your team. Comment directly on the live site to streamline feedback.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Built-in Analytics</h3>
+          <p class="feature-description">Understand your audience with privacy-friendly analytics. No configuration required.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Automatic HTTPS</h3>
+          <p class="feature-description">SSL certificates are provisioned automatically. Your sites are secure by default.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">DDoS Mitigation</h3>
+          <p class="feature-description">Enterprise-grade security built in. Protect your applications from attacks automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="metrics">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">10x</div>
+          <div class="metric-label">Faster deployments</div>
+          <p class="metric-description">Deploy in seconds, not minutes. Vercel's infrastructure is optimized for speed.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">99.99%</div>
+          <div class="metric-label">Uptime SLA</div>
+          <p class="metric-description">Enterprise-grade reliability. Your sites stay online when it matters most.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">1M+</div>
+          <div class="metric-label">Developers</div>
+          <p class="metric-description">Join the community building the future of the web on Vercel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start with a template</h2>
+        <p class="section-subtitle">Deploy a complete project in seconds</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-image">
+            <div class="template-placeholder">Next.js</div>
+          </div>
+          <div class="template-content">
+            <h3 class="template-title">Next.js Commerce</h3>
+            <p class="template-description">High-performance ecommerce template with Shopify integration</p>
+            <div class="template-meta">
+              <span class="template-tag">Next.js</span>
+              <span class="template-tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">
+            <div class="template-placeholder">AI</div>
+          </div>
+          <div class="template-content">
+            <h3 class="template-title">AI Chatbot</h3>
+            <p class="template-description">Full-featured chatbot with streaming responses and chat history</p>
+            <div class="template-meta">
+              <span class="template-tag">Next.js</span>
+              <span class="template-tag">OpenAI</span>
+            </div>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">
+            <div class="template-placeholder">Blog</div>
+          </div>
+          <div class="template-content">
+            <h3 class="template-title">Portfolio Starter</h3>
+            <p class="template-description">Personal portfolio with blog, projects, and contact form</p>
+            <div class="template-meta">
+              <span class="template-tag">Next.js</span>
+              <span class="template-tag">MDX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="templates-cta">
+        <a href="#templates" class="link-primary">Browse all templates →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deployment Section -->
+  <section class="deployment">
+    <div class="container">
+      <div class="deployment-content">
+        <div class="deployment-text">
+          <h2 class="section-title">Deploy in seconds</h2>
+          <p class="section-subtitle">Import your Git repository and deploy with zero configuration. Vercel automatically detects your framework and optimizes your build.</p>
+          <div class="deployment-steps">
+            <div class="deployment-step">
+              <span class="step-number">01</span>
+              <span class="step-text">Import Git Repository</span>
+            </div>
+            <div class="deployment-step">
+              <span class="step-number">02</span>
+              <span class="step-text">Configure Project Settings</span>
+            </div>
+            <div class="deployment-step">
+              <span class="step-number">03</span>
+              <span class="step-text">Deploy to Production</span>
+            </div>
+          </div>
+          <button class="btn-dark">Start Deploying</button>
+        </div>
+        <div class="deployment-visual">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-title">terminal</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="code-prompt">$</span> <span class="code-command">vercel</span>
+<span class="code-output">Vercel CLI 33.0.0</span>
+<span class="code-output">🔍 Inspect: https://vercel.com/...</span>
+<span class="code-output">✅ Production: https://example.com</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start for free, scale as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Hobby</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited deployments</li>
+            <li>100GB bandwidth</li>
+            <li>Automatic HTTPS</li>
+            <li>Preview deployments</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-ghost btn-full">Start for free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$20</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Hobby</li>
+            <li>1TB bandwidth</li>
+            <li>Advanced analytics</li>
+            <li>Password protection</li>
+            <li>Priority support</li>
+            <li>Web Application Firewall</li>
+          </ul>
+          <button class="btn-dark btn-full">Start 14-day trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Pro</li>
+            <li>Unlimited bandwidth</li>
+            <li>99.99% SLA</li>
+            <li>Dedicated support</li>
+            <li>SSO & SAML</li>
+            <li>Advanced security</li>
+          </ul>
+          <button class="btn-ghost btn-full">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation Preview -->
+  <section class="docs-preview" id="docs">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comprehensive documentation</h2>
+        <p class="section-subtitle">Everything you need to build on Vercel</p>
+      </div>
+      <div class="docs-grid">
+        <a href="#quickstart" class="doc-card">
+          <div class="doc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3 class="doc-title">Quickstart</h3>
+          <p class="doc-description">Deploy your first project in minutes</p>
+        </a>
+        <a href="#frameworks" class="doc-card">
+          <div class="doc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <path d="M3 9h18"></path>
+            </svg>
+          </div>
+          <h3 class="doc-title">Frameworks</h3>
+          <p class="doc-description">Next.js, React, Vue, and more</p>
+        </a>
+        <a href="#api" class="doc-card">
+          <div class="doc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="doc-title">API Reference</h3>
+          <p class="doc-description">Complete REST and CLI documentation</p>
+        </a>
+        <a href="#guides" class="doc-card">
+          <div class="doc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3 class="doc-title">Guides</h3>
+          <p class="doc-description">Step-by-step tutorials and examples</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start building today</h2>
+        <p class="cta-subtitle">Join over 1 million developers building on Vercel</p>
+        <div class="cta-actions">
+          <button class="btn-dark btn-large">Start Deploying</button>
+          <button class="btn-ghost btn-large">Talk to Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#cli">CLI & API</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <svg width="76" height="16" viewBox="0 0 76 16" fill="currentColor">
+            <path d="M38 0L45.5 16H30.5L38 0Z"/>
+          </svg>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Vercel Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll effect to navbar
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        navbar.style.boxShadow = 'rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 4px';
+      } else {
+        navbar.style.boxShadow = 'rgba(0, 0, 0, 0.08) 0px 0px 0px 1px';
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

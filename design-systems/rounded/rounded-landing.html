@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rounded - Smooth & Friendly Design System</title>
+  <link rel="stylesheet" href="rounded-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">
+          <div class="logo-icon">R</div>
+          <span>Rounded</span>
+        </a>
+        <nav class="nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#examples" class="nav-link">Examples</a>
+          <a href="#docs" class="nav-link">Docs</a>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Design with Smooth Curves & Friendly Vibes</h1>
+        <p class="hero-subtitle">
+          Rounded is a modern design system that embraces soft edges, circular elements, 
+          and approachable aesthetics. Create interfaces that feel warm, welcoming, and delightful.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary btn-large">Start Building</a>
+          <a href="#" class="btn btn-secondary btn-large">View Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="features">
+        <div class="features-header">
+          <h2 class="features-title">Why Choose Rounded?</h2>
+          <p class="features-subtitle">
+            A design system built for modern, friendly, and approachable interfaces
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Soft & Friendly</h3>
+            <p class="feature-description">
+              Large border-radius values and circular elements create a warm, 
+              approachable aesthetic that users love.
+            </p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Smooth Transitions</h3>
+            <p class="feature-description">
+              Carefully crafted animations and transitions make every interaction 
+              feel fluid and natural.
+            </p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3 class="feature-title">Design Tokens</h3>
+            <p class="feature-description">
+              Comprehensive set of design tokens for colors, spacing, typography, 
+              and border-radius values.
+            </p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3 class="feature-title">Fully Responsive</h3>
+            <p class="feature-description">
+              Built mobile-first with responsive components that adapt beautifully 
+              to any screen size.
+            </p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🎭</div>
+            <h3 class="feature-title">Rich Components</h3>
+            <p class="feature-description">
+              Pre-built components with rounded aesthetics including cards, buttons, 
+              inputs, and more.
+            </p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3 class="feature-title">Easy to Use</h3>
+            <p class="feature-description">
+              Simple CSS classes and intuitive naming conventions make implementation 
+              quick and straightforward.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="section components">
+    <div class="container">
+      <div class="components-header">
+        <h2>Component Library</h2>
+        <p class="hero-subtitle">
+          Beautiful, rounded components ready to use in your projects
+        </p>
+      </div>
+      
+      <div class="components-grid">
+        <!-- Buttons Demo -->
+        <div class="component-demo">
+          <h4>Buttons</h4>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <button class="btn btn-primary">Primary Button</button>
+            <button class="btn btn-secondary">Secondary Button</button>
+            <button class="btn btn-primary btn-large">Large Button</button>
+          </div>
+        </div>
+        
+        <!-- Card Demo -->
+        <div class="component-demo">
+          <h4>Cards</h4>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-avatar"></div>
+              <div>
+                <div class="card-title">Sarah Johnson</div>
+                <div class="card-subtitle">Product Designer</div>
+              </div>
+            </div>
+            <p style="margin: 0; color: var(--color-text-secondary);">
+              Creating delightful user experiences with rounded design principles.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Badges Demo -->
+        <div class="component-demo">
+          <h4>Badges</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="badge">Default</span>
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge">Design System</span>
+            <span class="badge badge-primary">Rounded</span>
+          </div>
+        </div>
+        
+        <!-- Input Demo -->
+        <div class="component-demo">
+          <h4>Input Fields</h4>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <input type="text" class="input" placeholder="Enter your name">
+            <input type="email" class="input" placeholder="Enter your email">
+            <input type="text" class="input" placeholder="Search...">
+          </div>
+        </div>
+        
+        <!-- Icon Buttons Demo -->
+        <div class="component-demo">
+          <h4>Icon Elements</h4>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <div class="feature-icon" style="width: 56px; height: 56px; font-size: 1.5rem;">💡</div>
+            <div class="feature-icon" style="width: 56px; height: 56px; font-size: 1.5rem;">🎨</div>
+            <div class="feature-icon" style="width: 56px; height: 56px; font-size: 1.5rem;">⚡</div>
+            <div class="feature-icon" style="width: 56px; height: 56px; font-size: 1.5rem;">🚀</div>
+          </div>
+        </div>
+        
+        <!-- Social Icons Demo -->
+        <div class="component-demo">
+          <h4>Social Icons</h4>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">gh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="section">
+    <div class="container">
+      <div class="examples">
+        <div class="examples-header">
+          <h2>Built with Rounded</h2>
+          <p class="hero-subtitle">
+            See how teams are using Rounded to create beautiful, friendly interfaces
+          </p>
+        </div>
+        
+        <div class="examples-grid">
+          <div class="example-item">
+            <div class="example-image">🎯</div>
+            <div class="example-content">
+              <h3 class="example-title">Dashboard App</h3>
+              <p class="example-description">
+                A modern analytics dashboard with smooth curves and friendly data visualization.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">Dashboard</span>
+                <span class="badge">Analytics</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="example-item">
+            <div class="example-image">💬</div>
+            <div class="example-content">
+              <h3 class="example-title">Chat Interface</h3>
+              <p class="example-description">
+                Messaging app with rounded bubbles and smooth animations for a delightful experience.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">Chat</span>
+                <span class="badge">Social</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="example-item">
+            <div class="example-image">🛍️</div>
+            <div class="example-content">
+              <h3 class="example-title">E-commerce Store</h3>
+              <p class="example-description">
+                Online shop with friendly product cards and smooth checkout flow.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">E-commerce</span>
+                <span class="badge">Retail</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="example-item">
+            <div class="example-image">📱</div>
+            <div class="example-content">
+              <h3 class="example-title">Mobile App</h3>
+              <p class="example-description">
+                Native-feeling mobile interface with rounded corners and smooth gestures.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">Mobile</span>
+                <span class="badge">iOS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="example-item">
+            <div class="example-image">📊</div>
+            <div class="example-content">
+              <h3 class="example-title">Project Manager</h3>
+              <p class="example-description">
+                Task management tool with friendly cards and smooth drag-and-drop interactions.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">Productivity</span>
+                <span class="badge">SaaS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="example-item">
+            <div class="example-image">🎨</div>
+            <div class="example-content">
+              <h3 class="example-title">Design Tool</h3>
+              <p class="example-description">
+                Creative platform with rounded panels and smooth canvas interactions.
+              </p>
+              <div class="example-tags">
+                <span class="badge badge-primary">Design</span>
+                <span class="badge">Creative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Principles Section -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Design Principles</h2>
+        <p class="hero-subtitle">
+          The core values that guide Rounded's design philosophy
+        </p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🌊</div>
+          <h3>Smooth & Flowing</h3>
+          <p style="color: var(--color-text-secondary);">
+            Every element flows naturally with generous curves and smooth transitions.
+          </p>
+        </div>
+        
+        <div style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">😊</div>
+          <h3>Friendly & Approachable</h3>
+          <p style="color: var(--color-text-secondary);">
+            Rounded corners and soft shadows create a welcoming, non-intimidating interface.
+          </p>
+        </div>
+        
+        <div style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+          <h3>Delightful Details</h3>
+          <p style="color: var(--color-text-secondary);">
+            Subtle animations and thoughtful interactions make every moment enjoyable.
+          </p>
+        </div>
+        
+        <div style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+          <h3>Purposeful Design</h3>
+          <p style="color: var(--color-text-secondary);">
+            Every rounded corner serves a purpose, guiding users naturally through the interface.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); 
+                  padding: 4rem 2rem; 
+                  border-radius: 3rem; 
+                  text-align: center; 
+                  color: white;
+                  box-shadow: var(--shadow-xl);">
+        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">
+          Ready to Build Something Beautiful?
+        </h2>
+        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95;">
+          Start creating friendly, approachable interfaces with Rounded today.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn btn-large" style="background: white; color: var(--color-primary);">
+            Get Started Free
+          </a>
+          <a href="#" class="btn btn-large" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon">R</div>
+            <span>Rounded</span>
+          </div>
+          <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+            A modern design system for creating smooth, friendly, and approachable interfaces.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">gh</a>
+            <a href="#" class="social-icon">f</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Design Tokens</a></li>
+            <li><a href="#">Figma Kit</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rounded Design System. All rights reserved. Built with smooth curves and friendly vibes.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

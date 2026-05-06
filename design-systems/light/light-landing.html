@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Design System - Clean, Bright, Modern</title>
+  <link rel="stylesheet" href="light-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="#" class="navbar-brand">Light</a>
+        <ul class="navbar-nav">
+          <li><a href="#features" class="navbar-link">Features</a></li>
+          <li><a href="#examples" class="navbar-link">Examples</a></li>
+          <li><a href="#components" class="navbar-link">Components</a></li>
+          <li><a href="#docs" class="navbar-link">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Light Design System</h1>
+      <p class="hero-subtitle">A clean, bright, and modern design system built for clarity and simplicity. Create beautiful interfaces with light backgrounds and vibrant accents.</p>
+      <div class="hero-actions">
+        <a href="#get-started" class="btn btn-primary btn-large">Get Started</a>
+        <a href="#examples" class="btn btn-secondary btn-large">View Examples</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose Light?</h2>
+        <p class="section-subtitle">Built with modern design principles, accessibility in mind, and optimized for readability and user experience.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Clean & Bright</h3>
+          <p class="feature-description">Light backgrounds with high contrast text ensure maximum readability and a fresh, airy feel throughout your application.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Vibrant Colors</h3>
+          <p class="feature-description">A carefully curated color palette with bright blues, purples, and accent colors that pop against light backgrounds.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Fully Responsive</h3>
+          <p class="feature-description">Every component is designed to work seamlessly across all devices, from mobile phones to large desktop screens.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Performance First</h3>
+          <p class="feature-description">Lightweight CSS with minimal dependencies ensures fast load times and smooth interactions.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">♿</div>
+          <h3 class="feature-title">Accessible</h3>
+          <p class="feature-description">Built with WCAG guidelines in mind, ensuring your interfaces are usable by everyone.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Customizable</h3>
+          <p class="feature-description">CSS variables make it easy to customize colors, spacing, and typography to match your brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Component Examples</h2>
+        <p class="section-subtitle">Explore our pre-built components designed for modern web applications.</p>
+      </div>
+      
+      <div class="grid grid-2">
+        <!-- Card Example 1 -->
+        <div class="card">
+          <div class="card-header">
+            <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+              <span class="badge badge-primary">New</span>
+              <span class="badge">Featured</span>
+            </div>
+            <h3 class="card-title">Dashboard Analytics</h3>
+            <p class="card-description">Real-time insights and metrics for your business</p>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4);">Track key performance indicators, monitor user engagement, and make data-driven decisions with our comprehensive analytics dashboard.</p>
+          <a href="#" class="btn btn-primary">View Dashboard</a>
+        </div>
+        
+        <!-- Card Example 2 -->
+        <div class="card">
+          <div class="card-header">
+            <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+              <span class="badge badge-success">Active</span>
+            </div>
+            <h3 class="card-title">Team Collaboration</h3>
+            <p class="card-description">Work together seamlessly with your team</p>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4);">Share files, communicate in real-time, and manage projects efficiently with our integrated collaboration tools.</p>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+        
+        <!-- Card Example 3 -->
+        <div class="card">
+          <div class="card-header">
+            <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+              <span class="badge badge-warning">Beta</span>
+            </div>
+            <h3 class="card-title">AI-Powered Insights</h3>
+            <p class="card-description">Leverage machine learning for better outcomes</p>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4);">Get intelligent recommendations and predictions powered by advanced AI algorithms tailored to your business needs.</p>
+          <a href="#" class="btn btn-primary">Try Beta</a>
+        </div>
+        
+        <!-- Card Example 4 -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Security & Compliance</h3>
+            <p class="card-description">Enterprise-grade security you can trust</p>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4);">Bank-level encryption, SOC 2 compliance, and regular security audits ensure your data is always protected.</p>
+          <a href="#" class="btn btn-secondary">Security Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">UI Components</h2>
+        <p class="section-subtitle">A comprehensive library of ready-to-use components.</p>
+      </div>
+      
+      <!-- Buttons -->
+      <div class="mb-12">
+        <h3 style="margin-bottom: var(--space-6);">Buttons</h3>
+        <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+          <button class="btn btn-primary btn-large">Large Primary</button>
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-primary btn-small">Small Primary</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-secondary btn-small">Small Secondary</button>
+        </div>
+      </div>
+      
+      <!-- Badges -->
+      <div class="mb-12">
+        <h3 style="margin-bottom: var(--space-6);">Badges</h3>
+        <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; align-items: center;">
+          <span class="badge">Default</span>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+        </div>
+      </div>
+      
+      <!-- Form Elements -->
+      <div class="mb-12">
+        <h3 style="margin-bottom: var(--space-6);">Form Elements</h3>
+        <div style="max-width: 500px;">
+          <div style="margin-bottom: var(--space-4);">
+            <label style="display: block; margin-bottom: var(--space-2); font-weight: var(--font-weight-medium); color: var(--text-primary);">Email Address</label>
+            <input type="email" class="input" placeholder="you@example.com">
+          </div>
+          <div style="margin-bottom: var(--space-4);">
+            <label style="display: block; margin-bottom: var(--space-2); font-weight: var(--font-weight-medium); color: var(--text-primary);">Message</label>
+            <textarea class="input" rows="4" placeholder="Enter your message..."></textarea>
+          </div>
+          <button class="btn btn-primary">Submit Form</button>
+        </div>
+      </div>
+      
+      <!-- Code Block -->
+      <div class="mb-12">
+        <h3 style="margin-bottom: var(--space-6);">Code Block</h3>
+        <div class="code-block">
+<pre style="margin: 0;">/* Import Light Design System */
+@import 'light-styles.css';
+
+/* Use CSS Variables */
+.custom-button {
+  background-color: var(--color-primary);
+  color: var(--text-inverse);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+}</pre>
+        </div>
+      </div>
+      
+      <!-- Typography -->
+      <div class="mb-12">
+        <h3 style="margin-bottom: var(--space-6);">Typography</h3>
+        <div style="background-color: var(--bg-secondary); padding: var(--space-8); border-radius: var(--radius-xl);">
+          <h1 style="margin-bottom: var(--space-3);">Heading 1</h1>
+          <h2 style="margin-bottom: var(--space-3);">Heading 2</h2>
+          <h3 style="margin-bottom: var(--space-3);">Heading 3</h3>
+          <h4 style="margin-bottom: var(--space-3);">Heading 4</h4>
+          <h5 style="margin-bottom: var(--space-3);">Heading 5</h5>
+          <h6 style="margin-bottom: var(--space-4);">Heading 6</h6>
+          <p>This is a paragraph with regular body text. The Light design system uses a clean, modern sans-serif font stack for optimal readability across all devices and platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Palette Section -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Color Palette</h2>
+        <p class="section-subtitle">A vibrant and accessible color system designed for light backgrounds.</p>
+      </div>
+      
+      <div class="grid grid-4">
+        <!-- Primary Colors -->
+        <div class="card">
+          <div style="height: 80px; background-color: var(--color-primary); border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+          <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-2);">Primary</h4>
+          <code style="font-size: var(--font-size-xs); color: var(--text-tertiary);">#3b82f6</code>
+        </div>
+        
+        <div class="card">
+          <div style="height: 80px; background-color: var(--color-secondary); border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+          <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-2);">Secondary</h4>
+          <code style="font-size: var(--font-size-xs); color: var(--text-tertiary);">#8b5cf6</code>
+        </div>
+        
+        <div class="card">
+          <div style="height: 80px; background-color: var(--color-accent); border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+          <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-2);">Accent</h4>
+          <code style="font-size: var(--font-size-xs); color: var(--text-tertiary);">#f59e0b</code>
+        </div>
+        
+        <div class="card">
+          <div style="height: 80px; background-color: var(--color-success); border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+          <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-2);">Success</h4>
+          <code style="font-size: var(--font-size-xs); color: var(--text-tertiary);">#10b981</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title">Ready to Get Started?</h2>
+      <p class="section-subtitle mb-8">Join thousands of developers building beautiful, accessible interfaces with the Light design system.</p>
+      <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+        <a href="#download" class="btn btn-primary btn-large">Download Now</a>
+        <a href="#docs" class="btn btn-secondary btn-large">Read Documentation</a>
+      </div>
+      
+      <!-- Stats -->
+      <div class="grid grid-3" style="margin-top: var(--space-16);">
+        <div>
+          <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--space-2);">50+</div>
+          <div style="color: var(--text-secondary);">Components</div>
+        </div>
+        <div>
+          <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--space-2);">10k+</div>
+          <div style="color: var(--text-secondary);">Downloads</div>
+        </div>
+        <div>
+          <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--space-2);">100%</div>
+          <div style="color: var(--text-secondary);">Open Source</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4 class="footer-section-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Features</a></li>
+            <li><a href="#" class="footer-link">Pricing</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+            <li><a href="#" class="footer-link">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-section-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Tutorials</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Community</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-section-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Partners</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-section-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+            <li><a href="#" class="footer-link">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Light Design System. All rights reserved. Built with care for the modern web.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

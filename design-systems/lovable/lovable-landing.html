@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovable - AI Full-Stack Builder</title>
+  <meta name="description" content="Build full-stack applications with AI. Lovable is your friendly AI coding companion that turns ideas into production-ready code.">
+  <link rel="stylesheet" href="lovable-styles.css">
+  <!-- Camera Plain Variable font would be loaded here in production -->
+  <style>
+    /* Fallback font styling for demo purposes */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;480;600&display=swap');
+    :root {
+      --font-primary: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo">Lovable</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#ai">AI Builder</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Start Building</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build Full-Stack Apps with AI</h1>
+        <p class="hero-subtitle">Your friendly AI coding companion that turns ideas into production-ready applications. No complex setup, just describe what you want to build.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Building Free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">See How It Works</button>
+        </div>
+        <div class="hero-badge">
+          <span>✨</span>
+          <span>Join 100,000+ developers building with AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">Developers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Apps Created</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10x</div>
+          <div class="stat-label">Faster Development</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">AI Assistance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything You Need to Build</h2>
+        <p class="section-subtitle">From idea to deployment, Lovable handles the complexity so you can focus on creating</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🤖</span>
+          <h4 class="feature-title">AI Code Generation</h4>
+          <p class="feature-description">Describe your app in natural language and watch as Lovable generates clean, production-ready code instantly.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h4 class="feature-title">Full-Stack Development</h4>
+          <p class="feature-description">Build complete applications with frontend, backend, and database—all generated and integrated automatically.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h4 class="feature-title">Beautiful UI Components</h4>
+          <p class="feature-description">Access a library of pre-built, customizable components that look great out of the box.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔄</span>
+          <h4 class="feature-title">Real-Time Collaboration</h4>
+          <p class="feature-description">Work with your team and AI simultaneously. See changes instantly as you build together.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🚀</span>
+          <h4 class="feature-title">One-Click Deploy</h4>
+          <p class="feature-description">Deploy your application to production with a single click. Hosting, SSL, and scaling included.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔧</span>
+          <h4 class="feature-title">Developer-Friendly</h4>
+          <p class="feature-description">Full code access, Git integration, and the ability to customize everything. No vendor lock-in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Section -->
+  <section class="ai-section" id="ai">
+    <div class="container">
+      <div class="ai-content">
+        <div class="ai-text">
+          <h2>Your AI Coding Partner</h2>
+          <p class="text-large">Lovable understands what you want to build and generates the code to make it happen. It's like having an expert developer on your team, available 24/7.</p>
+          <ul class="ai-features">
+            <li>Natural language to code generation</li>
+            <li>Context-aware suggestions and improvements</li>
+            <li>Automatic bug detection and fixes</li>
+            <li>Best practices built-in</li>
+            <li>Learns your coding style</li>
+          </ul>
+          <div style="margin-top: var(--spacing-5);">
+            <button class="btn-primary" onclick="scrollToSection('get-started')">Try AI Builder</button>
+          </div>
+        </div>
+        <div class="ai-visual">
+          <div class="ai-chat-demo">
+            <input 
+              type="text" 
+              class="chat-input" 
+              placeholder="Describe what you want to build..."
+              value="Create a todo app with dark mode"
+              readonly
+            >
+            <div class="suggestion-pills">
+              <span class="suggestion-pill">Add authentication</span>
+              <span class="suggestion-pill">Create dashboard</span>
+              <span class="suggestion-pill">Build API</span>
+              <span class="suggestion-pill">Add database</span>
+            </div>
+            <div class="chat-actions">
+              <button class="btn-primary">Generate Code</button>
+              <button class="btn-pill">🎤</button>
+              <button class="btn-pill">📋</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start with a Template</h2>
+        <p class="section-subtitle">Choose from hundreds of pre-built templates and customize them to your needs</p>
+      </div>
+      <div class="template-grid">
+        <a href="#" class="template-card">
+          <div class="template-image">📱</div>
+          <div class="template-content">
+            <h4 class="template-title">SaaS Dashboard</h4>
+            <p class="template-description">Complete SaaS starter with authentication, billing, and admin panel.</p>
+          </div>
+        </a>
+        <a href="#" class="template-card">
+          <div class="template-image">🛒</div>
+          <div class="template-content">
+            <h4 class="template-title">E-Commerce Store</h4>
+            <p class="template-description">Full-featured online store with cart, checkout, and payment integration.</p>
+          </div>
+        </a>
+        <a href="#" class="template-card">
+          <div class="template-image">📝</div>
+          <div class="template-content">
+            <h4 class="template-title">Blog Platform</h4>
+            <p class="template-description">Modern blog with CMS, markdown support, and SEO optimization.</p>
+          </div>
+        </a>
+        <a href="#" class="template-card">
+          <div class="template-image">💼</div>
+          <div class="template-content">
+            <h4 class="template-title">Portfolio Site</h4>
+            <p class="template-description">Showcase your work with a beautiful, responsive portfolio website.</p>
+          </div>
+        </a>
+        <a href="#" class="template-card">
+          <div class="template-image">📊</div>
+          <div class="template-content">
+            <h4 class="template-title">Analytics Dashboard</h4>
+            <p class="template-description">Data visualization dashboard with charts, graphs, and real-time updates.</p>
+          </div>
+        </a>
+        <a href="#" class="template-card">
+          <div class="template-image">🎓</div>
+          <div class="template-content">
+            <h4 class="template-title">Learning Platform</h4>
+            <p class="template-description">Online course platform with video hosting and progress tracking.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How Lovable Works</h2>
+        <p class="section-subtitle">From idea to production in three simple steps</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">1️⃣</span>
+          <h4 class="feature-title">Describe Your App</h4>
+          <p class="feature-description">Tell Lovable what you want to build in plain English. Be as detailed or as brief as you like.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">2️⃣</span>
+          <h4 class="feature-title">AI Generates Code</h4>
+          <p class="feature-description">Watch as Lovable creates your full-stack application with clean, maintainable code.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">3️⃣</span>
+          <h4 class="feature-title">Deploy & Iterate</h4>
+          <p class="feature-description">Deploy instantly or refine with AI assistance. Make changes by simply describing what you want.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by Developers</h2>
+        <p class="section-subtitle">See what people are building with Lovable</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: var(--spacing-3);">"I built my entire SaaS MVP in a weekend. Lovable handled everything from auth to payments. This is the future of development."</p>
+          <h4 class="feature-title">Alex Chen</h4>
+          <p class="feature-description">Founder, TaskFlow</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: var(--spacing-3);">"As a designer who codes, Lovable is a game-changer. I can focus on the experience while AI handles the implementation details."</p>
+          <h4 class="feature-title">Sarah Martinez</h4>
+          <p class="feature-description">Product Designer</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: var(--spacing-3);">"The code quality is impressive. It's not just generating boilerplate—it's writing production-ready, well-structured code."</p>
+          <h4 class="feature-title">James Wilson</h4>
+          <p class="feature-description">Senior Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="features" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4 class="feature-title">Free</h4>
+          <div style="margin: var(--spacing-3) 0;">
+            <div style="font-size: var(--text-section-heading); font-weight: 600; color: var(--charcoal); letter-spacing: -1.2px;">$0</div>
+            <p class="feature-description">per month</p>
+          </div>
+          <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-4);">
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ 3 projects</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ AI code generation</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Basic templates</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Community support</li>
+          </ul>
+          <button class="btn-secondary" style="width: 100%;" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        <div class="feature-card" style="border: 2px solid var(--charcoal);">
+          <div style="display: inline-block; padding: 4px 12px; background-color: var(--charcoal); color: var(--off-white); border-radius: var(--radius-pill); font-size: var(--text-caption); margin-bottom: var(--spacing-2);">Most Popular</div>
+          <h4 class="feature-title">Pro</h4>
+          <div style="margin: var(--spacing-3) 0;">
+            <div style="font-size: var(--text-section-heading); font-weight: 600; color: var(--charcoal); letter-spacing: -1.2px;">$29</div>
+            <p class="feature-description">per month</p>
+          </div>
+          <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-4);">
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Unlimited projects</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Advanced AI features</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ All templates</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Priority support</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Custom domains</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Team collaboration</li>
+          </ul>
+          <button class="btn-primary" style="width: 100%;" onclick="scrollToSection('get-started')">Start Pro Trial</button>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Enterprise</h4>
+          <div style="margin: var(--spacing-3) 0;">
+            <div style="font-size: var(--text-section-heading); font-weight: 600; color: var(--charcoal); letter-spacing: -1.2px;">Custom</div>
+            <p class="feature-description">contact us</p>
+          </div>
+          <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-4);">
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Everything in Pro</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Dedicated support</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ SLA guarantee</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Custom integrations</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ On-premise option</li>
+            <li style="padding: var(--spacing-1) 0; color: var(--charcoal-82);">✓ Training & onboarding</li>
+          </ul>
+          <button class="btn-secondary" style="width: 100%;" onclick="alert('Contact sales at sales@lovable.ai')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Build Something Amazing?</h2>
+        <p class="cta-subtitle">Join thousands of developers who are building faster with AI. Start for free, no credit card required.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Building Free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#ai">AI Builder</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lovable. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would show an interactive demo or video walkthrough.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add active state to navigation on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          if (navLink) {
+            document.querySelectorAll('.nav-links a').forEach(link => {
+              link.style.fontWeight = '400';
+            });
+            navLink.style.fontWeight = '600';
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

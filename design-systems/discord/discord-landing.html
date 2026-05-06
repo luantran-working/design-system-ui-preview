@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord - Where Communities Thrive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="discord-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <svg width="124" height="34" viewBox="0 0 124 34" class="logo-svg">
+            <path fill="currentColor" d="M26.0015 6.9529C24.0021 6.03845 21.8787 5.37198 19.6623 5C19.3833 5.48048 19.0733 6.13144 18.8563 6.64292C16.4989 6.30193 14.1585 6.30193 11.8336 6.64292C11.6166 6.13144 11.2911 5.48048 11.0276 5C8.79575 5.37198 6.67235 6.03845 4.6869 6.9529C0.672601 12.8736 -0.41235 18.6548 0.130124 24.3585C2.79599 26.2959 5.36889 27.4739 7.89682 28.2489C8.51679 27.4119 9.07477 26.5129 9.55525 25.5675C8.64079 25.2265 7.77283 24.808 6.93587 24.312C7.15286 24.1571 7.36986 23.9866 7.57135 23.8161C12.6241 26.1255 18.0969 26.1255 23.0876 23.8161C23.3046 23.9866 23.5061 24.1571 23.7231 24.312C22.8861 24.808 22.0182 25.2265 21.1037 25.5675C21.5842 26.5129 22.1422 27.4119 22.7621 28.2489C25.2885 27.4739 27.8769 26.2959 30.5288 24.3585C31.1952 17.7559 29.4733 12.0212 26.0015 6.9529ZM10.2527 20.8402C8.73376 20.8402 7.49382 19.4608 7.49382 17.7714C7.49382 16.082 8.70276 14.7025 10.2527 14.7025C11.7871 14.7025 13.0425 16.082 13.0115 17.7714C13.0115 19.4608 11.7871 20.8402 10.2527 20.8402ZM20.4373 20.8402C18.9183 20.8402 17.6768 19.4608 17.6768 17.7714C17.6768 16.082 18.8873 14.7025 20.4373 14.7025C21.9717 14.7025 23.2271 16.082 23.1961 17.7714C23.1961 19.4608 21.9872 20.8402 20.4373 20.8402Z"/>
+          </svg>
+          <span class="logo-text">Discord</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#communities">Communities</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('download')">Download</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">IMAGINE A PLACE...</h1>
+        <p class="hero-subtitle">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('download')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            Download for Windows
+          </button>
+          <button class="btn-secondary btn-large" onclick="openInBrowser()">Open Discord in your browser</button>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="feature-row">
+        <div class="feature-image">
+          <div class="feature-placeholder">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="80" fill="#5865f2" opacity="0.1"/>
+              <path d="M100 60v80M60 100h80" stroke="#5865f2" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="feature-text">
+          <h2 class="feature-title">Create an invite-only place where you belong</h2>
+          <p class="feature-description">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <div class="feature-placeholder">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <circle cx="70" cy="70" r="30" fill="#23a55a" opacity="0.3"/>
+              <circle cx="130" cy="70" r="30" fill="#f0b232" opacity="0.3"/>
+              <circle cx="70" cy="130" r="30" fill="#f23f43" opacity="0.3"/>
+              <circle cx="130" cy="130" r="30" fill="#5865f2" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="feature-text">
+          <h2 class="feature-title">Where hanging out is easy</h2>
+          <p class="feature-description">Grab a seat in a voice channel when you're free. Friends in your server can see you're around and instantly pop in to talk without having to call.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <div class="feature-placeholder">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <rect x="40" y="40" width="120" height="120" rx="20" fill="#5865f2" opacity="0.1"/>
+              <circle cx="80" cy="80" r="15" fill="#23a55a"/>
+              <circle cx="120" cy="80" r="15" fill="#23a55a"/>
+              <path d="M70 130 Q100 150 130 130" stroke="#5865f2" stroke-width="6" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="feature-text">
+          <h2 class="feature-title">From few to a fandom</h2>
+          <p class="feature-description">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Communities Showcase -->
+  <section class="communities" id="communities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">RELIABLE TECH FOR STAYING CLOSE</h2>
+        <p class="section-subtitle">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+      </div>
+      <div class="communities-grid">
+        <div class="community-card">
+          <div class="community-icon online">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+              <circle cx="24" cy="24" r="20"/>
+            </svg>
+          </div>
+          <h3 class="community-name">Gaming Communities</h3>
+          <p class="community-members">15M+ members online</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon online">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+              <circle cx="24" cy="24" r="20"/>
+            </svg>
+          </div>
+          <h3 class="community-name">Study Groups</h3>
+          <p class="community-members">8M+ members online</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon online">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+              <circle cx="24" cy="24" r="20"/>
+            </svg>
+          </div>
+          <h3 class="community-name">Art & Creators</h3>
+          <p class="community-members">12M+ members online</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon online">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+              <circle cx="24" cy="24" r="20"/>
+            </svg>
+          </div>
+          <h3 class="community-name">Local Communities</h3>
+          <p class="community-members">5M+ members online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Section -->
+  <section class="safety" id="safety">
+    <div class="container">
+      <div class="safety-content">
+        <h2 class="section-title">Your place to talk</h2>
+        <p class="safety-description">Discord is committed to keeping you safe and empowering you to make Discord your own. Set up your server to require members to verify their accounts, enable content filters, and create custom auto-moderation rules.</p>
+        <div class="safety-features">
+          <div class="safety-item">
+            <div class="safety-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16 2L4 8v8c0 7.5 5.2 14.5 12 16 6.8-1.5 12-8.5 12-16V8L16 2zm0 22c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+              </svg>
+            </div>
+            <h4>Verified Accounts</h4>
+          </div>
+          <div class="safety-item">
+            <div class="safety-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16 2L4 8v8c0 7.5 5.2 14.5 12 16 6.8-1.5 12-8.5 12-16V8L16 2zm0 22c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+              </svg>
+            </div>
+            <h4>Content Filters</h4>
+          </div>
+          <div class="safety-item">
+            <div class="safety-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16 2L4 8v8c0 7.5 5.2 14.5 12 16 6.8-1.5 12-8.5 12-16V8L16 2zm0 22c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+              </svg>
+            </div>
+            <h4>Auto-Moderation</h4>
+          </div>
+          <div class="safety-item">
+            <div class="safety-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16 2L4 8v8c0 7.5 5.2 14.5 12 16 6.8-1.5 12-8.5 12-16V8L16 2zm0 22c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+              </svg>
+            </div>
+            <h4>Privacy Controls</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download-content">
+        <h2 class="section-title">Ready to start your journey?</h2>
+        <p class="download-subtitle">Join over 150 million people using Discord every month</p>
+        <div class="download-buttons">
+          <button class="btn-primary btn-large">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            Download for Windows
+          </button>
+        </div>
+        <div class="download-platforms">
+          <a href="#" class="platform-link">Mac</a>
+          <a href="#" class="platform-link">Linux</a>
+          <a href="#" class="platform-link">iOS</a>
+          <a href="#" class="platform-link">Android</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="124" height="34" viewBox="0 0 124 34" class="logo-svg">
+              <path fill="currentColor" d="M26.0015 6.9529C24.0021 6.03845 21.8787 5.37198 19.6623 5C19.3833 5.48048 19.0733 6.13144 18.8563 6.64292C16.4989 6.30193 14.1585 6.30193 11.8336 6.64292C11.6166 6.13144 11.2911 5.48048 11.0276 5C8.79575 5.37198 6.67235 6.03845 4.6869 6.9529C0.672601 12.8736 -0.41235 18.6548 0.130124 24.3585C2.79599 26.2959 5.36889 27.4739 7.89682 28.2489C8.51679 27.4119 9.07477 26.5129 9.55525 25.5675C8.64079 25.2265 7.77283 24.808 6.93587 24.312C7.15286 24.1571 7.36986 23.9866 7.57135 23.8161C12.6241 26.1255 18.0969 26.1255 23.0876 23.8161C23.3046 23.9866 23.5061 24.1571 23.7231 24.312C22.8861 24.808 22.0182 25.2265 21.1037 25.5675C21.5842 26.5129 22.1422 27.4119 22.7621 28.2489C25.2885 27.4739 27.8769 26.2959 30.5288 24.3585C31.1952 17.7559 29.4733 12.0212 26.0015 6.9529ZM10.2527 20.8402C8.73376 20.8402 7.49382 19.4608 7.49382 17.7714C7.49382 16.082 8.70276 14.7025 10.2527 14.7025C11.7871 14.7025 13.0425 16.082 13.0115 17.7714C13.0115 19.4608 11.7871 20.8402 10.2527 20.8402ZM20.4373 20.8402C18.9183 20.8402 17.6768 19.4608 17.6768 17.7714C17.6768 16.082 18.8873 14.7025 20.4373 14.7025C21.9717 14.7025 23.2271 16.082 23.1961 17.7714C23.1961 19.4608 21.9872 20.8402 20.4373 20.8402Z"/>
+            </svg>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="#1e1f22"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#1e1f22" stroke-width="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1e1f22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#download">Download</a></li>
+            <li><a href="#nitro">Nitro</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#branding">Branding</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#support" id="support">Support</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#developers">Developers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Policies</h4>
+          <ul class="footer-links">
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo-small">
+          <svg width="124" height="34" viewBox="0 0 124 34" class="logo-svg">
+            <path fill="currentColor" d="M26.0015 6.9529C24.0021 6.03845 21.8787 5.37198 19.6623 5C19.3833 5.48048 19.0733 6.13144 18.8563 6.64292C16.4989 6.30193 14.1585 6.30193 11.8336 6.64292C11.6166 6.13144 11.2911 5.48048 11.0276 5C8.79575 5.37198 6.67235 6.03845 4.6869 6.9529C0.672601 12.8736 -0.41235 18.6548 0.130124 24.3585C2.79599 26.2959 5.36889 27.4739 7.89682 28.2489C8.51679 27.4119 9.07477 26.5129 9.55525 25.5675C8.64079 25.2265 7.77283 24.808 6.93587 24.312C7.15286 24.1571 7.36986 23.9866 7.57135 23.8161C12.6241 26.1255 18.0969 26.1255 23.0876 23.8161C23.3046 23.9866 23.5061 24.1571 23.7231 24.312C22.8861 24.808 22.0182 25.2265 21.1037 25.5675C21.5842 26.5129 22.1422 27.4119 22.7621 28.2489C25.2885 27.4739 27.8769 26.2959 30.5288 24.3585C31.1952 17.7559 29.4733 12.0212 26.0015 6.9529ZM10.2527 20.8402C8.73376 20.8402 7.49382 19.4608 7.49382 17.7714C7.49382 16.082 8.70276 14.7025 10.2527 14.7025C11.7871 14.7025 13.0425 16.082 13.0115 17.7714C13.0115 19.4608 11.7871 20.8402 10.2527 20.8402ZM20.4373 20.8402C18.9183 20.8402 17.6768 19.4608 17.6768 17.7714C17.6768 16.082 18.8873 14.7025 20.4373 14.7025C21.9717 14.7025 23.2271 16.082 23.1961 17.7714C23.1961 19.4608 21.9872 20.8402 20.4373 20.8402Z"/>
+          </svg>
+        </div>
+        <button class="btn-primary">Sign up</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openInBrowser() {
+      alert('Opening Discord in browser... In production, this would open the web app.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism - Modern Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glassmorphism-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Glassmorphism</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon">✨</span>
+          <span>Modern design system with frosted glass effects</span>
+        </div>
+        <h1 class="hero-title">Design with Glass & Light</h1>
+        <p class="hero-subtitle">A complete design system featuring translucent surfaces, subtle blur effects, and luminous borders that bring depth and modern elegance to your interfaces.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('components')">Explore Components</button>
+          <button class="btn-glass btn-large" onclick="openDocs()">View Documentation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Components</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Color Tokens</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Accessible</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3KB</div>
+          <div class="stat-label">CSS Size</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for Modern Interfaces</h2>
+        <p class="section-subtitle">Every element designed with glassmorphism principles for clarity and visual depth</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Frosted Glass Effects</h3>
+          <p class="feature-description">Translucent surfaces with backdrop blur create depth and hierarchy. Multiple glass opacity levels from light to ultra for perfect layering.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Luminous Borders</h3>
+          <p class="feature-description">Soft, glowing borders that enhance glass surfaces without overwhelming content. Subtle, medium, and strong border variants for every use case.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌈</div>
+          <h3 class="feature-title">Rich Color System</h3>
+          <p class="feature-description">Primary blue (#1856FF) for emphasis, with success, warning, and danger states. All colors optimized for glass surfaces and readability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3 class="feature-title">Consistent Spacing</h3>
+          <p class="feature-description">Comfortable density mode with predictable spacing scale. Vertical rhythm maintained across all sections and components.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Smooth Interactions</h3>
+          <p class="feature-description">Subtle transitions (150-250ms) with stable easing. Hover, focus, active, disabled, and loading states clearly defined.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♿</div>
+          <h3 class="feature-title">Accessibility First</h3>
+          <p class="feature-description">WCAG compliant contrast ratios, clear focus states, and semantic HTML. Beautiful design that works for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="section" id="examples">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Real-World Examples</h2>
+        <p class="section-subtitle">See glassmorphism in action across different interface patterns</p>
+      </div>
+      <div class="examples-grid">
+        <div class="example-card">
+          <h3 class="feature-title">Dashboard Cards</h3>
+          <p class="feature-description">Glass cards with subtle shadows perfect for data visualization and metrics display.</p>
+          <div class="example-visual">
+            <div style="text-align: center;">
+              <div class="stat-number" style="margin-bottom: 8px;">2,847</div>
+              <div class="stat-label">Active Users</div>
+            </div>
+          </div>
+        </div>
+        <div class="example-card">
+          <h3 class="feature-title">Navigation Bars</h3>
+          <p class="feature-description">Sticky frosted glass navigation that blurs content beneath while maintaining readability.</p>
+          <div class="example-visual">
+            <div style="display: flex; gap: 24px; align-items: center;">
+              <div style="font-weight: 700; font-size: 18px;">Logo</div>
+              <div style="display: flex; gap: 16px; font-size: 14px;">
+                <span>Home</span>
+                <span>About</span>
+                <span>Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="example-card">
+          <h3 class="feature-title">Modal Dialogs</h3>
+          <p class="feature-description">Elevated glass surfaces with strong borders for important actions and confirmations.</p>
+          <div class="example-visual">
+            <div style="text-align: center; max-width: 200px;">
+              <div style="font-weight: 600; margin-bottom: 8px;">Confirm Action</div>
+              <div style="font-size: 14px; opacity: 0.8; margin-bottom: 16px;">Are you sure?</div>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn-glass" style="flex: 1; padding: 8px;">Cancel</button>
+                <button class="btn-primary" style="flex: 1; padding: 8px;">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="example-card">
+          <h3 class="feature-title">Form Inputs</h3>
+          <p class="feature-description">Glass input fields with clear focus states and smooth transitions for better user experience.</p>
+          <div class="example-visual">
+            <input type="text" class="input-glass" placeholder="Enter your email..." style="max-width: 280px;">
+          </div>
+        </div>
+        <div class="example-card">
+          <h3 class="feature-title">Status Badges</h3>
+          <p class="feature-description">Semantic color badges with glass effects for status indicators and labels.</p>
+          <div class="example-visual">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+              <span class="badge badge-success">Active</span>
+              <span class="badge badge-warning">Pending</span>
+              <span class="badge badge-danger">Error</span>
+            </div>
+          </div>
+        </div>
+        <div class="example-card">
+          <h3 class="feature-title">Call-to-Action</h3>
+          <p class="feature-description">Primary buttons with shadow and hover effects that guide user attention effectively.</p>
+          <div class="example-visual">
+            <div style="display: flex; gap: 12px; flex-direction: column; align-items: center;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-glass">Secondary Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section class="section" id="components">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Component Library</h2>
+        <p class="section-subtitle">Pre-built components following glassmorphism design principles</p>
+      </div>
+      <div class="components-grid">
+        <div class="component-card">
+          <h3 class="feature-title">Buttons</h3>
+          <p class="feature-description">Primary, glass, and outline variants with hover and focus states.</p>
+          <div class="component-preview">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <button class="btn-primary">Primary</button>
+              <button class="btn-glass">Glass</button>
+              <button class="btn-outline">Outline</button>
+            </div>
+          </div>
+        </div>
+        <div class="component-card">
+          <h3 class="feature-title">Input Fields</h3>
+          <p class="feature-description">Glass input fields with clear focus states and placeholder styling.</p>
+          <div class="component-preview">
+            <input type="text" class="input-glass" placeholder="Type something..." style="width: 100%; max-width: 240px;">
+          </div>
+        </div>
+        <div class="component-card">
+          <h3 class="feature-title">Badges</h3>
+          <p class="feature-description">Status badges with semantic colors and glass backgrounds.</p>
+          <div class="component-preview">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="badge">Default</span>
+              <span class="badge badge-success">Success</span>
+              <span class="badge badge-warning">Warning</span>
+              <span class="badge badge-danger">Danger</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card">
+          <h3 class="feature-title">Cards</h3>
+          <p class="feature-description">Frosted glass cards with hover effects and consistent padding.</p>
+          <div class="component-preview">
+            <div style="background: var(--glass-medium); backdrop-filter: blur(16px); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 16px; max-width: 200px;">
+              <div style="font-weight: 600; margin-bottom: 8px;">Card Title</div>
+              <div style="font-size: 14px; opacity: 0.8;">Card content goes here with glass effect.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Tokens Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Design Tokens</h2>
+        <p class="section-subtitle">Consistent design language through well-defined tokens</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">Colors</h3>
+          <p class="feature-description mb-4">Primary, secondary, success, warning, danger, and surface tokens.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; font-size: 13px; font-family: var(--font-mono);">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="width: 24px; height: 24px; background: var(--primary); border-radius: 4px; border: 1px solid var(--border-glass);"></div>
+              <span>#1856FF</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="width: 24px; height: 24px; background: var(--secondary); border-radius: 4px; border: 1px solid var(--border-glass);"></div>
+              <span>#3A344E</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="width: 24px; height: 24px; background: var(--success); border-radius: 4px; border: 1px solid var(--border-glass);"></div>
+              <span>#07CA6B</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="width: 24px; height: 24px; background: var(--warning); border-radius: 4px; border: 1px solid var(--border-glass);"></div>
+              <span>#E89558</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Typography</h3>
+          <p class="feature-description mb-4">Plus Jakarta Sans with 9 weight variants for perfect hierarchy.</p>
+          <div style="font-size: 13px; line-height: 1.8;">
+            <div style="font-weight: 200;">Extralight (200)</div>
+            <div style="font-weight: 400;">Regular (400)</div>
+            <div style="font-weight: 600;">Semibold (600)</div>
+            <div style="font-weight: 800;">Extrabold (800)</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Spacing</h3>
+          <p class="feature-description mb-4">Comfortable density with 4px base unit for consistent rhythm.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 13px;">
+              <div style="width: 16px; height: 16px; background: var(--primary); border-radius: 2px;"></div>
+              <span style="font-family: var(--font-mono);">--spacing-4: 16px</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 13px;">
+              <div style="width: 24px; height: 24px; background: var(--primary); border-radius: 2px;"></div>
+              <span style="font-family: var(--font-mono);">--spacing-6: 24px</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 13px;">
+              <div style="width: 32px; height: 32px; background: var(--primary); border-radius: 2px;"></div>
+              <span style="font-family: var(--font-mono);">--spacing-8: 32px</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Glass Effects</h3>
+          <p class="feature-description mb-4">Four opacity levels for perfect layering and depth.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background: var(--glass-light); backdrop-filter: blur(12px); border: 1px solid var(--border-glass); border-radius: 6px; padding: 8px; font-size: 13px;">Light (0.25)</div>
+            <div style="background: var(--glass-medium); backdrop-filter: blur(16px); border: 1px solid var(--border-glass); border-radius: 6px; padding: 8px; font-size: 13px;">Medium (0.4)</div>
+            <div style="background: var(--glass-heavy); backdrop-filter: blur(20px); border: 1px solid var(--border-glass); border-radius: 6px; padding: 8px; font-size: 13px;">Heavy (0.6)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Design Principles</h2>
+        <p class="section-subtitle">Guidelines that shape every component and interaction</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Clear Hierarchy</h3>
+          <p class="feature-description">Headline → support text → primary action. Use whitespace to separate concerns before adding borders or shadows.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Readability First</h3>
+          <p class="feature-description">Body text on #141414 for legibility. Never sacrifice readability for decorative effects.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Consistent Palette</h3>
+          <p class="feature-description">Use existing tokens before introducing new colors. Primary (#1856FF) for CTA emphasis.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Purposeful Motion</h3>
+          <p class="feature-description">Short transitions (150-250ms) with stable easing. Motion emphasizes interaction, not decoration.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📏</div>
+          <h3 class="feature-title">Predictable Grid</h3>
+          <p class="feature-description">Align to consistent grid. Avoid ad-hoc offsets. Maintain vertical rhythm across sections.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚫</div>
+          <h3 class="feature-title">Avoid Anti-patterns</h3>
+          <p class="feature-description">Don't flatten hierarchy with same type size. Don't mix unrelated visual metaphors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Building with Glass</h2>
+        <p class="cta-subtitle">Download the complete design system with components, tokens, and documentation. Free and open source.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleDownload()">Download Design System</button>
+          <button class="btn-glass btn-large" onclick="viewGithub()">View on GitHub</button>
+        </div>
+        <div class="hero-badge" style="margin-top: 24px;">
+          <span class="badge-icon">✓</span>
+          <span>MIT License • Free forever • No attribution required</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#design-tokens">Design Tokens</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#figma">Figma Kit</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#license">License</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Glassmorphism Design System. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#figma" class="social-link">Figma</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDocs() {
+      alert('Documentation would open here. In production, this would navigate to the full documentation site.');
+    }
+
+    function handleDownload() {
+      alert('Download would start here. In production, this would download the design system package.');
+    }
+
+    function viewGithub() {
+      alert('GitHub repository would open here. In production, this would navigate to the GitHub repo.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards
+    document.querySelectorAll('.feature-card, .component-card, .example-card, .stat-item').forEach(card => {
+      observer.observe(card);
+    });
+
+    // Subtle parallax effect on hero
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero-title');
+      if (hero && scrolled < 600) {
+        hero.style.transform = `translateY(${scrolled * 0.2}px)`;
+        hero.style.opacity = Math.max(0.3, 1 - (scrolled / 600));
+      }
+    });
+
+    // Add ripple effect to buttons
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+        
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        ripple.style.position = 'absolute';
+        ripple.style.borderRadius = '50%';
+        ripple.style.background = 'rgba(255, 255, 255, 0.5)';
+        ripple.style.transform = 'scale(0)';
+        ripple.style.animation = 'ripple 0.6s ease-out';
+        ripple.style.pointerEvents = 'none';
+        
+        this.style.position = 'relative';
+        this.style.overflow = 'hidden';
+        this.appendChild(ripple);
+        
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+
+    // Add ripple animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+/* Notion Design System - Following DESIGN.md specifications */
+
+/* CSS Variables based on DESIGN.md tokens */
+:root {
+  /* Primary Colors */
+  --notion-black: rgba(0, 0, 0, 0.95);
+  --pure-white: #ffffff;
+  --notion-blue: #0075de;
+  
+  /* Brand Secondary */
+  --deep-navy: #213183;
+  --active-blue: #005bab;
+  
+  /* Warm Neutral Scale */
+  --warm-white: #f6f5f4;
+  --warm-dark: #31302e;
+  --warm-gray-500: #615d59;
+  --warm-gray-300: #a39e98;
+  
+  /* Semantic Accent Colors */
+  --teal: #2a9d99;
+  --green: #1aae39;
+  --orange: #dd5b00;
+  --pink: #ff64c8;
+  --purple: #391c57;
+  --brown: #523410;
+  
+  /* Interactive */
+  --link-blue: #0075de;
+  --link-light-blue: #62aef0;
+  --focus-blue: #097fe8;
+  --badge-blue-bg: #f2f9ff;
+  --badge-blue-text: #097fe8;
+  
+  /* Shadows & Depth */
+  --whisper-border: 1px solid rgba(0, 0, 0, 0.1);
+  --card-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px, 
+                 rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px, 
+                 rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px, 
+                 rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px;
+  --deep-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px, 
+                 rgba(0, 0, 0, 0.02) 0px 3px 7px, 
+                 rgba(0, 0, 0, 0.02) 0px 7px 15px, 
+                 rgba(0, 0, 0, 0.04) 0px 14px 28px, 
+                 rgba(0, 0, 0, 0.05) 0px 23px 52px;
+  
+  /* Typography Scale */
+  --font-primary: 'Inter', -apple-system, system-ui, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
+  --text-display-hero: 64px;
+  --text-display-secondary: 54px;
+  --text-section-heading: 48px;
+  --text-subheading-large: 40px;
+  --text-subheading: 26px;
+  --text-card-title: 22px;
+  --text-body-large: 20px;
+  --text-body: 16px;
+  --text-nav: 15px;
+  --text-caption: 14px;
+  --text-badge: 12px;
+  
+  /* Spacing: 8px base unit */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-6: 48px;
+  --spacing-8: 64px;
+  --spacing-10: 80px;
+  --spacing-12: 96px;
+  --spacing-15: 120px;
+  
+  /* Border Radius Scale */
+  --radius-micro: 4px;
+  --radius-subtle: 5px;
+  --radius-standard: 8px;
+  --radius-comfortable: 12px;
+  --radius-large: 16px;
+  --radius-pill: 9999px;
+  --radius-circle: 100%;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 250ms ease;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--notion-black);
+  background-color: var(--pure-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography - NotionInter with compression at scale */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--notion-black);
+  margin-bottom: var(--spacing-2);
+}
+
+h1 {
+  font-size: var(--text-display-hero);
+  line-height: 1.00;
+  letter-spacing: -2.125px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-section-heading);
+  line-height: 1.00;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--text-subheading);
+  line-height: 1.23;
+  letter-spacing: -0.625px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--text-card-title);
+  line-height: 1.27;
+  letter-spacing: -0.25px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: var(--spacing-2);
+  line-height: 1.5;
+}
+
+/* Container - Max width 1200px */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-3);
+}
+
+/* Navigation - Clean horizontal nav on white */
+.navbar {
+  background-color: var(--pure-white);
+  border-bottom: var(--whisper-border);
+  padding: var(--spacing-2) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-primary);
+  font-size: var(--text-card-title);
+  font-weight: 700;
+  color: var(--notion-black);
+  letter-spacing: -0.25px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--notion-black);
+  text-decoration: none;
+  font-size: var(--text-nav);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--link-blue);
+}
+
+/* Buttons - Primary uses Notion Blue */
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  font-family: var(--font-primary);
+  font-size: var(--text-nav);
+  font-weight: 600;
+  padding: 8px 16px;
+  border: var(--whisper-border);
+  border-radius: var(--radius-micro);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--notion-blue);
+  color: var(--pure-white);
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--active-blue);
+  transform: scale(1.05);
+}
+
+.btn-primary:active {
+  transform: scale(0.9);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--focus-blue);
+  outline-offset: 2px;
+  box-shadow: var(--card-shadow);
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--notion-black);
+  border: 1px solid transparent;
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary:active {
+  transform: scale(0.9);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--notion-black);
+  border: 1px solid transparent;
+}
+
+.btn-ghost:hover {
+  text-decoration: underline;
+}
+
+.btn-large {
+  padding: 12px 24px;
+  font-size: var(--text-body);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Pill Badge Button */
+.badge-pill {
+  background-color: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-badge);
+  font-weight: 600;
+  letter-spacing: 0.125px;
+  display: inline-block;
+}
+
+/* Hero Section - Generous vertical padding */
+.hero {
+  padding: var(--spacing-15) 0 var(--spacing-10);
+  background-color: var(--pure-white);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: var(--text-display-hero);
+  font-weight: 700;
+  line-height: 1.00;
+  letter-spacing: -2.125px;
+  margin-bottom: var(--spacing-3);
+  color: var(--notion-black);
+}
+
+.hero-subtitle {
+  font-size: var(--text-body-large);
+  font-weight: 600;
+  line-height: 1.40;
+  letter-spacing: -0.125px;
+  color: var(--warm-gray-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: 6px 12px;
+  background-color: var(--warm-white);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-caption);
+  color: var(--warm-gray-500);
+  font-weight: 500;
+}
+
+.badge-icon {
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* Section Headers - Consistent spacing */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.section-title {
+  font-size: var(--text-section-heading);
+  font-weight: 700;
+  line-height: 1.00;
+  letter-spacing: -1.5px;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.section-subtitle {
+  font-size: var(--text-body-large);
+  font-weight: 600;
+  line-height: 1.40;
+  letter-spacing: -0.125px;
+  color: var(--warm-gray-500);
+}
+
+/* Alternating Section Backgrounds */
+.section-white {
+  background-color: var(--pure-white);
+  padding: var(--spacing-10) 0;
+}
+
+.section-warm {
+  background-color: var(--warm-white);
+  padding: var(--spacing-10) 0;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-3);
+}
+
+/* Cards - Whisper borders and soft shadows */
+.feature-card {
+  background-color: var(--pure-white);
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+  padding: var(--spacing-4);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+  box-shadow: var(--deep-shadow);
+  transform: translateY(-2px);
+}
+
+.feature-icon {
+  font-size: var(--text-subheading-large);
+  margin-bottom: var(--spacing-2);
+}
+
+.feature-title {
+  font-size: var(--text-card-title);
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.25px;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.feature-description {
+  font-size: var(--text-body);
+  font-weight: 400;
+  color: var(--warm-gray-500);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-2);
+}
+
+.feature-link {
+  display: inline-block;
+  color: var(--link-blue);
+  text-decoration: none;
+  font-size: var(--text-body);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.feature-link:hover {
+  text-decoration: underline;
+}
+
+/* Templates Section */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.template-card {
+  background-color: var(--pure-white);
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-base);
+}
+
+.template-card:hover {
+  box-shadow: var(--deep-shadow);
+  transform: translateY(-2px);
+}
+
+.template-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--warm-white);
+  border-bottom: var(--whisper-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.template-content {
+  padding: var(--spacing-3);
+}
+
+.template-title {
+  font-size: var(--text-body-large);
+  font-weight: 700;
+  line-height: 1.40;
+  letter-spacing: -0.125px;
+  margin-bottom: var(--spacing-1);
+  color: var(--notion-black);
+}
+
+.template-description {
+  font-size: var(--text-caption);
+  font-weight: 400;
+  color: var(--warm-gray-500);
+  line-height: 1.43;
+}
+
+/* Use Cases Section */
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.use-case-card {
+  background-color: var(--pure-white);
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+  padding: var(--spacing-4);
+  box-shadow: var(--card-shadow);
+}
+
+.use-case-icon {
+  font-size: var(--text-subheading-large);
+  margin-bottom: var(--spacing-2);
+}
+
+.use-case-title {
+  font-size: var(--text-card-title);
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.25px;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.use-case-description {
+  font-size: var(--text-body);
+  font-weight: 400;
+  color: var(--warm-gray-500);
+  line-height: 1.5;
+}
+
+/* Pricing Section */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-8);
+}
+
+.pricing-card {
+  background-color: var(--pure-white);
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+  padding: var(--spacing-4);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.pricing-card:hover {
+  box-shadow: var(--deep-shadow);
+  transform: translateY(-2px);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--notion-blue);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--notion-blue);
+  color: var(--pure-white);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-badge);
+  font-weight: 600;
+  letter-spacing: 0.125px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+  border-bottom: var(--whisper-border);
+}
+
+.pricing-name {
+  font-size: var(--text-card-title);
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.25px;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.pricing-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.price-amount {
+  font-size: var(--text-subheading-large);
+  font-weight: 700;
+  color: var(--notion-black);
+}
+
+.price-period {
+  font-size: var(--text-body);
+  color: var(--warm-gray-500);
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: var(--spacing-4);
+}
+
+.pricing-features li {
+  padding: var(--spacing-1) 0;
+  font-size: var(--text-body);
+  color: var(--notion-black);
+  font-weight: 400;
+}
+
+/* CTA Section */
+.cta {
+  padding: var(--spacing-10) 0;
+  background-color: var(--warm-white);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: var(--text-section-heading);
+  font-weight: 700;
+  line-height: 1.00;
+  letter-spacing: -1.5px;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.cta-subtitle {
+  font-size: var(--text-body-large);
+  font-weight: 600;
+  line-height: 1.40;
+  letter-spacing: -0.125px;
+  color: var(--warm-gray-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  padding: var(--spacing-8) 0 var(--spacing-4);
+  background-color: var(--pure-white);
+  border-top: var(--whisper-border);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+
+.footer-section h4 {
+  font-size: var(--text-body);
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+  color: var(--notion-black);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-1);
+}
+
+.footer-links a {
+  color: var(--warm-gray-500);
+  text-decoration: none;
+  font-size: var(--text-caption);
+  font-weight: 400;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--link-blue);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-3);
+  border-top: var(--whisper-border);
+  font-size: var(--text-caption);
+  color: var(--warm-gray-500);
+}
+
+/* Trust Bar / Logo Grid */
+.trust-bar {
+  padding: var(--spacing-6) 0;
+  background-color: var(--pure-white);
+  border-bottom: var(--whisper-border);
+}
+
+.trust-content {
+  text-align: center;
+}
+
+.trust-title {
+  font-size: var(--text-caption);
+  font-weight: 500;
+  color: var(--warm-gray-500);
+  margin-bottom: var(--spacing-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.trust-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+}
+
+.trust-logo {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--warm-gray-300);
+}
+
+/* Metric Cards */
+.metrics {
+  padding: var(--spacing-10) 0;
+  background-color: var(--warm-white);
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.metric-card {
+  background-color: var(--pure-white);
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+  padding: var(--spacing-4);
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.metric-number {
+  font-size: var(--text-subheading-large);
+  font-weight: 700;
+  color: var(--notion-black);
+  margin-bottom: var(--spacing-1);
+}
+
+.metric-label {
+  font-size: var(--text-body);
+  font-weight: 400;
+  color: var(--warm-gray-500);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--text-subheading-large);
+    letter-spacing: -1.5px;
+  }
+  
+  .section-title {
+    font-size: var(--text-subheading);
+    letter-spacing: -0.625px;
+  }
+  
+  .hero-cta,
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .feature-grid,
+  .template-grid,
+  .use-case-grid,
+  .pricing-grid,
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero {
+    padding: var(--spacing-8) 0 var(--spacing-6);
+  }
+  
+  .section-white,
+  .section-warm {
+    padding: var(--spacing-6) 0;
+  }
+}
+
+/* Focus States - Accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--focus-blue);
+  outline-offset: 2px;
+}
+
+/* Disabled State */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Link Styles */
+a {
+  color: var(--link-blue);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Image Treatment */
+img {
+  max-width: 100%;
+  height: auto;
+  border: var(--whisper-border);
+  border-radius: var(--radius-comfortable);
+}

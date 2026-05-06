@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesla - Electric Vehicles, Solar & Clean Energy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tesla-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">TESLA</div>
+      <ul class="nav-links">
+        <li><button class="nav-button">Vehicles</button></li>
+        <li><button class="nav-button">Energy</button></li>
+        <li><button class="nav-button">Charging</button></li>
+        <li><button class="nav-button">Discover</button></li>
+        <li><button class="nav-button">Shop</button></li>
+      </ul>
+      <div class="nav-icons">
+        <button class="icon-button" aria-label="Help">?</button>
+        <button class="icon-button" aria-label="Language">🌐</button>
+        <button class="icon-button" aria-label="Account">👤</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Model S -->
+  <section class="hero" id="model-s">
+    <div class="hero-content">
+      <h1 class="hero-title">Model S</h1>
+      <p class="hero-subtitle">Plaid</p>
+      <div class="hero-promo">0% APR Available</div>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Model S')">Order Now</button>
+        <button class="btn-secondary" onclick="handleInventory('Model S')">View Inventory</button>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-arrow carousel-arrow-left" aria-label="Previous">‹</button>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="carousel-arrow carousel-arrow-right" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <!-- Hero Section - Model 3 -->
+  <section class="hero hero-alt" id="model-3">
+    <div class="hero-content">
+      <h1 class="hero-title">Model 3</h1>
+      <p class="hero-subtitle">Starting at $38,990</p>
+      <p class="hero-detail">After Federal Tax Credit</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Model 3')">Order Now</button>
+        <button class="btn-secondary" onclick="handleInventory('Model 3')">View Inventory</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section - Model X -->
+  <section class="hero hero-dark" id="model-x">
+    <div class="hero-content">
+      <h1 class="hero-title">Model X</h1>
+      <p class="hero-subtitle">Plaid</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Model X')">Order Now</button>
+        <button class="btn-secondary" onclick="handleInventory('Model X')">View Inventory</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section - Model Y -->
+  <section class="hero hero-light" id="model-y">
+    <div class="hero-content">
+      <h1 class="hero-title">Model Y</h1>
+      <p class="hero-subtitle">Starting at $43,990</p>
+      <p class="hero-detail">After Federal Tax Credit</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Model Y')">Order Now</button>
+        <button class="btn-secondary" onclick="handleInventory('Model Y')">View Inventory</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="technology-section">
+    <div class="category-grid">
+      <div class="category-card category-card-large">
+        <div class="category-label">Autopilot</div>
+        <div class="category-content">
+          <h2 class="category-title">Future of Driving</h2>
+          <p class="category-description">Full Self-Driving Capability</p>
+          <div class="category-actions">
+            <a href="#autopilot" class="text-link">Learn</a>
+            <a href="#order-autopilot" class="text-link">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-label">Performance</div>
+        <div class="category-content">
+          <h2 class="category-title">Plaid</h2>
+          <p class="category-description">1,020 hp • 1.99s 0-60 mph</p>
+          <div class="category-actions">
+            <a href="#performance" class="text-link">Learn</a>
+            <a href="#order-performance" class="text-link">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Energy Section -->
+  <section class="hero hero-energy" id="solar">
+    <div class="hero-content">
+      <h1 class="hero-title">Solar Roof</h1>
+      <p class="hero-subtitle">Produce Clean Energy From Your Roof</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Solar')">Order Now</button>
+        <button class="btn-secondary" onclick="handleLearn('Solar')">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Powerwall Section -->
+  <section class="hero hero-powerwall" id="powerwall">
+    <div class="hero-content">
+      <h1 class="hero-title">Powerwall</h1>
+      <p class="hero-subtitle">Store Energy for Any Time</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="handleOrder('Powerwall')">Order Now</button>
+        <button class="btn-secondary" onclick="handleLearn('Powerwall')">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Charging Section -->
+  <section class="charging-section">
+    <div class="section-content">
+      <h2 class="section-title">Supercharger Network</h2>
+      <p class="section-subtitle">50,000+ Global Superchargers</p>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Superchargers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15 min</div>
+          <div class="stat-label">200 Miles of Range</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <button class="btn-primary" onclick="handleFindCharger()">Find a Supercharger</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section">
+    <div class="category-grid">
+      <div class="category-card category-card-experience">
+        <div class="category-label">Test Drive</div>
+        <div class="category-content">
+          <h2 class="category-title">Experience Tesla</h2>
+          <p class="category-description">Schedule a Demo Drive</p>
+          <div class="category-actions">
+            <a href="#demo" class="text-link">Schedule</a>
+          </div>
+        </div>
+      </div>
+      <div class="category-card category-card-experience">
+        <div class="category-label">Inventory</div>
+        <div class="category-content">
+          <h2 class="category-title">Existing Inventory</h2>
+          <p class="category-description">Ready for Immediate Delivery</p>
+          <div class="category-actions">
+            <a href="#inventory" class="text-link">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <ul class="footer-links">
+          <li><a href="#about">Tesla © 2026</a></li>
+          <li><a href="#privacy">Privacy & Legal</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#engage">Engage</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent Chat Bar -->
+  <div class="chat-bar">
+    <div class="chat-content">
+      <button class="chat-button">
+        <span class="chat-icon">💬</span>
+        <span class="chat-label">Ask a Question</span>
+      </button>
+      <input type="text" class="chat-input" placeholder="What's Dog Mode?" aria-label="Ask a question">
+      <button class="chat-send" aria-label="Send">→</button>
+      <button class="chat-cta">
+        <span class="chat-cta-icon">📅</span>
+        <span>Schedule a Drive Today</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navigation background on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
+    // Carousel functionality
+    const dots = document.querySelectorAll('.dot');
+    const heroes = document.querySelectorAll('.hero');
+    let currentSlide = 0;
+
+    function updateCarousel(index) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    document.querySelector('.carousel-arrow-left')?.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + 3) % 3;
+      updateCarousel(currentSlide);
+      heroes[currentSlide].scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelector('.carousel-arrow-right')?.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % 3;
+      updateCarousel(currentSlide);
+      heroes[currentSlide].scrollIntoView({ behavior: 'smooth' });
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateCarousel(currentSlide);
+        heroes[currentSlide].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Button handlers
+    function handleOrder(model) {
+      alert(`Order ${model} - In production, this would navigate to the order configurator.`);
+    }
+
+    function handleInventory(model) {
+      alert(`View ${model} Inventory - In production, this would show available vehicles.`);
+    }
+
+    function handleLearn(product) {
+      alert(`Learn about ${product} - In production, this would navigate to the product page.`);
+    }
+
+    function handleFindCharger() {
+      alert('Find Supercharger - In production, this would open the charging map.');
+    }
+
+    // Chat bar interaction
+    document.querySelector('.chat-button')?.addEventListener('click', () => {
+      document.querySelector('.chat-input')?.focus();
+    });
+
+    document.querySelector('.chat-send')?.addEventListener('click', () => {
+      const input = document.querySelector('.chat-input');
+      if (input && input.value.trim()) {
+        alert(`Question submitted: ${input.value}`);
+        input.value = '';
+      }
+    });
+
+    document.querySelector('.chat-cta')?.addEventListener('click', () => {
+      alert('Schedule a Drive - In production, this would open the scheduling interface.');
+    });
+  </script>
+</body>
+</html>

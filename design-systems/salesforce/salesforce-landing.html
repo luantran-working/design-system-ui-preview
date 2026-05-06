@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce - Customer 360 CRM Platform</title>
+  <link rel="stylesheet" href="salesforce-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Salesforce</div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Start Free Trial</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Grow Your Business with Customer 360</h1>
+        <p class="hero-subtitle">Unite marketing, sales, service, commerce, and IT on the world's #1 CRM platform. Connect with customers in a whole new way with Salesforce Customer 360.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Start Free Trial</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 150,000+ companies worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">150K+</div>
+          <div class="stat-label">Companies Trust Salesforce</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$1.7T</div>
+          <div class="stat-label">Customer Revenue Generated</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">9.3M</div>
+          <div class="stat-label">Jobs Created by 2026</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">#1</div>
+          <div class="stat-label">CRM Platform Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Customer 360 Products</h2>
+        <p class="section-subtitle">Everything you need to connect with customers across every touchpoint</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-icon">☁️</div>
+          <h3 class="product-title">Sales Cloud</h3>
+          <p class="product-description">Close more deals and speed up growth with the #1 sales platform. Manage leads, opportunities, and accounts from anywhere.</p>
+          <a href="#sales" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🤝</div>
+          <h3 class="product-title">Service Cloud</h3>
+          <p class="product-description">Deliver personalized customer service at scale. Resolve cases faster with AI-powered support across every channel.</p>
+          <a href="#service" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">📊</div>
+          <h3 class="product-title">Marketing Cloud</h3>
+          <p class="product-description">Build 1-to-1 customer journeys across email, mobile, social, and advertising. Personalize every interaction at scale.</p>
+          <a href="#marketing" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🛒</div>
+          <h3 class="product-title">Commerce Cloud</h3>
+          <p class="product-description">Unify digital commerce experiences across B2C and B2B. Deliver seamless shopping on any device, anywhere.</p>
+          <a href="#commerce" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🤖</div>
+          <h3 class="product-title">Einstein AI</h3>
+          <p class="product-description">Bring trusted AI to every workflow. Predict outcomes, automate tasks, and generate content with built-in AI.</p>
+          <a href="#einstein" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">⚡</div>
+          <h3 class="product-title">Platform</h3>
+          <p class="product-description">Build and deploy apps fast with low-code tools. Extend Salesforce with custom apps and integrations.</p>
+          <a href="#platform" class="product-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Salesforce?</h2>
+        <p class="section-subtitle">The complete CRM platform built for growth</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">360-Degree Customer View</h3>
+          <p class="feature-description">Get a complete view of every customer across sales, service, marketing, and more. Break down silos and work from a single source of truth.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Fast Time to Value</h3>
+          <p class="feature-description">Get up and running quickly with out-of-the-box solutions. Deploy in weeks, not months, with guided setup and best practices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3 class="feature-title">Seamless Integration</h3>
+          <p class="feature-description">Connect with thousands of apps through AppExchange. Integrate with your existing tools and systems effortlessly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Mobile-First Design</h3>
+          <p class="feature-description">Work from anywhere with native mobile apps. Access customer data, update records, and close deals on the go.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">Trust your data with enterprise-grade security. SOC 2, ISO 27001, and GDPR compliant with advanced encryption.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3 class="feature-title">Scalable Growth</h3>
+          <p class="feature-description">Scale with confidence as your business grows. From startups to Fortune 500, Salesforce grows with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for Every Industry</h2>
+        <p class="section-subtitle">Industry-specific solutions tailored to your business needs</p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon">🏥</div>
+          <h3 class="industry-title">Healthcare</h3>
+          <p class="industry-description">Connect patients, providers, and payers with personalized care experiences.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏦</div>
+          <h3 class="industry-title">Financial Services</h3>
+          <p class="industry-description">Build trusted relationships with clients through personalized financial services.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏭</div>
+          <h3 class="industry-title">Manufacturing</h3>
+          <p class="industry-description">Transform operations with connected products and intelligent supply chains.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🛍️</div>
+          <h3 class="industry-title">Retail</h3>
+          <p class="industry-description">Create seamless shopping experiences across every channel and touchpoint.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">📡</div>
+          <h3 class="industry-title">Communications</h3>
+          <p class="industry-description">Deliver personalized experiences and accelerate digital transformation.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🎓</div>
+          <h3 class="industry-title">Education</h3>
+          <p class="industry-description">Connect students, faculty, and alumni with personalized learning journeys.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏛️</div>
+          <h3 class="industry-title">Public Sector</h3>
+          <p class="industry-description">Modernize government services and improve constituent experiences.</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">⚡</div>
+          <h3 class="industry-title">Energy & Utilities</h3>
+          <p class="industry-description">Transform customer engagement and optimize field service operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Industry Leaders</h2>
+        <p class="section-subtitle">See how companies transform with Salesforce</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Salesforce has transformed how we connect with our customers. We've seen a 35% increase in sales productivity and our customer satisfaction scores have never been higher."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div class="author-info">
+              <div class="author-name">Jennifer Martinez</div>
+              <div class="author-title">VP of Sales, TechCorp Global</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The 360-degree view of our customers has been game-changing. We can now deliver personalized experiences at scale and our retention rates have improved by 40%."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info">
+              <div class="author-name">David Kim</div>
+              <div class="author-title">Chief Customer Officer, RetailMax</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Einstein AI has automated so many of our routine tasks. Our team can now focus on high-value activities and we've reduced response times by 60%."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Patel</div>
+              <div class="author-title">Director of Service, FinanceFirst</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Edition</h2>
+        <p class="section-subtitle">Flexible pricing for businesses of all sizes</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Essentials</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$25</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 10 users</li>
+            <li>Account and contact management</li>
+            <li>Opportunity management</li>
+            <li>Lead management</li>
+            <li>Email integration</li>
+            <li>Mobile app</li>
+            <li>Reports and dashboards</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Professional</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$75</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Essentials</li>
+            <li>Unlimited users</li>
+            <li>Sales forecasting</li>
+            <li>Lead scoring</li>
+            <li>Campaign management</li>
+            <li>Workflow automation</li>
+            <li>Advanced reports</li>
+            <li>API access</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$150</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Professional</li>
+            <li>Advanced customization</li>
+            <li>Einstein AI features</li>
+            <li>Advanced analytics</li>
+            <li>Sandbox environments</li>
+            <li>24/7 support</li>
+            <li>Custom apps</li>
+            <li>Territory management</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Unlimited</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$300</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Enterprise</li>
+            <li>Unlimited CRM power</li>
+            <li>Premier Success Plan</li>
+            <li>Configuration services</li>
+            <li>Dedicated support</li>
+            <li>Advanced security</li>
+            <li>Unlimited sandboxes</li>
+            <li>Custom training</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Your Free Trial Today</h2>
+        <p class="cta-subtitle">Join 150,000+ companies growing with Salesforce. No credit card required.</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your work email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+        </div>
+        <p class="form-note">30-day free trial • No credit card required • Cancel anytime</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#sales">Sales Cloud</a></li>
+            <li><a href="#service">Service Cloud</a></li>
+            <li><a href="#marketing">Marketing Cloud</a></li>
+            <li><a href="#commerce">Commerce Cloud</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#einstein">Einstein AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Industries</h4>
+          <ul class="footer-links">
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#financial">Financial Services</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#public">Public Sector</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#trailhead">Trailhead</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#trust">Trust</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Salesforce, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox to start your free trial.`);
+      } else {
+        alert('Please enter a valid work email address.');
+      }
+    }
+
+    function contactSales() {
+      alert('Contact sales form would open here. In production, this would link to a contact form or scheduling page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Active nav link on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

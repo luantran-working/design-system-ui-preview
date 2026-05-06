@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Friendly Design System - Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes.">
+  <title>Friendly Design System - Warm & Welcoming UI</title>
+  <link rel="stylesheet" href="friendly-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">Friendly</div>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#examples" class="nav-link">Examples</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#docs" class="nav-link">Documentation</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Design That Feels Like Home</h1>
+        <p>Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes. Create interfaces that welcome everyone.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-secondary">View Documentation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="text-center">
+        <h2>Built for Connection</h2>
+        <p>Every element designed to create warm, welcoming experiences that put people first.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Soft Pastel Palette</h3>
+          <p>Carefully crafted colors that create a calm, inviting atmosphere while maintaining excellent readability and accessibility.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Rounded Elements</h3>
+          <p>Smooth, rounded corners throughout create a gentle, approachable feel that makes users comfortable and engaged.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌟</div>
+          <h3>Ample Whitespace</h3>
+          <p>Generous spacing lets content breathe, reducing cognitive load and creating a relaxed, uncluttered experience.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💝</div>
+          <h3>Intuitive Interactions</h3>
+          <p>Subtle transitions and clear feedback make every interaction feel natural and responsive without overwhelming users.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Clear Hierarchy</h3>
+          <p>Thoughtful typography and spacing guide users effortlessly through content with obvious visual structure.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">♿</div>
+          <h3>Accessible by Default</h3>
+          <p>Strong contrast ratios, focus states, and semantic markup ensure everyone can use your interface comfortably.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="section section-alt" id="examples">
+    <div class="container">
+      <div class="text-center">
+        <h2>See It in Action</h2>
+        <p>Real-world examples of Friendly design principles creating delightful user experiences.</p>
+      </div>
+      
+      <div class="examples-grid">
+        <div class="example-card">
+          <div class="example-image">Dashboard</div>
+          <div class="example-content">
+            <h3>Analytics Dashboard</h3>
+            <p>Clean data visualization with soft colors and clear hierarchy makes complex information approachable and easy to understand.</p>
+            <button class="btn btn-primary">View Demo</button>
+          </div>
+        </div>
+        
+        <div class="example-card">
+          <div class="example-image">Forms</div>
+          <div class="example-content">
+            <h3>User Onboarding</h3>
+            <p>Welcoming forms with clear labels, helpful feedback, and gentle validation create a stress-free signup experience.</p>
+            <button class="btn btn-primary">View Demo</button>
+          </div>
+        </div>
+        
+        <div class="example-card">
+          <div class="example-image">Cards</div>
+          <div class="example-content">
+            <h3>Content Gallery</h3>
+            <p>Rounded cards with soft shadows and consistent spacing showcase content beautifully while maintaining visual harmony.</p>
+            <button class="btn btn-primary">View Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section class="section" id="components">
+    <div class="container">
+      <div class="text-center">
+        <h2>Component Library</h2>
+        <p>A complete set of ready-to-use components that embody the Friendly design philosophy.</p>
+      </div>
+      
+      <div class="components-showcase">
+        <!-- Buttons -->
+        <div class="component-demo">
+          <h3>Buttons</h3>
+          <div class="button-group">
+            <button class="btn btn-primary">Primary Action</button>
+            <button class="btn btn-secondary">Secondary Action</button>
+            <button class="btn btn-primary" disabled>Disabled Button</button>
+          </div>
+          <p>Primary buttons use our signature color for emphasis, while secondary buttons provide clear alternatives without competing for attention.</p>
+        </div>
+
+        <!-- Form Elements -->
+        <div class="component-demo">
+          <h3>Form Elements</h3>
+          <form>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="you@example.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us what you think..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Cards -->
+        <div class="component-demo">
+          <h3>Cards</h3>
+          <div class="card">
+            <div class="card-header">Welcome Card</div>
+            <div class="card-body">
+              <p>Cards provide a clean container for related content with consistent padding, rounded corners, and subtle elevation.</p>
+              <div>
+                <span class="badge badge-success">Active</span>
+                <span class="badge badge-primary">Featured</span>
+                <span class="badge badge-warning">New</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="component-demo">
+          <h3>Badges & Status Indicators</h3>
+          <div>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-primary">Primary</span>
+          </div>
+          <p class="mt-lg">Use badges to highlight status, categories, or important metadata without overwhelming the interface.</p>
+        </div>
+
+        <!-- Typography -->
+        <div class="component-demo">
+          <h3>Typography Scale</h3>
+          <h1>Heading 1 - 40px</h1>
+          <h2>Heading 2 - 32px</h2>
+          <h3>Heading 3 - 24px</h3>
+          <p style="font-size: var(--font-size-base);">Body Text - 18px - Optimized for readability with comfortable line height and spacing.</p>
+          <p style="font-size: var(--font-size-sm);">Small Text - 16px - Perfect for secondary information and captions.</p>
+          <p style="font-size: var(--font-size-xs); font-family: var(--font-mono);">Monospace - 14px - Space Mono for code and technical content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center">
+        <h2>Ready to Create Welcoming Experiences?</h2>
+        <p>Start building with Friendly today and make your users feel right at home.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Download Design System</button>
+          <button class="btn btn-secondary">Browse Components</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Friendly Design System</h3>
+          <p>Creating approachable, intuitive interfaces that welcome everyone. Design with warmth, build with confidence.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#guidelines">Design Guidelines</a></li>
+            <li><a href="#tokens">Design Tokens</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Community</h3>
+          <ul class="footer-links">
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#figma">Figma Files</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#license">License</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Friendly Design System. Built with care for everyone.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

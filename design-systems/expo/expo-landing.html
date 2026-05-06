@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo - Build Native Apps with React</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="expo-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Expo</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>All Systems Operational</span>
+          </div>
+          <button class="btn-primary-pill" onclick="scrollToSection('get-started')">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build native apps for iOS, Android, and web</h1>
+        <p class="hero-subtitle">Expo is an open-source platform for making universal native apps with React. Build once, deploy everywhere with the tools developers love.</p>
+        <div class="hero-cta">
+          <button class="btn-dark-pill btn-large" onclick="scrollToSection('get-started')">Get Started</button>
+          <button class="btn-white btn-large" onclick="openDemo()">View Demo</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="device-preview">
+          <div class="device-frame phone">
+            <div class="device-screen">
+              <div class="app-preview">
+                <div class="preview-header">
+                  <div class="preview-avatar"></div>
+                  <div class="preview-text-block"></div>
+                </div>
+                <div class="preview-content">
+                  <div class="preview-card"></div>
+                  <div class="preview-card"></div>
+                  <div class="preview-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="device-frame tablet">
+            <div class="device-screen">
+              <div class="app-preview">
+                <div class="preview-sidebar"></div>
+                <div class="preview-main">
+                  <div class="preview-card"></div>
+                  <div class="preview-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to build great apps</h2>
+        <p class="section-subtitle">Powerful tools and services that work together seamlessly</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Universal Apps</h3>
+          <p class="feature-description">Write once, run everywhere. Build apps for iOS, Android, and web from a single codebase with React Native.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Fast Refresh</h3>
+          <p class="feature-description">See your changes instantly with hot reloading. Edit your code and watch it update in real-time on your device.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Native APIs</h3>
+          <p class="feature-description">Access device features like camera, location, notifications, and more with simple JavaScript APIs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3 class="feature-title">Cloud Services</h3>
+          <p class="feature-description">Build, deploy, and iterate faster with EAS Build, EAS Submit, and EAS Update built right in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Beautiful UI</h3>
+          <p class="feature-description">Create stunning interfaces with native components and smooth animations that feel right at home.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Over-the-Air Updates</h3>
+          <p class="feature-description">Push updates instantly to your users without waiting for app store approval. Fix bugs in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional tools for every stage</h2>
+        <p class="section-subtitle">From development to deployment, we've got you covered</p>
+      </div>
+      <div class="tools-showcase">
+        <div class="tool-item">
+          <div class="tool-content">
+            <h3 class="tool-title">Expo Go</h3>
+            <p class="tool-description">Start building immediately with the Expo Go app. Scan a QR code and see your app running on your device in seconds. No Xcode or Android Studio required.</p>
+            <div class="tool-features">
+              <span class="tool-tag">iOS</span>
+              <span class="tool-tag">Android</span>
+              <span class="tool-tag">Free</span>
+            </div>
+          </div>
+          <div class="tool-visual">
+            <div class="code-preview">
+              <div class="code-header">
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+              </div>
+              <pre class="code-content"><code>npx create-expo-app my-app
+
+cd my-app
+npx expo start</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-item reverse">
+          <div class="tool-content">
+            <h3 class="tool-title">EAS Build</h3>
+            <p class="tool-description">Build your app in the cloud for iOS and Android. No need to manage certificates, provisioning profiles, or build machines. Just push your code and get production-ready binaries.</p>
+            <div class="tool-features">
+              <span class="tool-tag">Cloud Builds</span>
+              <span class="tool-tag">CI/CD Ready</span>
+              <span class="tool-tag">Fast</span>
+            </div>
+          </div>
+          <div class="tool-visual">
+            <div class="code-preview">
+              <div class="code-header">
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+              </div>
+              <pre class="code-content"><code>eas build --platform all
+
+✓ Build complete!
+  iOS: app-v1.0.0.ipa
+  Android: app-v1.0.0.apk</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-item">
+          <div class="tool-content">
+            <h3 class="tool-title">EAS Update</h3>
+            <p class="tool-description">Ship bug fixes and improvements instantly. Push JavaScript updates directly to your users without going through the app stores. Roll back bad updates with one command.</p>
+            <div class="tool-features">
+              <span class="tool-tag">Instant Updates</span>
+              <span class="tool-tag">Rollback</span>
+              <span class="tool-tag">Analytics</span>
+            </div>
+          </div>
+          <div class="tool-visual">
+            <div class="code-preview">
+              <div class="code-header">
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+              </div>
+              <pre class="code-content"><code>eas update --branch production
+
+✓ Published update
+  Users will receive it
+  within minutes</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start with a template</h2>
+        <p class="section-subtitle">Pre-built templates to jumpstart your project</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-screen">
+              <div class="template-nav"></div>
+              <div class="template-content-blocks">
+                <div class="template-block"></div>
+                <div class="template-block"></div>
+                <div class="template-block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3 class="template-title">Blank Template</h3>
+            <p class="template-description">Start from scratch with a minimal setup. Perfect for building your app from the ground up.</p>
+            <button class="btn-white-small">Use Template</button>
+          </div>
+        </div>
+
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-screen">
+              <div class="template-tabs"></div>
+              <div class="template-content-blocks">
+                <div class="template-block"></div>
+                <div class="template-block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3 class="template-title">Tabs Navigation</h3>
+            <p class="template-description">Bottom tab navigation with multiple screens. Great for content-focused apps.</p>
+            <button class="btn-white-small">Use Template</button>
+          </div>
+        </div>
+
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-screen">
+              <div class="template-drawer"></div>
+              <div class="template-content-blocks">
+                <div class="template-block"></div>
+                <div class="template-block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3 class="template-title">Drawer Navigation</h3>
+            <p class="template-description">Side drawer menu with stack navigation. Ideal for apps with many sections.</p>
+            <button class="btn-white-small">Use Template</button>
+          </div>
+        </div>
+
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-screen">
+              <div class="template-auth"></div>
+              <div class="template-content-blocks">
+                <div class="template-block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3 class="template-title">Authentication</h3>
+            <p class="template-description">Complete auth flow with login, signup, and password reset. Ready to customize.</p>
+            <button class="btn-white-small">Use Template</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="code-example">
+    <div class="container">
+      <div class="code-header-section">
+        <h2 class="section-title">Simple, powerful, React</h2>
+        <p class="section-subtitle">If you know React, you already know Expo</p>
+      </div>
+      <div class="code-block-large">
+        <div class="code-tabs">
+          <button class="code-tab active">App.js</button>
+          <button class="code-tab">package.json</button>
+        </div>
+        <pre class="code-content-large"><code>import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { Camera } from 'expo-camera';
+
+export default function App() {
+  const [hasPermission, setHasPermission] = useState(null);
+
+  const requestPermission = async () => {
+    const { status } = await Camera.requestCameraPermissionsAsync();
+    setHasPermission(status === 'granted');
+  };
+
+  return (
+    &lt;View style={styles.container}&gt;
+      &lt;Text style={styles.title}&gt;Welcome to Expo&lt;/Text&gt;
+      &lt;Button title="Open Camera" onPress={requestPermission} /&gt;
+      &lt;StatusBar style="auto" /&gt;
+    &lt;/View&gt;
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+});</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">1M+</div>
+          <div class="stat-label">Apps Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Developers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50M+</div>
+          <div class="stat-label">Monthly Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pricing that scales with you</h2>
+        <p class="section-subtitle">Start free, upgrade when you need more</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited projects</li>
+            <li>Expo Go development</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+            <li>Standard build times</li>
+          </ul>
+          <button class="btn-white-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Production</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$29</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Free</li>
+            <li>Priority builds (2x faster)</li>
+            <li>Advanced analytics</li>
+            <li>Email support</li>
+            <li>Custom domains</li>
+            <li>Team collaboration</li>
+            <li>100 GB bandwidth</li>
+          </ul>
+          <button class="btn-dark-pill-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Production</li>
+            <li>Dedicated support</li>
+            <li>99.9% SLA</li>
+            <li>On-premise options</li>
+            <li>Custom integrations</li>
+            <li>Security reviews</li>
+            <li>Unlimited bandwidth</li>
+          </ul>
+          <button class="btn-white-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by developers worldwide</h2>
+        <p class="section-subtitle">See what teams are building with Expo</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Expo has completely transformed our mobile development workflow. We went from months to weeks for new features. The over-the-air updates are a game changer."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Alex Chen</div>
+              <div class="author-title">Lead Developer, TechStart</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The best part about Expo is how it just works. No more fighting with native build tools. We can focus on building great features instead of debugging toolchains."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Sarah Martinez</div>
+              <div class="author-title">CTO, AppFlow</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "EAS Build and EAS Update have saved us countless hours. We can ship fixes to production in minutes instead of waiting days for app store reviews."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Michael Park</div>
+              <div class="author-title">Engineering Manager, MobileFirst</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title-dark">Ready to build your app?</h2>
+        <p class="section-subtitle-dark">Join hundreds of thousands of developers building with Expo</p>
+        <div class="get-started-actions">
+          <button class="btn-dark-pill btn-large" onclick="handleSignup()">Get Started Free</button>
+          <a href="#docs" class="btn-white btn-large">Read the Docs</a>
+        </div>
+        <p class="get-started-note">No credit card required • Free forever</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#api-reference">API Reference</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Expo. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#reddit" class="social-link">Reddit</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would show an interactive demo or video.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Code tab switching
+    document.querySelectorAll('.code-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.code-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duolingo - Learn Languages for Free, Forever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DIN+Round+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="duolingo-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">🦉</span>
+          <span>Duolingo</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gamification">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">GET STARTED</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          The free, fun, and <span class="highlight">effective</span> way to learn a language!
+        </h1>
+        <p class="hero-subtitle">
+          Learn Spanish, French, German, Italian, and more with bite-sized lessons. Join 500 million learners worldwide!
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">GET STARTED</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">I ALREADY HAVE AN ACCOUNT</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">🏆</span>
+          <span>App of the Year by Apple • Editor's Choice by Google Play</span>
+        </div>
+        <div class="hero-mascot mascot">🦉</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500M+</div>
+          <div class="stat-label">Learners Worldwide</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Languages Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Free Forever</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">#1</div>
+          <div class="stat-label">Education App</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section class="languages" id="languages">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Learn Any Language</h2>
+        <p class="section-subtitle">Choose from 40+ languages and start learning today</p>
+      </div>
+      <div class="language-grid">
+        <div class="language-bubble">
+          <div class="language-icon">🇪🇸</div>
+          <div class="language-name">Spanish</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇫🇷</div>
+          <div class="language-name">French</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇩🇪</div>
+          <div class="language-name">German</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇮🇹</div>
+          <div class="language-name">Italian</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇯🇵</div>
+          <div class="language-name">Japanese</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇰🇷</div>
+          <div class="language-name">Korean</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇨🇳</div>
+          <div class="language-name">Chinese</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇵🇹</div>
+          <div class="language-name">Portuguese</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇷🇺</div>
+          <div class="language-name">Russian</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇦🇪</div>
+          <div class="language-name">Arabic</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🇮🇳</div>
+          <div class="language-name">Hindi</div>
+        </div>
+        <div class="language-bubble">
+          <div class="language-icon">🌍</div>
+          <div class="language-name">+30 More</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Duolingo Works</h2>
+        <p class="section-subtitle">Effective, personalized, and fun language learning</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎮</span>
+          <h3 class="feature-title">Game-like lessons</h3>
+          <p class="feature-description">Fun, bite-sized lessons that feel like playing a game. Earn points, unlock levels, and compete with friends!</p>
+          <a href="#gamification" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🧠</span>
+          <h3 class="feature-title">Personalized learning</h3>
+          <p class="feature-description">Lessons adapt to your learning style and pace. Our AI-powered system helps you learn faster and remember longer.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">Quick & effective</h3>
+          <p class="feature-description">Just 5 minutes a day can teach you a language. Research shows Duolingo is as effective as university courses.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔊</span>
+          <h3 class="feature-title">Real conversations</h3>
+          <p class="feature-description">Practice speaking, listening, reading, and writing. Learn practical phrases you'll actually use in real life.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <h3 class="feature-title">Learn anywhere</h3>
+          <p class="feature-description">Available on iOS, Android, and web. Sync your progress across all devices and learn on the go.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🏆</span>
+          <h3 class="feature-title">Stay motivated</h3>
+          <p class="feature-description">Build a streak, earn achievements, and join a community of millions. Make language learning a daily habit.</p>
+          <a href="#gamification" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gamification Section -->
+  <section class="gamification" id="gamification">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Learning Made Fun</h2>
+        <p class="section-subtitle">Gamification that keeps you coming back every day</p>
+      </div>
+      <div class="gamification-grid">
+        <div class="gamification-card">
+          <span class="gamification-icon">🔥</span>
+          <h3 class="gamification-title">Build Your Streak</h3>
+          <p class="gamification-description">Practice every day to build your streak. The longer your streak, the more motivated you'll be to keep going!</p>
+          <div class="streak-counter">
+            <span class="streak-icon">🔥</span>
+            <span class="streak-number">365 Day Streak!</span>
+          </div>
+        </div>
+        <div class="gamification-card">
+          <span class="gamification-icon">💎</span>
+          <h3 class="gamification-title">Earn Gems</h3>
+          <p class="gamification-description">Complete lessons to earn gems. Use them to unlock bonus content, power-ups, and special features.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="gamification-card">
+          <span class="gamification-icon">🏅</span>
+          <h3 class="gamification-title">Unlock Achievements</h3>
+          <p class="gamification-description">Earn badges and trophies as you progress. Show off your accomplishments and compete with friends!</p>
+          <div class="progress-bar">
+            <div class="progress-fill streak" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="gamification-card">
+          <span class="gamification-icon">👥</span>
+          <h3 class="gamification-title">Join Leaderboards</h3>
+          <p class="gamification-description">Compete with learners worldwide. Climb the ranks and prove you're the best language learner!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Start free, upgrade anytime for premium features</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Duolingo Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/forever</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Personalized lessons</li>
+            <li>Game-like experience</li>
+            <li>40+ languages</li>
+            <li>Progress tracking</li>
+            <li>Community support</li>
+            <li>Ad-supported</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">START FOR FREE</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Super Duolingo</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$6.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Free</li>
+            <li>No ads</li>
+            <li>Unlimited Hearts</li>
+            <li>Personalized Practice</li>
+            <li>Unlimited Legendary</li>
+            <li>Monthly Streak Repair</li>
+            <li>Mastery Quiz</li>
+          </ul>
+          <button class="btn-orange btn-full" onclick="scrollToSection('cta')">START FREE TRIAL</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Family Plan</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$9.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Super</li>
+            <li>Up to 6 family members</li>
+            <li>Individual profiles</li>
+            <li>Separate progress tracking</li>
+            <li>Family dashboard</li>
+            <li>Best value per person</li>
+          </ul>
+          <button class="btn-pink btn-full" onclick="scrollToSection('cta')">START FAMILY PLAN</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by Millions</h2>
+        <p class="section-subtitle">See what learners are saying about Duolingo</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">⭐⭐⭐⭐⭐</span>
+          <p class="feature-description">"I've tried other language apps, but Duolingo is by far the best. The gamification keeps me motivated, and I've learned more in 3 months than I did in 2 years of high school Spanish!"</p>
+          <h3 class="feature-title">— Sarah M., USA</h3>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⭐⭐⭐⭐⭐</span>
+          <p class="feature-description">"As a busy parent, I love that I can learn French in just 5 minutes a day. The lessons are fun, effective, and fit perfectly into my schedule. My 365-day streak is my proudest achievement!"</p>
+          <h3 class="feature-title">— James K., UK</h3>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⭐⭐⭐⭐⭐</span>
+          <p class="feature-description">"I'm learning Japanese for my upcoming trip to Tokyo. Duolingo makes it so easy and fun! The speaking exercises have really helped my pronunciation. Highly recommend!"</p>
+          <h3 class="feature-title">— Maria L., Spain</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section class="languages">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Backed by Science</h2>
+        <p class="section-subtitle">Research proves Duolingo works</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">📊</span>
+          <h3 class="feature-title">University-level learning</h3>
+          <p class="feature-description">34 hours on Duolingo = 1 university semester of language courses. Independent research shows our effectiveness.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎓</span>
+          <h3 class="feature-title">Expert-designed curriculum</h3>
+          <p class="feature-description">Created by language experts and powered by AI. Our courses are constantly improving based on learner data.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔬</span>
+          <h3 class="feature-title">Proven methodology</h3>
+          <p class="feature-description">Spaced repetition, immediate feedback, and adaptive learning ensure you retain what you learn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Your Language Journey Today!</h2>
+        <p class="cta-subtitle">Join 500 million learners. It's free, fun, and scientifically proven to work.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">GET STARTED</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">LEARN MORE</button>
+        </div>
+        <div class="hero-badge" style="margin-top: 24px;">
+          <span class="badge-icon">✓</span>
+          <span>No credit card required • 100% free to start</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">About</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Our Mission</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#duolingo">Duolingo</a></li>
+            <li><a href="#schools">Duolingo for Schools</a></li>
+            <li><a href="#english">Duolingo English Test</a></li>
+            <li><a href="#abc">Duolingo ABC</a></li>
+            <li><a href="#math">Duolingo Math</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Help & Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#guidelines">Community Guidelines</a></li>
+            <li><a href="#status">Status</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Privacy & Terms</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Social</h4>
+          <ul class="footer-links">
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#tiktok">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Duolingo. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would show an interactive demo or video tour.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Animate progress bars on scroll
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progressFills = entry.target.querySelectorAll('.progress-fill');
+          progressFills.forEach(fill => {
+            const width = fill.style.width;
+            fill.style.width = '0%';
+            setTimeout(() => {
+              fill.style.width = width;
+            }, 100);
+          });
+        }
+      });
+    }, observerOptions);
+
+    // Observe gamification section
+    const gamificationSection = document.querySelector('.gamification');
+    if (gamificationSection) {
+      observer.observe(gamificationSection);
+    }
+
+    // Add hover effect to language bubbles
+    document.querySelectorAll('.language-bubble').forEach(bubble => {
+      bubble.addEventListener('click', function() {
+        const languageName = this.querySelector('.language-name').textContent;
+        alert(`Start learning ${languageName}! In production, this would begin the ${languageName} course.`);
+      });
+    });
+
+    // Animate stat numbers on scroll
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat-number');
+          statNumbers.forEach(stat => {
+            stat.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+              stat.style.transform = 'scale(1)';
+            }, 300);
+          });
+        }
+      });
+    }, observerOptions);
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+  </script>
+</body>
+</html>

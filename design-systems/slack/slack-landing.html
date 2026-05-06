@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack - Where Work Happens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slack-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo">slack</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#channels">Channels</a></li>
+          <li><a href="#integrations">Integrations</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Try for Free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Where work happens</h1>
+        <p class="hero-subtitle">Slack brings your team together, wherever you are. Get more done with organized conversations, powerful search, and seamless integrations.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Get Started Free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by companies worldwide to get work done</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Daily Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">750K+</div>
+          <div class="stat-label">Organizations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2,600+</div>
+          <div class="stat-label">Apps & Integrations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.99%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to work together</h2>
+        <p class="section-subtitle">Slack brings all your communication together in one place. It's real-time messaging, archiving and search for modern teams.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">💬</span>
+          <h3 class="feature-title">Organized Conversations</h3>
+          <p class="feature-description">Create channels for projects, topics, teams, or anything else. Keep conversations focused and easy to find.</p>
+          <a href="#channels" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔍</span>
+          <h3 class="feature-title">Powerful Search</h3>
+          <p class="feature-description">Find what you need instantly. Search through messages, files, and conversations with lightning-fast results.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔗</span>
+          <h3 class="feature-title">Seamless Integrations</h3>
+          <p class="feature-description">Connect all your tools and services. Work with Google Drive, Salesforce, GitHub, and 2,600+ other apps.</p>
+          <a href="#integrations" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <h3 class="feature-title">Work Anywhere</h3>
+          <p class="feature-description">Stay connected on desktop, mobile, or web. Your conversations sync seamlessly across all devices.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎥</span>
+          <h3 class="feature-title">Huddles & Clips</h3>
+          <p class="feature-description">Jump on a quick audio or video huddle. Record and share video clips for async communication.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔒</span>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">Bank-level encryption, compliance certifications, and advanced admin controls keep your data safe.</p>
+          <a href="#features" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Channels Section -->
+  <section class="channels" id="channels">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Channels keep work organized</h2>
+        <p class="section-subtitle">Create dedicated spaces for every project, team, or topic. Keep everyone in the loop and conversations on track.</p>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card">
+          <span class="channel-icon">#</span>
+          <h3 class="channel-name">#marketing</h3>
+          <p class="channel-description">Coordinate campaigns, share creative assets, and track performance metrics all in one place.</p>
+        </div>
+        <div class="channel-card">
+          <span class="channel-icon">#</span>
+          <h3 class="channel-name">#engineering</h3>
+          <p class="channel-description">Discuss technical challenges, share code snippets, and integrate with GitHub for seamless development.</p>
+        </div>
+        <div class="channel-card">
+          <span class="channel-icon">#</span>
+          <h3 class="channel-name">#customer-success</h3>
+          <p class="channel-description">Collaborate on customer issues, share feedback, and ensure every customer gets the best experience.</p>
+        </div>
+        <div class="channel-card">
+          <span class="channel-icon">#</span>
+          <h3 class="channel-name">#random</h3>
+          <p class="channel-description">Build team culture with casual conversations, celebrations, and fun moments that bring people together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Connect your tools to Slack</h2>
+        <p class="section-subtitle">Bring all your work into one place with 2,600+ apps and integrations</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-item">Google Drive</div>
+        <div class="integration-item">Salesforce</div>
+        <div class="integration-item">GitHub</div>
+        <div class="integration-item">Zoom</div>
+        <div class="integration-item">Asana</div>
+        <div class="integration-item">Jira</div>
+        <div class="integration-item">Dropbox</div>
+        <div class="integration-item">Trello</div>
+        <div class="integration-item">Microsoft 365</div>
+        <div class="integration-item">HubSpot</div>
+        <div class="integration-item">Zendesk</div>
+        <div class="integration-item">Figma</div>
+      </div>
+      <div class="integration-cta">
+        <p>Explore 2,600+ apps in the <a href="#apps" class="text-link">Slack App Directory</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for how you work</h2>
+        <p class="section-subtitle">Teams of all sizes and industries use Slack to get work done</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🚀</span>
+          <h3 class="feature-title">Startups</h3>
+          <p class="feature-description">Move fast and stay aligned. Keep your small team connected as you build and scale your product.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🏢</span>
+          <h3 class="feature-title">Enterprise</h3>
+          <p class="feature-description">Connect thousands of employees across departments, offices, and time zones with enterprise-grade security.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💻</span>
+          <h3 class="feature-title">Engineering</h3>
+          <p class="feature-description">Integrate with dev tools, automate workflows, and ship code faster with your entire team in sync.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3 class="feature-title">Creative Teams</h3>
+          <p class="feature-description">Share designs, gather feedback, and collaborate on creative projects without endless email threads.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📊</span>
+          <h3 class="feature-title">Sales</h3>
+          <p class="feature-description">Close deals faster with real-time updates, CRM integrations, and seamless team collaboration.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎓</span>
+          <h3 class="feature-title">Education</h3>
+          <p class="feature-description">Connect students, faculty, and staff. Create collaborative learning environments that work anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="channels">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by teams everywhere</h2>
+        <p class="section-subtitle">See what companies are saying about Slack</p>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card">
+          <p class="channel-description" style="margin-bottom: 16px; font-style: italic;">"Slack has transformed how our team communicates. We've reduced email by 90% and everyone stays in the loop effortlessly."</p>
+          <h3 class="channel-name">Sarah Chen</h3>
+          <p class="channel-description">VP of Operations, TechCorp</p>
+        </div>
+        <div class="channel-card">
+          <p class="channel-description" style="margin-bottom: 16px; font-style: italic;">"The integrations are game-changing. We connect all our tools to Slack and everything just works together seamlessly."</p>
+          <h3 class="channel-name">Marcus Johnson</h3>
+          <p class="channel-description">CTO, StartupXYZ</p>
+        </div>
+        <div class="channel-card">
+          <p class="channel-description" style="margin-bottom: 16px; font-style: italic;">"Slack keeps our remote team connected. It feels like we're all in the same office, even though we're across 12 time zones."</p>
+          <h3 class="channel-name">Emily Rodriguez</h3>
+          <p class="channel-description">Head of Remote, GlobalCo</p>
+        </div>
+        <div class="channel-card">
+          <p class="channel-description" style="margin-bottom: 16px; font-style: italic;">"We moved from email to Slack and our productivity skyrocketed. Decisions happen faster and nothing gets lost."</p>
+          <h3 class="channel-name">David Kim</h3>
+          <p class="channel-description">CEO, InnovateLabs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose the plan that's right for you</h2>
+        <p class="section-subtitle">Start free and upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 90-day message history</li>
+            <li>✓ 10 integrations</li>
+            <li>✓ 1:1 video calls</li>
+            <li>✓ 5 GB file storage</li>
+            <li>✓ Unlimited channels</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('cta')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$7.25</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited message history</li>
+            <li>✓ Unlimited integrations</li>
+            <li>✓ Group video calls (up to 50)</li>
+            <li>✓ 10 GB per user storage</li>
+            <li>✓ Guest accounts</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">Try Pro Free</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Business+</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12.50</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Pro</li>
+            <li>✓ 99.99% uptime SLA</li>
+            <li>✓ SAML-based SSO</li>
+            <li>✓ Advanced compliance</li>
+            <li>✓ 24/7 support</li>
+            <li>✓ Custom retention policies</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('cta')">Try Business+ Free</button>
+        </div>
+      </div>
+      <div class="integration-cta" style="margin-top: 48px;">
+        <p>Need more? <a href="#enterprise" class="text-link">Contact us about Enterprise Grid</a> for unlimited workspaces and advanced admin controls.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to transform how your team works?</h2>
+        <p class="cta-subtitle">Join millions of people who use Slack to get work done</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get Started Free</button>
+          <button class="btn-secondary btn-large" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#channels">Channels</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="#apps">App Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#support">Customer Support</a></li>
+            <li><a href="#remote">Remote Work</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#api">API</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Slack Technologies, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a Slack product demo video.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to Slack\'s registration page.');
+    }
+
+    function contactSales() {
+      alert('Sales contact form would open here. In production, this would link to Slack\'s sales inquiry form.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

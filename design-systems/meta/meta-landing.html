@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta - Social Technology Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="meta-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Meta</div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#vr-ar">VR & AR</a></li>
+          <li><a href="#business">For Business</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('shop')">Shop</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image-container">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Building the Future of Connection</h1>
+          <p class="hero-subtitle">We're moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.</p>
+          <div class="hero-cta">
+            <button class="btn-primary btn-large" onclick="scrollToSection('products')">Explore Products</button>
+            <button class="btn-secondary btn-large" onclick="openVideo()">Watch Video</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">3.8B+</div>
+          <div class="stat-label">People Connected</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200M+</div>
+          <div class="stat-label">Businesses Reached</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$117B</div>
+          <div class="stat-label">Annual Revenue</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">86K+</div>
+          <div class="stat-label">Employees Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Family of Apps and Services</h2>
+        <p class="section-subtitle">Connecting billions of people around the world</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-icon facebook">f</div>
+          <h3 class="product-title">Facebook</h3>
+          <p class="product-description">Connect with friends and the world around you. Share moments, discover communities, and build meaningful relationships.</p>
+          <a href="#facebook" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon instagram">📷</div>
+          <h3 class="product-title">Instagram</h3>
+          <p class="product-description">Capture and share the world's moments. Express yourself through photos, videos, stories, and reels.</p>
+          <a href="#instagram" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon messenger">💬</div>
+          <h3 class="product-title">Messenger</h3>
+          <p class="product-description">Stay connected with free messaging, voice and video calls. Chat instantly with friends and family.</p>
+          <a href="#messenger" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon whatsapp">📱</div>
+          <h3 class="product-title">WhatsApp</h3>
+          <p class="product-description">Simple, reliable, private messaging and calling for free. Connect with anyone, anywhere in the world.</p>
+          <a href="#whatsapp" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon threads">🧵</div>
+          <h3 class="product-title">Threads</h3>
+          <p class="product-description">Share text updates and join public conversations. A new space for real-time updates and ideas.</p>
+          <a href="#threads" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon workplace">💼</div>
+          <h3 class="product-title">Workplace</h3>
+          <p class="product-description">Connect everyone in your company and turn ideas into action. Collaboration tools for modern teams.</p>
+          <a href="#workplace" class="product-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quest VR Section (Dark) -->
+  <section class="quest-section" id="vr-ar">
+    <div class="quest-hero">
+      <div class="quest-overlay"></div>
+      <div class="container">
+        <div class="quest-content">
+          <h2 class="quest-title">Meta Quest 3</h2>
+          <p class="quest-subtitle">Mixed reality that transforms how you work, play, and connect. Experience the next generation of immersive technology.</p>
+          <div class="quest-cta">
+            <button class="btn-primary-light btn-large" onclick="scrollToSection('shop')">Buy Now</button>
+            <button class="btn-ghost btn-large" onclick="openDemo()">Try Demo</button>
+          </div>
+          <div class="quest-features">
+            <div class="quest-feature">
+              <div class="feature-icon-small">🎮</div>
+              <div class="feature-text">500+ Games & Apps</div>
+            </div>
+            <div class="quest-feature">
+              <div class="feature-icon-small">👁️</div>
+              <div class="feature-text">4K+ Resolution</div>
+            </div>
+            <div class="quest-feature">
+              <div class="feature-icon-small">⚡</div>
+              <div class="feature-text">Wireless Freedom</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ray-Ban Meta Section -->
+  <section class="rayban-section">
+    <div class="container">
+      <div class="rayban-grid">
+        <div class="rayban-image">
+          <div class="image-placeholder rayban-placeholder"></div>
+        </div>
+        <div class="rayban-content">
+          <div class="rayban-badge">New</div>
+          <h2 class="rayban-title">Ray-Ban Meta Smart Glasses</h2>
+          <p class="rayban-description">Capture, share, and stay connected with smart glasses that blend iconic style with cutting-edge technology. Take photos, record videos, listen to music, and make calls—all hands-free.</p>
+          <ul class="rayban-features">
+            <li>12MP ultra-wide camera</li>
+            <li>Open-ear audio with 5 speakers</li>
+            <li>Live streaming to social media</li>
+            <li>All-day battery life</li>
+          </ul>
+          <button class="btn-rayban btn-large" onclick="scrollToSection('shop')">Shop Ray-Ban Meta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Solutions -->
+  <section class="business-section" id="business">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Meta for Business</h2>
+        <p class="section-subtitle">Grow your business and reach billions of people</p>
+      </div>
+      <div class="business-grid">
+        <div class="business-card">
+          <div class="business-icon">📊</div>
+          <h3 class="business-title">Advertising</h3>
+          <p class="business-description">Reach the right people at the right time with powerful advertising tools across Facebook, Instagram, and more.</p>
+          <ul class="business-benefits">
+            <li>Targeted audience reach</li>
+            <li>Measurable results</li>
+            <li>Flexible budgets</li>
+          </ul>
+          <a href="#ads" class="business-link">Get Started →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">🛍️</div>
+          <h3 class="business-title">Commerce</h3>
+          <p class="business-description">Sell products directly on Facebook and Instagram. Set up your shop and start selling in minutes.</p>
+          <ul class="business-benefits">
+            <li>Easy shop setup</li>
+            <li>Integrated checkout</li>
+            <li>Product tagging</li>
+          </ul>
+          <a href="#commerce" class="business-link">Start Selling →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">💬</div>
+          <h3 class="business-title">Messaging</h3>
+          <p class="business-description">Connect with customers through Messenger and WhatsApp Business. Provide support and build relationships.</p>
+          <ul class="business-benefits">
+            <li>Automated responses</li>
+            <li>Customer support tools</li>
+            <li>Business profiles</li>
+          </ul>
+          <a href="#messaging" class="business-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metaverse Vision Section (Dark) -->
+  <section class="metaverse-section">
+    <div class="metaverse-overlay"></div>
+    <div class="container">
+      <div class="metaverse-content">
+        <h2 class="metaverse-title">Building the Metaverse</h2>
+        <p class="metaverse-subtitle">The metaverse will feel like a hybrid of today's online social experiences, sometimes expanded into three dimensions or projected into the physical world. It will let you share immersive experiences with other people even when you can't be together.</p>
+        <div class="metaverse-features">
+          <div class="metaverse-feature">
+            <h4 class="metaverse-feature-title">Social Presence</h4>
+            <p class="metaverse-feature-text">Feel like you're together when you're apart</p>
+          </div>
+          <div class="metaverse-feature">
+            <h4 class="metaverse-feature-title">Avatars</h4>
+            <p class="metaverse-feature-text">Express yourself in new ways</p>
+          </div>
+          <div class="metaverse-feature">
+            <h4 class="metaverse-feature-title">Virtual Spaces</h4>
+            <p class="metaverse-feature-text">Create and explore together</p>
+          </div>
+          <div class="metaverse-feature">
+            <h4 class="metaverse-feature-title">Interoperability</h4>
+            <p class="metaverse-feature-text">Move seamlessly between experiences</p>
+          </div>
+        </div>
+        <button class="btn-primary-light btn-large" onclick="openMetaverse()">Explore the Vision</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Impact -->
+  <section class="community-section" id="community">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Community & Impact</h2>
+        <p class="section-subtitle">Building technology that brings people together</p>
+      </div>
+      <div class="community-grid">
+        <div class="community-card">
+          <div class="community-image safety"></div>
+          <div class="community-card-content">
+            <h3 class="community-title">Safety & Privacy</h3>
+            <p class="community-description">We're committed to keeping you safe and protecting your privacy with industry-leading tools and controls.</p>
+            <a href="#safety" class="community-link">Learn about our approach →</a>
+          </div>
+        </div>
+        <div class="community-card">
+          <div class="community-image inclusion"></div>
+          <div class="community-card-content">
+            <h3 class="community-title">Diversity & Inclusion</h3>
+            <p class="community-description">Building a diverse, equitable, and inclusive workplace where everyone can thrive and do their best work.</p>
+            <a href="#diversity" class="community-link">See our progress →</a>
+          </div>
+        </div>
+        <div class="community-card">
+          <div class="community-image sustainability"></div>
+          <div class="community-card-content">
+            <h3 class="community-title">Sustainability</h3>
+            <p class="community-description">Working toward net zero emissions across our value chain and supporting renewable energy projects.</p>
+            <a href="#sustainability" class="community-link">Read our commitment →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Section -->
+  <section class="careers-section">
+    <div class="container">
+      <div class="careers-content">
+        <h2 class="section-title">Join Us</h2>
+        <p class="section-subtitle">Help us build the future of human connection and the technology that makes it possible.</p>
+        <div class="careers-stats">
+          <div class="career-stat">
+            <div class="career-stat-number">86,000+</div>
+            <div class="career-stat-label">Employees</div>
+          </div>
+          <div class="career-stat">
+            <div class="career-stat-number">100+</div>
+            <div class="career-stat-label">Office Locations</div>
+          </div>
+          <div class="career-stat">
+            <div class="career-stat-number">1,000+</div>
+            <div class="career-stat-label">Open Positions</div>
+          </div>
+        </div>
+        <button class="btn-primary btn-large" onclick="openCareers()">View Open Roles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop Meta Products</h2>
+        <p class="section-subtitle">Explore our latest hardware and accessories</p>
+      </div>
+      <div class="shop-grid">
+        <div class="shop-card">
+          <div class="shop-image quest3"></div>
+          <div class="shop-content">
+            <div class="shop-badge">Best Seller</div>
+            <h3 class="shop-title">Meta Quest 3</h3>
+            <p class="shop-price">Starting at $499.99</p>
+            <p class="shop-description">Our most powerful headset yet with mixed reality</p>
+            <button class="btn-primary" onclick="buyProduct('quest3')">Buy Now</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-image rayban"></div>
+          <div class="shop-content">
+            <div class="shop-badge new">New</div>
+            <h3 class="shop-title">Ray-Ban Meta</h3>
+            <p class="shop-price">Starting at $299.00</p>
+            <p class="shop-description">Smart glasses with camera, audio, and AI</p>
+            <button class="btn-primary" onclick="buyProduct('rayban')">Buy Now</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-image portal"></div>
+          <div class="shop-content">
+            <h3 class="shop-title">Portal</h3>
+            <p class="shop-price">Starting at $179.00</p>
+            <p class="shop-description">Smart video calling for the home</p>
+            <button class="btn-primary" onclick="buyProduct('portal')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="section-title">Stay Connected</h2>
+        <p class="section-subtitle">Get the latest news, product updates, and stories from Meta</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleNewsletter()">Subscribe</button>
+        </div>
+        <p class="form-note">By subscribing, you agree to our Privacy Policy and Terms of Service</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#messenger">Messenger</a></li>
+            <li><a href="#whatsapp">WhatsApp</a></li>
+            <li><a href="#threads">Threads</a></li>
+            <li><a href="#workplace">Workplace</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Hardware</h4>
+          <ul class="footer-links">
+            <li><a href="#quest">Meta Quest</a></li>
+            <li><a href="#rayban">Ray-Ban Meta</a></li>
+            <li><a href="#portal">Portal</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">For Business</h4>
+          <ul class="footer-links">
+            <li><a href="#advertising">Advertising</a></li>
+            <li><a href="#commerce">Commerce</a></li>
+            <li><a href="#messaging">Messaging</a></li>
+            <li><a href="#workplace">Workplace</a></li>
+            <li><a href="#developers">Developers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Meta Platforms, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#facebook-social" class="social-link">Facebook</a>
+          <a href="#instagram-social" class="social-link">Instagram</a>
+          <a href="#twitter-social" class="social-link">Twitter</a>
+          <a href="#linkedin-social" class="social-link">LinkedIn</a>
+          <a href="#youtube-social" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openVideo() {
+      alert('Video player would open here. In production, this would show a Meta brand video.');
+    }
+
+    function openDemo() {
+      alert('Quest demo experience would launch here. In production, this would open an interactive VR demo.');
+    }
+
+    function openMetaverse() {
+      alert('Metaverse experience would open here. In production, this would link to an immersive metaverse showcase.');
+    }
+
+    function openCareers() {
+      alert('Careers page would open here. In production, this would link to Meta careers portal.');
+    }
+
+    function buyProduct(product) {
+      alert(`Redirecting to ${product} product page. In production, this would open the Meta Store checkout.`);
+    }
+
+    function handleNewsletter() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for subscribing with ${email}! You'll receive updates from Meta.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

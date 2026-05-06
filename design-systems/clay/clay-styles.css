@@ -1,0 +1,430 @@
+/* Clay Design System Styles */
+
+:root {
+  /* Colors - Warm cream canvas with vivid swatch palette */
+  --clay-cream: #faf9f7;
+  --clay-oat: #dad4c8;
+  --clay-oat-light: #eee9df;
+  --clay-black: #000000;
+  --clay-white: #ffffff;
+  
+  /* Swatch palette - named like juice bar flavors */
+  --clay-matcha: #4ade80;
+  --clay-slushie: #22d3ee;
+  --clay-lemon: #fbbf24;
+  --clay-ube: #a78bfa;
+  --clay-pomegranate: #fb7185;
+  --clay-blueberry: #1e3a8a;
+  --clay-dragonfruit: #e879f9;
+  
+  /* Typography */
+  --font-display: 'Roobert', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+  
+  /* Spacing - 8px baseline */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  
+  /* Border radius - generous rounding */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--clay-black);
+  background-color: var(--clay-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "ss03", "ss10", "ss11", "ss12";
+}
+
+/* Typography scale */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 80px;
+  letter-spacing: -3.2px;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: -1.92px;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: -0.64px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+/* Navigation */
+nav {
+  background: var(--clay-white);
+  border-bottom: 2px solid var(--clay-oat);
+  padding: var(--space-2) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--clay-black);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--clay-black);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--clay-matcha);
+}
+
+/* Buttons - playful hover animations */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.btn-primary {
+  background: var(--clay-matcha);
+  color: var(--clay-black);
+  box-shadow: rgb(0,0,0) 0px 0px;
+}
+
+.btn-primary:hover {
+  transform: rotateZ(-8deg) translateY(-8px);
+  background: var(--clay-ube);
+  box-shadow: rgb(0,0,0) -7px 7px;
+}
+
+.btn-secondary {
+  background: var(--clay-white);
+  color: var(--clay-black);
+  border: 2px solid var(--clay-oat);
+  box-shadow: rgb(0,0,0) 0px 0px;
+}
+
+.btn-secondary:hover {
+  transform: rotateZ(8deg) translateY(-8px);
+  background: var(--clay-lemon);
+  box-shadow: rgb(0,0,0) 7px 7px;
+}
+
+/* Hero section */
+.hero {
+  padding: var(--space-10) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: var(--space-3);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: var(--space-5);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Cards - generous rounding with oat borders */
+.card {
+  background: var(--clay-white);
+  border: 2px solid var(--clay-oat);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgb(0,0,0) 0px 8px 16px -4px;
+}
+
+/* Dashed borders variant */
+.card-dashed {
+  border-style: dashed;
+}
+
+/* Swatch backgrounds */
+.bg-matcha { background: var(--clay-matcha); }
+.bg-slushie { background: var(--clay-slushie); }
+.bg-lemon { background: var(--clay-lemon); }
+.bg-ube { background: var(--clay-ube); }
+.bg-pomegranate { background: var(--clay-pomegranate); }
+.bg-blueberry { background: var(--clay-blueberry); color: var(--clay-white); }
+.bg-dragonfruit { background: var(--clay-dragonfruit); }
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Sections */
+section {
+  padding: var(--space-8) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+/* Features */
+.features {
+  background: var(--clay-white);
+  border-top: 2px solid var(--clay-oat);
+  border-bottom: 2px solid var(--clay-oat);
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+/* Colorful sections */
+.colorful-section {
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  margin: var(--space-6) 0;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: var(--space-6) 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.stat-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--font-mono);
+}
+
+/* Pricing */
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.pricing-card {
+  background: var(--clay-white);
+  border: 2px solid var(--clay-oat);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.pricing-card.featured {
+  border-color: var(--clay-matcha);
+  border-width: 3px;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 600;
+  margin: var(--space-3) 0;
+}
+
+.price-period {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: var(--clay-white);
+  border-top: 2px solid var(--clay-oat);
+  padding: var(--space-8) 0 var(--space-4);
+  margin-top: var(--space-10);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.footer-section h4 {
+  margin-bottom: var(--space-2);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--font-mono);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-1);
+}
+
+.footer-links a {
+  color: var(--clay-black);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--clay-matcha);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--clay-oat-light);
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero {
+    padding: var(--space-6) 0;
+  }
+  
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit - Dive into anything</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reddit-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <div class="logo-icon">r/</div>
+          <span>reddit</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#communities">Communities</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#content">Explore</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Join Reddit</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Dive into anything</h1>
+        <p class="hero-subtitle">Reddit is home to thousands of communities, endless conversation, and authentic human connection. Whether you're into breaking news, sports, TV fan theories, or a never-ending stream of the internet's cutest animals, there's a community on Reddit for you.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Get Started</button>
+          <button class="btn-outline btn-large" onclick="exploreContent()">Explore Communities</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-number">430M+</span>
+            <span class="stat-label">Monthly Active Users</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">100K+</span>
+            <span class="stat-label">Active Communities</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">13B+</span>
+            <span class="stat-label">Posts & Comments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Communities Section -->
+  <section class="communities" id="communities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find Your Community</h2>
+        <p class="section-subtitle">Explore thousands of communities where people share their passions</p>
+      </div>
+      <div class="community-grid">
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">🎮</div>
+            <div class="community-info">
+              <div class="community-name">r/gaming</div>
+              <div class="community-members">38.5M members</div>
+            </div>
+          </div>
+          <p class="community-description">A subreddit for (almost) anything related to games - video games, board games, card games, etc. (but not sports).</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">💻</div>
+            <div class="community-info">
+              <div class="community-name">r/programming</div>
+              <div class="community-members">6.2M members</div>
+            </div>
+          </div>
+          <p class="community-description">Computer Programming - discussions, news, and tutorials about programming languages, software development, and tech.</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">🎨</div>
+            <div class="community-info">
+              <div class="community-name">r/art</div>
+              <div class="community-members">22.8M members</div>
+            </div>
+          </div>
+          <p class="community-description">This is a subreddit about art, where we are serious about art and artists, and discussing art in a mature, substantive way.</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">🔬</div>
+            <div class="community-info">
+              <div class="community-name">r/science</div>
+              <div class="community-members">31.2M members</div>
+            </div>
+          </div>
+          <p class="community-description">This community is a place to share and discuss new scientific research. Read about the latest advances in astronomy, biology, medicine, physics, social science, and more.</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">🎬</div>
+            <div class="community-info">
+              <div class="community-name">r/movies</div>
+              <div class="community-members">31.8M members</div>
+            </div>
+          </div>
+          <p class="community-description">The goal of r/Movies is to provide an inclusive place for discussions and news about films with major releases.</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+
+        <div class="community-card">
+          <div class="community-header">
+            <div class="community-icon">🍳</div>
+            <div class="community-info">
+              <div class="community-name">r/cooking</div>
+              <div class="community-members">7.1M members</div>
+            </div>
+          </div>
+          <p class="community-description">r/Cooking is a place for the cooks of reddit and those who want to learn how to cook. Post anything related to cooking here, within reason.</p>
+          <button class="btn-primary community-join">Join Community</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Reddit?</h2>
+        <p class="section-subtitle">The front page of the internet, built for real conversations</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Real Conversations</h3>
+          <p class="feature-description">Connect with people who share your interests. Have authentic discussions with real people, not bots or algorithms.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Community-Driven</h3>
+          <p class="feature-description">Communities are created and moderated by users. The best content rises to the top through upvotes and downvotes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Diverse Perspectives</h3>
+          <p class="feature-description">Explore viewpoints from around the world. Learn from experts, enthusiasts, and everyday people with unique experiences.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Privacy First</h3>
+          <p class="feature-description">Stay anonymous or build your reputation. You control your identity and what you share with the community.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Breaking News</h3>
+          <p class="feature-description">Get the latest news as it happens. Communities react in real-time to events around the world.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3 class="feature-title">Awards & Recognition</h3>
+          <p class="feature-description">Give and receive awards for great content. Show appreciation and support for contributions that matter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Showcase -->
+  <section class="content-showcase" id="content">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trending on Reddit</h2>
+        <p class="section-subtitle">See what people are talking about right now</p>
+      </div>
+      <div class="content-grid">
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-community">r/technology</span>
+            <span>•</span>
+            <span class="post-author">Posted by u/techexpert</span>
+          </div>
+          <div class="post-content">
+            <h3 class="post-title">New AI breakthrough enables real-time language translation</h3>
+            <p class="post-text">Researchers have developed a new AI model that can translate between 100+ languages in real-time with unprecedented accuracy...</p>
+          </div>
+          <div class="post-actions">
+            <div class="post-action">
+              <span class="upvote-icon">↑</span>
+              <span>12.5k</span>
+            </div>
+            <div class="post-action">
+              <span>💬</span>
+              <span>847 comments</span>
+            </div>
+            <div class="post-action">
+              <span>🔗</span>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-community">r/askscience</span>
+            <span>•</span>
+            <span class="post-author">Posted by u/curious_mind</span>
+          </div>
+          <div class="post-content">
+            <h3 class="post-title">How do scientists determine the age of fossils?</h3>
+            <p class="post-text">I've always wondered about the methods used in dating fossils. Can someone explain the different techniques and their accuracy?</p>
+          </div>
+          <div class="post-actions">
+            <div class="post-action">
+              <span class="upvote-icon">↑</span>
+              <span>8.2k</span>
+            </div>
+            <div class="post-action">
+              <span>💬</span>
+              <span>523 comments</span>
+            </div>
+            <div class="post-action">
+              <span>🔗</span>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-community">r/DIY</span>
+            <span>•</span>
+            <span class="post-author">Posted by u/maker_pro</span>
+          </div>
+          <div class="post-content">
+            <h3 class="post-title">Built a custom desk with integrated cable management</h3>
+            <p class="post-text">After months of planning, I finally completed my dream workspace. Here's how I did it with detailed photos and measurements...</p>
+          </div>
+          <div class="post-actions">
+            <div class="post-action">
+              <span class="upvote-icon">↑</span>
+              <span>15.7k</span>
+            </div>
+            <div class="post-action">
+              <span>💬</span>
+              <span>1.2k comments</span>
+            </div>
+            <div class="post-action">
+              <span>🔗</span>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Join the Conversation</h2>
+        <p class="cta-subtitle">Create an account to start posting, commenting, and connecting with communities that matter to you.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Sign Up</button>
+          <button class="btn-outline btn-large" onclick="handleLogin()">Log In</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="about">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">About</h4>
+          <ul class="footer-links">
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#advertise">Advertise</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#help">Help</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#guidelines">Community Guidelines</a></li>
+            <li><a href="#moderators">Moderator Guidelines</a></li>
+            <li><a href="#transparency">Transparency</a></li>
+            <li><a href="#reddit-for-community">Reddit for Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#reddit-101">Reddit 101</a></li>
+            <li><a href="#reddiquette">Reddiquette</a></li>
+            <li><a href="#content-policy">Content Policy</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#user-agreement">User Agreement</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#api">Reddit API</a></li>
+            <li><a href="#apps">Mobile Apps</a></li>
+            <li><a href="#buttons">Reddit Buttons</a></li>
+            <li><a href="#widgets">Reddit Widgets</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Reddit, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function exploreContent() {
+      scrollToSection('communities');
+    }
+
+    function handleSignup() {
+      alert('Sign up functionality would redirect to Reddit registration. In production, this would open the sign-up flow.');
+    }
+
+    function handleLogin() {
+      alert('Login functionality would redirect to Reddit login. In production, this would open the login modal.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Simulate upvote interaction
+    document.querySelectorAll('.post-action').forEach(action => {
+      action.addEventListener('click', function() {
+        if (this.querySelector('.upvote-icon')) {
+          this.style.color = '#FF4500';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

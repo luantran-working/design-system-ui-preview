@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canva - Design Anything. Publish Anywhere.</title>
+  <meta name="description" content="Create stunning designs with Canva's easy-to-use design platform. Templates, photos, and tools for every project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="canva-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Canva</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button class="btn-secondary" onclick="handleLogin()">Log in</button>
+          <button class="btn-primary" onclick="scrollToSection('get-started')">Sign up free</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Design <span class="hero-gradient-text">anything.</span><br>
+          Publish anywhere.
+        </h1>
+        <p class="hero-subtitle">
+          Create stunning visuals in minutes with thousands of templates, photos, and easy-to-use tools. No design experience needed.
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start designing for free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch how it works</button>
+        </div>
+        <div class="hero-badge">
+          <span>✨</span>
+          <span>Join 100+ million users worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">250K+</div>
+          <div class="stat-label">Templates</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">190+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5B+</div>
+          <div class="stat-label">Designs Created</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to create</h2>
+        <p class="section-subtitle">Professional design tools made simple for everyone</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Drag-and-drop editor</h3>
+          <p class="feature-description">Intuitive design tools that anyone can use. Simply drag, drop, and customize to create stunning visuals in minutes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3 class="feature-title">Professional templates</h3>
+          <p class="feature-description">Access 250,000+ professionally designed templates for every project. From social posts to presentations and everything in between.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🖼️</div>
+          <h3 class="feature-title">Millions of assets</h3>
+          <p class="feature-description">Choose from millions of photos, graphics, videos, and fonts. Premium content library included with Canva Pro.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Real-time collaboration</h3>
+          <p class="feature-description">Work together seamlessly with your team. Comment, edit, and share designs in real-time from anywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Magic Studio</h3>
+          <p class="feature-description">AI-powered design tools that do the heavy lifting. Remove backgrounds, generate images, and enhance photos instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Design anywhere</h3>
+          <p class="feature-description">Create on desktop, mobile, or tablet. Your designs sync automatically across all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Templates for every occasion</h2>
+        <p class="section-subtitle">Start with a template and make it your own</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-thumbnail">📱</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Instagram Post</h3>
+              <span class="template-category category-social">Social</span>
+            </div>
+            <p class="template-description">Eye-catching social media posts that stand out in the feed</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-thumbnail">📊</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Presentation</h3>
+              <span class="template-category category-business">Business</span>
+            </div>
+            <p class="template-description">Professional presentations that impress your audience</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-thumbnail">📄</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Flyer</h3>
+              <span class="template-category category-marketing">Marketing</span>
+            </div>
+            <p class="template-description">Promotional flyers that grab attention and drive action</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-thumbnail">🎓</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Worksheet</h3>
+              <span class="template-category category-education">Education</span>
+            </div>
+            <p class="template-description">Educational materials that make learning engaging</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-thumbnail">💌</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Invitation</h3>
+              <span class="template-category category-personal">Personal</span>
+            </div>
+            <p class="template-description">Beautiful invitations for every celebration</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-thumbnail">🎬</div>
+          <div class="template-content">
+            <div class="template-header">
+              <h3 class="template-title">Video</h3>
+              <span class="template-category category-social">Social</span>
+            </div>
+            <p class="template-description">Engaging video content for social media and beyond</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teams Section -->
+  <section class="teams" id="teams">
+    <div class="container">
+      <div class="teams-content">
+        <div class="teams-text">
+          <h2 class="section-title">Built for teams of all sizes</h2>
+          <p class="section-subtitle" style="text-align: left; margin-bottom: 32px;">
+            Collaborate seamlessly with your team and maintain brand consistency across all your designs.
+          </p>
+          <ul class="teams-features">
+            <li>Brand Kit to keep your brand consistent</li>
+            <li>Team folders and shared templates</li>
+            <li>Approval workflows and comments</li>
+            <li>Admin controls and team management</li>
+            <li>Priority support for your team</li>
+          </ul>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn-primary btn-large" onclick="scrollToSection('pricing')">Try Canva for Teams</button>
+            <button class="btn-subtle btn-large" onclick="openDemo()">Learn more</button>
+          </div>
+        </div>
+        <div class="teams-visual">
+          👥
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose the plan that's right for you</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Canva Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">Forever</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 250,000+ free templates</li>
+            <li>✓ 100+ design types</li>
+            <li>✓ Hundreds of thousands of free photos and graphics</li>
+            <li>✓ Invite members to your team</li>
+            <li>✓ 5GB cloud storage</li>
+            <li>✓ Basic photo editing tools</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Canva Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Free, plus:</li>
+            <li>✓ 100M+ premium photos, videos, graphics</li>
+            <li>✓ Magic Studio AI tools</li>
+            <li>✓ Background remover</li>
+            <li>✓ Brand Kit with custom fonts and colors</li>
+            <li>✓ 1TB cloud storage</li>
+            <li>✓ Premium templates and content</li>
+            <li>✓ Schedule social media posts</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Try Pro free for 30 days</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Canva for Teams</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$14.99</span>
+              <span class="price-period">/month per person</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Pro, plus:</li>
+            <li>✓ Team collaboration tools</li>
+            <li>✓ Brand controls and templates</li>
+            <li>✓ Approval workflows</li>
+            <li>✓ Team folders and organization</li>
+            <li>✓ Admin controls and insights</li>
+            <li>✓ Priority support</li>
+            <li>✓ Single Sign-On (SSO)</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start team trial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to start designing?</h2>
+        <p class="cta-subtitle">Join millions of users creating stunning designs with Canva</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Sign up for free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="hero" id="get-started" style="padding: 80px 0; background-color: #f4f5f7;">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="section-title">Start designing for free</h2>
+        <p class="section-subtitle" style="margin-bottom: 32px;">
+          No credit card required. Cancel anytime.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; margin-bottom: 24px;">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="email-input" 
+            id="emailInput"
+            aria-label="Email address"
+          >
+          <button class="btn-primary btn-large" onclick="handleSignup()">Sign up free</button>
+        </div>
+        <div class="hero-badge">
+          <span>🔒</span>
+          <span>Your data is safe and secure with us</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#apps">Apps</a></li>
+            <li><a href="#magic-studio">Magic Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">For Business</h4>
+          <ul class="footer-links">
+            <li><a href="#teams">Canva for Teams</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#nonprofits">Nonprofits</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#design-school">Design School</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#trust-center">Trust Center</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Canva. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleLogin() {
+      alert('Login functionality would be implemented here. In production, this would redirect to the login page.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! In production, you would be redirected to complete registration.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add keyboard navigation support
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        // Close any open modals or menus
+        console.log('Escape key pressed');
+      }
+    });
+  </script>
+</body>
+</html>

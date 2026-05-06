@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor - The AI-First Code Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cursor-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Cursor</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#ai-capabilities">AI Capabilities</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('download')">Download</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build software faster with AI</h1>
+        <p class="hero-subtitle">Cursor is the AI-first code editor designed for pair-programming with AI. Write, edit, and understand code with the power of GPT-4 built directly into your editor.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('download')">Download for Free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">macOS</span>
+          <span class="tag">Windows</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="editor-preview">
+          <div class="editor-header">
+            <div class="editor-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="editor-title">main.tsx</div>
+          </div>
+          <div class="editor-content">
+            <pre><code><span class="code-keyword">import</span> <span class="code-variable">React</span> <span class="code-keyword">from</span> <span class="code-string">'react'</span>;
+
+<span class="code-keyword">export</span> <span class="code-keyword">function</span> <span class="code-function">App</span>() {
+  <span class="code-keyword">return</span> (
+    <span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"app"</span><span class="code-tag">&gt;</span>
+      <span class="code-tag">&lt;h1&gt;</span>Hello Cursor<span class="code-tag">&lt;/h1&gt;</span>
+    <span class="code-tag">&lt;/div&gt;</span>
+  );
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Timeline Section -->
+  <section class="ai-timeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">AI that understands your codebase</h2>
+        <p class="section-subtitle">Watch Cursor work through complex coding tasks step by step</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker thinking"></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Thinking</div>
+            <div class="timeline-description">Analyzing your request and planning the implementation</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker grep"></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Searching</div>
+            <div class="timeline-description">Finding relevant files and code patterns in your project</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker read"></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Reading</div>
+            <div class="timeline-description">Understanding context from related files and dependencies</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker edit"></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Editing</div>
+            <div class="timeline-description">Making precise changes across multiple files</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to code with AI</h2>
+        <p class="section-subtitle">Powerful features designed for modern development</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Chat with your code</h3>
+          <p class="feature-description">Ask questions about your codebase, get explanations, and receive suggestions. Cursor understands your entire project context.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <h3 class="feature-title">Edit in natural language</h3>
+          <p class="feature-description">Describe what you want to change in plain English. Cursor will make the edits across multiple files automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Codebase search</h3>
+          <p class="feature-description">Semantic search that understands what you're looking for, not just keyword matching. Find code by describing what it does.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant completions</h3>
+          <p class="feature-description">AI-powered autocomplete that predicts your next edit. Write code at the speed of thought with intelligent suggestions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🐛</div>
+          <h3 class="feature-title">Debug with AI</h3>
+          <p class="feature-description">Paste error messages and get instant explanations with suggested fixes. Cursor helps you understand and resolve issues faster.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Privacy first</h3>
+          <p class="feature-description">Your code stays private. Choose between cloud models or run everything locally. SOC 2 compliant with enterprise security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Capabilities Section -->
+  <section class="ai-capabilities" id="ai-capabilities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">AI capabilities that feel like magic</h2>
+        <p class="section-subtitle">Experience the future of coding</p>
+      </div>
+      <div class="capabilities-grid">
+        <div class="capability-card">
+          <div class="capability-header">
+            <h3 class="capability-title">Multi-file editing</h3>
+            <span class="capability-badge">New</span>
+          </div>
+          <p class="capability-description">Make changes across your entire codebase with a single command. Cursor understands dependencies and updates everything consistently.</p>
+          <div class="capability-example">
+            <div class="example-prompt">
+              <span class="prompt-icon">→</span>
+              <span class="prompt-text">Rename UserProfile to AccountProfile everywhere</span>
+            </div>
+            <div class="example-result">
+              <span class="result-icon">✓</span>
+              <span class="result-text">Updated 12 files across components, types, and tests</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="capability-card">
+          <div class="capability-header">
+            <h3 class="capability-title">Code generation</h3>
+            <span class="capability-badge">Popular</span>
+          </div>
+          <p class="capability-description">Generate entire functions, components, or modules from descriptions. Cursor writes code that matches your project's style and patterns.</p>
+          <div class="capability-example">
+            <div class="example-prompt">
+              <span class="prompt-icon">→</span>
+              <span class="prompt-text">Create a React form with validation for user signup</span>
+            </div>
+            <div class="example-result">
+              <span class="result-icon">✓</span>
+              <span class="result-text">Generated SignupForm.tsx with TypeScript types and validation</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="capability-card">
+          <div class="capability-header">
+            <h3 class="capability-title">Intelligent refactoring</h3>
+            <span class="capability-badge">Pro</span>
+          </div>
+          <p class="capability-description">Refactor code with confidence. Cursor suggests improvements, extracts functions, and modernizes patterns while preserving behavior.</p>
+          <div class="capability-example">
+            <div class="example-prompt">
+              <span class="prompt-icon">→</span>
+              <span class="prompt-text">Extract this logic into a reusable hook</span>
+            </div>
+            <div class="example-result">
+              <span class="result-icon">✓</span>
+              <span class="result-text">Created useUserData hook and updated 5 components</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="code-example">
+    <div class="container">
+      <div class="code-header">
+        <h2 class="section-title">See Cursor in action</h2>
+        <p class="section-subtitle">Real examples of AI-assisted coding</p>
+      </div>
+      <div class="example-tabs">
+        <button class="tab-button active" onclick="showExample('chat')">Chat</button>
+        <button class="tab-button" onclick="showExample('edit')">Edit</button>
+        <button class="tab-button" onclick="showExample('generate')">Generate</button>
+      </div>
+      <div class="example-content" id="chat-example">
+        <div class="chat-interface">
+          <div class="chat-message user">
+            <div class="message-avatar">You</div>
+            <div class="message-content">How does the authentication flow work in this app?</div>
+          </div>
+          <div class="chat-message assistant">
+            <div class="message-avatar">Cursor</div>
+            <div class="message-content">
+              <p>Based on your codebase, here's how authentication works:</p>
+              <ol>
+                <li>User submits credentials via <code>LoginForm.tsx</code></li>
+                <li><code>authService.ts</code> sends request to <code>/api/auth/login</code></li>
+                <li>Server validates and returns JWT token</li>
+                <li>Token stored in localStorage via <code>useAuth</code> hook</li>
+                <li>Protected routes check token in <code>PrivateRoute.tsx</code></li>
+              </ol>
+              <p>Would you like me to show you any specific part?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by developers worldwide</h2>
+        <p class="section-subtitle">Join thousands of developers coding faster with Cursor</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Cursor has completely changed how I write code. The AI understands context better than any tool I've used. It's like having a senior developer pair programming with you 24/7."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">DM</div>
+            <div class="author-info">
+              <div class="author-name">David Martinez</div>
+              <div class="author-title">Senior Engineer at Stripe</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "I was skeptical about AI coding tools, but Cursor proved me wrong. The multi-file editing feature alone has saved me hours every week. It just works."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Kim</div>
+              <div class="author-title">Tech Lead at Notion</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The best investment I've made in my development workflow. Cursor's AI is incredibly accurate and the privacy-first approach means I can use it on client projects."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JC</div>
+            <div class="author-info">
+              <div class="author-name">James Chen</div>
+              <div class="author-title">Freelance Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade when you need more</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Hobby</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>2,000 completions/month</li>
+            <li>50 chat messages/month</li>
+            <li>Basic AI models</li>
+            <li>Community support</li>
+            <li>All core features</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('download')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$20</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited completions</li>
+            <li>Unlimited chat messages</li>
+            <li>GPT-4 & Claude access</li>
+            <li>Priority support</li>
+            <li>Advanced refactoring</li>
+            <li>Multi-file editing</li>
+            <li>Private mode</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('download')">Start Pro Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Business</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$40</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Pro</li>
+            <li>Team collaboration</li>
+            <li>Centralized billing</li>
+            <li>Admin dashboard</li>
+            <li>SSO & SAML</li>
+            <li>Dedicated support</li>
+            <li>SLA guarantee</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+      <div class="pricing-note">
+        <p>All plans include a 14-day free trial. No credit card required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <p class="section-subtitle">Everything you need to know about Cursor</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">What makes Cursor different from other AI coding tools?</h3>
+          <p class="faq-answer">Cursor is built from the ground up as an AI-first editor. Unlike plugins or extensions, AI is deeply integrated into every part of the editing experience. We understand your entire codebase context, not just the current file.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is my code private and secure?</h3>
+          <p class="faq-answer">Yes. We're SOC 2 Type II certified and never train on your code. You can choose to use cloud models or run everything locally. Business plans include additional security features like SSO and audit logs.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I use Cursor with my existing projects?</h3>
+          <p class="faq-answer">Absolutely. Cursor works with any programming language and framework. It's built on VS Code, so you can import your existing settings, extensions, and keybindings seamlessly.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What AI models does Cursor use?</h3>
+          <p class="faq-answer">We support GPT-4, GPT-3.5, Claude 2, and other leading models. Pro users can choose their preferred model. We're constantly adding support for new models as they become available.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do I need an internet connection?</h3>
+          <p class="faq-answer">For cloud models, yes. However, Pro users can configure Cursor to use local models that work completely offline. The editor itself works offline for all standard editing features.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I cancel anytime?</h3>
+          <p class="faq-answer">Yes, you can cancel your subscription at any time. You'll continue to have access until the end of your billing period, then automatically revert to the free Hobby plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download-content">
+        <h2 class="section-title">Ready to code faster?</h2>
+        <p class="section-subtitle">Download Cursor and experience the future of coding with AI</p>
+        <div class="download-buttons">
+          <button class="btn-primary btn-large" onclick="handleDownload('mac')">
+            <span class="btn-icon">🍎</span>
+            Download for macOS
+          </button>
+          <button class="btn-primary btn-large" onclick="handleDownload('windows')">
+            <span class="btn-icon">🪟</span>
+            Download for Windows
+          </button>
+          <button class="btn-primary btn-large" onclick="handleDownload('linux')">
+            <span class="btn-icon">🐧</span>
+            Download for Linux
+          </button>
+        </div>
+        <p class="download-note">Free to start • No credit card required • 14-day Pro trial included</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cursor. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function showExample(type) {
+      // Remove active class from all tabs
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Add active class to clicked tab
+      event.target.classList.add('active');
+      
+      // In a real implementation, this would switch between different examples
+      console.log('Showing example:', type);
+    }
+
+    function handleDownload(platform) {
+      alert(`Downloading Cursor for ${platform}. In production, this would start the download.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

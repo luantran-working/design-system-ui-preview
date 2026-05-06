@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warp - The Terminal for the 21st Century</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="warp-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Warp</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#blocks">Blocks</a></li>
+          <li><a href="#ai">AI</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('download')">Download</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The terminal for the 21st century</h1>
+        <p class="hero-subtitle">Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('download')">Download for Mac</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 500,000+ developers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Commands Run Daily</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Faster Workflows</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-label">User Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">FEATURES</div>
+        <h2 class="section-title">Built for modern developers</h2>
+        <p class="section-subtitle">Everything you need to work faster and smarter in the terminal</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Blazing Fast</h3>
+          <p class="feature-description">Built in Rust for maximum performance. Instant startup, smooth scrolling, and responsive input even with massive outputs.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Modern UI</h3>
+          <p class="feature-description">A terminal that feels like an IDE. Command palette, autocomplete, and a beautiful interface designed for productivity.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 class="feature-title">AI-Powered</h3>
+          <p class="feature-description">Ask Warp AI to explain errors, suggest commands, or debug issues. Your AI pair programmer in the terminal.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3 class="feature-title">Block-Based</h3>
+          <p class="feature-description">Commands and outputs are organized into blocks. Copy, share, and navigate your terminal history like never before.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Team Collaboration</h3>
+          <p class="feature-description">Share commands, workflows, and terminal sessions with your team. Knowledge sharing built into your terminal.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Secure & Private</h3>
+          <p class="feature-description">Your terminal data stays on your machine. Optional cloud features are encrypted end-to-end.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blocks Section -->
+  <section class="blocks" id="blocks">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">BLOCKS</div>
+        <h2 class="section-title">Command blocks that make sense</h2>
+        <p class="section-subtitle">Every command and output is a block you can interact with</p>
+      </div>
+      <div class="blocks-grid">
+        <div class="block-card">
+          <div class="block-icon">📋</div>
+          <h3 class="block-title">Copy & Share</h3>
+          <p class="block-description">Select any block to copy the command or output. Share terminal sessions with teammates instantly.</p>
+          <div class="block-code">$ git status
+On branch main
+Your branch is up to date</div>
+        </div>
+        <div class="block-card">
+          <div class="block-icon">🔍</div>
+          <h3 class="block-title">Search & Navigate</h3>
+          <p class="block-description">Jump between blocks, search your history, and find commands faster than ever before.</p>
+          <div class="block-code">$ npm install
+added 247 packages
+audited 248 packages</div>
+        </div>
+        <div class="block-card">
+          <div class="block-icon">🎨</div>
+          <h3 class="block-title">Organize & Annotate</h3>
+          <p class="block-description">Add notes to blocks, bookmark important commands, and keep your terminal organized.</p>
+          <div class="block-code">$ docker ps
+CONTAINER ID   IMAGE
+a1b2c3d4e5f6   nginx:latest</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Features Section -->
+  <section class="ai-features" id="ai">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">WARP AI</div>
+        <h2 class="section-title">Your AI assistant in the terminal</h2>
+        <p class="section-subtitle">Get help without leaving your workflow</p>
+      </div>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <div class="ai-icon">💬</div>
+          <h3 class="ai-title">Natural Language Commands</h3>
+          <p class="ai-description">Describe what you want to do in plain English. Warp AI suggests the right command for you.</p>
+        </div>
+        <div class="ai-card">
+          <div class="ai-icon">🐛</div>
+          <h3 class="ai-title">Error Explanations</h3>
+          <p class="ai-description">Get instant explanations for errors and suggestions on how to fix them. No more googling error messages.</p>
+        </div>
+        <div class="ai-card">
+          <div class="ai-icon">📚</div>
+          <h3 class="ai-title">Command Documentation</h3>
+          <p class="ai-description">Ask about any command and get clear, concise documentation right in your terminal.</p>
+        </div>
+        <div class="ai-card">
+          <div class="ai-icon">🔧</div>
+          <h3 class="ai-title">Workflow Suggestions</h3>
+          <p class="ai-description">Warp AI learns your patterns and suggests optimizations to make you more productive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminal Preview Section -->
+  <section class="terminal-preview">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">EXPERIENCE</div>
+        <h2 class="section-title">See Warp in action</h2>
+        <p class="section-subtitle">A terminal that feels like the future</p>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dot"></div>
+          <div class="terminal-dot"></div>
+          <div class="terminal-dot"></div>
+        </div>
+        <div class="terminal-content"><span class="terminal-prompt">~/projects/warp</span> <span class="terminal-command">$ warp ai "how do I find large files?"</span>
+
+<span class="terminal-output">🤖 Warp AI suggests:</span>
+
+<span class="terminal-command">find . -type f -size +100M -exec ls -lh {} \;</span>
+
+<span class="terminal-output">This command finds all files larger than 100MB in the current
+directory and displays them with human-readable sizes.</span>
+
+<span class="terminal-prompt">~/projects/warp</span> <span class="terminal-command">$ git log --oneline -5</span>
+
+<span class="terminal-output">a1b2c3d feat: add AI command suggestions
+e4f5g6h fix: improve block rendering performance
+i7j8k9l docs: update installation guide
+m0n1o2p refactor: optimize terminal scrolling
+q3r4s5t feat: add team collaboration features</span>
+
+<span class="terminal-prompt">~/projects/warp</span> <span class="terminal-command">█</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">TESTIMONIALS</div>
+        <h2 class="section-title">Loved by developers worldwide</h2>
+        <p class="section-subtitle">See what the community is saying</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Warp has completely changed how I work in the terminal. The block-based interface and AI features save me hours every week. I can't imagine going back."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Kim</div>
+              <div class="author-title">Senior Engineer, Stripe</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The performance is incredible. Even with massive log outputs, Warp stays smooth and responsive. It's the terminal I've been waiting for."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+              <div class="author-name">Marcus Rodriguez</div>
+              <div class="author-title">DevOps Lead, Airbnb</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Warp AI is like having a senior engineer looking over my shoulder. It catches mistakes, suggests better commands, and helps me learn as I work."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JC</div>
+            <div class="author-info">
+              <div class="author-name">Jessica Chen</div>
+              <div class="author-title">Full Stack Developer, Vercel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="category-label">PRICING</div>
+        <h2 class="section-title">Choose your plan</h2>
+        <p class="section-subtitle">Free for individuals, powerful for teams</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Personal</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ All core features</li>
+            <li>✓ Unlimited blocks</li>
+            <li>✓ Warp AI (100 requests/day)</li>
+            <li>✓ Command palette</li>
+            <li>✓ Themes & customization</li>
+            <li>✓ Cloud sync</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('download')">Download Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Team</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$15</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Personal</li>
+            <li>✓ Unlimited Warp AI</li>
+            <li>✓ Team workspaces</li>
+            <li>✓ Shared commands & workflows</li>
+            <li>✓ Session sharing</li>
+            <li>✓ Admin controls</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="handleSignup('team')">Start Team Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Team</li>
+            <li>✓ SSO & SAML</li>
+            <li>✓ Advanced security</li>
+            <li>✓ On-premise deployment</li>
+            <li>✓ Custom integrations</li>
+            <li>✓ Dedicated support</li>
+            <li>✓ SLA guarantee</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="download">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to transform your terminal?</h2>
+        <p class="cta-subtitle">Join hundreds of thousands of developers using Warp to build better software, faster.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleDownload()">Download for Mac</button>
+          <button class="btn-secondary btn-large" onclick="viewDocs()">View Documentation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#blocks">Blocks</a></li>
+            <li><a href="#ai">Warp AI</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Warp. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleDownload() {
+      alert('Download would start here. In production, this would detect the OS and start the appropriate download.');
+    }
+
+    function handleSignup(plan) {
+      alert(`Starting ${plan} plan signup. In production, this would redirect to the signup flow.`);
+    }
+
+    function contactSales() {
+      alert('Contact sales form would open here. In production, this would open a contact form or calendar booking.');
+    }
+
+    function viewDocs() {
+      alert('Documentation would open here. In production, this would link to the docs site.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

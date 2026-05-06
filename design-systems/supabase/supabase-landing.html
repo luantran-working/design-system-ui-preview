@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase - The Open Source Firebase Alternative</title>
+  <meta name="description" content="Build in a weekend. Scale to millions. Supabase is an open source Firebase alternative with PostgreSQL database, authentication, storage, and real-time subscriptions.">
+  <link rel="stylesheet" href="supabase-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          <span>Supabase</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#database">Database</a></li>
+          <li><a href="#auth">Auth</a></li>
+          <li><a href="#storage">Storage</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Start your project</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build in a weekend. Scale to millions.</h1>
+        <p class="hero-subtitle">Supabase is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, and Storage.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start your project</button>
+          <button class="btn-secondary btn-large" onclick="openDocs()">Documentation</button>
+        </div>
+        <div class="hero-badge">
+          <span class="code-label">OPEN SOURCE</span>
+          <span>•</span>
+          <a href="#github" class="badge-link">Star us on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">1M+</div>
+          <div class="stat-label">Developers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Databases</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">GitHub Stars</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to build</h2>
+        <p class="section-subtitle">A complete backend in minutes, not months</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🗄️</div>
+          <h3 class="feature-title">Database</h3>
+          <p class="feature-description">Every project is a full Postgres database, the world's most trusted relational database. Powerful, extensible, and open source.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3 class="feature-title">Authentication</h3>
+          <p class="feature-description">Add user sign ups and logins, securing your data with Row Level Security. Support for social providers, magic links, and more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3 class="feature-title">Storage</h3>
+          <p class="feature-description">Store, organize, and serve large files. Any media, including videos and images. Integrated with your database and auth.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Realtime</h3>
+          <p class="feature-description">Listen to database changes, build multiplayer experiences, and broadcast data to clients. All powered by Postgres.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Edge Functions</h3>
+          <p class="feature-description">Write custom code without deploying or scaling servers. Globally distributed TypeScript functions at the edge.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Auto APIs</h3>
+          <p class="feature-description">Instantly generate RESTful APIs from your database schema. No code required. Just create tables and start querying.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Database Section -->
+  <section class="database" id="database">
+    <div class="container">
+      <div class="database-content">
+        <div class="database-text">
+          <span class="code-label">POSTGRES DATABASE</span>
+          <h2 class="section-title">Every project is a full Postgres database</h2>
+          <p>Supabase is built on top of PostgreSQL, one of the world's most scalable databases. Use the full power of Postgres with extensions, triggers, and functions.</p>
+          <button class="btn-primary" onclick="scrollToSection('get-started')">Start building</button>
+        </div>
+        <div class="database-visual">
+          <pre><code class="code-content">-- Create a table
+create table posts (
+  id bigint generated by default as identity primary key,
+  title text not null,
+  content text,
+  user_id uuid references auth.users not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- Enable Row Level Security
+alter table posts enable row level security;
+
+-- Create a policy
+create policy "Users can view their own posts"
+  on posts for select
+  using ( auth.uid() = user_id );</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Auth Section -->
+  <section class="auth" id="auth">
+    <div class="container">
+      <div class="section-header">
+        <span class="code-label">AUTHENTICATION</span>
+        <h2 class="section-title">Add authentication in minutes</h2>
+        <p class="section-subtitle">Secure your application with built-in auth that just works</p>
+      </div>
+      <div class="auth-grid">
+        <div class="auth-card">
+          <div class="auth-icon">📧</div>
+          <h3 class="auth-title">Email & Password</h3>
+          <p class="auth-description">Traditional email and password authentication with email confirmation and password recovery built-in.</p>
+        </div>
+        <div class="auth-card">
+          <div class="auth-icon">🔗</div>
+          <h3 class="auth-title">Magic Links</h3>
+          <p class="auth-description">Passwordless authentication via email. Send users a magic link to sign in without remembering passwords.</p>
+        </div>
+        <div class="auth-card">
+          <div class="auth-icon">🌐</div>
+          <h3 class="auth-title">Social Providers</h3>
+          <p class="auth-description">Support for Google, GitHub, GitLab, Bitbucket, Azure, Facebook, Twitter, Discord, and more.</p>
+        </div>
+        <div class="auth-card">
+          <div class="auth-icon">📱</div>
+          <h3 class="auth-title">Phone Auth</h3>
+          <p class="auth-description">SMS-based authentication with OTP codes. Support for Twilio, MessageBird, Vonage, and TextLocal.</p>
+        </div>
+        <div class="auth-card">
+          <div class="auth-icon">🔒</div>
+          <h3 class="auth-title">Row Level Security</h3>
+          <p class="auth-description">Secure your data at the database level. Users can only access data they're authorized to see.</p>
+        </div>
+        <div class="auth-card">
+          <div class="auth-icon">🎫</div>
+          <h3 class="auth-title">JWT Tokens</h3>
+          <p class="auth-description">Industry-standard JWT tokens for secure authentication. Integrate with any framework or platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Storage Section -->
+  <section class="storage" id="storage">
+    <div class="container">
+      <div class="storage-content">
+        <span class="code-label">STORAGE</span>
+        <h2 class="section-title">Store and serve any file</h2>
+        <p class="section-subtitle">Large file storage with automatic optimization and CDN delivery</p>
+        <div class="storage-features">
+          <div class="storage-item">
+            <div class="storage-item-icon">🖼️</div>
+            <h3 class="storage-item-title">Image Transformations</h3>
+            <p class="storage-item-description">Resize, crop, and optimize images on the fly with URL parameters.</p>
+          </div>
+          <div class="storage-item">
+            <div class="storage-item-icon">🌍</div>
+            <h3 class="storage-item-title">CDN Integration</h3>
+            <p class="storage-item-description">Globally distributed content delivery for fast file access worldwide.</p>
+          </div>
+          <div class="storage-item">
+            <div class="storage-item-icon">🔐</div>
+            <h3 class="storage-item-title">Access Control</h3>
+            <p class="storage-item-description">Secure your files with Row Level Security policies and signed URLs.</p>
+          </div>
+          <div class="storage-item">
+            <div class="storage-item-icon">📊</div>
+            <h3 class="storage-item-title">Resumable Uploads</h3>
+            <p class="storage-item-description">Upload large files reliably with automatic resume on connection failure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="database" style="padding: 90px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="code-label">DEVELOPER EXPERIENCE</span>
+        <h2 class="section-title">Simple, powerful client libraries</h2>
+        <p class="section-subtitle">Get started in seconds with JavaScript, Python, Dart, and more</p>
+      </div>
+      <div class="code-block">
+        <pre><code class="code-content">import { createClient } from '@supabase/supabase-js'
+
+// Initialize the client
+const supabase = createClient(
+  'https://your-project.supabase.co',
+  'your-anon-key'
+)
+
+// Query data
+const { data, error } = await supabase
+  .from('posts')
+  .select('*')
+  .eq('user_id', userId)
+
+// Insert data
+const { data, error } = await supabase
+  .from('posts')
+  .insert({ title: 'Hello World', content: 'My first post' })
+
+// Subscribe to changes
+const subscription = supabase
+  .channel('posts')
+  .on('postgres_changes', 
+    { event: '*', schema: 'public', table: 'posts' },
+    (payload) => console.log('Change received!', payload)
+  )
+  .subscribe()</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Predictable pricing</h2>
+        <p class="section-subtitle">Start for free, scale as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 500MB database</li>
+            <li>Up to 1GB file storage</li>
+            <li>Up to 2GB bandwidth</li>
+            <li>50,000 monthly active users</li>
+            <li>Social OAuth providers</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$25</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>8GB database</li>
+            <li>100GB file storage</li>
+            <li>250GB bandwidth</li>
+            <li>100,000 monthly active users</li>
+            <li>7-day log retention</li>
+            <li>Email support</li>
+            <li>Daily backups</li>
+            <li>No project pausing</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Pro trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited database size</li>
+            <li>Unlimited file storage</li>
+            <li>Unlimited bandwidth</li>
+            <li>Unlimited monthly active users</li>
+            <li>Dedicated support</li>
+            <li>99.9% SLA</li>
+            <li>SOC2 compliance</li>
+            <li>Custom contracts</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="contactSales()">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="code-label">TRUSTED BY</span>
+        <h2 class="section-title">Powering the world's best teams</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-label">GitHub</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Mozilla</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Notion</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Vercel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start building in seconds</h2>
+        <p class="cta-subtitle">Create a new project and get a dedicated Postgres database in less than 2 minutes</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start your project</button>
+          <button class="btn-secondary btn-large" onclick="openDocs()">View documentation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#database">Database</a></li>
+            <li><a href="#auth">Authentication</a></li>
+            <li><a href="#storage">Storage</a></li>
+            <li><a href="#realtime">Realtime</a></li>
+            <li><a href="#edge-functions">Edge Functions</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#company-blog">Company Blog</a></li>
+            <li><a href="#open-source">Open Source</a></li>
+            <li><a href="#humans">Humans.txt</a></li>
+            <li><a href="#lawyers">Lawyers.txt</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#github" id="github">GitHub</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#discussions">Discussions</a></li>
+            <li><a href="#dev-to">Dev.to</a></li>
+            <li><a href="#rss">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Supabase Inc. Open source and available on GitHub.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDocs() {
+      alert('Documentation would open here. In production, this would link to https://supabase.com/docs');
+    }
+
+    function contactSales() {
+      alert('Contact sales form would open here. In production, this would link to a contact form or email.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the Supabase dashboard signup.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

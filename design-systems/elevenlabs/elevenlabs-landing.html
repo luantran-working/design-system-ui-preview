@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs - AI Voice Generation Platform</title>
+  <meta name="description" content="Create natural-sounding speech with the most advanced AI voice technology. Generate voices for audiobooks, videos, podcasts, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Using Inter as fallback for Waldenburg -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="elevenlabs-styles.css">
+  <style>
+    /* Waldenburg font fallback - using light weight serif */
+    @font-face {
+      font-family: 'Waldenburg';
+      src: local('Georgia'), local('Times New Roman');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'WaldenburgFH';
+      src: local('Georgia'), local('Times New Roman');
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">ElevenLabs</div>
+        <ul class="nav-links">
+          <li><a href="#voices">Voices</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button class="btn-secondary" onclick="handleSignIn()">Sign In</button>
+          <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The most realistic AI voices</h1>
+        <p class="hero-subtitle">Create natural-sounding speech with the most advanced AI voice technology. Generate voices for audiobooks, videos, podcasts, and more.</p>
+        <div class="hero-cta">
+          <button class="btn-warm btn-large" onclick="scrollToSection('get-started')">Try for Free</button>
+          <button class="btn-secondary btn-large" onclick="playDemo()">Listen to Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>🎙️</span>
+          <span>Trusted by 1M+ creators worldwide</span>
+        </div>
+        
+        <!-- Audio Waveform Visual -->
+        <div class="waveform-visual">
+          <div class="waveform-placeholder">
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+            <div class="waveform-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voices Section -->
+  <section class="voices" id="voices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore our voice library</h2>
+        <p class="section-subtitle">Choose from hundreds of natural-sounding voices in 29 languages, or clone your own voice in seconds.</p>
+      </div>
+      <div class="voice-grid">
+        <div class="voice-card">
+          <div class="voice-avatar">🎭</div>
+          <h3 class="voice-name">Rachel</h3>
+          <p class="voice-description">Calm, warm, and professional. Perfect for narration and audiobooks.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (US)</span>
+            <span class="voice-tag">Female</span>
+            <span class="voice-tag">Mature</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('rachel')">▶ Play Sample</button>
+        </div>
+        
+        <div class="voice-card">
+          <div class="voice-avatar">🎤</div>
+          <h3 class="voice-name">Adam</h3>
+          <p class="voice-description">Deep, authoritative, and engaging. Ideal for documentaries and presentations.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (US)</span>
+            <span class="voice-tag">Male</span>
+            <span class="voice-tag">Deep</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('adam')">▶ Play Sample</button>
+        </div>
+        
+        <div class="voice-card">
+          <div class="voice-avatar">🌟</div>
+          <h3 class="voice-name">Bella</h3>
+          <p class="voice-description">Youthful, energetic, and friendly. Great for social media and advertising.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (US)</span>
+            <span class="voice-tag">Female</span>
+            <span class="voice-tag">Young</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('bella')">▶ Play Sample</button>
+        </div>
+        
+        <div class="voice-card">
+          <div class="voice-avatar">🎬</div>
+          <h3 class="voice-name">Antoni</h3>
+          <p class="voice-description">Versatile, clear, and articulate. Perfect for e-learning and tutorials.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (US)</span>
+            <span class="voice-tag">Male</span>
+            <span class="voice-tag">Clear</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('antoni')">▶ Play Sample</button>
+        </div>
+        
+        <div class="voice-card">
+          <div class="voice-avatar">🌍</div>
+          <h3 class="voice-name">Charlotte</h3>
+          <p class="voice-description">Sophisticated, elegant, and refined. Excellent for luxury brands.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (UK)</span>
+            <span class="voice-tag">Female</span>
+            <span class="voice-tag">Elegant</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('charlotte')">▶ Play Sample</button>
+        </div>
+        
+        <div class="voice-card">
+          <div class="voice-avatar">🎙️</div>
+          <h3 class="voice-name">Josh</h3>
+          <p class="voice-description">Natural, conversational, and relatable. Great for podcasts and vlogs.</p>
+          <div class="voice-tags">
+            <span class="voice-tag">English (US)</span>
+            <span class="voice-tag">Male</span>
+            <span class="voice-tag">Casual</span>
+          </div>
+          <button class="voice-play" onclick="playVoice('josh')">▶ Play Sample</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gradient Showcase Section -->
+  <section class="gradient-showcase">
+    <div class="container">
+      <div class="showcase-content">
+        <h2 class="section-title">Voice cloning in seconds</h2>
+        <p class="section-subtitle">Upload a 1-minute audio sample and create a perfect digital replica of any voice. Our AI captures every nuance, emotion, and characteristic.</p>
+        <div class="showcase-image">
+          <div style="padding: 60px 0; text-align: center; color: var(--warm-gray);">
+            <div style="font-size: 48px; margin-bottom: 16px;">🎵</div>
+            <p style="font-size: 14px; letter-spacing: 0.14px;">Voice cloning interface preview</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to create perfect audio</h2>
+        <p class="section-subtitle">Professional-grade tools designed for creators, developers, and businesses.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Natural Prosody</h3>
+          <p class="feature-description">Our AI understands context and emotion, delivering speech that sounds genuinely human with natural rhythm and intonation.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">29 Languages</h3>
+          <p class="feature-description">Generate speech in 29 languages with native-level pronunciation and cultural nuances built into every voice.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Real-Time Generation</h3>
+          <p class="feature-description">Generate high-quality audio in seconds, not hours. Perfect for live applications and rapid iteration.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Voice Design Studio</h3>
+          <p class="feature-description">Fine-tune every aspect of your voice: pitch, speed, emotion, and emphasis. Complete creative control.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">SOC 2 Type II certified with end-to-end encryption. Your data and voices are completely secure.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Developer API</h3>
+          <p class="feature-description">Integrate AI voices into your applications with our simple, powerful API. Scale to millions of requests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted across industries</h2>
+        <p class="section-subtitle">From independent creators to Fortune 500 companies, see how teams use ElevenLabs.</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">📚</div>
+          <h3 class="use-case-title">Audiobook Production</h3>
+          <p class="use-case-description">Transform written content into engaging audiobooks with professional narration. Reduce production time from weeks to hours.</p>
+          <ul class="use-case-benefits">
+            <li>90% faster production</li>
+            <li>Multiple narrator voices</li>
+            <li>Consistent quality across chapters</li>
+            <li>Instant revisions and updates</li>
+          </ul>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🎬</div>
+          <h3 class="use-case-title">Video Content</h3>
+          <p class="use-case-description">Add professional voiceovers to videos, documentaries, and explainer content without expensive studio time.</p>
+          <ul class="use-case-benefits">
+            <li>Instant voiceover generation</li>
+            <li>Perfect lip-sync timing</li>
+            <li>Multi-language dubbing</li>
+            <li>Cost-effective scaling</li>
+          </ul>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🎙️</div>
+          <h3 class="use-case-title">Podcasting</h3>
+          <p class="use-case-description">Create podcast intros, ads, and even full episodes with consistent, high-quality voice content.</p>
+          <ul class="use-case-benefits">
+            <li>Consistent brand voice</li>
+            <li>Quick ad insertion</li>
+            <li>Guest voice cloning</li>
+            <li>Automated transcription</li>
+          </ul>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🎮</div>
+          <h3 class="use-case-title">Gaming & Interactive</h3>
+          <p class="use-case-description">Generate dynamic dialogue for games, virtual assistants, and interactive experiences at scale.</p>
+          <ul class="use-case-benefits">
+            <li>Real-time voice generation</li>
+            <li>Unlimited dialogue variations</li>
+            <li>Character voice consistency</li>
+            <li>Localization support</li>
+          </ul>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">📱</div>
+          <h3 class="use-case-title">Accessibility</h3>
+          <p class="use-case-description">Make content accessible to everyone with natural-sounding text-to-speech for apps and websites.</p>
+          <ul class="use-case-benefits">
+            <li>WCAG compliance</li>
+            <li>Screen reader enhancement</li>
+            <li>Multiple language support</li>
+            <li>Customizable voices</li>
+          </ul>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🏢</div>
+          <h3 class="use-case-title">Enterprise Training</h3>
+          <p class="use-case-description">Create engaging e-learning content and training materials with professional narration at scale.</p>
+          <ul class="use-case-benefits">
+            <li>Rapid content updates</li>
+            <li>Consistent training quality</li>
+            <li>Multi-language courses</li>
+            <li>Cost-effective scaling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, powerful API</h2>
+        <p class="section-subtitle">Integrate AI voices into your application in minutes with our developer-friendly API.</p>
+      </div>
+      
+      <div class="code-block">
+        <pre><code class="code-content">import { ElevenLabs } from 'elevenlabs-node';
+
+const client = new ElevenLabs({
+  apiKey: process.env.ELEVENLABS_API_KEY
+});
+
+// Generate speech from text
+const audio = await client.textToSpeech({
+  voiceId: 'rachel',
+  text: 'Welcome to the future of voice AI.',
+  modelId: 'eleven_multilingual_v2',
+  voiceSettings: {
+    stability: 0.5,
+    similarityBoost: 0.75
+  }
+});
+
+// Save or stream the audio
+await audio.pipe(fs.createWriteStream('output.mp3'));</code></pre>
+      </div>
+      
+      <div style="text-align: center; margin-top: 32px;">
+        <button class="btn-primary btn-large" onclick="window.open('#docs', '_self')">View Full Documentation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose your plan</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow. All plans include access to our voice library.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>10,000 characters/month</li>
+            <li>3 custom voices</li>
+            <li>Access to voice library</li>
+            <li>Standard quality</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-secondary btn-large pricing-cta" onclick="scrollToSection('get-started')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Creator</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$22</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>100,000 characters/month</li>
+            <li>10 custom voices</li>
+            <li>Voice cloning</li>
+            <li>High quality audio</li>
+            <li>Commercial license</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn-primary btn-large pricing-cta" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>500,000 characters/month</li>
+            <li>Unlimited custom voices</li>
+            <li>Professional voice cloning</li>
+            <li>Ultra-high quality</li>
+            <li>API access</li>
+            <li>Advanced voice design</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn-secondary btn-large pricing-cta" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 48px;">
+        <p style="color: var(--dark-gray); font-size: 16px; letter-spacing: 0.16px; margin-bottom: 16px;">
+          Need more? Enterprise plans available with custom pricing.
+        </p>
+        <button class="btn-warm" onclick="handleContactSales()">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start creating today</h2>
+        <p class="cta-subtitle">Join over 1 million creators using ElevenLabs to bring their content to life with AI voices.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large btn-uppercase" onclick="handleGetStarted()">GET STARTED FREE</button>
+          <button class="btn-secondary btn-large" onclick="handleContactSales()">Talk to Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#voices">Voice Library</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#voice-cloning">Voice Cloning</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Use Cases</h4>
+          <ul class="footer-links">
+            <li><a href="#audiobooks">Audiobooks</a></li>
+            <li><a href="#video">Video Content</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#ethics">Ethics</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 ElevenLabs. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#github" class="social-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleSignIn() {
+      alert('Sign in functionality would redirect to authentication page.');
+    }
+
+    function handleGetStarted() {
+      alert('Get started functionality would redirect to signup page with free plan selected.');
+    }
+
+    function handleContactSales() {
+      alert('Contact sales functionality would open a contact form or redirect to sales page.');
+    }
+
+    function playDemo() {
+      alert('Demo audio would play here. In production, this would trigger an audio player with sample voices.');
+    }
+
+    function playVoice(voiceId) {
+      alert(`Playing sample for voice: ${voiceId}. In production, this would play an actual audio sample.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add subtle parallax effect to waveform on scroll
+    window.addEventListener('scroll', function() {
+      const waveform = document.querySelector('.waveform-visual');
+      if (waveform) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * 0.3;
+        waveform.style.transform = `translateY(${rate}px)`;
+      }
+    });
+  </script>
+</body>
+</html>

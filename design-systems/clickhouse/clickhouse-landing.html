@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickHouse - The Fastest Real-Time Analytics Database</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Inconsolata:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="clickhouse-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">CLICKHOUSE</div>
+        <ul class="nav-links">
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#performance">PERFORMANCE</a></li>
+          <li><a href="#use-cases">USE CASES</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#docs">DOCS</a></li>
+        </ul>
+        <button class="btn-green" onclick="scrollToSection('get-started')">GET STARTED</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The Database for AI</h1>
+        <p class="hero-subtitle">Real-time analytics at any scale. Query billions of rows in milliseconds. Built for speed, designed for developers.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free</button>
+          <button class="btn-ghost btn-large" onclick="openDemo()">View Benchmarks</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">⚡</span>
+          <span>100-1000x faster than traditional databases</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">1000x</div>
+          <div class="stat-label">Faster Queries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1PB+</div>
+          <div class="stat-label">Data Processed Daily</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">&lt;100ms</div>
+          <div class="stat-label">Query Latency</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Companies Trust Us</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">CAPABILITIES</div>
+        <h2 class="section-title">Built for Extreme Performance</h2>
+        <p class="section-subtitle">Column-oriented architecture designed for real-time analytics at scale</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card highlighted">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Lightning Fast Queries</h3>
+          <p class="feature-description">Process billions of rows in milliseconds. Columnar storage and vectorized execution deliver unmatched speed.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Real-Time Analytics</h3>
+          <p class="feature-description">Ingest and query data simultaneously. No delays, no batch processing. Instant insights from streaming data.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">SQL Compatible</h3>
+          <p class="feature-description">Use familiar SQL syntax with powerful extensions. No new query language to learn. Start querying immediately.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3 class="feature-title">Horizontal Scaling</h3>
+          <p class="feature-description">Scale from gigabytes to petabytes seamlessly. Add nodes without downtime. Linear performance scaling.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3 class="feature-title">Compression Excellence</h3>
+          <p class="feature-description">10x better compression than traditional databases. Store more data, reduce costs, maintain query speed.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">Role-based access control, encryption at rest and in transit, audit logging. SOC 2 and GDPR compliant.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Deep Dive -->
+  <section class="performance" id="performance">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">BENCHMARKS</div>
+        <h2 class="section-title">Performance That Speaks for Itself</h2>
+        <p class="section-subtitle">Real-world metrics from production deployments</p>
+      </div>
+      <div class="performance-grid">
+        <div class="performance-card">
+          <div class="performance-metric">2.3B</div>
+          <div class="performance-label">Rows/Second</div>
+          <p class="performance-description">Insert throughput on commodity hardware</p>
+        </div>
+        <div class="performance-card">
+          <div class="performance-metric">100TB</div>
+          <div class="performance-label">Single Table</div>
+          <p class="performance-description">Query performance remains constant</p>
+        </div>
+        <div class="performance-card">
+          <div class="performance-metric">50ms</div>
+          <div class="performance-label">P95 Latency</div>
+          <p class="performance-description">Complex aggregations on billions of rows</p>
+        </div>
+        <div class="performance-card">
+          <div class="performance-metric">10:1</div>
+          <div class="performance-label">Compression</div>
+          <p class="performance-description">Average compression ratio vs raw data</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">APPLICATIONS</div>
+        <h2 class="section-title">Powering Data-Intensive Applications</h2>
+        <p class="section-subtitle">From startups to Fortune 500 companies</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">📊</div>
+          <h3 class="use-case-title">Real-Time Dashboards</h3>
+          <p class="use-case-description">Build interactive dashboards that query live data. No pre-aggregation required. Sub-second response times for complex visualizations.</p>
+          <ul class="use-case-benefits">
+            <li>Live data visualization</li>
+            <li>Ad-hoc query support</li>
+            <li>Millions of concurrent users</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🔍</div>
+          <h3 class="use-case-title">Log Analytics</h3>
+          <p class="use-case-description">Ingest and analyze petabytes of logs. Full-text search, pattern matching, and anomaly detection at scale.</p>
+          <ul class="use-case-benefits">
+            <li>Petabyte-scale log storage</li>
+            <li>Real-time alerting</li>
+            <li>Cost-effective retention</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🎯</div>
+          <h3 class="use-case-title">User Analytics</h3>
+          <p class="use-case-description">Track user behavior across millions of sessions. Funnel analysis, cohort analysis, and retention metrics in real-time.</p>
+          <ul class="use-case-benefits">
+            <li>Event-level granularity</li>
+            <li>Behavioral segmentation</li>
+            <li>Instant insights</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🤖</div>
+          <h3 class="use-case-title">AI & Machine Learning</h3>
+          <p class="use-case-description">Feature engineering at scale. Train models on billions of data points. Real-time inference and model serving.</p>
+          <ul class="use-case-benefits">
+            <li>Fast feature extraction</li>
+            <li>Vector similarity search</li>
+            <li>Model training pipelines</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">💰</div>
+          <h3 class="use-case-title">Financial Analytics</h3>
+          <p class="use-case-description">Process market data, transactions, and risk calculations in real-time. Regulatory compliance and audit trails.</p>
+          <ul class="use-case-benefits">
+            <li>Microsecond precision</li>
+            <li>Immutable audit logs</li>
+            <li>Complex calculations</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🌐</div>
+          <h3 class="use-case-title">IoT & Telemetry</h3>
+          <p class="use-case-description">Collect metrics from millions of devices. Time-series analysis, downsampling, and aggregation at any scale.</p>
+          <ul class="use-case-benefits">
+            <li>High-cardinality data</li>
+            <li>Time-series optimization</li>
+            <li>Automatic rollups</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="code-example">
+    <div class="container">
+      <div class="code-header">
+        <div class="section-label">DEVELOPER EXPERIENCE</div>
+        <h2 class="section-title">Simple SQL, Extreme Performance</h2>
+        <p class="section-subtitle">Familiar syntax with powerful analytics capabilities</p>
+      </div>
+      <div class="code-block">
+        <pre><code class="code-content">-- Query billions of rows in milliseconds
+<span class="code-highlight">SELECT</span>
+    user_id,
+    <span class="code-highlight">COUNT</span>(*) as events,
+    <span class="code-highlight">AVG</span>(session_duration) as avg_duration,
+    <span class="code-highlight">QUANTILE</span>(0.95)(response_time) as p95_latency
+<span class="code-highlight">FROM</span> events
+<span class="code-highlight">WHERE</span> 
+    timestamp >= <span class="code-highlight">NOW</span>() - <span class="code-highlight">INTERVAL</span> 7 DAY
+    <span class="code-highlight">AND</span> event_type = 'page_view'
+<span class="code-highlight">GROUP BY</span> user_id
+<span class="code-highlight">HAVING</span> events > 100
+<span class="code-highlight">ORDER BY</span> events <span class="code-highlight">DESC</span>
+<span class="code-highlight">LIMIT</span> 1000;
+
+-- Result: 2.3 billion rows scanned in 47ms</code></pre>
+      </div>
+      <div class="code-actions">
+        <button class="btn-primary" onclick="copyCode()">Copy Query</button>
+        <a href="#docs" class="btn-ghost">View Documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-content">
+        <div class="trust-label">TRUSTED BY INDUSTRY LEADERS</div>
+        <div class="trust-logos">
+          <div class="trust-logo">Uber</div>
+          <div class="trust-logo">Cloudflare</div>
+          <div class="trust-logo">eBay</div>
+          <div class="trust-logo">Spotify</div>
+          <div class="trust-logo">Bloomberg</div>
+          <div class="trust-logo">Cisco</div>
+          <div class="trust-logo">Deutsche Bank</div>
+          <div class="trust-logo">Tencent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">PLANS</div>
+        <h2 class="section-title">Scale at Your Own Pace</h2>
+        <p class="section-subtitle">From development to enterprise production</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">DEVELOPER</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 10GB storage</li>
+            <li>✓ 100M rows/month</li>
+            <li>✓ Community support</li>
+            <li>✓ All core features</li>
+            <li>✓ SQL interface</li>
+            <li>✓ Basic monitoring</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">PRODUCTION</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$299</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 1TB storage included</li>
+            <li>✓ Unlimited queries</li>
+            <li>✓ Priority support</li>
+            <li>✓ Advanced monitoring</li>
+            <li>✓ Automated backups</li>
+            <li>✓ 99.9% SLA</li>
+            <li>✓ Multi-region replication</li>
+            <li>✓ Custom retention policies</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">ENTERPRISE</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited storage</li>
+            <li>✓ Dedicated clusters</li>
+            <li>✓ 24/7 support</li>
+            <li>✓ 99.99% SLA</li>
+            <li>✓ On-premise deployment</li>
+            <li>✓ Custom integrations</li>
+            <li>✓ SSO & SAML</li>
+            <li>✓ Dedicated account team</li>
+            <li>✓ Training & consulting</li>
+          </ul>
+          <button class="btn-ghost btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Experience Extreme Performance?</h2>
+        <p class="cta-subtitle">Start querying billions of rows in milliseconds. No credit card required.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+          <button class="btn-ghost btn-large" onclick="openDemo()">Schedule Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">PRODUCT</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#benchmarks">Benchmarks</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">USE CASES</h4>
+          <ul class="footer-links">
+            <li><a href="#analytics">Real-Time Analytics</a></li>
+            <li><a href="#logs">Log Analytics</a></li>
+            <li><a href="#user-analytics">User Analytics</a></li>
+            <li><a href="#ml">Machine Learning</a></li>
+            <li><a href="#iot">IoT & Telemetry</a></li>
+            <li><a href="#finance">Financial Data</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#guides">Getting Started</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#status">System Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ClickHouse. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#slack" class="social-link">Slack</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Benchmark demo would open here. In production, this would link to interactive performance benchmarks.');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Query copied to clipboard!');
+      });
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add neon glow effect on hover for feature cards
+    document.querySelectorAll('.feature-card, .use-case-card, .pricing-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.boxShadow = '0 0 20px rgba(250, 255, 105, 0.3)';
+      });
+      card.addEventListener('mouseleave', function() {
+        this.style.boxShadow = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

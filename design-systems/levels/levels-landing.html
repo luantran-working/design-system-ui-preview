@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levels - Metabolic Health Tracking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="levels-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Levels</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#science">Science</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#research">Research</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Understand Your Metabolic Health</h1>
+        <p class="hero-subtitle">Real-time glucose monitoring and personalized insights to optimize your energy, focus, and long-term health.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Your Journey</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">See How It Works</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 100,000+ members optimizing their health</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50M+</div>
+          <div class="stat-label">Glucose Readings</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Continuous Monitoring</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Member Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Metabolic Insights That Matter</h2>
+        <p class="section-subtitle">Track, understand, and optimize your glucose response in real-time</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Real-Time Glucose Data</h3>
+          <p class="feature-description">Continuous glucose monitoring with instant feedback on how food, exercise, and sleep affect your metabolic health.</p>
+          <a href="#data" class="feature-link">View sample data →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Personalized Scores</h3>
+          <p class="feature-description">Get a metabolic score for every meal and activity. Understand what works for your unique biology.</p>
+          <a href="#science" class="feature-link">Learn the science →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔬</div>
+          <h3 class="feature-title">Science-Backed Insights</h3>
+          <p class="feature-description">Evidence-based recommendations from leading metabolic health researchers and physicians.</p>
+          <a href="#research" class="feature-link">Read research →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Energy Optimization</h3>
+          <p class="feature-description">Identify patterns that affect your energy levels and make data-driven decisions to feel your best.</p>
+          <a href="#features" class="feature-link">Explore features →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3 class="feature-title">Cognitive Performance</h3>
+          <p class="feature-description">Track how glucose stability impacts focus, memory, and mental clarity throughout your day.</p>
+          <a href="#science" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Seamless Integration</h3>
+          <p class="feature-description">Connect with Apple Health, fitness trackers, and other health apps for comprehensive insights.</p>
+          <a href="#features" class="feature-link">See integrations →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science Section -->
+  <section class="science" id="science">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Science of Metabolic Health</h2>
+        <p class="section-subtitle">Understanding glucose is key to optimizing your health</p>
+      </div>
+      <div class="science-content">
+        <div class="science-text">
+          <h3 class="science-heading">Why Glucose Matters</h3>
+          <p class="science-description">Glucose is your body's primary energy source. When glucose levels spike and crash, you experience energy dips, brain fog, and increased inflammation. Stable glucose levels lead to sustained energy, better focus, and improved long-term health outcomes.</p>
+          <ul class="science-list">
+            <li>Reduces risk of chronic disease</li>
+            <li>Improves energy and mental clarity</li>
+            <li>Supports healthy weight management</li>
+            <li>Enhances athletic performance</li>
+            <li>Promotes better sleep quality</li>
+          </ul>
+          <button class="btn-secondary" onclick="scrollToSection('research')">Read the Research</button>
+        </div>
+        <div class="science-visual">
+          <div class="glucose-chart">
+            <div class="chart-header">
+              <span class="chart-title">Glucose Response</span>
+              <span class="chart-range">70-140 mg/dL</span>
+            </div>
+            <div class="chart-area">
+              <svg viewBox="0 0 400 200" class="chart-svg">
+                <path d="M 0 150 Q 50 150 100 120 T 200 100 T 300 110 T 400 100" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+                <circle cx="100" cy="120" r="6" fill="#8B5CF6"/>
+                <circle cx="200" cy="100" r="6" fill="#16A34A"/>
+                <circle cx="300" cy="110" r="6" fill="#8B5CF6"/>
+              </svg>
+            </div>
+            <div class="chart-labels">
+              <span class="chart-label">Breakfast</span>
+              <span class="chart-label">Lunch</span>
+              <span class="chart-label">Dinner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Data Visualization Section -->
+  <section class="data-section" id="data">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Your Data, Your Insights</h2>
+        <p class="section-subtitle">See exactly how your body responds to every decision</p>
+      </div>
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="data-header">
+            <h3 class="data-title">Daily Score</h3>
+            <div class="data-score success">92</div>
+          </div>
+          <p class="data-description">Your metabolic stability score for today based on glucose variability and time in range.</p>
+          <div class="data-metrics">
+            <div class="metric">
+              <span class="metric-label">Avg Glucose</span>
+              <span class="metric-value">98 mg/dL</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Time in Range</span>
+              <span class="metric-value">94%</span>
+            </div>
+          </div>
+        </div>
+        <div class="data-card">
+          <div class="data-header">
+            <h3 class="data-title">Meal Impact</h3>
+            <div class="data-score warning">68</div>
+          </div>
+          <p class="data-description">Breakfast caused a moderate spike. Consider adding protein or reducing refined carbs.</p>
+          <div class="data-metrics">
+            <div class="metric">
+              <span class="metric-label">Peak Glucose</span>
+              <span class="metric-value">142 mg/dL</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Spike Duration</span>
+              <span class="metric-value">45 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="data-card">
+          <div class="data-header">
+            <h3 class="data-title">Weekly Trend</h3>
+            <div class="data-score success">88</div>
+          </div>
+          <p class="data-description">Your average score improved by 12 points this week. Great progress on glucose stability.</p>
+          <div class="data-metrics">
+            <div class="metric">
+              <span class="metric-label">Best Day</span>
+              <span class="metric-value">Thursday</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Improvement</span>
+              <span class="metric-value">+12 pts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How Levels Works</h2>
+        <p class="section-subtitle">Three simple steps to metabolic awareness</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Apply Your Sensor</h3>
+          <p class="step-description">Wear a small, painless continuous glucose monitor on your arm. It tracks your glucose 24/7 for 14 days.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Log Your Activities</h3>
+          <p class="step-description">Record meals, exercise, sleep, and stress. The app automatically correlates your activities with glucose data.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Optimize Your Health</h3>
+          <p class="step-description">Get personalized insights and scores. Learn what foods and habits work best for your unique metabolism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section class="research" id="research">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Backed by Science</h2>
+        <p class="section-subtitle">Research-driven approach to metabolic health</p>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon">📄</div>
+          <h3 class="research-title">Glucose Variability & Health</h3>
+          <p class="research-description">Studies show that glucose variability is a key predictor of metabolic dysfunction and chronic disease risk.</p>
+          <a href="#" class="research-link">Read study →</a>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">🧬</div>
+          <h3 class="research-title">Personalized Nutrition</h3>
+          <p class="research-description">Research demonstrates that individuals have unique glycemic responses to identical foods based on their microbiome and genetics.</p>
+          <a href="#" class="research-link">Read study →</a>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">⚕️</div>
+          <h3 class="research-title">CGM for Wellness</h3>
+          <p class="research-description">Continuous glucose monitoring helps healthy individuals optimize diet, exercise, and lifestyle for better metabolic outcomes.</p>
+          <a href="#" class="research-link">Read study →</a>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">🏃</div>
+          <h3 class="research-title">Exercise & Glucose</h3>
+          <p class="research-description">Timing and type of exercise significantly impact glucose regulation and insulin sensitivity throughout the day.</p>
+          <a href="#" class="research-link">Read study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Health Optimizers</h2>
+        <p class="section-subtitle">Real results from real members</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Levels completely changed how I think about food. I lost 15 pounds without counting calories, just by understanding my glucose response."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div class="author-info">
+              <div class="author-name">Jessica Martinez</div>
+              <div class="author-title">Software Engineer</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "As an athlete, understanding my glucose patterns helped me optimize my training and recovery. My performance has never been better."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info">
+              <div class="author-name">David Kim</div>
+              <div class="author-title">Marathon Runner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The data is eye-opening. I discovered that my afternoon crashes were caused by my breakfast choices. Now I have steady energy all day."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Rodriguez</div>
+              <div class="author-title">Entrepreneur</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start Your Metabolic Journey</h2>
+        <p class="section-subtitle">Choose the plan that fits your goals</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Monthly</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$199</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 2 CGM sensors (1 month)</li>
+            <li>✓ Levels app access</li>
+            <li>✓ Personalized insights</li>
+            <li>✓ Meal scoring</li>
+            <li>✓ Email support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Annual</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$399</span>
+              <span class="price-period">/year</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 24 CGM sensors (1 year)</li>
+            <li>✓ Levels app access</li>
+            <li>✓ Advanced analytics</li>
+            <li>✓ Meal scoring & trends</li>
+            <li>✓ Priority support</li>
+            <li>✓ Early feature access</li>
+            <li>✓ Save $1,989/year</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Annual Plan</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Teams</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 5+ team members</li>
+            <li>✓ Bulk sensor delivery</li>
+            <li>✓ Team dashboard</li>
+            <li>✓ Dedicated support</li>
+            <li>✓ Custom reporting</li>
+            <li>✓ Wellness programs</li>
+            <li>✓ Volume pricing</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about Levels</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">Do I need a prescription?</h3>
+          <p class="faq-answer">No prescription needed. Levels provides access to CGM sensors through our medical team. We'll guide you through the simple onboarding process.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is the sensor painful?</h3>
+          <p class="faq-answer">Not at all. The sensor is applied with a simple applicator and most members report feeling nothing. It's waterproof and stays on for 14 days.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How accurate is the data?</h3>
+          <p class="faq-answer">We use FDA-approved CGM sensors that are clinically accurate. The data is the same quality used by people with diabetes to manage their health.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I use Levels if I have diabetes?</h3>
+          <p class="faq-answer">Levels is designed for metabolically healthy individuals looking to optimize. If you have diabetes, please consult your doctor before using Levels.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What's included in my membership?</h3>
+          <p class="faq-answer">Your membership includes CGM sensors, the Levels app with personalized insights, meal scoring, trend analysis, and access to our support team.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I cancel anytime?</h3>
+          <p class="faq-answer">Yes. Monthly plans can be canceled anytime. Annual plans are non-refundable but you can pause your membership if needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Ready to Optimize Your Health?</h2>
+        <p class="section-subtitle">Join 100,000+ members taking control of their metabolic health</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Your Journey</button>
+        </div>
+        <p class="form-note">Free shipping • 30-day money-back guarantee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#science">How It Works</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#app">Mobile App</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#guides">Health Guides</a></li>
+            <li><a href="#podcast">Podcast</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#hipaa">HIPAA Compliance</a></li>
+            <li><a href="#medical">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Levels Health. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would show a product walkthrough.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for your interest! We'll send onboarding information to ${email}.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

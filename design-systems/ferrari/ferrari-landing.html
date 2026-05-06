@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari - The Official Ferrari Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ferrari-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo-container">
+          <div class="prancing-horse">
+            <svg width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 0L44 42H0L22 0Z" fill="#DA291C"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#models">Models</a></li>
+          <li><a href="#racing">Racing</a></li>
+          <li><a href="#heritage">Heritage</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#ownership">Ownership</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-label">INTRODUCING THE NEW</p>
+        <h1 class="hero-title">SF90 XX Stradale</h1>
+        <p class="hero-subtitle">The most extreme road-legal Ferrari ever created</p>
+        <button class="btn-ghost" onclick="scrollToSection('models')">Discover More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Range</h2>
+        <p class="section-subtitle">Every Ferrari is a masterpiece of performance and design</p>
+      </div>
+      <div class="model-grid">
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">V12</p>
+            <h3 class="model-name">812 Competizione</h3>
+            <p class="model-description">The ultimate expression of Ferrari's naturally aspirated V12 engine</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #8B0000 0%, #DC0000 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">HYBRID</p>
+            <h3 class="model-name">SF90 Stradale</h3>
+            <p class="model-description">Extreme performance meets hybrid efficiency in our first plug-in hybrid</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #2d2d2d 0%, #4a4a4a 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">V8</p>
+            <h3 class="model-name">296 GTB</h3>
+            <p class="model-description">A new era of driving pleasure with the V6 hybrid architecture</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #DC0000 50%, #1a1a1a 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">SPIDER</p>
+            <h3 class="model-name">F8 Spider</h3>
+            <p class="model-description">Open-top exhilaration with uncompromising performance</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #6d6d6d 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">GT</p>
+            <h3 class="model-name">Roma</h3>
+            <p class="model-description">Timeless elegance meets contemporary design in the new Dolce Vita</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-image" style="background: linear-gradient(135deg, #DC0000 0%, #8B0000 100%);"></div>
+          <div class="model-info">
+            <p class="model-label">SUV</p>
+            <h3 class="model-name">Purosangue</h3>
+            <p class="model-description">The first four-door, four-seater Ferrari in the Prancing Horse's history</p>
+            <a href="#configure" class="btn-primary">Configure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Racing Heritage Section -->
+  <section class="racing-dark" id="racing">
+    <div class="racing-content">
+      <div class="racing-text">
+        <p class="racing-label">SCUDERIA FERRARI</p>
+        <h2 class="racing-title">Born on the Track</h2>
+        <p class="racing-description">Since 1950, Ferrari has competed in every Formula 1 World Championship. Our racing DNA flows through every road car we create, delivering unmatched performance and passion.</p>
+        <div class="racing-stats">
+          <div class="stat-item">
+            <div class="stat-number">16</div>
+            <div class="stat-label">CONSTRUCTORS' TITLES</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15</div>
+            <div class="stat-label">DRIVERS' CHAMPIONSHIPS</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">240+</div>
+            <div class="stat-label">GRAND PRIX VICTORIES</div>
+          </div>
+        </div>
+        <button class="btn-ghost" onclick="openRacing()">Explore Racing Heritage</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Editorial Section -->
+  <section class="heritage" id="heritage">
+    <div class="container">
+      <div class="heritage-grid">
+        <div class="heritage-content">
+          <p class="heritage-label">SINCE 1947</p>
+          <h2 class="heritage-title">The Ferrari Legacy</h2>
+          <p class="heritage-text">Enzo Ferrari founded Scuderia Ferrari in 1929 to allow amateur drivers to compete. In 1947, he built the first Ferrari road car, the 125 S. Today, Ferrari represents the pinnacle of Italian automotive excellence, combining racing heritage with uncompromising luxury.</p>
+          <p class="heritage-text">Every Ferrari tells a story of passion, innovation, and the relentless pursuit of perfection. From the legendary 250 GTO to today's hybrid hypercars, the Prancing Horse embodies the spirit of Italian craftsmanship and engineering excellence.</p>
+          <a href="#museum" class="text-link">Visit the Ferrari Museum →</a>
+        </div>
+        <div class="heritage-image">
+          <div class="image-placeholder" style="background: linear-gradient(135deg, #1a1a1a 0%, #DC0000 50%, #1a1a1a 100%); height: 500px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-dark" id="experience">
+    <div class="experience-content">
+      <div class="container">
+        <div class="section-header-light">
+          <h2 class="section-title-light">The Ferrari Experience</h2>
+          <p class="section-subtitle-light">Immerse yourself in the world of Ferrari</p>
+        </div>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="experience-icon">🏁</div>
+            <h3 class="experience-title">Corso Pilota</h3>
+            <p class="experience-description">Master the art of driving with our professional racing instructors on legendary circuits around the world.</p>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">🏛️</div>
+            <h3 class="experience-title">Museum</h3>
+            <p class="experience-description">Explore 75 years of Ferrari history at our museums in Maranello and Modena.</p>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">🏭</div>
+            <h3 class="experience-title">Factory Tour</h3>
+            <p class="experience-description">Witness the birth of a legend with an exclusive tour of our Maranello production facility.</p>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">🎨</div>
+            <h3 class="experience-title">Tailor Made</h3>
+            <p class="experience-description">Create your unique Ferrari with our bespoke personalization program.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ownership Section -->
+  <section class="ownership" id="ownership">
+    <div class="container">
+      <div class="ownership-content">
+        <div class="ownership-text">
+          <p class="ownership-label">FERRARI APPROVED</p>
+          <h2 class="ownership-title">Certified Pre-Owned</h2>
+          <p class="ownership-description">Every Ferrari Approved vehicle undergoes a rigorous 201-point inspection and comes with comprehensive warranty coverage. Experience the thrill of Ferrari ownership with complete confidence.</p>
+          <ul class="ownership-features">
+            <li>201-point technical inspection</li>
+            <li>24-month warranty coverage</li>
+            <li>Genuine Ferrari parts only</li>
+            <li>Complete service history verification</li>
+            <li>Roadside assistance included</li>
+          </ul>
+          <a href="#inventory" class="btn-primary">View Inventory</a>
+        </div>
+        <div class="ownership-image">
+          <div class="image-placeholder" style="background: linear-gradient(135deg, #DC0000 0%, #8B0000 100%); height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Stay Connected</h2>
+        <p class="newsletter-subtitle">Subscribe to receive the latest news, events, and exclusive content from Ferrari</p>
+        <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+          <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletterEmail" required>
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+        <p class="newsletter-note">By subscribing, you agree to receive marketing communications from Ferrari</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">MODELS</h4>
+          <ul class="footer-links">
+            <li><a href="#sports">Sports Cars</a></li>
+            <li><a href="#gt">GT & GTC4Lusso</a></li>
+            <li><a href="#special">Special Series</a></li>
+            <li><a href="#icona">Icona</a></li>
+            <li><a href="#configure">Configure Your Ferrari</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">RACING</h4>
+          <ul class="footer-links">
+            <li><a href="#f1">Formula 1</a></li>
+            <li><a href="#gt-racing">GT Racing</a></li>
+            <li><a href="#challenge">Ferrari Challenge</a></li>
+            <li><a href="#esports">Esports</a></li>
+            <li><a href="#corse-clienti">Corse Clienti</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">OWNERSHIP</h4>
+          <ul class="footer-links">
+            <li><a href="#approved">Ferrari Approved</a></li>
+            <li><a href="#financial">Financial Services</a></li>
+            <li><a href="#service">Service & Parts</a></li>
+            <li><a href="#warranty">Warranty</a></li>
+            <li><a href="#recall">Recall Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">EXPERIENCE</h4>
+          <ul class="footer-links">
+            <li><a href="#corso">Corso Pilota</a></li>
+            <li><a href="#museum">Museums</a></li>
+            <li><a href="#factory">Factory Tours</a></li>
+            <li><a href="#tailor">Tailor Made</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Ferrari</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#media">Media Centre</a></li>
+            <li><a href="#contact" id="contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; 2026 Ferrari S.p.A. - All rights reserved</p>
+          <div class="footer-legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#cookies">Cookie Policy</a>
+            <a href="#legal">Legal Notice</a>
+            <a href="#accessibility">Accessibility</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openRacing() {
+      alert('Racing heritage section would open here. In production, this would link to the full racing history.');
+    }
+
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      if (email && email.includes('@')) {
+        alert(`Thank you for subscribing with ${email}! You will receive Ferrari updates.`);
+        document.getElementById('newsletterEmail').value = '';
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

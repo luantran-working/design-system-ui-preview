@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kraken - Buy, Sell and Trade Cryptocurrency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kraken-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Kraken</div>
+        <ul class="nav-links">
+          <li><a href="#markets">Markets</a></li>
+          <li><a href="#trading">Trading</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Trade Crypto with Confidence</h1>
+        <p class="hero-subtitle">Buy, sell, and trade Bitcoin, Ethereum, and 200+ cryptocurrencies with industry-leading security and powerful trading tools.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Create Free Account</button>
+          <button class="btn-outlined btn-large" onclick="openDemo()">Explore Markets</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 10+ million traders worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">$207B</div>
+          <div class="stat-label">Quarterly Trading Volume</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Cryptocurrencies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Verified Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">190+</div>
+          <div class="stat-label">Countries Served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markets Section -->
+  <section class="markets" id="markets">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular Markets</h2>
+        <p class="section-subtitle">Trade the most popular cryptocurrencies with competitive fees</p>
+      </div>
+      <div class="market-grid">
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">BTC/USD</span>
+            <span class="market-icon">₿</span>
+          </div>
+          <div class="market-price">$67,234.50</div>
+          <span class="market-change positive">+2.45%</span>
+        </div>
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">ETH/USD</span>
+            <span class="market-icon">Ξ</span>
+          </div>
+          <div class="market-price">$3,456.78</div>
+          <span class="market-change positive">+1.89%</span>
+        </div>
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">SOL/USD</span>
+            <span class="market-icon">◎</span>
+          </div>
+          <div class="market-price">$142.33</div>
+          <span class="market-change positive">+5.67%</span>
+        </div>
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">XRP/USD</span>
+            <span class="market-icon">✕</span>
+          </div>
+          <div class="market-price">$0.5234</div>
+          <span class="market-change negative">-0.82%</span>
+        </div>
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">ADA/USD</span>
+            <span class="market-icon">₳</span>
+          </div>
+          <div class="market-price">$0.4567</div>
+          <span class="market-change positive">+3.21%</span>
+        </div>
+        <div class="market-card">
+          <div class="market-header">
+            <span class="market-pair">DOGE/USD</span>
+            <span class="market-icon">Ð</span>
+          </div>
+          <div class="market-price">$0.1523</div>
+          <span class="market-change positive">+1.45%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trading Section -->
+  <section class="trading" id="trading">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Advanced Trading Tools</h2>
+        <p class="section-subtitle">Professional-grade platform for traders of all levels</p>
+      </div>
+      <div class="trading-grid">
+        <div class="trading-card">
+          <div class="trading-icon">📊</div>
+          <h3 class="trading-title">Spot Trading</h3>
+          <p class="trading-description">Buy and sell cryptocurrencies instantly with our intuitive spot trading interface. Access deep liquidity and competitive spreads.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+        <div class="trading-card">
+          <div class="trading-icon">⚡</div>
+          <h3 class="trading-title">Margin Trading</h3>
+          <p class="trading-description">Amplify your trading power with up to 5x leverage. Trade with confidence using our advanced risk management tools.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+        <div class="trading-card">
+          <div class="trading-icon">🎯</div>
+          <h3 class="trading-title">Futures Trading</h3>
+          <p class="trading-description">Trade perpetual and quarterly futures contracts with up to 50x leverage. Hedge your positions or speculate on price movements.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+        <div class="trading-card">
+          <div class="trading-icon">💰</div>
+          <h3 class="trading-title">Staking</h3>
+          <p class="trading-description">Earn rewards by staking your crypto assets. Support blockchain networks while generating passive income.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+        <div class="trading-card">
+          <div class="trading-icon">🔄</div>
+          <h3 class="trading-title">Instant Buy</h3>
+          <p class="trading-description">Purchase crypto instantly with your credit card, debit card, or bank transfer. Simple and fast for beginners.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+        <div class="trading-card">
+          <div class="trading-icon">🤖</div>
+          <h3 class="trading-title">API Trading</h3>
+          <p class="trading-description">Build custom trading bots and strategies with our powerful REST and WebSocket APIs. Full documentation included.</p>
+          <a href="#learn-more" class="trading-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose Kraken</h2>
+        <p class="section-subtitle">Industry-leading features for serious traders</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💎</div>
+          <h4 class="feature-title">Low Fees</h4>
+          <p class="feature-description">Enjoy some of the lowest trading fees in the industry. Volume-based discounts available for high-frequency traders.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4 class="feature-title">Lightning Fast</h4>
+          <p class="feature-description">Execute trades in milliseconds with our high-performance matching engine. Never miss an opportunity.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4 class="feature-title">Global Access</h4>
+          <p class="feature-description">Trade from anywhere in the world. Support for 190+ countries and multiple fiat currencies.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h4 class="feature-title">Mobile Trading</h4>
+          <p class="feature-description">Trade on the go with our award-winning mobile apps for iOS and Android. Full feature parity with desktop.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h4 class="feature-title">Advanced Charts</h4>
+          <p class="feature-description">Professional charting tools powered by TradingView. Technical indicators, drawing tools, and custom layouts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h4 class="feature-title">Learn & Earn</h4>
+          <p class="feature-description">Access free educational resources and earn crypto while learning. Perfect for beginners getting started.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <section class="security" id="security">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Bank-Level Security</h2>
+        <p class="section-subtitle">Your assets are protected by industry-leading security measures</p>
+      </div>
+      <div class="security-grid">
+        <div class="security-card">
+          <div class="security-icon">🔒</div>
+          <h4 class="security-title">Cold Storage</h4>
+          <p class="security-description">95% of client funds stored offline in air-gapped cold storage. Multi-signature wallets with geographic distribution.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">🛡️</div>
+          <h4 class="security-title">2FA Protection</h4>
+          <p class="security-description">Secure your account with two-factor authentication. Support for authenticator apps, hardware keys, and biometrics.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">🔐</div>
+          <h4 class="security-title">Encryption</h4>
+          <p class="security-description">End-to-end encryption for all sensitive data. TLS 1.3 for data in transit, AES-256 for data at rest.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">✅</div>
+          <h4 class="security-title">Regulatory Compliance</h4>
+          <p class="security-description">Fully licensed and regulated in multiple jurisdictions. Regular audits and compliance with global standards.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">🔍</div>
+          <h4 class="security-title">24/7 Monitoring</h4>
+          <p class="security-description">Round-the-clock security monitoring and threat detection. Dedicated security team protecting your assets.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">💼</div>
+          <h4 class="security-title">Insurance Coverage</h4>
+          <p class="security-description">Client assets protected by comprehensive insurance policies. Additional coverage for qualified accounts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <p class="section-subtitle">No hidden fees. Pay only for what you trade.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price">
+              <span class="price-amount">0.26%</span>
+              <span class="price-period">per trade</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Spot trading</li>
+            <li>✓ Instant buy/sell</li>
+            <li>✓ Basic charts</li>
+            <li>✓ Mobile app access</li>
+            <li>✓ Email support</li>
+            <li>✓ Staking rewards</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Intermediate</h3>
+            <div class="pricing-price">
+              <span class="price-amount">0.16%</span>
+              <span class="price-period">per trade</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Starter</li>
+            <li>✓ Margin trading (5x)</li>
+            <li>✓ Advanced charts</li>
+            <li>✓ API access</li>
+            <li>✓ Priority support</li>
+            <li>✓ Lower withdrawal fees</li>
+            <li>✓ Volume discounts</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">Start Trading</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">0.10%</span>
+              <span class="price-period">per trade</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Intermediate</li>
+            <li>✓ Futures trading (50x)</li>
+            <li>✓ Dedicated account manager</li>
+            <li>✓ OTC trading desk</li>
+            <li>✓ Custom fee structures</li>
+            <li>✓ White-glove onboarding</li>
+            <li>✓ Institutional features</li>
+          </ul>
+          <button class="btn-outlined btn-full" onclick="scrollToSection('cta')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Millions</h2>
+        <p class="section-subtitle">See what our traders are saying</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <p class="trading-description">"Kraken has been my go-to exchange for years. The security measures give me peace of mind, and the trading tools are top-notch."</p>
+          <div style="margin-top: 16px;">
+            <div style="font-weight: 600; color: var(--near-black);">Sarah Chen</div>
+            <div style="font-size: 14px; color: var(--cool-gray);">Professional Trader</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <p class="trading-description">"The API documentation is excellent. I've built several trading bots that run flawlessly. Customer support is responsive and helpful."</p>
+          <div style="margin-top: 16px;">
+            <div style="font-weight: 600; color: var(--near-black);">Marcus Rodriguez</div>
+            <div style="font-size: 14px; color: var(--cool-gray);">Algorithmic Trader</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <p class="trading-description">"As a beginner, I appreciated the educational resources. The interface is intuitive, and I felt confident making my first trades."</p>
+          <div style="margin-top: 16px;">
+            <div style="font-weight: 600; color: var(--near-black);">Emily Thompson</div>
+            <div style="font-size: 14px; color: var(--cool-gray);">Crypto Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Trading Today</h2>
+        <p class="cta-subtitle">Join millions of traders worldwide. Create your free account in minutes.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Create Free Account</button>
+          <button class="btn-outlined btn-large" onclick="openDemo()">View Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#spot">Spot Trading</a></li>
+            <li><a href="#margin">Margin Trading</a></li>
+            <li><a href="#futures">Futures</a></li>
+            <li><a href="#staking">Staking</a></li>
+            <li><a href="#nft">NFT Marketplace</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#api">API Docs</a></li>
+            <li><a href="#fees">Fee Schedule</a></li>
+            <li><a href="#status">System Status</a></li>
+            <li><a href="#support">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kraken. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#telegram" class="social-link">Telegram</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#reddit" class="social-link">Reddit</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would link to a trading demo or video walkthrough.');
+    }
+
+    function handleSignup() {
+      alert('Sign up form would open here. In production, this would redirect to account creation.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add active state to navigation on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          if (navLink) {
+            document.querySelectorAll('.nav-links a').forEach(link => {
+              link.style.color = 'var(--near-black)';
+            });
+            navLink.style.color = 'var(--kraken-purple)';
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robinhood - Investing for Everyone</title>
+  <meta name="description" content="Commission-free investing, plus the tools you need to put your money in motion. Sign up and get your first stock free.">
+  <link rel="stylesheet" href="robinhood-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Robinhood</div>
+        <ul class="nav-links">
+          <li><a href="#investing">Investing</a></li>
+          <li><a href="#crypto">Crypto</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#learn">Learn</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✓</span>
+          <span>Commission-free trading</span>
+        </div>
+        <h1 class="hero-title">Investing for Everyone</h1>
+        <p class="hero-subtitle">Commission-free investing, plus the tools you need to put your money in motion. Sign up and get your first stock free.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Get Started</button>
+          <button class="btn-outline btn-large" onclick="openLearnMore()">Learn More</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">$0</span>
+            <span class="stat-label">Commission</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">$0</span>
+            <span class="stat-label">Account Minimum</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">Crypto Trading</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for the Way You Invest</h2>
+        <p class="section-subtitle">Everything you need to start investing, all in one place</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3 class="feature-title">Commission-Free Trading</h3>
+          <p class="feature-description">Trade stocks, ETFs, options, and crypto with zero commission. Keep more of your money working for you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant Deposits</h3>
+          <p class="feature-description">Get instant access to funds up to $1,000 for trading while your deposit clears. Start investing immediately.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Fractional Shares</h3>
+          <p class="feature-description">Invest in your favorite companies with as little as $1. Own pieces of expensive stocks without breaking the bank.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3 class="feature-title">Real-Time Market Data</h3>
+          <p class="feature-description">Stay informed with real-time quotes, news, and market analysis. Make decisions with confidence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Bank-Level Security</h3>
+          <p class="feature-description">Your account is protected by industry-leading security. SIPC insured up to $500,000.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Mobile-First Design</h3>
+          <p class="feature-description">Intuitive app designed for your phone. Trade, track, and manage your portfolio on the go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investing Section -->
+  <section class="investing" id="investing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Invest Your Way</h2>
+        <p class="section-subtitle">Choose from a variety of investment options to build your portfolio</p>
+      </div>
+      <div class="investing-grid">
+        <div class="investing-card">
+          <div class="investing-icon">📊</div>
+          <h3 class="investing-title">Stocks</h3>
+          <p class="investing-description">Buy and sell shares of your favorite companies commission-free. Build wealth with equity ownership.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">💼</div>
+          <h3 class="investing-title">ETFs</h3>
+          <p class="investing-description">Diversify instantly with exchange-traded funds. Access entire markets with a single investment.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">⚙️</div>
+          <h3 class="investing-title">Options</h3>
+          <p class="investing-description">Advanced strategies for experienced traders. Hedge positions or generate income with options.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">💰</div>
+          <h3 class="investing-title">Cash Management</h3>
+          <p class="investing-description">Earn competitive interest on uninvested cash. FDIC insured up to $2.25M through partner banks.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">🎓</div>
+          <h3 class="investing-title">Retirement</h3>
+          <p class="investing-description">IRA accounts with no commission and no account minimums. Invest for your future tax-efficiently.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">🤖</div>
+          <h3 class="investing-title">Recurring Investments</h3>
+          <p class="investing-description">Automate your investing with scheduled purchases. Dollar-cost average into your favorite assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crypto Section -->
+  <section class="crypto" id="crypto">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trade Crypto 24/7</h2>
+        <p class="section-subtitle">Buy, sell, and hold cryptocurrency with the same app you use for stocks</p>
+      </div>
+      <div class="crypto-features">
+        <div class="crypto-feature">
+          <div class="crypto-feature-icon">₿</div>
+          <h3 class="crypto-feature-title">Bitcoin & More</h3>
+          <p class="crypto-feature-description">Trade Bitcoin, Ethereum, Dogecoin, and dozens of other cryptocurrencies commission-free.</p>
+        </div>
+        <div class="crypto-feature">
+          <div class="crypto-feature-icon">🔄</div>
+          <h3 class="crypto-feature-title">Instant Transfers</h3>
+          <p class="crypto-feature-description">Move crypto in and out of your Robinhood account instantly. Full control of your assets.</p>
+        </div>
+        <div class="crypto-feature">
+          <div class="crypto-feature-icon">🌙</div>
+          <h3 class="crypto-feature-title">24/7 Trading</h3>
+          <p class="crypto-feature-description">Markets never sleep. Trade cryptocurrency any time, day or night, weekends and holidays.</p>
+        </div>
+      </div>
+      <div class="stats-display">
+        <div class="stat-card">
+          <div class="stat-number">75+</div>
+          <div class="stat-description">Cryptocurrencies Available</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">$0</div>
+          <div class="stat-description">Trading Commission</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-description">Market Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Start free or unlock premium features with Robinhood Gold</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Robinhood</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Commission-free trading</li>
+            <li>Stocks, ETFs, options, crypto</li>
+            <li>Fractional shares</li>
+            <li>Real-time market data</li>
+            <li>Basic research tools</li>
+            <li>Mobile & web access</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Robinhood Gold</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$5</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Robinhood</li>
+            <li>5% APY on uninvested cash</li>
+            <li>$50,000 instant deposit</li>
+            <li>Level II market data</li>
+            <li>Professional research</li>
+            <li>Margin investing</li>
+            <li>Morningstar reports</li>
+            <li>NASDAQ TotalView</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start 30-Day Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Retirement</h3>
+            <div class="pricing-price">
+              <span class="price-amount">1%</span>
+              <span class="price-period">match</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Traditional & Roth IRA</li>
+            <li>No commission trading</li>
+            <li>No account minimums</li>
+            <li>1% IRA match on contributions</li>
+            <li>Tax-advantaged growth</li>
+            <li>Retirement planning tools</li>
+            <li>Portfolio analysis</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('get-started')">Open IRA</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Millions</h2>
+        <p class="section-subtitle">Join the community of investors building wealth on Robinhood</p>
+      </div>
+      <div class="stats-display">
+        <div class="stat-card">
+          <div class="stat-number">23M+</div>
+          <div class="stat-description">Active Users</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">$100B+</div>
+          <div class="stat-description">Assets Under Custody</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4.5★</div>
+          <div class="stat-description">App Store Rating</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2013</div>
+          <div class="stat-description">Founded</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Section -->
+  <section class="investing" id="learn">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Learn While You Invest</h2>
+        <p class="section-subtitle">Educational resources to help you make informed decisions</p>
+      </div>
+      <div class="investing-grid">
+        <div class="investing-card">
+          <div class="investing-icon">📚</div>
+          <h3 class="investing-title">Robinhood Learn</h3>
+          <p class="investing-description">Free educational content covering investing basics, market concepts, and financial literacy.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">📰</div>
+          <h3 class="investing-title">Market News</h3>
+          <p class="investing-description">Stay updated with curated news, earnings reports, and market-moving events in real-time.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">💡</div>
+          <h3 class="investing-title">Analyst Ratings</h3>
+          <p class="investing-description">Access professional analyst ratings and price targets for thousands of stocks.</p>
+        </div>
+        <div class="investing-card">
+          <div class="investing-icon">📊</div>
+          <h3 class="investing-title">Portfolio Analysis</h3>
+          <p class="investing-description">Track your performance, diversification, and risk with detailed portfolio analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Start Investing?</h2>
+        <p class="cta-subtitle">Sign up and get your first stock free. No commission, no account minimum.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Sign Up Now</button>
+          <button class="btn-secondary btn-large" onclick="openApp()">Download App</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#stocks">Stocks</a></li>
+            <li><a href="#options">Options</a></li>
+            <li><a href="#crypto">Crypto</a></li>
+            <li><a href="#gold">Robinhood Gold</a></li>
+            <li><a href="#retirement">Retirement</a></li>
+            <li><a href="#cash">Cash Card</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#investors">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#support">Support Center</a></li>
+            <li><a href="#snacks">Snacks Newsletter</a></li>
+            <li><a href="#api">Developer API</a></li>
+            <li><a href="#affiliates">Affiliates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#disclosures">Disclosures</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+            <li><a href="#finra">FINRA BrokerCheck</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Robinhood Markets, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div style="margin-top: 32px; padding-top: 32px; border-top: 1px solid #2C2C2E; font-size: 12px; color: rgba(255, 255, 255, 0.5); line-height: 1.6;">
+        <p>All investments involve risk and the past performance of a security, or financial product does not guarantee future results or returns. Securities trading is offered to self-directed customers by Robinhood Financial. Robinhood Financial is a member of FINRA and SIPC. Cryptocurrency trading is offered through Robinhood Crypto, LLC. Robinhood Crypto is not a member of FINRA or SIPC.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openLearnMore() {
+      alert('Learn More: In production, this would open detailed information about Robinhood features and benefits.');
+    }
+
+    function handleSignup() {
+      alert('Sign Up: In production, this would redirect to the account creation flow. Get your first stock free!');
+    }
+
+    function openApp() {
+      alert('Download App: In production, this would detect your device and redirect to the App Store or Google Play.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards
+    document.querySelectorAll('.feature-card, .investing-card, .crypto-feature, .pricing-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

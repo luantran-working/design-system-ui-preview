@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wise - Money Without Borders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wise-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Wise</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#global">Global</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('calculator')">Send Money</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Money without borders</h1>
+        <p class="hero-subtitle">Send money internationally at the real exchange rate with no hidden fees</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('calculator')">Get Started</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">See How It Works</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 16 million customers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <div class="calculator-card">
+        <h2 class="calculator-title">Send money now</h2>
+        <form class="calculator-form" onsubmit="calculateTransfer(event)">
+          <div class="form-group">
+            <label class="form-label">You send</label>
+            <div class="country-selector">
+              <span class="country-flag">🇺🇸</span>
+              <input type="number" class="form-input" id="sendAmount" value="1000" placeholder="1000">
+              <span style="font-weight: 600; font-size: 1.13rem;">USD</span>
+            </div>
+          </div>
+          
+          <div class="transfer-arrow">↓</div>
+          
+          <div class="form-group">
+            <label class="form-label">Recipient gets</label>
+            <div class="country-selector">
+              <span class="country-flag">🇬🇧</span>
+              <input type="number" class="form-input" id="receiveAmount" value="785" placeholder="785" readonly>
+              <span style="font-weight: 600; font-size: 1.13rem;">GBP</span>
+            </div>
+          </div>
+          
+          <div class="exchange-rate">
+            1.00 USD = 0.785 GBP • Fee: $4.50 • Arrives in 1-2 days
+          </div>
+          
+          <button type="submit" class="btn-primary btn-large btn-full">Continue</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Fast, fair, transparent</h2>
+        <p class="section-subtitle">The way money should move</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h4 class="feature-title">Real exchange rate</h4>
+          <p class="feature-description">We use the mid-market rate — the same one you see on Google. No markup, no hidden fees.</p>
+          <a href="#pricing" class="feature-link">See our fees →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4 class="feature-title">Lightning fast</h4>
+          <p class="feature-description">Most transfers arrive within hours. Over 50% of our transfers are instant.</p>
+          <a href="#how-it-works" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h4 class="feature-title">Safe and secure</h4>
+          <p class="feature-description">Your money is protected with bank-level security. We're regulated by financial authorities worldwide.</p>
+          <a href="#global" class="feature-link">Our licenses →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4 class="feature-title">80+ countries</h4>
+          <p class="feature-description">Send money to over 80 countries in 50+ currencies. We're always adding more.</p>
+          <a href="#global" class="feature-link">See all countries →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h4 class="feature-title">Easy to use</h4>
+          <p class="feature-description">Send money from your phone, tablet, or computer. Track your transfer every step of the way.</p>
+          <a href="#" class="feature-link">Download app →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h4 class="feature-title">Wise card</h4>
+          <p class="feature-description">Spend in 175+ countries at the real exchange rate. No foreign transaction fees.</p>
+          <a href="#" class="feature-link">Get the card →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-subtitle">Three simple steps to send money abroad</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h4 class="step-title">Enter your amount</h4>
+          <p class="step-description">Tell us how much you want to send. We'll show you our fees upfront and the real exchange rate.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h4 class="step-title">Set up your transfer</h4>
+          <p class="step-description">Choose how to pay and add your recipient's bank details. We'll guide you through every step.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h4 class="step-title">That's it</h4>
+          <p class="step-description">Your money is on its way. Track your transfer in real-time and get notified when it arrives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Section -->
+  <section class="global" id="global">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted worldwide</h2>
+        <p class="section-subtitle">Moving money for millions of people and businesses</p>
+      </div>
+      <div class="global-stats">
+        <div class="stat-item">
+          <div class="stat-number">16M+</div>
+          <div class="stat-label">Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">£9B</div>
+          <div class="stat-label">Sent every month</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">80+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Currencies</div>
+        </div>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge">FCA Regulated</div>
+        <div class="trust-badge">FinCEN Registered</div>
+        <div class="trust-badge">ASIC Licensed</div>
+        <div class="trust-badge">MAS Approved</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What our customers say</h2>
+        <p class="section-subtitle">Join millions who trust Wise</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "I've been using Wise for years to send money back home. The rates are always fair and the transfers are fast. I've saved thousands compared to my old bank."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+              <div class="author-name">Maria Rodriguez</div>
+              <div class="author-title">Software Engineer, San Francisco</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "As a freelancer working with international clients, Wise has been a game-changer. No more hidden fees or confusing exchange rates. Just simple, transparent transfers."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JC</div>
+            <div class="author-info">
+              <div class="author-name">James Chen</div>
+              <div class="author-title">Freelance Designer, London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Our business sends payments to suppliers in 15 different countries. Wise makes it easy and affordable. The business account features are exactly what we needed."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Patel</div>
+              <div class="author-title">CFO, TechStart Inc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Transparent pricing</h2>
+        <p class="section-subtitle">No hidden fees. Ever.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Personal Account</h4>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Free to open and maintain</li>
+            <li>✓ Send money to 80+ countries</li>
+            <li>✓ Real exchange rate</li>
+            <li>✓ Low, transparent fees</li>
+            <li>✓ Mobile app access</li>
+            <li>✓ 24/7 customer support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('calculator')">Open Account</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h4 class="pricing-name">Wise Card</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$9</span>
+              <span class="price-period">one-time</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Personal</li>
+            <li>✓ Spend in 175+ countries</li>
+            <li>✓ Real exchange rate</li>
+            <li>✓ No foreign transaction fees</li>
+            <li>✓ Free ATM withdrawals up to $100/month</li>
+            <li>✓ Contactless payments</li>
+            <li>✓ Apple Pay & Google Pay</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('calculator')">Order Card</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Business Account</h4>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Free to open and maintain</li>
+            <li>✓ Batch payments</li>
+            <li>✓ Multi-currency accounts</li>
+            <li>✓ Accounting integrations</li>
+            <li>✓ Team access controls</li>
+            <li>✓ Dedicated support</li>
+            <li>✓ API access</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="openBusinessSignup()">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Join 16 million people who choose Wise</h2>
+        <p class="cta-subtitle">Open your free account in minutes and start sending money at the real exchange rate</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="scrollToSection('calculator')">Get Started</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#calculator">Send Money</a></li>
+            <li><a href="#card">Wise Card</a></li>
+            <li><a href="#business">Business</a></li>
+            <li><a href="#platform">Platform</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#rates">Exchange Rates</a></li>
+            <li><a href="#calculator">Fee Calculator</a></li>
+            <li><a href="#api">API Docs</a></li>
+            <li><a href="#affiliates">Affiliates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+            <li><a href="#complaints">Complaints</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Wise Payments Limited. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would show how Wise transfers work.');
+    }
+
+    function openBusinessSignup() {
+      alert('Business signup would open here. In production, this would link to the business account application.');
+    }
+
+    function calculateTransfer(event) {
+      event.preventDefault();
+      const sendAmount = document.getElementById('sendAmount').value;
+      if (sendAmount && sendAmount > 0) {
+        alert(`Great! You're sending $${sendAmount} USD. In production, this would continue to the transfer flow.`);
+      } else {
+        alert('Please enter a valid amount to send.');
+      }
+    }
+
+    // Update receive amount when send amount changes
+    document.getElementById('sendAmount').addEventListener('input', function(e) {
+      const sendAmount = parseFloat(e.target.value) || 0;
+      const exchangeRate = 0.785;
+      const fee = 4.50;
+      const receiveAmount = ((sendAmount - fee) * exchangeRate).toFixed(2);
+      document.getElementById('receiveAmount').value = receiveAmount > 0 ? receiveAmount : 0;
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

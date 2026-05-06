@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bold Design System - Strong visual presence with heavyweight typography and high-contrast colors">
+  <title>BOLD Design System - Make an Impact</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="bold-styles.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">BOLD</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>MAKE AN IMPACT</h1>
+        <p class="hero-subtitle">Strong visual presence. Heavyweight typography. High-contrast design.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-large">GET STARTED</button>
+          <button class="btn btn-outline btn-large">VIEW DOCS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="section features">
+    <div class="container">
+      <div class="features-header">
+        <h2>POWERFUL FEATURES</h2>
+        <p class="hero-subtitle" style="color: var(--color-text);">Built for commanding layouts and attention-grabbing interfaces</p>
+      </div>
+      
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">HIGH CONTRAST</h3>
+          <p class="card-description">Bold color combinations that demand attention and ensure maximum readability across all devices and contexts.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">💪</div>
+          <h3 class="card-title">HEAVYWEIGHT TYPE</h3>
+          <p class="card-description">Archivo Black typography creates strong visual hierarchy and unmistakable brand presence in every headline.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">CLEAR HIERARCHY</h3>
+          <p class="card-description">Obvious content structure with consistent spacing and predictable grid alignment for effortless scanning.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">ACTION-FOCUSED</h3>
+          <p class="card-description">Primary actions stand out with strong color emphasis and purposeful transitions that guide user behavior.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <h3 class="card-title">SYSTEMATIC</h3>
+          <p class="card-description">Consistent spacing scale and component patterns ensure predictable, maintainable design across your product.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">♿</div>
+          <h3 class="card-title">ACCESSIBLE</h3>
+          <p class="card-description">Strong focus states, clear labels, and high contrast ratios meet accessibility standards without compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS SHOWCASE -->
+  <section id="components" class="section components-showcase">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>COMPONENT LIBRARY</h2>
+        <p class="hero-subtitle" style="color: var(--color-text);">Ready-to-use components with bold personality</p>
+      </div>
+
+      <!-- Buttons Demo -->
+      <div class="component-demo">
+        <h4>BUTTONS</h4>
+        <div class="flex" style="flex-wrap: wrap;">
+          <button class="btn btn-primary">PRIMARY ACTION</button>
+          <button class="btn btn-secondary">SECONDARY ACTION</button>
+          <button class="btn btn-primary btn-large">LARGE BUTTON</button>
+          <button class="btn btn-primary btn-disabled">DISABLED</button>
+        </div>
+      </div>
+
+      <!-- Form Inputs Demo -->
+      <div class="component-demo">
+        <h4>FORM INPUTS</h4>
+        <div class="grid grid-2">
+          <div class="input-group">
+            <label class="label" for="name">Full Name</label>
+            <input type="text" id="name" class="input" placeholder="Enter your name">
+          </div>
+          
+          <div class="input-group">
+            <label class="label" for="email">Email Address</label>
+            <input type="email" id="email" class="input" placeholder="you@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label class="label" for="message">Message</label>
+            <input type="text" id="message" class="input input-error" value="Invalid input">
+            <div class="error-message">This field is required</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Demo -->
+      <div class="component-demo">
+        <h4>CARDS</h4>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4>STANDARD CARD</h4>
+            <p>Clean card design with consistent padding and hover effects.</p>
+          </div>
+          
+          <div class="card card-dark">
+            <h4>DARK CARD</h4>
+            <p>High-contrast dark variant for emphasis and visual variety.</p>
+          </div>
+          
+          <div class="card" style="border-color: var(--color-primary);">
+            <h4>HIGHLIGHTED</h4>
+            <p>Primary color accent for featured content and CTAs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR PALETTE -->
+  <section id="colors" class="section section-dark">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>COLOR SYSTEM</h2>
+        <p class="hero-subtitle">High-contrast palette for maximum impact</p>
+      </div>
+      
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #0077BC;"></div>
+          <div class="color-name">PRIMARY</div>
+          <div class="color-value">#0077BC</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #009866;"></div>
+          <div class="color-name">SECONDARY</div>
+          <div class="color-value">#009866</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #16A34A;"></div>
+          <div class="color-name">SUCCESS</div>
+          <div class="color-value">#16A34A</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #D97706;"></div>
+          <div class="color-name">WARNING</div>
+          <div class="color-value">#D97706</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #DC2626;"></div>
+          <div class="color-name">DANGER</div>
+          <div class="color-value">#DC2626</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #111111;"></div>
+          <div class="color-name">SURFACE</div>
+          <div class="color-value">#111111</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #111827;"></div>
+          <div class="color-name">TEXT</div>
+          <div class="color-value">#111827</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #FFFFFF; border-color: #111111;"></div>
+          <div class="color-name">WHITE</div>
+          <div class="color-value">#FFFFFF</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES SECTION -->
+  <section id="examples" class="section">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>DESIGN PRINCIPLES</h2>
+        <p class="hero-subtitle" style="color: var(--color-text);">Core guidelines for bold, impactful design</p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card-title">✓ DO THIS</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Use Primary (#0077BC) for CTA emphasis</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Keep hierarchy obvious and scannable</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Maintain consistent spacing scale</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Use whitespace before borders</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Make focus states explicit</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✓ Keep microcopy action-oriented</li>
+          </ul>
+        </div>
+        
+        <div class="card card-dark">
+          <h3 class="card-title" style="color: var(--color-danger);">✗ AVOID THIS</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't use off-palette colors</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't flatten type hierarchy</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't add decorative effects</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't use ad-hoc spacing</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't mix visual metaphors</li>
+            <li style="margin-bottom: var(--space-3); font-weight: var(--weight-bold);">✗ Don't use generic filler copy</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Typography Scale Example -->
+      <div class="component-demo mt-8">
+        <h4>TYPOGRAPHY SCALE</h4>
+        <div style="background: white; padding: var(--space-8); border-radius: var(--radius-lg);">
+          <h1 style="margin-bottom: var(--space-4);">HEADING 1 - DISPLAY</h1>
+          <h2 style="margin-bottom: var(--space-4);">HEADING 2 - MAJOR SECTION</h2>
+          <h3 style="margin-bottom: var(--space-4);">HEADING 3 - SUBSECTION</h3>
+          <h4 style="margin-bottom: var(--space-4);">HEADING 4 - COMPONENT TITLE</h4>
+          <p style="font-size: var(--text-lg); font-weight: var(--weight-regular); margin-bottom: var(--space-4);">
+            Body text uses regular weight for optimal readability. The Bold design system prioritizes scanability and contrast while maintaining strong visual personality through heavyweight headings.
+          </p>
+          <p style="font-size: var(--text-base); font-weight: var(--weight-regular); color: var(--color-gray-medium);">
+            Secondary text provides supporting information with reduced visual weight but maintains clarity and legibility.
+          </p>
+        </div>
+      </div>
+
+      <!-- Spacing Scale Example -->
+      <div class="component-demo mt-8">
+        <h4>SPACING SCALE</h4>
+        <div style="background: white; padding: var(--space-8); border-radius: var(--radius-lg);">
+          <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div style="display: flex; align-items: center; gap: var(--space-4);">
+              <div style="width: 4px; height: 40px; background: var(--color-primary);"></div>
+              <span style="font-family: var(--font-mono); font-weight: var(--weight-bold);">4px - Minimal spacing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-4);">
+              <div style="width: 8px; height: 40px; background: var(--color-primary);"></div>
+              <span style="font-family: var(--font-mono); font-weight: var(--weight-bold);">8px - Tight spacing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-4);">
+              <div style="width: 16px; height: 40px; background: var(--color-primary);"></div>
+              <span style="font-family: var(--font-mono); font-weight: var(--weight-bold);">16px - Base spacing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-4);">
+              <div style="width: 24px; height: 40px; background: var(--color-primary);"></div>
+              <span style="font-family: var(--font-mono); font-weight: var(--weight-bold);">24px - Comfortable spacing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-4);">
+              <div style="width: 32px; height: 40px; background: var(--color-primary);"></div>
+              <span style="font-family: var(--font-mono); font-weight: var(--weight-bold);">32px - Section spacing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section" style="background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; margin-bottom: var(--space-6);">READY TO MAKE AN IMPACT?</h2>
+      <p class="hero-subtitle" style="margin-bottom: var(--space-8);">Start building with the Bold design system today</p>
+      <div class="flex-center" style="gap: var(--space-4); flex-wrap: wrap;">
+        <button class="btn btn-large" style="background: white; color: var(--color-primary);">DOWNLOAD NOW</button>
+        <button class="btn btn-outline btn-large">VIEW ON GITHUB</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>BOLD DESIGN</h4>
+          <p style="font-weight: var(--weight-regular); line-height: 1.7;">
+            A design system built for strong visual presence, heavyweight typography, and commanding layouts that demand attention.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#tokens">Design Tokens</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>COMMUNITY</h4>
+          <ul class="footer-links">
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#figma">Figma Files</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#license">License</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 BOLD DESIGN SYSTEM. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

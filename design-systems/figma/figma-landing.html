@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma - The Collaborative Design Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="figma-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Figma</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#collaboration">Collaboration</a></li>
+          <li><a href="#plugins">Plugins</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Vibrant Gradient -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Design together, ship faster</h1>
+        <p class="hero-subtitle">The collaborative interface design tool. Build beautiful products with your team in real-time.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Get started for free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Tabs -->
+  <section class="product-tabs">
+    <div class="container">
+      <div class="tab-container">
+        <button class="tab-button active" onclick="switchTab('design')">Design</button>
+        <button class="tab-button" onclick="switchTab('prototype')">Prototype</button>
+        <button class="tab-button" onclick="switchTab('dev-mode')">Dev Mode</button>
+        <button class="tab-button" onclick="switchTab('figjam')">FigJam</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">4M+</div>
+          <div class="stat-label">Designers & Teams</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Plugins & Widgets</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">FEATURES</div>
+        <h2 class="section-title">Everything you need to design</h2>
+        <p class="section-subtitle">Professional tools that scale with your team</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">✏️</span>
+          <h3 class="feature-title">Vector Networks</h3>
+          <p class="feature-description">Create complex shapes with our revolutionary vector editing tools. Bend, combine, and manipulate paths with precision.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3 class="feature-title">Design Systems</h3>
+          <p class="feature-description">Build and maintain consistent design systems with shared components, styles, and libraries across your organization.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">Auto Layout</h3>
+          <p class="feature-description">Create responsive designs that adapt automatically. Build once, resize anywhere with intelligent constraints.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔄</span>
+          <h3 class="feature-title">Version History</h3>
+          <p class="feature-description">Never lose work again. Browse unlimited version history and restore any previous state with a single click.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎭</span>
+          <h3 class="feature-title">Prototyping</h3>
+          <p class="feature-description">Bring designs to life with interactive prototypes. Add transitions, animations, and smart overlays without code.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💬</span>
+          <h3 class="feature-title">Comments & Feedback</h3>
+          <p class="feature-description">Collaborate seamlessly with contextual comments. Tag teammates, resolve threads, and keep feedback organized.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Section - Colorful Background -->
+  <section class="collaboration" id="collaboration">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">COLLABORATION</div>
+        <h2 class="section-title">Design is better together</h2>
+        <p class="section-subtitle">Real-time collaboration that feels like magic</p>
+      </div>
+      <div class="collaboration-grid">
+        <div class="collaboration-card">
+          <h3>Multiplayer Editing</h3>
+          <p>See everyone's cursor in real-time. Edit simultaneously without conflicts or overwrites. Design together like you're in the same room.</p>
+        </div>
+        <div class="collaboration-card">
+          <h3>Live Presentations</h3>
+          <p>Present designs to stakeholders with a single link. Walk through flows, gather feedback, and make updates on the fly.</p>
+        </div>
+        <div class="collaboration-card">
+          <h3>Shared Libraries</h3>
+          <p>Publish components and styles to your team. Updates propagate instantly across all files, keeping everyone in sync.</p>
+        </div>
+        <div class="collaboration-card">
+          <h3>Permissions & Access</h3>
+          <p>Control who can view, edit, or comment. Set up teams, projects, and granular permissions for enterprise security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="showcase">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">DESIGN TO CODE</div>
+        <h2 class="section-title">From design to development</h2>
+        <p class="section-subtitle">Bridge the gap between design and code</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">👨‍💻</span>
+          <h3 class="feature-title">Dev Mode</h3>
+          <p class="feature-description">A dedicated workspace for developers. Inspect designs, copy code, and access all the specs you need to build.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📐</span>
+          <h3 class="feature-title">CSS & Code Export</h3>
+          <p class="feature-description">Copy CSS, iOS, and Android code directly from designs. Get accurate measurements and asset exports instantly.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔗</span>
+          <h3 class="feature-title">API & Integrations</h3>
+          <p class="feature-description">Connect Figma to your workflow with our powerful API. Integrate with Jira, Slack, GitHub, and hundreds of other tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plugins Section -->
+  <section class="plugins" id="plugins">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">PLUGINS & WIDGETS</div>
+        <h2 class="section-title">Extend Figma's capabilities</h2>
+        <p class="section-subtitle">Thousands of plugins built by the community</p>
+      </div>
+      <div class="plugin-grid">
+        <div class="plugin-card">
+          <div class="plugin-icon">🖼️</div>
+          <div class="plugin-name">Unsplash</div>
+          <div class="plugin-author">by Unsplash</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">📊</div>
+          <div class="plugin-name">Charts</div>
+          <div class="plugin-author">by Figma</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🎨</div>
+          <div class="plugin-name">Color Palettes</div>
+          <div class="plugin-author">by Community</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">✨</div>
+          <div class="plugin-name">Autoflow</div>
+          <div class="plugin-author">by Autoflow</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">📝</div>
+          <div class="plugin-name">Content Reel</div>
+          <div class="plugin-author">by Microsoft</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🔤</div>
+          <div class="plugin-name">Font Scale</div>
+          <div class="plugin-author">by Community</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🎭</div>
+          <div class="plugin-name">Avatars</div>
+          <div class="plugin-author">by UI Faces</div>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🌈</div>
+          <div class="plugin-name">Stark</div>
+          <div class="plugin-author">by Stark Lab</div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn-secondary" onclick="explorPlugins()">Explore all plugins</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">PRICING</div>
+        <h2 class="section-title">Plans for teams of all sizes</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited personal files</li>
+            <li>✓ Unlimited collaborators</li>
+            <li>✓ 3 Figma and 3 FigJam files</li>
+            <li>✓ Unlimited cloud storage</li>
+            <li>✓ Mobile app access</li>
+            <li>✓ Community support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Get started free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Professional</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/editor/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Starter</li>
+            <li>✓ Unlimited Figma files</li>
+            <li>✓ Unlimited version history</li>
+            <li>✓ Private projects</li>
+            <li>✓ Shared libraries</li>
+            <li>✓ Advanced prototyping</li>
+            <li>✓ Team collaboration</li>
+            <li>✓ Plugin development</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start free trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Organization</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$45</span>
+              <span class="price-period">/editor/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Professional</li>
+            <li>✓ Organization-wide libraries</li>
+            <li>✓ Design system analytics</li>
+            <li>✓ Centralized teams</li>
+            <li>✓ Private plugins</li>
+            <li>✓ SSO & SAML</li>
+            <li>✓ Advanced admin controls</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="contactSales()">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section - Colorful Background -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to design better?</h2>
+        <p class="cta-subtitle">Join millions of designers and teams using Figma to create, collaborate, and ship products faster.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get started for free</button>
+          <button class="btn-secondary btn-large" onclick="contactSales()">Talk to sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#whats-new">What's New</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#plugins">Plugins</a></li>
+            <li><a href="#best-practices">Best Practices</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#api">API</a></li>
+            <li><a href="#plugin-docs">Plugin Docs</a></li>
+            <li><a href="#widget-docs">Widget Docs</a></li>
+            <li><a href="#dev-resources">Dev Resources</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#dmca">DMCA Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Figma, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function switchTab(tab) {
+      // Remove active class from all tabs
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Add active class to clicked tab
+      event.target.classList.add('active');
+      
+      console.log('Switched to tab:', tab);
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would show an interactive product demo.');
+    }
+
+    function explorPlugins() {
+      alert('This would navigate to the Figma Community plugins page.');
+    }
+
+    function handleSignup() {
+      alert('This would redirect to the Figma signup page. Get started for free at figma.com!');
+    }
+
+    function contactSales() {
+      alert('This would open a contact form for the sales team.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add keyboard navigation for tabs
+    document.querySelectorAll('.tab-button').forEach((tab, index, tabs) => {
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          const nextTab = tabs[(index + 1) % tabs.length];
+          nextTab.focus();
+          nextTab.click();
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          const prevTab = tabs[(index - 1 + tabs.length) % tabs.length];
+          prevTab.focus();
+          prevTab.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

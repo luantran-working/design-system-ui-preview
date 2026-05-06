@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claymorphism Design System - Soft, Tactile UI</title>
+  <link rel="stylesheet" href="claymorphism-styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">Claymorphism</a>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#components" class="nav-link">Components</a></li>
+          <li><a href="#examples" class="nav-link">Examples</a></li>
+          <li><a href="#" class="clay-btn clay-btn-primary">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero section">
+    <div class="container">
+      <h1 class="hero-title">Soft, Tactile Design<br>That Feels Real</h1>
+      <p class="hero-subtitle">
+        Experience the next evolution of UI design with Claymorphism - where soft, puffy elements 
+        and playful 3D effects create interfaces that beg to be touched.
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#" class="clay-btn clay-btn-primary">Explore Components</a>
+        <a href="#" class="clay-btn clay-btn-secondary">View Documentation</a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="clay-card hero-shape hero-shape-1">
+          <span style="color: white;">🎨</span>
+        </div>
+        <div class="clay-card hero-shape hero-shape-2">
+          <span style="color: white;">✨</span>
+        </div>
+        <div class="clay-card hero-shape hero-shape-3">
+          <span style="color: white;">🚀</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+    <div class="container">
+      <h2 class="section-title">Why Claymorphism?</h2>
+      
+      <div class="features-grid">
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #3B82F6, #60A5FA);">
+            <span style="color: white;">🎯</span>
+          </div>
+          <h3 class="feature-title">Tactile & Playful</h3>
+          <p class="feature-description">
+            Soft, rounded shapes with inner and outer shadows create a malleable, clay-like appearance 
+            that invites interaction and engagement.
+          </p>
+        </div>
+
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #16A34A, #22C55E);">
+            <span style="color: white;">🎨</span>
+          </div>
+          <h3 class="feature-title">Modern & Colorful</h3>
+          <p class="feature-description">
+            Vibrant color palettes and gradient surfaces bring life to your interfaces while 
+            maintaining excellent readability and accessibility.
+          </p>
+        </div>
+
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #D97706, #F59E0B);">
+            <span style="color: white;">⚡</span>
+          </div>
+          <h3 class="feature-title">Highly Usable</h3>
+          <p class="feature-description">
+            Clear hierarchy, consistent spacing, and predictable interactions ensure your users 
+            can navigate with confidence and ease.
+          </p>
+        </div>
+
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #8B5CF6, #A78BFA);">
+            <span style="color: white;">📱</span>
+          </div>
+          <h3 class="feature-title">Fully Responsive</h3>
+          <p class="feature-description">
+            Designed mobile-first with fluid layouts that adapt beautifully across all screen 
+            sizes and devices.
+          </p>
+        </div>
+
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #DC2626, #EF4444);">
+            <span style="color: white;">🔧</span>
+          </div>
+          <h3 class="feature-title">Design Tokens</h3>
+          <p class="feature-description">
+            Built on a foundation of systematic design tokens for colors, typography, spacing, 
+            and effects - easy to customize and extend.
+          </p>
+        </div>
+
+        <div class="feature-card clay-card">
+          <div class="feature-icon" style="background: linear-gradient(145deg, #0891B2, #06B6D4);">
+            <span style="color: white;">💫</span>
+          </div>
+          <h3 class="feature-title">Smooth Interactions</h3>
+          <p class="feature-description">
+            Subtle transitions and purposeful animations enhance the user experience without 
+            overwhelming or distracting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="components-showcase section">
+    <div class="container">
+      <h2 class="section-title">Component Library</h2>
+
+      <!-- Buttons -->
+      <div class="component-demo">
+        <h3>Buttons</h3>
+        <div class="button-group">
+          <button class="clay-btn clay-btn-primary">Primary Button</button>
+          <button class="clay-btn clay-btn-secondary">Secondary Button</button>
+          <button class="clay-btn clay-btn-primary" style="background: linear-gradient(145deg, #16A34A, #22C55E);">Success</button>
+          <button class="clay-btn clay-btn-primary" style="background: linear-gradient(145deg, #D97706, #F59E0B);">Warning</button>
+          <button class="clay-btn clay-btn-primary" style="background: linear-gradient(145deg, #DC2626, #EF4444);">Danger</button>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-demo">
+        <h3>Form Inputs</h3>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="clay-input" placeholder="you@example.com">
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="clay-input" rows="4" placeholder="Tell us what you think..."></textarea>
+        </div>
+      </div>
+
+      <!-- Badges -->
+      <div class="component-demo">
+        <h3>Badges</h3>
+        <div class="badge-group">
+          <span class="clay-badge clay-badge-primary">Primary</span>
+          <span class="clay-badge clay-badge-success">Success</span>
+          <span class="clay-badge clay-badge-warning">Warning</span>
+          <span class="clay-badge" style="background: linear-gradient(145deg, #DC2626, #EF4444); color: white;">Danger</span>
+          <span class="clay-badge" style="background: linear-gradient(145deg, #8B5CF6, #A78BFA); color: white;">Info</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="section" style="background: rgba(255, 255, 255, 0.4);">
+    <div class="container">
+      <h2 class="section-title">Real-World Examples</h2>
+      
+      <div class="cards-grid">
+        <div class="clay-card">
+          <div class="feature-icon mb-4" style="background: linear-gradient(145deg, #3B82F6, #60A5FA); width: 60px; height: 60px; font-size: 1.5rem;">
+            <span style="color: white;">📊</span>
+          </div>
+          <h4>Dashboard Card</h4>
+          <p style="margin-bottom: var(--space-6); opacity: 0.8;">
+            Track your metrics with beautiful, tactile cards that make data visualization engaging.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="clay-badge clay-badge-success">+12.5%</span>
+            <a href="#" class="clay-btn clay-btn-secondary" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm);">View Details</a>
+          </div>
+        </div>
+
+        <div class="clay-card">
+          <div class="feature-icon mb-4" style="background: linear-gradient(145deg, #16A34A, #22C55E); width: 60px; height: 60px; font-size: 1.5rem;">
+            <span style="color: white;">💳</span>
+          </div>
+          <h4>Payment Form</h4>
+          <p style="margin-bottom: var(--space-6); opacity: 0.8;">
+            Secure checkout experiences with soft, trustworthy design elements.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="clay-badge" style="background: linear-gradient(145deg, #8B5CF6, #A78BFA); color: white;">Secure</span>
+            <a href="#" class="clay-btn clay-btn-primary" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm);">Checkout</a>
+          </div>
+        </div>
+
+        <div class="clay-card">
+          <div class="feature-icon mb-4" style="background: linear-gradient(145deg, #D97706, #F59E0B); width: 60px; height: 60px; font-size: 1.5rem;">
+            <span style="color: white;">🔔</span>
+          </div>
+          <h4>Notification Center</h4>
+          <p style="margin-bottom: var(--space-6); opacity: 0.8;">
+            Keep users informed with playful, non-intrusive notification designs.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="clay-badge clay-badge-warning">3 New</span>
+            <a href="#" class="clay-btn clay-btn-secondary" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm);">View All</a>
+          </div>
+        </div>
+
+        <div class="clay-card">
+          <div class="feature-icon mb-4" style="background: linear-gradient(145deg, #0891B2, #06B6D4); width: 60px; height: 60px; font-size: 1.5rem;">
+            <span style="color: white;">⚙️</span>
+          </div>
+          <h4>Settings Panel</h4>
+          <p style="margin-bottom: var(--space-6); opacity: 0.8;">
+            Intuitive configuration interfaces with clear visual hierarchy.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="clay-badge clay-badge-primary">Updated</span>
+            <a href="#" class="clay-btn clay-btn-secondary" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm);">Configure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="text-align: center;">
+    <div class="container">
+      <div class="clay-card" style="max-width: 800px; margin: 0 auto; padding: var(--space-12);">
+        <h2 style="margin-bottom: var(--space-6);">Ready to Build Something Beautiful?</h2>
+        <p style="font-size: var(--text-lg); margin-bottom: var(--space-8); opacity: 0.9;">
+          Start creating tactile, engaging interfaces with Claymorphism today. 
+          Download the design system and bring your ideas to life.
+        </p>
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="clay-btn clay-btn-primary" style="padding: var(--space-4) var(--space-8); font-size: var(--text-lg);">Download Now</a>
+          <a href="#" class="clay-btn clay-btn-secondary" style="padding: var(--space-4) var(--space-8); font-size: var(--text-lg);">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h3 class="footer-title">Claymorphism</h3>
+        <p style="max-width: 600px; margin: 0 auto var(--space-6); opacity: 0.8;">
+          A modern design system inspired by soft, tactile clay surfaces. 
+          Built for designers and developers who want to create playful, engaging user experiences.
+        </p>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Documentation</a></li>
+          <li><a href="#" class="footer-link">Components</a></li>
+          <li><a href="#" class="footer-link">Design Tokens</a></li>
+          <li><a href="#" class="footer-link">GitHub</a></li>
+          <li><a href="#" class="footer-link">Figma Kit</a></li>
+          <li><a href="#" class="footer-link">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Claymorphism Design System. Built with care and attention to detail.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

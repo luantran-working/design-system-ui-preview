@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oracle - Cloud Infrastructure & Database Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="oracle-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Oracle</div>
+        <ul class="nav-links">
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#database">Database</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-secondary" onclick="handleSignIn()">Sign In</button>
+          <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-text">Oracle Cloud Infrastructure</span>
+        </div>
+        <h1 class="hero-title">Enterprise Cloud Built for Performance</h1>
+        <p class="hero-subtitle">Run your mission-critical workloads on the world's most complete and integrated cloud infrastructure. Oracle Cloud delivers better performance, security, and cost savings.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free Trial</button>
+          <button class="btn-tertiary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">$300</span>
+            <span class="stat-label">Free Cloud Credits</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">30 Days</span>
+            <span class="stat-label">Free Trial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-text">Trusted by industry leaders worldwide</p>
+      <div class="trust-logos">
+        <div class="trust-logo">FedEx</div>
+        <div class="trust-logo">Zoom</div>
+        <div class="trust-logo">Mazda</div>
+        <div class="trust-logo">8x8</div>
+        <div class="trust-logo">Albertsons</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Section -->
+  <section class="cloud-section" id="cloud">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Oracle Cloud Infrastructure</h2>
+        <p class="section-subtitle">Next-generation cloud designed for enterprise workloads</p>
+      </div>
+      <div class="cloud-grid">
+        <div class="cloud-card">
+          <div class="cloud-icon">☁️</div>
+          <h3 class="cloud-title">Compute</h3>
+          <p class="cloud-description">High-performance compute instances with bare metal, VMs, and containers. Scale from 1 to thousands of cores.</p>
+          <ul class="cloud-features">
+            <li>Bare Metal Instances</li>
+            <li>Virtual Machines</li>
+            <li>Container Engine</li>
+            <li>Auto Scaling</li>
+          </ul>
+          <a href="#compute" class="cloud-link">Learn more →</a>
+        </div>
+        <div class="cloud-card">
+          <div class="cloud-icon">🗄️</div>
+          <h3 class="cloud-title">Storage</h3>
+          <p class="cloud-description">Enterprise-grade storage with block, object, file, and archive options. 99.999999999% durability.</p>
+          <ul class="cloud-features">
+            <li>Block Storage</li>
+            <li>Object Storage</li>
+            <li>File Storage</li>
+            <li>Archive Storage</li>
+          </ul>
+          <a href="#storage" class="cloud-link">Learn more →</a>
+        </div>
+        <div class="cloud-card">
+          <div class="cloud-icon">🌐</div>
+          <h3 class="cloud-title">Networking</h3>
+          <p class="cloud-description">Fast, reliable, and secure networking with global reach. Private connectivity and load balancing.</p>
+          <ul class="cloud-features">
+            <li>Virtual Cloud Networks</li>
+            <li>Load Balancing</li>
+            <li>FastConnect</li>
+            <li>DNS & Traffic Management</li>
+          </ul>
+          <a href="#networking" class="cloud-link">Learn more →</a>
+        </div>
+        <div class="cloud-card">
+          <div class="cloud-icon">🔒</div>
+          <h3 class="cloud-title">Security</h3>
+          <p class="cloud-description">Built-in security at every layer. Encryption, identity management, and threat detection included.</p>
+          <ul class="cloud-features">
+            <li>Identity & Access Management</li>
+            <li>Data Encryption</li>
+            <li>Security Zones</li>
+            <li>Cloud Guard</li>
+          </ul>
+          <a href="#security" class="cloud-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Database Section -->
+  <section class="database-section" id="database">
+    <div class="container">
+      <div class="database-content">
+        <div class="database-text">
+          <h2 class="section-title">Oracle Autonomous Database</h2>
+          <p class="section-subtitle">The world's first self-driving database. Automates routine tasks so you can focus on innovation.</p>
+          <div class="database-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">Self-Driving</h4>
+                <p class="benefit-description">Automates provisioning, tuning, patching, and upgrades</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🛡️</div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">Self-Securing</h4>
+                <p class="benefit-description">Protects against external and internal threats automatically</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🔧</div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">Self-Repairing</h4>
+                <p class="benefit-description">Prevents downtime with automated failure detection and repair</p>
+              </div>
+            </div>
+          </div>
+          <div class="database-cta">
+            <button class="btn-primary" onclick="scrollToSection('get-started')">Try Autonomous Database</button>
+            <a href="#database-docs" class="text-link">View documentation →</a>
+          </div>
+        </div>
+        <div class="database-visual">
+          <div class="database-card">
+            <div class="db-header">
+              <span class="db-status">● Running</span>
+              <span class="db-name">ProductionDB</span>
+            </div>
+            <div class="db-metrics">
+              <div class="db-metric">
+                <span class="metric-label">CPU Usage</span>
+                <span class="metric-value">23%</span>
+              </div>
+              <div class="db-metric">
+                <span class="metric-label">Storage</span>
+                <span class="metric-value">1.2 TB</span>
+              </div>
+              <div class="db-metric">
+                <span class="metric-label">Queries/sec</span>
+                <span class="metric-value">15.4K</span>
+              </div>
+            </div>
+            <div class="db-actions">
+              <button class="db-button">Scale</button>
+              <button class="db-button">Backup</button>
+              <button class="db-button">Monitor</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="applications-section" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Enterprise Applications</h2>
+        <p class="section-subtitle">Complete suite of cloud applications for every business function</p>
+      </div>
+      <div class="applications-grid">
+        <div class="app-card">
+          <h3 class="app-title">ERP</h3>
+          <p class="app-description">Unified financial management, procurement, and project management</p>
+        </div>
+        <div class="app-card">
+          <h3 class="app-title">HCM</h3>
+          <p class="app-description">Complete human capital management from hire to retire</p>
+        </div>
+        <div class="app-card">
+          <h3 class="app-title">SCM</h3>
+          <p class="app-description">End-to-end supply chain planning and execution</p>
+        </div>
+        <div class="app-card">
+          <h3 class="app-title">CX</h3>
+          <p class="app-description">Customer experience platform for sales, service, and marketing</p>
+        </div>
+        <div class="app-card">
+          <h3 class="app-title">EPM</h3>
+          <p class="app-description">Enterprise performance management and analytics</p>
+        </div>
+        <div class="app-card">
+          <h3 class="app-title">Analytics</h3>
+          <p class="app-description">Business intelligence and data visualization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="solutions-section" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Industry Solutions</h2>
+        <p class="section-subtitle">Purpose-built solutions for your industry</p>
+      </div>
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="solution-header">
+            <h3 class="solution-title">Financial Services</h3>
+          </div>
+          <p class="solution-description">Core banking, payments, risk management, and regulatory compliance solutions.</p>
+          <ul class="solution-features">
+            <li>Core Banking Platform</li>
+            <li>Payment Processing</li>
+            <li>Risk & Compliance</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-header">
+            <h3 class="solution-title">Healthcare</h3>
+          </div>
+          <p class="solution-description">Electronic health records, clinical systems, and patient engagement platforms.</p>
+          <ul class="solution-features">
+            <li>EHR Systems</li>
+            <li>Clinical Analytics</li>
+            <li>Patient Portal</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-header">
+            <h3 class="solution-title">Retail</h3>
+          </div>
+          <p class="solution-description">Omnichannel commerce, merchandising, and supply chain optimization.</p>
+          <ul class="solution-features">
+            <li>Point of Sale</li>
+            <li>Inventory Management</li>
+            <li>Customer Loyalty</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-header">
+            <h3 class="solution-title">Manufacturing</h3>
+          </div>
+          <p class="solution-description">Production planning, quality management, and IoT-enabled operations.</p>
+          <ul class="solution-features">
+            <li>Production Planning</li>
+            <li>Quality Control</li>
+            <li>IoT Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">430K+</div>
+          <div class="stat-label">Customers Worldwide</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">175+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Cloud Regions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.995%</div>
+          <div class="stat-label">SLA Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <p class="section-subtitle">Pay only for what you use with no hidden fees</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free Tier</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>2 Oracle Autonomous Databases</li>
+            <li>2 Compute VMs</li>
+            <li>Block, Object, and Archive Storage</li>
+            <li>Load Balancer</li>
+            <li>Monitoring and Notifications</li>
+            <li>Always Free - No Expiration</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pay As You Go</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Usage-Based</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>$300 in free credits for 30 days</li>
+            <li>All cloud services available</li>
+            <li>Per-second billing</li>
+            <li>No upfront commitment</li>
+            <li>Scale up or down anytime</li>
+            <li>24/7 support included</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Volume discounts</li>
+            <li>Committed use discounts</li>
+            <li>Dedicated support team</li>
+            <li>Custom SLAs</li>
+            <li>Private cloud options</li>
+            <li>Migration assistance</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started-section" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start Building on Oracle Cloud</h2>
+        <p class="section-subtitle">Get $300 in free credits and access to Always Free services</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your work email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+        </div>
+        <p class="form-note">No credit card required for Always Free services</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#cloud">Cloud Infrastructure</a></li>
+            <li><a href="#database">Database</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#mysql">MySQL</a></li>
+            <li><a href="#java">Java</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#financial">Financial Services</a></li>
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#public-sector">Public Sector</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Oracle</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#contact" id="contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Oracle Corporation. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#privacy" class="legal-link">Privacy</a>
+          <a href="#terms" class="legal-link">Terms of Use</a>
+          <a href="#cookies" class="legal-link">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for next steps.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    function handleSignIn() {
+      alert('Sign in would redirect to Oracle Cloud login page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

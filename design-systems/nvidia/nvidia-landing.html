@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIDIA - The AI Computing Company</title>
+  <link rel="stylesheet" href="nvidia-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">NVIDIA</div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#gaming">Gaming</a></li>
+          <li><a href="#data-center">Data Center</a></li>
+          <li><a href="#ai">AI</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('contact')">Contact Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Accelerating AI. Powering Innovation.</h1>
+        <p class="hero-subtitle">NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('products')">Explore GPUs</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>Powering the AI Revolution</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">1000x</div>
+          <div class="stat-label">AI Performance Increase</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40K+</div>
+          <div class="stat-label">AI Startups Powered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4M+</div>
+          <div class="stat-label">Developers Worldwide</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3000+</div>
+          <div class="stat-label">GPU-Accelerated Apps</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GPUs Section -->
+  <section class="section-light" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">GeForce RTX Series</div>
+        <h2 class="section-title">Ultimate Performance. Unmatched Power.</h2>
+        <p class="section-subtitle">Experience gaming, creating, and computing at the highest level with GeForce RTX GPUs powered by the NVIDIA Ada Lovelace architecture.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">GeForce RTX</div>
+            <h3 class="card-title">RTX 4090</h3>
+            <p class="card-description">The ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics with 24GB of G6X memory.</p>
+            <a href="#rtx4090" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">GeForce RTX</div>
+            <h3 class="card-title">RTX 4080</h3>
+            <p class="card-description">Exceptional performance for gamers and creators. Experience ultra-high performance gaming with ray tracing and DLSS 3.</p>
+            <a href="#rtx4080" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #000 0%, #2a2a2a 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">GeForce RTX</div>
+            <h3 class="card-title">RTX 4070 Ti</h3>
+            <p class="card-description">Supercharged performance for gamers and creators. Get a quantum leap in performance with AI-powered DLSS 3 and full ray tracing.</p>
+            <a href="#rtx4070ti" class="card-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Section -->
+  <section class="section-dark" id="ai">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">NVIDIA AI</div>
+        <h2 class="section-title">Accelerating the AI Revolution</h2>
+        <p class="section-subtitle">From training to inference, NVIDIA AI platforms deliver breakthrough performance for every stage of the AI workflow.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #76b900 0%, #3f8500 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">AI Platform</div>
+            <h3 class="card-title">NVIDIA AI Enterprise</h3>
+            <p class="card-description">End-to-end, cloud-native suite of AI and data analytics software optimized, certified, and supported by NVIDIA.</p>
+            <a href="#ai-enterprise" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #0046a4 0%, #003080 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">Deep Learning</div>
+            <h3 class="card-title">CUDA & cuDNN</h3>
+            <p class="card-description">Parallel computing platform and deep neural network library that dramatically accelerates AI and HPC applications.</p>
+            <a href="#cuda" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #4d1368 0%, #2a0a3a 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">Inference</div>
+            <h3 class="card-title">TensorRT</h3>
+            <p class="card-description">High-performance deep learning inference optimizer and runtime that delivers low latency and high throughput.</p>
+            <a href="#tensorrt" class="card-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaming Section -->
+  <section class="section-light" id="gaming">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">GeForce Gaming</div>
+        <h2 class="section-title">Game On with GeForce RTX</h2>
+        <p class="section-subtitle">Get the ultimate gaming experience with ray tracing, DLSS 3, and AI-powered performance.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">DLSS 3</h3>
+          <p class="feature-description">AI-powered performance multiplier. Get up to 4x performance with DLSS Frame Generation and super resolution.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💎</div>
+          <h3 class="feature-title">Ray Tracing</h3>
+          <p class="feature-description">Experience realistic lighting, reflections, and shadows with real-time ray tracing technology.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎮</div>
+          <h3 class="feature-title">Reflex</h3>
+          <p class="feature-description">Reduce system latency and improve responsiveness for the ultimate competitive gaming advantage.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📺</div>
+          <h3 class="feature-title">G-SYNC</h3>
+          <p class="feature-description">Eliminate screen tearing and minimize stutter for smooth, fast, and immersive gaming experiences.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Studio</h3>
+          <p class="feature-description">Accelerate creative workflows with AI-powered tools for video editing, 3D rendering, and graphic design.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Broadcast</h3>
+          <p class="feature-description">Transform your room into a home broadcast studio with AI-enhanced voice and video.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Center Section -->
+  <section class="section-dark" id="data-center">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Data Center Solutions</div>
+        <h2 class="section-title">Powering the Modern Data Center</h2>
+        <p class="section-subtitle">NVIDIA data center platforms deliver breakthrough performance for AI, HPC, and accelerated computing workloads.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #df6500 0%, #a04a00 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">GPU Architecture</div>
+            <h3 class="card-title">NVIDIA H100</h3>
+            <p class="card-description">The world's most advanced data center GPU, built on the Hopper architecture. Delivers unprecedented performance for large-scale AI and HPC.</p>
+            <a href="#h100" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #8c1c55 0%, #5a1136 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">Networking</div>
+            <h3 class="card-title">NVIDIA BlueField</h3>
+            <p class="card-description">Data processing unit (DPU) that combines powerful compute with advanced networking to accelerate and secure data center infrastructure.</p>
+            <a href="#bluefield" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="product-card product-card-dark">
+          <div class="card-image" style="background: linear-gradient(135deg, #76b900 0%, #4d7a00 100%);"></div>
+          <div class="card-content">
+            <div class="card-category">Software Platform</div>
+            <h3 class="card-title">NVIDIA DGX</h3>
+            <p class="card-description">Integrated AI supercomputing infrastructure that delivers the performance of an entire data center in a single system.</p>
+            <a href="#dgx" class="card-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Specs Showcase -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Technical Excellence</div>
+        <h2 class="section-title">Engineering at the Edge of Possible</h2>
+        <p class="section-subtitle">Breakthrough specifications that redefine computational performance.</p>
+      </div>
+      <div class="tech-specs">
+        <table>
+          <thead>
+            <tr>
+              <th>GPU</th>
+              <th>Architecture</th>
+              <th>CUDA Cores</th>
+              <th>Memory</th>
+              <th>Performance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>RTX 4090</strong></td>
+              <td>Ada Lovelace</td>
+              <td class="highlight">16,384</td>
+              <td>24GB GDDR6X</td>
+              <td class="highlight">82.6 TFLOPS</td>
+            </tr>
+            <tr>
+              <td><strong>RTX 4080</strong></td>
+              <td>Ada Lovelace</td>
+              <td class="highlight">9,728</td>
+              <td>16GB GDDR6X</td>
+              <td class="highlight">48.7 TFLOPS</td>
+            </tr>
+            <tr>
+              <td><strong>H100</strong></td>
+              <td>Hopper</td>
+              <td class="highlight">16,896</td>
+              <td>80GB HBM3</td>
+              <td class="highlight">60 TFLOPS</td>
+            </tr>
+            <tr>
+              <td><strong>A100</strong></td>
+              <td>Ampere</td>
+              <td class="highlight">6,912</td>
+              <td>80GB HBM2e</td>
+              <td class="highlight">19.5 TFLOPS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Industries</div>
+        <h2 class="section-title">Transforming Every Industry</h2>
+        <p class="section-subtitle">NVIDIA technology powers innovation across healthcare, automotive, finance, manufacturing, and beyond.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🏥</div>
+          <h3 class="feature-title">Healthcare</h3>
+          <p class="feature-description">Accelerating drug discovery, medical imaging, and genomics research with AI-powered computing.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚗</div>
+          <h3 class="feature-title">Automotive</h3>
+          <p class="feature-description">Powering autonomous vehicles and intelligent transportation systems with NVIDIA DRIVE platform.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">Financial Services</h3>
+          <p class="feature-description">Enabling real-time risk analysis, fraud detection, and algorithmic trading at unprecedented scale.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏭</div>
+          <h3 class="feature-title">Manufacturing</h3>
+          <p class="feature-description">Optimizing production with digital twins, robotics, and AI-driven quality control systems.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎬</div>
+          <h3 class="feature-title">Media & Entertainment</h3>
+          <p class="feature-description">Revolutionizing content creation with real-time rendering and AI-enhanced production workflows.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔬</div>
+          <h3 class="feature-title">Research</h3>
+          <p class="feature-description">Accelerating scientific discovery in climate science, physics, chemistry, and computational biology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Section -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Developer Resources</div>
+        <h2 class="section-title">Built for Developers</h2>
+        <p class="section-subtitle">Comprehensive tools, libraries, and SDKs to accelerate your development.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="card-content">
+            <div class="card-category">SDK</div>
+            <h3 class="card-title">CUDA Toolkit</h3>
+            <p class="card-description">Complete development environment for building GPU-accelerated applications. Includes compilers, libraries, and debugging tools.</p>
+            <a href="#cuda-toolkit" class="card-link">Download →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <div class="card-category">Framework</div>
+            <h3 class="card-title">NGC Catalog</h3>
+            <p class="card-description">Hub for GPU-optimized AI software, including pre-trained models, SDKs, and containers for every AI framework.</p>
+            <a href="#ngc" class="card-link">Explore →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <div class="card-category">Documentation</div>
+            <h3 class="card-title">Developer Portal</h3>
+            <p class="card-description">Access comprehensive documentation, tutorials, and sample code to get started with NVIDIA technologies.</p>
+            <a href="#docs" class="card-link">Get Started →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Accelerate Your Innovation?</h2>
+        <p class="cta-subtitle">Join millions of developers, researchers, and enterprises building the future with NVIDIA technology.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleContact()">Contact Sales</button>
+          <button class="btn-secondary btn-large" onclick="handleDeveloper()">Join Developer Program</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="#geforce">GeForce Graphics Cards</a></li>
+            <li><a href="#laptops">Gaming Laptops</a></li>
+            <li><a href="#studio">NVIDIA Studio</a></li>
+            <li><a href="#data-center">Data Center</a></li>
+            <li><a href="#automotive">Automotive</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#ai">Artificial Intelligence</a></li>
+            <li><a href="#hpc">High Performance Computing</a></li>
+            <li><a href="#visualization">Visualization</a></li>
+            <li><a href="#networking">Networking</a></li>
+            <li><a href="#omniverse">Omniverse</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#cuda">CUDA Toolkit</a></li>
+            <li><a href="#tensorrt">TensorRT</a></li>
+            <li><a href="#ngc">NGC Catalog</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#forums">Developer Forums</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About NVIDIA</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#support">Product Support</a></li>
+            <li><a href="#drivers">Download Drivers</a></li>
+            <li><a href="#forums">Community Forums</a></li>
+            <li><a href="#warranty">Warranty</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NVIDIA Corporation. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to an NVIDIA technology demonstration.');
+    }
+
+    function handleContact() {
+      alert('Contact form would open here. In production, this would link to NVIDIA sales contact page.');
+    }
+
+    function handleDeveloper() {
+      alert('Developer registration would open here. In production, this would link to NVIDIA Developer Program signup.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll effect to navbar
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 2px 8px 0px';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

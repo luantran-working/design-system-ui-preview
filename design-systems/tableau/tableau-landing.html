@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau - Business Intelligence and Analytics Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tableau-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Tableau
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#visualizations">Visualizations</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Try Tableau Free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🏆</span>
+          <span>Leader in Gartner Magic Quadrant for Analytics 2026</span>
+        </div>
+        <h1 class="hero-title">See and Understand Your Data</h1>
+        <p class="hero-subtitle">Transform your data into actionable insights with the world's leading analytics platform. Empower everyone in your organization to make data-driven decisions.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free Trial</button>
+          <button class="btn-outline btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">150K+</span>
+            <span class="hero-stat-label">Organizations</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">1M+</span>
+            <span class="hero-stat-label">Active Users</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">10B+</span>
+            <span class="hero-stat-label">Data Points Analyzed</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">99.9%</span>
+            <span class="hero-stat-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">5x</span>
+          <span class="stat-label">Faster Decision Making</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">80%</span>
+          <span class="stat-label">Time Saved on Reporting</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">300+</span>
+          <span class="stat-label">Data Connectors</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Expert Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powerful Analytics for Everyone</h2>
+        <p class="section-subtitle">From data preparation to advanced analytics, Tableau provides everything you need to unlock insights from your data</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Visual Analytics</h3>
+          <p class="feature-description">Create stunning, interactive visualizations with drag-and-drop simplicity. No coding required—just connect your data and start exploring.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3 class="feature-title">Connect Any Data</h3>
+          <p class="feature-description">Access data from anywhere—cloud databases, spreadsheets, big data, or real-time streams. 300+ native connectors included.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 class="feature-title">AI-Powered Insights</h3>
+          <p class="feature-description">Let AI surface hidden patterns and anomalies. Get automated explanations and predictions powered by machine learning.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Collaboration</h3>
+          <p class="feature-description">Share dashboards, collaborate in real-time, and embed analytics anywhere. Keep your team aligned with live data.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Mobile Analytics</h3>
+          <p class="feature-description">Access your dashboards on any device. Native mobile apps deliver full analytics power on the go.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">Bank-level encryption, role-based access, and compliance with SOC 2, HIPAA, and GDPR standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visualizations Section -->
+  <section class="visualizations" id="visualizations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Beautiful Visualizations, Powerful Insights</h2>
+        <p class="section-subtitle">Choose from dozens of chart types and customize every detail to tell your data story</p>
+      </div>
+      <div class="viz-grid">
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #1F77B4, #5DA5DA);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <rect x="20" y="80" width="30" height="40" fill="white" opacity="0.8"/>
+              <rect x="60" y="50" width="30" height="70" fill="white" opacity="0.9"/>
+              <rect x="100" y="30" width="30" height="90" fill="white" opacity="0.7"/>
+              <rect x="140" y="60" width="30" height="60" fill="white" opacity="0.85"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Interactive Dashboards</h3>
+            <p class="viz-description">Build comprehensive dashboards that update in real-time. Filter, drill down, and explore your data dynamically.</p>
+          </div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #FF7F0E, #FFB366);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <circle cx="100" cy="60" r="40" fill="white" opacity="0.3"/>
+              <circle cx="100" cy="60" r="30" fill="white" opacity="0.5"/>
+              <circle cx="100" cy="60" r="20" fill="white" opacity="0.7"/>
+              <circle cx="100" cy="60" r="10" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Geographic Mapping</h3>
+            <p class="viz-description">Visualize location-based data with built-in maps. Identify regional trends and patterns instantly.</p>
+          </div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #2CA02C, #7FD17F);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <polyline points="20,100 50,70 80,80 110,40 140,50 170,20" fill="none" stroke="white" stroke-width="3" opacity="0.8"/>
+              <polyline points="20,100 50,85 80,90 110,65 140,70 170,50" fill="none" stroke="white" stroke-width="3" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Trend Analysis</h3>
+            <p class="viz-description">Track changes over time with line charts, area charts, and forecasting. Predict future trends with confidence.</p>
+          </div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #9467BD, #C5A5D9);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <rect x="30" y="30" width="15" height="15" fill="white" opacity="0.4"/>
+              <rect x="50" y="30" width="15" height="15" fill="white" opacity="0.6"/>
+              <rect x="70" y="30" width="15" height="15" fill="white" opacity="0.8"/>
+              <rect x="30" y="50" width="15" height="15" fill="white" opacity="0.7"/>
+              <rect x="50" y="50" width="15" height="15" fill="white" opacity="0.9"/>
+              <rect x="70" y="50" width="15" height="15" fill="white" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Heat Maps</h3>
+            <p class="viz-description">Identify patterns and correlations at a glance. Perfect for large datasets and complex relationships.</p>
+          </div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #D62728, #FF6B6C);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <circle cx="60" cy="60" r="25" fill="white" opacity="0.6"/>
+              <circle cx="100" cy="60" r="35" fill="white" opacity="0.7"/>
+              <circle cx="140" cy="60" r="20" fill="white" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Statistical Analysis</h3>
+            <p class="viz-description">Perform advanced statistical analysis with box plots, scatter plots, and distribution charts.</p>
+          </div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-preview" style="background: linear-gradient(135deg, #17BECF, #7FE5F0);">
+            <svg width="200" height="120" viewBox="0 0 200 120" style="opacity: 0.9;">
+              <rect x="40" y="40" width="40" height="40" fill="white" opacity="0.5"/>
+              <rect x="90" y="40" width="30" height="40" fill="white" opacity="0.7"/>
+              <rect x="130" y="40" width="20" height="40" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="viz-content">
+            <h3 class="viz-title">Custom Visualizations</h3>
+            <p class="viz-description">Create unique visualizations tailored to your needs. Extend Tableau with custom charts and integrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Solutions for Every Industry</h2>
+        <p class="section-subtitle">Trusted by leading organizations across healthcare, finance, retail, and more</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-icon">🏥</div>
+          <h3 class="solution-title">Healthcare</h3>
+          <p class="solution-description">Improve patient outcomes and operational efficiency with real-time healthcare analytics.</p>
+          <ul class="solution-features">
+            <li>Patient flow optimization</li>
+            <li>Clinical outcomes tracking</li>
+            <li>Resource utilization</li>
+            <li>HIPAA compliance</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">💰</div>
+          <h3 class="solution-title">Financial Services</h3>
+          <p class="solution-description">Detect fraud, manage risk, and optimize portfolios with advanced financial analytics.</p>
+          <ul class="solution-features">
+            <li>Risk assessment</li>
+            <li>Fraud detection</li>
+            <li>Portfolio analysis</li>
+            <li>Regulatory reporting</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🛒</div>
+          <h3 class="solution-title">Retail & E-commerce</h3>
+          <p class="solution-description">Understand customer behavior, optimize inventory, and increase sales with retail analytics.</p>
+          <ul class="solution-features">
+            <li>Customer segmentation</li>
+            <li>Inventory optimization</li>
+            <li>Sales forecasting</li>
+            <li>Pricing analytics</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🏭</div>
+          <h3 class="solution-title">Manufacturing</h3>
+          <p class="solution-description">Optimize production, reduce downtime, and improve quality with manufacturing analytics.</p>
+          <ul class="solution-features">
+            <li>Production monitoring</li>
+            <li>Quality control</li>
+            <li>Supply chain optimization</li>
+            <li>Predictive maintenance</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">📱</div>
+          <h3 class="solution-title">Technology</h3>
+          <p class="solution-description">Track product metrics, user engagement, and business performance for tech companies.</p>
+          <ul class="solution-features">
+            <li>Product analytics</li>
+            <li>User behavior tracking</li>
+            <li>Performance monitoring</li>
+            <li>Growth metrics</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🎓</div>
+          <h3 class="solution-title">Education</h3>
+          <p class="solution-description">Improve student outcomes and institutional effectiveness with education analytics.</p>
+          <ul class="solution-features">
+            <li>Student performance</li>
+            <li>Enrollment trends</li>
+            <li>Resource allocation</li>
+            <li>Retention analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Flexible pricing for individuals, teams, and enterprises</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Tableau Creator</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$70</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Full authoring capabilities</li>
+            <li>Tableau Desktop & Prep</li>
+            <li>Web authoring</li>
+            <li>Connect to any data source</li>
+            <li>Publish to Tableau Server/Online</li>
+            <li>1 Creator license included</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Tableau Explorer</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$42</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Web-based authoring</li>
+            <li>Edit published workbooks</li>
+            <li>Create new dashboards</li>
+            <li>Explore published data sources</li>
+            <li>Collaborate with teams</li>
+            <li>Mobile access</li>
+            <li>Unlimited viewers</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Tableau Viewer</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$15</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>View & interact with dashboards</li>
+            <li>Filter and drill down</li>
+            <li>Subscribe to content</li>
+            <li>Mobile access</li>
+            <li>Export data & images</li>
+            <li>Commenting & annotations</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <p class="text-secondary mb-4">Need an enterprise solution?</p>
+        <button class="btn-secondary btn-large" onclick="scrollToSection('contact')">Contact Sales for Custom Pricing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Your Analytics Journey Today</h2>
+        <p class="cta-subtitle">Join over 150,000 organizations using Tableau to transform their data into insights. Try it free for 14 days—no credit card required.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+          <button class="btn-outline btn-large" onclick="scrollToSection('contact')">Talk to Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#tableau-desktop">Tableau Desktop</a></li>
+            <li><a href="#tableau-server">Tableau Server</a></li>
+            <li><a href="#tableau-online">Tableau Online</a></li>
+            <li><a href="#tableau-prep">Tableau Prep</a></li>
+            <li><a href="#tableau-mobile">Tableau Mobile</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#financial">Financial Services</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#documentation" id="resources">Documentation</a></li>
+            <li><a href="#training">Training & Tutorials</a></li>
+            <li><a href="#community">Community Forums</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Tableau</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact" id="contact">Contact Us</a></li>
+            <li><a href="#press">Press & Media</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tableau Software, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would showcase Tableau\'s interactive dashboards and features.');
+    }
+
+    function handleSignup() {
+      alert('Sign up form would open here. In production, this would redirect to the Tableau trial registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll animation for stats
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards for animation
+    document.querySelectorAll('.feature-card, .viz-card, .solution-card, .pricing-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

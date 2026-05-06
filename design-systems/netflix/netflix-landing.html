@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Unlimited Movies, TV Shows & More</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="netflix-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">NETFLIX</div>
+        <ul class="nav-links">
+          <li><a href="#shows">TV Shows</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#plans">Plans</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-secondary" onclick="handleSignIn()">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">
+          <span>🎬</span>
+          <span>New Releases Every Week</span>
+        </div>
+        <h1 class="hero-title">Unlimited Movies, TV Shows, and More</h1>
+        <p class="hero-subtitle">Watch anywhere. Cancel anytime. Stream on your phone, tablet, laptop, and TV without paying more.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Get Started</button>
+          <button class="btn-secondary btn-large" onclick="scrollToSection('plans')">See Plans</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">260M+</div>
+          <div class="stat-label">Global Subscribers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">190+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Movies & Shows</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Unlimited Streaming</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Shows Section -->
+  <section id="shows">
+    <div class="container">
+      <div class="carousel">
+        <h2 class="carousel-title">Trending Now</h2>
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <div class="content-card">
+              <div class="content-card-image">
+                <span>🎭</span>
+                <div class="content-card-overlay"></div>
+              </div>
+              <div class="content-card-body">
+                <h3 class="content-card-title">Drama Series</h3>
+                <p class="content-card-description">Award-winning original series with compelling storylines and unforgettable characters.</p>
+                <div class="content-card-meta">
+                  <span>⭐ 4.8</span>
+                  <span>8 Seasons</span>
+                  <span>HD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-card">
+              <div class="content-card-image">
+                <span>🚀</span>
+                <div class="content-card-overlay"></div>
+              </div>
+              <div class="content-card-body">
+                <h3 class="content-card-title">Sci-Fi Adventure</h3>
+                <p class="content-card-description">Mind-bending science fiction that pushes the boundaries of imagination.</p>
+                <div class="content-card-meta">
+                  <span>⭐ 4.9</span>
+                  <span>5 Seasons</span>
+                  <span>4K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-card">
+              <div class="content-card-image">
+                <span>😂</span>
+                <div class="content-card-overlay"></div>
+              </div>
+              <div class="content-card-body">
+                <h3 class="content-card-title">Comedy Special</h3>
+                <p class="content-card-description">Laugh-out-loud comedy from the world's best stand-up comedians.</p>
+                <div class="content-card-meta">
+                  <span>⭐ 4.7</span>
+                  <span>New</span>
+                  <span>HD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-card">
+              <div class="content-card-image">
+                <span>🔍</span>
+                <div class="content-card-overlay"></div>
+              </div>
+              <div class="content-card-body">
+                <h3 class="content-card-title">Mystery Thriller</h3>
+                <p class="content-card-description">Edge-of-your-seat suspense that will keep you guessing until the end.</p>
+                <div class="content-card-meta">
+                  <span>⭐ 4.6</span>
+                  <span>3 Seasons</span>
+                  <span>HD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movies Section -->
+  <section id="movies">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Blockbuster Movies</h2>
+        <p class="section-subtitle">From Hollywood hits to international cinema, discover movies that move you</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>🎬</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Action Blockbuster</h3>
+            <p class="content-card-description">High-octane action with stunning visual effects and heart-pounding sequences.</p>
+            <div class="content-card-meta">
+              <span>⭐ 4.5</span>
+              <span>2h 15m</span>
+              <span>4K</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>💕</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Romantic Drama</h3>
+            <p class="content-card-description">A heartwarming love story that will make you believe in romance again.</p>
+            <div class="content-card-meta">
+              <span>⭐ 4.8</span>
+              <span>1h 58m</span>
+              <span>HD</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>👻</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Horror Masterpiece</h3>
+            <p class="content-card-description">Terrifying horror that will haunt your dreams and keep you up at night.</p>
+            <div class="content-card-meta">
+              <span>⭐ 4.4</span>
+              <span>1h 45m</span>
+              <span>HD</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>🎨</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Animated Feature</h3>
+            <p class="content-card-description">Beautiful animation with stories that resonate with audiences of all ages.</p>
+            <div class="content-card-meta">
+              <span>⭐ 4.9</span>
+              <span>1h 32m</span>
+              <span>4K</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>🌍</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Documentary</h3>
+            <p class="content-card-description">Eye-opening documentaries that explore the world's most fascinating stories.</p>
+            <div class="content-card-meta">
+              <span>⭐ 4.7</span>
+              <span>2h 5m</span>
+              <span>4K</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="content-card-image">
+            <span>🎭</span>
+            <div class="content-card-overlay"></div>
+          </div>
+          <div class="content-card-body">
+            <h3 class="content-card-title">Award Winner</h3>
+            <p class="content-card-description">Critically acclaimed films that have won prestigious awards worldwide.</p>
+            <div class="content-card-meta">
+              <span>⭐ 5.0</span>
+              <span>2h 28m</span>
+              <span>4K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose Netflix?</h2>
+        <p class="section-subtitle">The ultimate streaming experience designed for entertainment lovers</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Watch Everywhere</h3>
+          <p class="feature-description">Stream on your phone, tablet, laptop, and TV. Download your favorites to watch offline.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">👨‍👩‍👧‍👦</div>
+          <h3 class="feature-title">Family Profiles</h3>
+          <p class="feature-description">Create up to 5 profiles for your household. Everyone gets their own personalized experience.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Smart Recommendations</h3>
+          <p class="feature-description">AI-powered suggestions based on what you love. Discover your next favorite show effortlessly.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚫</div>
+          <h3 class="feature-title">No Ads Ever</h3>
+          <p class="feature-description">Enjoy uninterrupted entertainment. No commercials, no interruptions, just pure content.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Global Content</h3>
+          <p class="feature-description">Access content from around the world with subtitles and dubbing in multiple languages.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Original Productions</h3>
+          <p class="feature-description">Exclusive Netflix Originals you can't find anywhere else. New releases every week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section class="plans" id="plans">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Flexible plans to fit your lifestyle. Cancel anytime.</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">$9.99</div>
+          <div class="plan-period">per month</div>
+          <ul class="plan-features">
+            <li>Unlimited movies & TV shows</li>
+            <li>Watch on 1 device at a time</li>
+            <li>HD available</li>
+            <li>Download on 1 device</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSelectPlan('basic')">Select Plan</button>
+        </div>
+        
+        <div class="plan-card featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">$15.49</div>
+          <div class="plan-period">per month</div>
+          <ul class="plan-features">
+            <li>Unlimited movies & TV shows</li>
+            <li>Watch on 2 devices at a time</li>
+            <li>Full HD (1080p)</li>
+            <li>Download on 2 devices</li>
+            <li>Cancel anytime</li>
+            <li>Ad-free experience</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="handleSelectPlan('standard')">Select Plan</button>
+        </div>
+        
+        <div class="plan-card">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">$19.99</div>
+          <div class="plan-period">per month</div>
+          <ul class="plan-features">
+            <li>Unlimited movies & TV shows</li>
+            <li>Watch on 4 devices at a time</li>
+            <li>Ultra HD (4K) + HDR</li>
+            <li>Download on 4 devices</li>
+            <li>Cancel anytime</li>
+            <li>Netflix spatial audio</li>
+            <li>Best video & audio quality</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSelectPlan('premium')">Select Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Watch?</h2>
+        <p class="cta-subtitle">Enter your email to create or restart your membership</p>
+        <form class="cta-form" onsubmit="handleEmailSubmit(event)">
+          <input 
+            type="email" 
+            class="email-input" 
+            placeholder="Email address" 
+            id="emailInput"
+            required
+          >
+          <button type="submit" class="btn-primary btn-large">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="#facebook" class="social-link" aria-label="Facebook">f</a>
+        <a href="#instagram" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#twitter" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#youtube" class="social-link" aria-label="YouTube">▶</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Netflix</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#media">Media Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#cookies">Cookie Preferences</a></li>
+            <li><a href="#corporate">Corporate Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Ways to Watch</h4>
+          <ul class="footer-links">
+            <li><a href="#devices">Supported Devices</a></li>
+            <li><a href="#plans">Plans & Pricing</a></li>
+            <li><a href="#gift">Gift Cards</a></li>
+            <li><a href="#originals">Netflix Originals</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Netflix, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll function
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Handle sign in
+    function handleSignIn() {
+      alert('Sign in functionality would redirect to login page. This is a demo.');
+    }
+
+    // Handle plan selection
+    function handleSelectPlan(plan) {
+      alert(`You selected the ${plan} plan! In production, this would redirect to checkout.`);
+    }
+
+    // Handle email submission
+    function handleEmailSubmit(event) {
+      event.preventDefault();
+      const email = document.getElementById('emailInput').value;
+      if (email) {
+        alert(`Thanks for signing up with ${email}! In production, this would start the registration process.`);
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all content cards
+    document.querySelectorAll('.content-card, .feature-item, .plan-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

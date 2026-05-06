@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mintlify - Beautiful Documentation Made Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mintlify-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo">Mintlify</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#integrations">Integrations</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Atmospheric Gradient -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Beautiful documentation that developers love</h1>
+        <p class="hero-subtitle">Create stunning, interactive documentation in minutes. Built for modern teams who care about developer experience.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Building</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">View Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>✓</span>
+          <span>Trusted by 5,000+ companies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-label">Loved by your favorite companies</div>
+      <div class="logo-grid">
+        <div class="logo-card">Stripe</div>
+        <div class="logo-card">Vercel</div>
+        <div class="logo-card">OpenAI</div>
+        <div class="logo-card">Anthropic</div>
+        <div class="logo-card">Supabase</div>
+        <div class="logo-card">Clerk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Everything you need for world-class documentation</h2>
+        <p class="section-subtitle">Built with developers in mind, designed for clarity and speed</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">📝</span>
+          <h4 class="feature-title">Write in Markdown</h4>
+          <p class="feature-description">Use familiar Markdown syntax with powerful extensions. Code blocks, tabs, callouts, and more built-in.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h4 class="feature-title">Customizable Design</h4>
+          <p class="feature-description">Match your brand with custom colors, fonts, and layouts. No design skills required.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔍</span>
+          <h4 class="feature-title">Powerful Search</h4>
+          <p class="feature-description">Lightning-fast search powered by AI. Find anything in your docs instantly.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🚀</span>
+          <h4 class="feature-title">Deploy in Seconds</h4>
+          <p class="feature-description">Push to GitHub and deploy automatically. Global CDN ensures fast load times everywhere.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📊</span>
+          <h4 class="feature-title">Analytics Built-in</h4>
+          <p class="feature-description">Understand how users interact with your docs. Track searches, page views, and user flows.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔗</span>
+          <h4 class="feature-title">API References</h4>
+          <p class="feature-description">Auto-generate beautiful API docs from OpenAPI specs. Keep them in sync effortlessly.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🌙</span>
+          <h4 class="feature-title">Dark Mode</h4>
+          <p class="feature-description">Beautiful dark mode out of the box. Automatically adapts to user preferences.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h4 class="feature-title">Lightning Fast</h4>
+          <p class="feature-description">Optimized for performance. Sub-second page loads and instant navigation.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔐</span>
+          <h4 class="feature-title">Private Docs</h4>
+          <p class="feature-description">Secure internal documentation with SSO, custom domains, and access controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Templates</div>
+        <h2 class="section-title">Start with a template</h2>
+        <p class="section-subtitle">Pre-built templates for common documentation needs</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-image">📚</div>
+          <div class="template-content">
+            <h4 class="template-title">Product Documentation</h4>
+            <p class="template-description">Complete template for product docs with guides, tutorials, and FAQs.</p>
+            <span class="template-badge">Popular</span>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">🔧</div>
+          <div class="template-content">
+            <h4 class="template-title">API Reference</h4>
+            <p class="template-description">Beautiful API documentation with interactive examples and code snippets.</p>
+            <span class="template-badge">Developer</span>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">📖</div>
+          <div class="template-content">
+            <h4 class="template-title">Knowledge Base</h4>
+            <p class="template-description">Help center template with search, categories, and article management.</p>
+            <span class="template-badge">Support</span>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">🎓</div>
+          <div class="template-content">
+            <h4 class="template-title">Developer Portal</h4>
+            <p class="template-description">Complete developer hub with docs, API reference, and SDKs.</p>
+            <span class="template-badge">Enterprise</span>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">📝</div>
+          <div class="template-content">
+            <h4 class="template-title">Changelog</h4>
+            <p class="template-description">Keep users updated with a beautiful changelog and release notes.</p>
+            <span class="template-badge">Updates</span>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">🏢</div>
+          <div class="template-content">
+            <h4 class="template-title">Internal Wiki</h4>
+            <p class="template-description">Private documentation for team knowledge and processes.</p>
+            <span class="template-badge">Internal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Integrations</div>
+        <h2 class="section-title">Works with your workflow</h2>
+        <p class="section-subtitle">Connect with the tools you already use</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-item">
+          <span class="integration-logo">📁</span>
+          GitHub
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🦊</span>
+          GitLab
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">📊</span>
+          Notion
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">💬</span>
+          Slack
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🎮</span>
+          Discord
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🔍</span>
+          Algolia
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">📈</span>
+          Google Analytics
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🎯</span>
+          Segment
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🔐</span>
+          Auth0
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">🌐</span>
+          Vercel
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">☁️</span>
+          Cloudflare
+        </div>
+        <div class="integration-item">
+          <span class="integration-logo">📝</span>
+          OpenAPI
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 3 team members</li>
+            <li>Unlimited pages</li>
+            <li>Custom domain</li>
+            <li>Basic analytics</li>
+            <li>Community support</li>
+            <li>GitHub integration</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Growth</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$120</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 10 team members</li>
+            <li>Everything in Starter</li>
+            <li>Advanced analytics</li>
+            <li>API reference docs</li>
+            <li>Custom components</li>
+            <li>Priority support</li>
+            <li>Remove Mintlify branding</li>
+            <li>Advanced search</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited team members</li>
+            <li>Everything in Growth</li>
+            <li>SSO & SAML</li>
+            <li>Private hosting</li>
+            <li>Custom integrations</li>
+            <li>Dedicated support</li>
+            <li>SLA guarantee</li>
+            <li>Advanced security</li>
+            <li>Custom contracts</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="openContact()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Footer Section -->
+  <section class="cta-footer" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Make documentation your winning advantage</h2>
+        <p class="cta-subtitle">Join thousands of companies building better docs with Mintlify</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-brand btn-large" onclick="handleSignup()">Get Started Free</button>
+        </div>
+        <p class="form-note">No credit card required • 14-day free trial</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#api-reference">API Reference</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#gdpr">GDPR</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mintlify. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would show an interactive demo or video.');
+    }
+
+    function openContact() {
+      alert('Contact form would open here. In production, this would open a contact modal or redirect to a contact page.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox to get started.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

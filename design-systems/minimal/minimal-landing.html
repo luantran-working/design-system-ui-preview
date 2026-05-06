@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Design System - Clean, Bold, Focused</title>
+  <meta name="description" content="A stripped-back design system emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.">
+  <link rel="stylesheet" href="minimal-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">Minimal</a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#examples" class="nav-link">Examples</a></li>
+        <li><a href="#components" class="nav-link">Components</a></li>
+        <li><a href="#colors" class="nav-link">Colors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Less is More</h1>
+      <p class="hero-subtitle">
+        A stripped-back design system emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.
+      </p>
+      <div class="hero-cta">
+        <a href="#components" class="btn btn-primary">Explore Components</a>
+        <a href="#examples" class="btn btn-secondary">View Examples</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <h2 class="features-title text-center">Design Principles</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="feature-icon">W</div>
+          <h3 class="card-title">Whitespace First</h3>
+          <p class="card-text">
+            Use whitespace to separate concerns before adding borders or shadows. Let content breathe with generous spacing.
+          </p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">T</div>
+          <h3 class="card-title">Clean Typography</h3>
+          <p class="card-text">
+            Headings carry personality while body text optimizes scanability and contrast. Clear hierarchy guides the eye.
+          </p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">C</div>
+          <h3 class="card-title">Restrained Color</h3>
+          <p class="card-text">
+            Primary color for emphasis, neutral surfaces for backgrounds. No off-palette colors, maximum clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="section" id="examples">
+    <div class="container">
+      <h2 class="text-center mb-8">Visual Style</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3 class="mb-4">Bold & Minimal</h3>
+          <p>
+            Every element serves a purpose. Strong contrast between text and background ensures readability. 
+            Typography scales expressively from desktop to mobile.
+          </p>
+          <p>
+            Consistent vertical rhythm across sections and components creates a predictable, scannable interface. 
+            Align columns and modules to a grid—avoid ad-hoc offsets.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-4">Purposeful Interaction</h3>
+          <p>
+            Subtle transitions emphasize primary actions. Short, purposeful animations (150–250ms) with stable easing 
+            provide feedback without distraction.
+          </p>
+          <p>
+            Hover, focus-visible, active, disabled, and loading states are explicit and consistent. 
+            Every interaction reinforces the minimal aesthetic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section class="section section-alt" id="components">
+    <div class="container">
+      <h2 class="text-center mb-8">Components</h2>
+      
+      <!-- Buttons -->
+      <div class="component-demo">
+        <div class="component-label">Buttons</div>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button class="btn btn-primary">Primary Action</button>
+          <button class="btn btn-secondary">Secondary Action</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-demo">
+        <div class="component-label">Form Inputs</div>
+        <div class="grid grid-2">
+          <div>
+            <label class="input-label" for="input-default">Default Input</label>
+            <input type="text" id="input-default" class="input" placeholder="Enter text...">
+          </div>
+          <div>
+            <label class="input-label" for="input-focus">Focused Input</label>
+            <input type="text" id="input-focus" class="input" value="Focused state" autofocus>
+          </div>
+          <div>
+            <label class="input-label" for="input-error">Error State</label>
+            <input type="text" id="input-error" class="input error" value="Invalid input">
+            <span class="input-error">This field is required</span>
+          </div>
+          <div>
+            <label class="input-label" for="input-disabled">Disabled Input</label>
+            <input type="text" id="input-disabled" class="input" value="Disabled" disabled>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-demo">
+        <div class="component-label">Cards</div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+              Cards use consistent radii, spacing, and elevation. Hover states provide subtle feedback.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Another Card</h4>
+            <p class="card-text">
+              Clear content blocks with consistent internal padding maintain visual rhythm.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Third Card</h4>
+            <p class="card-text">
+              Hierarchy is obvious: headline, support text, then primary action.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography Scale -->
+      <div class="component-demo">
+        <div class="component-label">Typography Scale</div>
+        <h1>Heading 1 - Display</h1>
+        <h2>Heading 2 - Section Title</h2>
+        <h3>Heading 3 - Subsection</h3>
+        <h4>Heading 4 - Card Title</h4>
+        <h5>Heading 5 - Small Heading</h5>
+        <h6>Heading 6 - Label</h6>
+        <p>Body text optimizes for scanability and contrast. Line height and spacing ensure comfortable reading across all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Palette Section -->
+  <section class="section" id="colors">
+    <div class="container">
+      <h2 class="text-center mb-8">Color Palette</h2>
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #0C0C09;"></div>
+          <div class="color-name">Primary</div>
+          <div class="color-value">#0C0C09</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #312C85;"></div>
+          <div class="color-name">Secondary</div>
+          <div class="color-value">#312C85</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #16A34A;"></div>
+          <div class="color-name">Success</div>
+          <div class="color-value">#16A34A</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #D97706;"></div>
+          <div class="color-name">Warning</div>
+          <div class="color-value">#D97706</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #DC2626;"></div>
+          <div class="color-name">Danger</div>
+          <div class="color-value">#DC2626</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #F4F4F1;"></div>
+          <div class="color-name">Surface</div>
+          <div class="color-value">#F4F4F1</div>
+        </div>
+      </div>
+      
+      <div class="mt-8">
+        <h3 class="text-center mb-6">Color Usage Guidelines</h3>
+        <div class="grid grid-2">
+          <div class="card">
+            <h4 class="card-title">Primary (#0C0C09)</h4>
+            <p class="card-text">
+              Use for CTA emphasis, primary actions, and key interactive elements. This is your strongest visual signal.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Surface (#F4F4F1)</h4>
+            <p class="card-text">
+              Use for large backgrounds, cards, and alternating sections. Creates subtle visual separation without borders.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Text (#0C0C09)</h4>
+            <p class="card-text">
+              Keep body copy on this color for maximum legibility. High contrast ensures readability across all contexts.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Semantic Colors</h4>
+            <p class="card-text">
+              Success, Warning, and Danger provide clear feedback. Use sparingly to maintain visual hierarchy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anti-patterns Section -->
+  <section class="section section-alt">
+    <div class="container-narrow">
+      <h2 class="text-center mb-8">Anti-patterns to Avoid</h2>
+      <div class="card mb-6">
+        <h4 class="card-title">Off-palette Colors</h4>
+        <p class="card-text">
+          Do not introduce colors outside the defined palette. If you need a new color, it should be added to the system, not used ad-hoc.
+        </p>
+      </div>
+      <div class="card mb-6">
+        <h4 class="card-title">Flattened Hierarchy</h4>
+        <p class="card-text">
+          Do not use the same type size and weight for all text. Clear hierarchy guides users through content efficiently.
+        </p>
+      </div>
+      <div class="card mb-6">
+        <h4 class="card-title">Decorative Effects</h4>
+        <p class="card-text">
+          Do not add decorative effects that reduce readability or accessibility. Every visual element should serve a functional purpose.
+        </p>
+      </div>
+      <div class="card">
+        <h4 class="card-title">Mixed Visual Metaphors</h4>
+        <p class="card-text">
+          Do not mix unrelated visual metaphors in the same interface. Consistency builds trust and reduces cognitive load.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Minimal</h4>
+          <p style="opacity: 0.8; font-size: 0.875rem;">
+            A design system for clarity and focus. Less is more.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Design Tokens</a></li>
+            <li><a href="#" class="footer-link">Component Library</a></li>
+            <li><a href="#" class="footer-link">Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">Figma</a></li>
+            <li><a href="#" class="footer-link">Discussions</a></li>
+            <li><a href="#" class="footer-link">Contribute</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Get Started</a></li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Minimal Design System. Built with clarity and purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal JavaScript for header scroll effect -->
+  <script>
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mistral AI - Frontier AI in Your Hands</title>
+  <link rel="stylesheet" href="mistral-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <div class="logo-blocks">
+            <span class="block block-1"></span>
+            <span class="block block-2"></span>
+            <span class="block block-3"></span>
+            <span class="block block-4"></span>
+          </div>
+          <span class="logo-text">MISTRAL AI</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#models">Models</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Documentation</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-cream" onclick="scrollToSection('get-started')">Get Started</button>
+          <button class="btn-dark" onclick="scrollToSection('get-started')">Try API</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">FRONTIER AI IN YOUR HANDS</h1>
+        <p class="hero-subtitle">Open-weight language models engineered in Europe. Powerful, efficient, and built for production.</p>
+        <div class="hero-cta">
+          <button class="btn-dark btn-large" onclick="scrollToSection('get-started')">START BUILDING</button>
+          <button class="btn-cream btn-large" onclick="openDocs()">EXPLORE MODELS</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">●</span>
+          <span>TRUSTED BY 100,000+ DEVELOPERS WORLDWIDE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">DEVELOPERS</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8B→405B</div>
+          <div class="stat-label">MODEL RANGE</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">128K</div>
+          <div class="stat-label">CONTEXT WINDOW</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">OPEN</div>
+          <div class="stat-label">WEIGHTS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Models</h2>
+        <p class="section-subtitle">From efficient edge deployment to frontier-scale reasoning</p>
+      </div>
+      <div class="model-grid">
+        <div class="model-card featured">
+          <div class="model-badge">FLAGSHIP</div>
+          <div class="model-icon">🔥</div>
+          <h3 class="model-name">Mistral Large 2</h3>
+          <div class="model-params">405B Parameters</div>
+          <p class="model-description">Our most capable model. State-of-the-art reasoning, multilingual understanding, and function calling. Built for complex enterprise applications.</p>
+          <ul class="model-features">
+            <li>128K context window</li>
+            <li>80+ languages supported</li>
+            <li>Advanced function calling</li>
+            <li>Code generation excellence</li>
+          </ul>
+          <button class="btn-dark btn-full" onclick="selectModel('large')">EXPLORE LARGE 2</button>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">⚡</div>
+          <h3 class="model-name">Mistral Medium</h3>
+          <div class="model-params">70B Parameters</div>
+          <p class="model-description">Balanced performance and efficiency. Perfect for production workloads requiring high quality at scale.</p>
+          <ul class="model-features">
+            <li>32K context window</li>
+            <li>Fast inference speed</li>
+            <li>Cost-effective scaling</li>
+            <li>Production-ready</li>
+          </ul>
+          <button class="btn-cream btn-full" onclick="selectModel('medium')">EXPLORE MEDIUM</button>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">🚀</div>
+          <h3 class="model-name">Mistral Small</h3>
+          <div class="model-params">22B Parameters</div>
+          <p class="model-description">Optimized for speed and efficiency. Deploy anywhere from cloud to edge with minimal latency.</p>
+          <ul class="model-features">
+            <li>16K context window</li>
+            <li>Ultra-fast responses</li>
+            <li>Edge deployment ready</li>
+            <li>Low resource usage</li>
+          </ul>
+          <button class="btn-cream btn-full" onclick="selectModel('small')">EXPLORE SMALL</button>
+        </div>
+
+        <div class="model-card">
+          <div class="model-icon">💎</div>
+          <h3 class="model-name">Mistral 8x7B</h3>
+          <div class="model-params">Mixture of Experts</div>
+          <p class="model-description">Sparse mixture-of-experts architecture. Efficient routing for specialized tasks with breakthrough performance.</p>
+          <ul class="model-features">
+            <li>32K context window</li>
+            <li>Sparse activation</li>
+            <li>Multi-task excellence</li>
+            <li>Open weights available</li>
+          </ul>
+          <button class="btn-cream btn-full" onclick="selectModel('moe')">EXPLORE 8x7B</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for Production</h2>
+        <p class="section-subtitle">Enterprise-grade capabilities from day one</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Multilingual Excellence</h3>
+          <p class="feature-description">Native support for 80+ languages including English, French, German, Spanish, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, and Arabic.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3 class="feature-title">Function Calling</h3>
+          <p class="feature-description">Advanced tool use and function calling capabilities. Integrate seamlessly with your APIs and external systems.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔓</div>
+          <h3 class="feature-title">Open Weights</h3>
+          <p class="feature-description">Deploy on your infrastructure. Full control over your AI stack with transparent, auditable model weights.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">JSON Mode</h3>
+          <p class="feature-description">Guaranteed structured output. Perfect for data extraction, API responses, and workflow automation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">SOC 2 Type II certified. GDPR compliant. On-premise deployment options for maximum data sovereignty.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Optimized Inference</h3>
+          <p class="feature-description">State-of-the-art inference optimization. Deploy efficiently from edge devices to data centers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section class="research" id="research">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Advancing AI Research</h2>
+        <p class="section-subtitle">Pushing the boundaries of language model capabilities</p>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-meta">
+            <span class="research-date">MARCH 2024</span>
+            <span class="research-type">TECHNICAL REPORT</span>
+          </div>
+          <h3 class="research-title">Mistral Large 2: Frontier Performance</h3>
+          <p class="research-description">Introducing our 405B parameter model with state-of-the-art performance across reasoning, mathematics, code generation, and multilingual understanding.</p>
+          <a href="#paper" class="research-link">READ PAPER →</a>
+        </div>
+        <div class="research-card">
+          <div class="research-meta">
+            <span class="research-date">JANUARY 2024</span>
+            <span class="research-type">ARCHITECTURE</span>
+          </div>
+          <h3 class="research-title">Mixture of Experts at Scale</h3>
+          <p class="research-description">Deep dive into our sparse MoE architecture enabling efficient scaling and specialized task routing with breakthrough efficiency.</p>
+          <a href="#paper" class="research-link">READ PAPER →</a>
+        </div>
+        <div class="research-card">
+          <div class="research-meta">
+            <span class="research-date">DECEMBER 2023</span>
+            <span class="research-type">BENCHMARK</span>
+          </div>
+          <h3 class="research-title">Multilingual Evaluation Framework</h3>
+          <p class="research-description">Comprehensive evaluation methodology for assessing language model performance across 80+ languages and diverse cultural contexts.</p>
+          <a href="#paper" class="research-link">READ PAPER →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="code-example">
+    <div class="container">
+      <div class="code-header">
+        <h2 class="section-title">Simple, Powerful API</h2>
+        <p class="section-subtitle">Get started in minutes with our OpenAI-compatible API</p>
+      </div>
+      <div class="code-block">
+        <pre><code class="code-content">import MistralClient from '@mistralai/mistralai';
+
+const client = new MistralClient(process.env.MISTRAL_API_KEY);
+
+const response = await client.chat({
+  model: 'mistral-large-latest',
+  messages: [
+    {
+      role: 'user',
+      content: 'Explain quantum computing in simple terms'
+    }
+  ],
+  temperature: 0.7,
+  maxTokens: 1000
+});
+
+console.log(response.choices[0].message.content);</code></pre>
+      </div>
+      <div class="code-actions">
+        <button class="btn-dark" onclick="copyCode()">COPY CODE</button>
+        <a href="#docs" class="btn-cream">VIEW DOCUMENTATION</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powering Innovation Across Industries</h2>
+        <p class="section-subtitle">From startups to enterprises</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">💼</div>
+          <h3 class="use-case-title">Enterprise AI</h3>
+          <p class="use-case-description">Deploy secure, on-premise AI solutions for document analysis, customer service automation, and knowledge management.</p>
+          <div class="use-case-stats">
+            <span>70% cost reduction</span>
+            <span>99.9% uptime</span>
+          </div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">💻</div>
+          <h3 class="use-case-title">Developer Tools</h3>
+          <p class="use-case-description">Build intelligent coding assistants, automated code review systems, and documentation generators with our code-specialized models.</p>
+          <div class="use-case-stats">
+            <span>10x faster development</span>
+            <span>95% accuracy</span>
+          </div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🌐</div>
+          <h3 class="use-case-title">Global Applications</h3>
+          <p class="use-case-description">Create multilingual chatbots, translation services, and content generation tools that work seamlessly across 80+ languages.</p>
+          <div class="use-case-stats">
+            <span>80+ languages</span>
+            <span>Real-time translation</span>
+          </div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🔬</div>
+          <h3 class="use-case-title">Research & Education</h3>
+          <p class="use-case-description">Accelerate research with open-weight models. Build educational tools, research assistants, and knowledge discovery systems.</p>
+          <div class="use-case-stats">
+            <span>Open weights</span>
+            <span>Academic pricing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <p class="section-subtitle">Pay only for what you use</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Mistral Small</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0.20</span>
+              <span class="price-period">/ 1M tokens</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>22B parameters</li>
+            <li>16K context window</li>
+            <li>Ultra-fast inference</li>
+            <li>Edge deployment ready</li>
+            <li>Function calling</li>
+            <li>JSON mode</li>
+          </ul>
+          <button class="btn-cream btn-full" onclick="scrollToSection('get-started')">START NOW</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Mistral Medium</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$2.70</span>
+              <span class="price-period">/ 1M tokens</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>70B parameters</li>
+            <li>32K context window</li>
+            <li>Balanced performance</li>
+            <li>Production optimized</li>
+            <li>Advanced function calling</li>
+            <li>Multilingual excellence</li>
+          </ul>
+          <button class="btn-dark btn-full" onclick="scrollToSection('get-started')">START NOW</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Mistral Large 2</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$8.00</span>
+              <span class="price-period">/ 1M tokens</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>405B parameters</li>
+            <li>128K context window</li>
+            <li>Frontier performance</li>
+            <li>80+ languages</li>
+            <li>Advanced reasoning</li>
+            <li>Enterprise support</li>
+          </ul>
+          <button class="btn-cream btn-full" onclick="scrollToSection('get-started')">START NOW</button>
+        </div>
+      </div>
+      <div class="pricing-note">
+        <p>All prices shown are for input tokens. Output tokens priced at 3x input rate. Volume discounts available for enterprise customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Innovators</h2>
+        <p class="section-subtitle">See what developers and enterprises are building</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Mistral's open-weight approach gives us the control we need for sensitive healthcare data. The multilingual support is exceptional."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Dr. Sophie Laurent</div>
+              <div class="author-title">CTO, MedTech Europe</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The performance-to-cost ratio is unmatched. We switched from GPT-4 and cut our inference costs by 60% while maintaining quality."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Marcus Chen</div>
+              <div class="author-title">VP Engineering, DataFlow AI</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Finally, a European AI provider that understands GDPR and data sovereignty. The on-premise deployment option was a game-changer."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">Anna Kowalski</div>
+              <div class="author-title">Head of AI, FinanceHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start Building with Mistral AI</h2>
+        <p class="section-subtitle">Get your API key and start building in minutes</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-dark btn-large" onclick="handleSignup()">GET API KEY</button>
+        </div>
+        <p class="form-note">Free tier includes $5 credit • No credit card required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">PRODUCT</h4>
+          <ul class="footer-links">
+            <li><a href="#models">Models</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">LEGAL</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <div class="logo-blocks">
+            <span class="block block-1"></span>
+            <span class="block block-2"></span>
+            <span class="block block-3"></span>
+            <span class="block block-4"></span>
+          </div>
+          <span>MISTRAL AI</span>
+        </div>
+        <p>&copy; 2026 Mistral AI. Engineered in Europe.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#discord" class="social-link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDocs() {
+      alert('Documentation would open here. In production, this would link to the full API documentation.');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Code copied to clipboard!');
+      });
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for your API key.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    function selectModel(model) {
+      alert(`You selected Mistral ${model}. In production, this would navigate to the model details page.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowflake - The Data Cloud</title>
+  <link rel="stylesheet" href="snowflake-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Snowflake</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#data-cloud">Data Cloud</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Start Free Trial</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Mobilize Your Data with the <span class="highlight">Data Cloud</span></h1>
+        <p class="hero-subtitle">A single platform for all your data, workloads, and applications. Unlock the value of your data with near-unlimited scale, concurrency, and performance.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free Trial</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 9,000+ customers worldwide including 691 of the Forbes Global 2000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">9,000+</div>
+          <div class="stat-label">Global Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">691</div>
+          <div class="stat-label">Forbes Global 2000</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1.5B+</div>
+          <div class="stat-label">Daily Queries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.99%</div>
+          <div class="stat-label">Availability SLA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for the Data Cloud Era</h2>
+        <p class="section-subtitle">A platform designed from the ground up for the cloud, with architecture that separates storage and compute</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🗄️</div>
+          <h3 class="feature-title">Unlimited Storage</h3>
+          <p class="feature-description">Store unlimited amounts of structured and semi-structured data. Automatic compression and optimization reduce storage costs.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant Elasticity</h3>
+          <p class="feature-description">Scale compute resources up or down instantly without downtime. Pay only for what you use with per-second billing.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Zero-Copy Cloning</h3>
+          <p class="feature-description">Create instant clones of databases, schemas, and tables without duplicating data. Perfect for dev/test environments.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Multi-Cloud</h3>
+          <p class="feature-description">Run on AWS, Azure, or Google Cloud. Move data seamlessly across clouds and regions without vendor lock-in.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-description">End-to-end encryption, role-based access control, and compliance with SOC 2, HIPAA, PCI DSS, and more.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3 class="feature-title">Data Sharing</h3>
+          <p class="feature-description">Share live data securely with partners and customers without copying or moving data. Real-time collaboration.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Cloud Section -->
+  <section class="data-cloud" id="data-cloud">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Data Cloud Platform</h2>
+        <p class="section-subtitle">One platform for all your data workloads</p>
+      </div>
+      <div class="data-cloud-grid">
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">📊</div>
+          <h3 class="data-cloud-title">Data Warehouse</h3>
+          <p class="data-cloud-description">Modern cloud data warehouse with near-unlimited scale and performance. Run complex analytics on petabytes of data.</p>
+        </div>
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">🔗</div>
+          <h3 class="data-cloud-title">Data Lake</h3>
+          <p class="data-cloud-description">Store and analyze structured and semi-structured data in a single platform. Native support for JSON, Avro, Parquet, and more.</p>
+        </div>
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">🔄</div>
+          <h3 class="data-cloud-title">Data Engineering</h3>
+          <p class="data-cloud-description">Build and orchestrate data pipelines with Snowpark, Streams, and Tasks. Transform data at scale with Python, Java, or Scala.</p>
+        </div>
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">🤖</div>
+          <h3 class="data-cloud-title">Data Science & ML</h3>
+          <p class="data-cloud-description">Train and deploy machine learning models directly in Snowflake. Bring your own frameworks or use Snowpark ML.</p>
+        </div>
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">📱</div>
+          <h3 class="data-cloud-title">Data Applications</h3>
+          <p class="data-cloud-description">Build data-intensive applications with Streamlit, Native Apps, and Snowpark. Deploy directly on the Data Cloud.</p>
+        </div>
+        <div class="data-cloud-card">
+          <div class="data-cloud-icon">🌍</div>
+          <h3 class="data-cloud-title">Data Marketplace</h3>
+          <p class="data-cloud-description">Access live data from thousands of providers. Monetize your data products and reach new customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powering Every Industry</h2>
+        <p class="section-subtitle">See how organizations use Snowflake to transform their business</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">🏦</div>
+          <h3 class="use-case-title">Financial Services</h3>
+          <p class="use-case-description">Real-time fraud detection, risk analytics, and regulatory compliance. Process millions of transactions per second with sub-second latency.</p>
+          <ul class="use-case-benefits">
+            <li>Real-time fraud detection</li>
+            <li>Regulatory compliance (SOC 2, PCI DSS)</li>
+            <li>Customer 360 analytics</li>
+            <li>Risk modeling at scale</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🏥</div>
+          <h3 class="use-case-title">Healthcare & Life Sciences</h3>
+          <p class="use-case-description">Accelerate research, improve patient outcomes, and ensure HIPAA compliance. Analyze genomic data and clinical trials at scale.</p>
+          <ul class="use-case-benefits">
+            <li>HIPAA compliant infrastructure</li>
+            <li>Genomic data analysis</li>
+            <li>Clinical trial optimization</li>
+            <li>Population health analytics</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🛒</div>
+          <h3 class="use-case-title">Retail & E-Commerce</h3>
+          <p class="use-case-description">Personalize customer experiences, optimize inventory, and predict demand. Analyze clickstream data and customer behavior in real-time.</p>
+          <ul class="use-case-benefits">
+            <li>Real-time personalization</li>
+            <li>Inventory optimization</li>
+            <li>Demand forecasting</li>
+            <li>Customer journey analytics</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">📺</div>
+          <h3 class="use-case-title">Media & Entertainment</h3>
+          <p class="use-case-description">Deliver personalized content recommendations, optimize ad targeting, and analyze viewer engagement across all platforms.</p>
+          <ul class="use-case-benefits">
+            <li>Content recommendation engines</li>
+            <li>Ad targeting optimization</li>
+            <li>Viewer analytics</li>
+            <li>Rights management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Pay only for what you use with per-second billing</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Standard</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$2</span>
+              <span class="price-period">/credit</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Complete SQL database</li>
+            <li>Unlimited storage</li>
+            <li>Automatic scaling</li>
+            <li>Time Travel (1 day)</li>
+            <li>End-to-end encryption</li>
+            <li>24/7 support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$3</span>
+              <span class="price-period">/credit</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Standard</li>
+            <li>Multi-cluster warehouses</li>
+            <li>Time Travel (90 days)</li>
+            <li>Materialized views</li>
+            <li>Column-level security</li>
+            <li>Annual rerate</li>
+            <li>Premier support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Business Critical</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$4</span>
+              <span class="price-period">/credit</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Enterprise</li>
+            <li>Enhanced security (HIPAA, PCI DSS)</li>
+            <li>Dedicated metadata store</li>
+            <li>Tri-Secret Secure</li>
+            <li>Private connectivity</li>
+            <li>Database failover</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start Your Data Cloud Journey Today</h2>
+        <p class="section-subtitle">Try Snowflake free for 30 days with $400 in credits</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your work email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+        </div>
+        <p class="form-note">No credit card required • $400 free credits • Full platform access</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#data-warehouse">Data Warehouse</a></li>
+            <li><a href="#data-lake">Data Lake</a></li>
+            <li><a href="#data-engineering">Data Engineering</a></li>
+            <li><a href="#data-science">Data Science</a></li>
+            <li><a href="#data-sharing">Data Sharing</a></li>
+            <li><a href="#marketplace">Marketplace</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#financial-services">Financial Services</a></li>
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#media">Media & Entertainment</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#public-sector">Public Sector</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#training">Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#investors">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#trust">Trust Center</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Snowflake Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox to start your free trial.`);
+      } else {
+        alert('Please enter a valid work email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

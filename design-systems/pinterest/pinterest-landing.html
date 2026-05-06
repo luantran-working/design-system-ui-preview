@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest - Visual Discovery Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pinterest-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Pinterest</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for ideas" class="search-input">
+        </div>
+        <div class="nav-actions">
+          <a href="#discover" class="nav-link">Discover</a>
+          <a href="#create" class="nav-link">Create</a>
+          <button class="btn-secondary">Log in</button>
+          <button class="btn-primary">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Get your next</h1>
+        <div class="hero-rotating">
+          <span class="rotating-text">weeknight dinner idea</span>
+        </div>
+        <p class="hero-subtitle">Discover recipes, home ideas, style inspiration and other ideas to try</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('discover')">Explore ideas</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover Section with Masonry Grid -->
+  <section class="discover" id="discover">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Discover ideas for every moment</h2>
+        <p class="section-subtitle">Explore billions of possibilities for every part of your life</p>
+      </div>
+      
+      <div class="category-tabs">
+        <button class="category-tab active">All</button>
+        <button class="category-tab">Home decor</button>
+        <button class="category-tab">Fashion</button>
+        <button class="category-tab">Food & drink</button>
+        <button class="category-tab">Travel</button>
+        <button class="category-tab">Art</button>
+        <button class="category-tab">DIY & crafts</button>
+      </div>
+
+      <div class="masonry-grid">
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 280px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Modern living room inspiration</h3>
+            <p class="pin-description">Cozy minimalist design ideas</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 380px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Summer outfit ideas</h3>
+            <p class="pin-description">Casual chic style inspiration</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 320px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Healthy breakfast recipes</h3>
+            <p class="pin-description">Quick and nutritious morning meals</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); height: 360px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Garden design ideas</h3>
+            <p class="pin-description">Beautiful outdoor spaces</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); height: 300px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Travel destinations 2026</h3>
+            <p class="pin-description">Must-visit places this year</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height: 340px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">DIY home projects</h3>
+            <p class="pin-description">Easy weekend crafts</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); height: 290px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Wedding inspiration</h3>
+            <p class="pin-description">Beautiful ceremony ideas</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pin-card">
+          <div class="pin-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); height: 370px;"></div>
+          <div class="pin-content">
+            <h3 class="pin-title">Workspace organization</h3>
+            <p class="pin-description">Productive home office setups</p>
+            <div class="pin-actions">
+              <button class="btn-circular">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Create Section -->
+  <section class="create" id="create">
+    <div class="container">
+      <div class="create-content">
+        <div class="create-text">
+          <h2 class="section-title">Create your own inspiration</h2>
+          <p class="section-subtitle">Save ideas you love and organize them into boards</p>
+          <div class="create-features">
+            <div class="feature-item">
+              <div class="feature-icon">📌</div>
+              <div class="feature-text">
+                <h3 class="feature-title">Save ideas</h3>
+                <p class="feature-description">Collect inspiration from across the web</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📁</div>
+              <div class="feature-text">
+                <h3 class="feature-title">Organize boards</h3>
+                <p class="feature-description">Keep your ideas sorted and accessible</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✨</div>
+              <div class="feature-text">
+                <h3 class="feature-title">Get inspired</h3>
+                <p class="feature-description">Discover new ideas based on your interests</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary btn-large">Start creating</button>
+        </div>
+        <div class="create-visual">
+          <div class="board-preview">
+            <div class="board-header">
+              <h3 class="board-title">My Dream Home</h3>
+              <span class="board-count">24 pins</span>
+            </div>
+            <div class="board-grid">
+              <div class="board-pin" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+              <div class="board-pin" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+              <div class="board-pin" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+              <div class="board-pin" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inspiration Categories -->
+  <section class="inspiration">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find your next project</h2>
+        <p class="section-subtitle">Browse popular categories and trending ideas</p>
+      </div>
+      <div class="category-grid">
+        <a href="#home" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+          <h3 class="category-name">Home decor</h3>
+        </a>
+        <a href="#fashion" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+          <h3 class="category-name">Fashion</h3>
+        </a>
+        <a href="#food" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+          <h3 class="category-name">Food & drink</h3>
+        </a>
+        <a href="#travel" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+          <h3 class="category-name">Travel</h3>
+        </a>
+        <a href="#art" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+          <h3 class="category-name">Art</h3>
+        </a>
+        <a href="#diy" class="category-card">
+          <div class="category-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+          <h3 class="category-name">DIY & crafts</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">450M+</div>
+          <div class="stat-label">Monthly active users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">240B+</div>
+          <div class="stat-label">Pins saved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5B+</div>
+          <div class="stat-label">Searches per month</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Ideas added daily</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Section -->
+  <section class="join">
+    <div class="container">
+      <div class="join-content">
+        <h2 class="section-title">Join Pinterest today</h2>
+        <p class="section-subtitle">Discover ideas, save what you love, and make it happen</p>
+        <div class="join-form">
+          <input type="email" placeholder="Email address" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Continue</button>
+        </div>
+        <p class="form-note">By continuing, you agree to Pinterest's Terms of Service and Privacy Policy</p>
+        <div class="social-login">
+          <button class="btn-social facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Continue with Facebook
+          </button>
+          <button class="btn-social google">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Continue with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home decor</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+            <li><a href="#food">Food & drink</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#art">Art</a></li>
+            <li><a href="#diy">DIY & crafts</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">About</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Pinterest</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#business">Business</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#safety">Safety Center</a></li>
+            <li><a href="#community">Community Guidelines</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#trademark">Trademark</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">Pinterest</div>
+        <p>&copy; 2026 Pinterest, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Welcome to Pinterest! Check your inbox at ${email} to get started.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Category tab switching
+    document.querySelectorAll('.category-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Rotating hero text animation
+    const rotatingTexts = [
+      'weeknight dinner idea',
+      'home decor inspiration',
+      'outfit to wear',
+      'travel destination',
+      'DIY project',
+      'recipe to try'
+    ];
+    let currentIndex = 0;
+    const rotatingElement = document.querySelector('.rotating-text');
+    
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % rotatingTexts.length;
+      rotatingElement.style.opacity = '0';
+      setTimeout(() => {
+        rotatingElement.textContent = rotatingTexts[currentIndex];
+        rotatingElement.style.opacity = '1';
+      }, 300);
+    }, 3000);
+  </script>
+</body>
+</html>

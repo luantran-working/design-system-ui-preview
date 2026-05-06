@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retool - Build Internal Tools Fast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="retool-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Retool</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-secondary" onclick="handleLogin()">Log in</button>
+          <button class="btn-primary" onclick="scrollToSection('get-started')">Start building</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build internal tools, remarkably fast</h1>
+        <p class="hero-subtitle">Retool is the fast way to build internal tools. Drag-and-drop our building blocks and connect them to your databases and APIs to build your own tools, instantly.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start building for free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch demo</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-badge">
+            <span class="stat-value">10,000+</span>
+            <span class="stat-label">companies</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-value">5M+</span>
+            <span class="stat-label">apps built</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="app-preview">
+          <div class="app-header">
+            <div class="app-tabs">
+              <div class="app-tab active">Dashboard</div>
+              <div class="app-tab">Users</div>
+              <div class="app-tab">Orders</div>
+            </div>
+          </div>
+          <div class="app-body">
+            <div class="component-grid">
+              <div class="component-item table">Table Component</div>
+              <div class="component-item chart">Chart Component</div>
+              <div class="component-item form">Form Component</div>
+              <div class="component-item button">Button Component</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to build internal tools</h2>
+        <p class="section-subtitle">Pre-built components, database integrations, and deployment—all in one platform</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3 class="feature-title">Drag-and-drop builder</h3>
+          <p class="feature-description">Build UIs with 100+ pre-built components. Tables, charts, forms, and more—no CSS required.</p>
+          <a href="#docs" class="feature-link">Explore components →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3 class="feature-title">Connect to anything</h3>
+          <p class="feature-description">Native integrations with PostgreSQL, MySQL, MongoDB, REST APIs, GraphQL, and 50+ data sources.</p>
+          <a href="#docs" class="feature-link">View integrations →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Write code when you need it</h3>
+          <p class="feature-description">Use JavaScript anywhere to transform data, customize logic, and extend functionality.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3 class="feature-title">Enterprise-grade security</h3>
+          <p class="feature-description">SOC 2 Type II certified, GDPR compliant, with SSO, audit logs, and granular permissions.</p>
+          <a href="#docs" class="feature-link">Security details →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Deploy instantly</h3>
+          <p class="feature-description">Share apps with your team in seconds. Host on Retool Cloud or self-host on your infrastructure.</p>
+          <a href="#docs" class="feature-link">Deployment options →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Collaborate in real-time</h3>
+          <p class="feature-description">Build together with version control, comments, and multiplayer editing.</p>
+          <a href="#docs" class="feature-link">Team features →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start with a template</h2>
+        <p class="section-subtitle">Get a head start with pre-built apps for common use cases</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-icon">📊</div>
+          </div>
+          <h3 class="template-title">Admin Dashboard</h3>
+          <p class="template-description">View and manage users, orders, and analytics in one place.</p>
+          <button class="btn-secondary btn-small">Use template</button>
+        </div>
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-icon">🛠️</div>
+          </div>
+          <h3 class="template-title">Customer Support Tool</h3>
+          <p class="template-description">Handle tickets, view customer data, and resolve issues faster.</p>
+          <button class="btn-secondary btn-small">Use template</button>
+        </div>
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-icon">📦</div>
+          </div>
+          <h3 class="template-title">Inventory Manager</h3>
+          <p class="template-description">Track stock levels, manage suppliers, and automate reordering.</p>
+          <button class="btn-secondary btn-small">Use template</button>
+        </div>
+        <div class="template-card">
+          <div class="template-preview">
+            <div class="template-icon">💰</div>
+          </div>
+          <h3 class="template-title">Sales Pipeline</h3>
+          <p class="template-description">Manage leads, track deals, and forecast revenue.</p>
+          <button class="btn-secondary btn-small">Use template</button>
+        </div>
+      </div>
+      <div class="template-cta">
+        <a href="#templates" class="text-link">Browse all 200+ templates →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for every team</h2>
+        <p class="section-subtitle">From operations to engineering, teams use Retool to move faster</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">⚙️</div>
+            <h3 class="use-case-title">Operations</h3>
+          </div>
+          <p class="use-case-description">Build custom workflows, automate manual tasks, and manage data without waiting on engineering.</p>
+          <ul class="use-case-examples">
+            <li>Order management systems</li>
+            <li>Inventory tracking tools</li>
+            <li>Approval workflows</li>
+            <li>Data entry forms</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">💼</div>
+            <h3 class="use-case-title">Customer Success</h3>
+          </div>
+          <p class="use-case-description">Give your team the tools they need to support customers and resolve issues quickly.</p>
+          <ul class="use-case-examples">
+            <li>Customer support dashboards</li>
+            <li>Account management tools</li>
+            <li>Refund processing</li>
+            <li>Usage analytics</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">👨‍💻</div>
+            <h3 class="use-case-title">Engineering</h3>
+          </div>
+          <p class="use-case-description">Ship internal tools 10x faster and focus on building your core product.</p>
+          <ul class="use-case-examples">
+            <li>Database admin panels</li>
+            <li>DevOps dashboards</li>
+            <li>Feature flag managers</li>
+            <li>API testing tools</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">📈</div>
+            <h3 class="use-case-title">Analytics</h3>
+          </div>
+          <p class="use-case-description">Create custom reports and dashboards that connect directly to your data sources.</p>
+          <ul class="use-case-examples">
+            <li>Business intelligence dashboards</li>
+            <li>Custom reporting tools</li>
+            <li>Data visualization</li>
+            <li>KPI tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="code-example">
+    <div class="container">
+      <div class="code-header">
+        <h2 class="section-title">Write code when you need it</h2>
+        <p class="section-subtitle">Use JavaScript to transform data and customize your apps</p>
+      </div>
+      <div class="code-block">
+        <pre><code class="code-content">// Transform API response data
+const users = query1.data.map(user => ({
+  id: user.id,
+  name: `${user.first_name} ${user.last_name}`,
+  email: user.email,
+  status: user.is_active ? 'Active' : 'Inactive',
+  lastLogin: moment(user.last_login).fromNow()
+}));
+
+// Filter based on search input
+const filteredUsers = users.filter(user => 
+  user.name.toLowerCase().includes(searchInput.value.toLowerCase())
+);
+
+// Return formatted data for table
+return filteredUsers;</code></pre>
+      </div>
+      <div class="code-features">
+        <div class="code-feature">
+          <span class="code-feature-icon">✓</span>
+          <span>Autocomplete & IntelliSense</span>
+        </div>
+        <div class="code-feature">
+          <span class="code-feature-icon">✓</span>
+          <span>Access to npm libraries</span>
+        </div>
+        <div class="code-feature">
+          <span class="code-feature-icon">✓</span>
+          <span>Real-time debugging</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="social-proof">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by innovative companies</h2>
+        <p class="section-subtitle">From startups to Fortune 500s</p>
+      </div>
+      <div class="company-grid">
+        <div class="company-logo">Amazon</div>
+        <div class="company-logo">DoorDash</div>
+        <div class="company-logo">Brex</div>
+        <div class="company-logo">Peloton</div>
+        <div class="company-logo">Mercedes-Benz</div>
+        <div class="company-logo">Coinbase</div>
+        <div class="company-logo">Stripe</div>
+        <div class="company-logo">Instacart</div>
+      </div>
+      <div class="testimonial-section">
+        <div class="testimonial-card-large">
+          <div class="testimonial-content">
+            "Retool has been critical for our operations. We've built over 40 internal tools that would have taken months to build from scratch. Now our ops team can ship tools themselves."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name">David Hsu</div>
+              <div class="author-title">CTO, Brex</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Up to 5 users</li>
+            <li>✓ Unlimited apps</li>
+            <li>✓ All standard components</li>
+            <li>✓ Connect to databases & APIs</li>
+            <li>✓ Community support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start for free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Team</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$10</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited users</li>
+            <li>✓ Advanced components</li>
+            <li>✓ Version control</li>
+            <li>✓ Audit logs</li>
+            <li>✓ Priority support</li>
+            <li>✓ Custom branding</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start free trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Team</li>
+            <li>✓ Self-hosted option</li>
+            <li>✓ SSO & SAML</li>
+            <li>✓ Advanced permissions</li>
+            <li>✓ SLA guarantee</li>
+            <li>✓ Dedicated support</li>
+            <li>✓ Custom contracts</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start building in minutes</h2>
+        <p class="section-subtitle">Join thousands of companies building internal tools with Retool</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Work email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start building for free</button>
+        </div>
+        <p class="form-note">No credit card required • Free forever for up to 5 users</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Use Cases</h4>
+          <ul class="footer-links">
+            <li><a href="#operations">Operations</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#customer-success">Customer Success</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Retool. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleLogin() {
+      alert('Login page would open here.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for next steps.`);
+      } else {
+        alert('Please enter a valid work email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

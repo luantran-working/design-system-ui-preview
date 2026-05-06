@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugging Face - The AI Community Building the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="huggingface-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Hugging Face</div>
+        <ul class="nav-links">
+          <li><a href="#models">Models</a></li>
+          <li><a href="#datasets">Datasets</a></li>
+          <li><a href="#spaces">Spaces</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-emoji">🤗</span>
+        <h1 class="hero-title">The AI community building the future</h1>
+        <p class="hero-subtitle">Build, train and deploy state of the art models powered by the reference open source in machine learning.</p>
+        <div class="hero-cta">
+          <button class="btn-yellow btn-large" onclick="scrollToSection('get-started')">Get Started</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Explore Models</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>500K+</strong> models</div>
+          <div class="hero-stat"><strong>250K+</strong> datasets</div>
+          <div class="hero-stat"><strong>200K+</strong> spaces</div>
+          <div class="hero-stat"><strong>10M+</strong> community members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Discover Models</h2>
+        <p class="section-subtitle">Explore over 500,000 models for NLP, computer vision, audio, and more</p>
+      </div>
+      <div class="model-grid">
+        <div class="model-card featured">
+          <div class="model-header">
+            <div>
+              <div class="model-name">meta-llama/Llama-3.1-405B</div>
+              <div class="model-author">meta-llama</div>
+            </div>
+            <span class="model-badge badge-new">NEW</span>
+          </div>
+          <p class="model-description">The most capable openly available LLM to date with 405B parameters. Excels at reasoning, coding, and multilingual tasks.</p>
+          <div class="model-tags">
+            <span class="tag tag-nlp">text-generation</span>
+            <span class="tag tag-nlp">conversational</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 2.5M downloads</div>
+            <div class="model-stat">❤ 15.2K likes</div>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-header">
+            <div>
+              <div class="model-name">stabilityai/stable-diffusion-3</div>
+              <div class="model-author">stabilityai</div>
+            </div>
+          </div>
+          <p class="model-description">Latest text-to-image diffusion model with improved prompt adherence and image quality.</p>
+          <div class="model-tags">
+            <span class="tag tag-multimodal">text-to-image</span>
+            <span class="tag tag-multimodal">diffusion</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 5.8M downloads</div>
+            <div class="model-stat">❤ 28.4K likes</div>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-header">
+            <div>
+              <div class="model-name">openai/whisper-large-v3</div>
+              <div class="model-author">openai</div>
+            </div>
+          </div>
+          <p class="model-description">Robust speech recognition model trained on 680,000 hours of multilingual data.</p>
+          <div class="model-tags">
+            <span class="tag tag-audio">automatic-speech-recognition</span>
+            <span class="tag tag-audio">audio</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 12.3M downloads</div>
+            <div class="model-stat">❤ 42.1K likes</div>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-header">
+            <div>
+              <div class="model-name">google/vit-large-patch16-224</div>
+              <div class="model-author">google</div>
+            </div>
+          </div>
+          <p class="model-description">Vision Transformer (ViT) model pre-trained on ImageNet-21k for image classification.</p>
+          <div class="model-tags">
+            <span class="tag tag-vision">image-classification</span>
+            <span class="tag tag-vision">vision</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 8.7M downloads</div>
+            <div class="model-stat">❤ 19.5K likes</div>
+          </div>
+        </div>
+
+        <div class="model-card featured">
+          <div class="model-header">
+            <div>
+              <div class="model-name">mistralai/Mixtral-8x22B</div>
+              <div class="model-author">mistralai</div>
+            </div>
+            <span class="model-badge badge-new">NEW</span>
+          </div>
+          <p class="model-description">Sparse mixture of experts model with 176B total parameters, 44B active per token.</p>
+          <div class="model-tags">
+            <span class="tag tag-nlp">text-generation</span>
+            <span class="tag tag-nlp">moe</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 1.2M downloads</div>
+            <div class="model-stat">❤ 8.9K likes</div>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-header">
+            <div>
+              <div class="model-name">sentence-transformers/all-MiniLM-L6-v2</div>
+              <div class="model-author">sentence-transformers</div>
+            </div>
+          </div>
+          <p class="model-description">Efficient sentence embedding model for semantic search and similarity tasks.</p>
+          <div class="model-tags">
+            <span class="tag tag-nlp">sentence-similarity</span>
+            <span class="tag tag-nlp">embeddings</span>
+          </div>
+          <div class="model-stats">
+            <div class="model-stat">⬇ 45.2M downloads</div>
+            <div class="model-stat">❤ 67.3K likes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datasets Section -->
+  <section class="datasets" id="datasets">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Datasets</h2>
+        <p class="section-subtitle">Access 250,000+ datasets for training and fine-tuning your models</p>
+      </div>
+      <div class="dataset-grid">
+        <div class="dataset-card">
+          <div class="dataset-name">common_voice</div>
+          <p class="dataset-description">Mozilla's initiative to help teach machines how real people speak. Multilingual speech corpus.</p>
+          <div class="dataset-meta">
+            <span>🗣 Audio</span>
+            <span>120 languages</span>
+            <span>30K hours</span>
+          </div>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-name">imagenet-1k</div>
+          <p class="dataset-description">Large-scale image database designed for visual object recognition research with 1000 classes.</p>
+          <div class="dataset-meta">
+            <span>🖼 Vision</span>
+            <span>1.2M images</span>
+            <span>1K classes</span>
+          </div>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-name">squad_v2</div>
+          <p class="dataset-description">Stanford Question Answering Dataset combining 100K questions with unanswerable questions.</p>
+          <div class="dataset-meta">
+            <span>📝 NLP</span>
+            <span>150K examples</span>
+            <span>English</span>
+          </div>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-name">laion-5b</div>
+          <p class="dataset-description">Large-scale dataset of 5.85 billion CLIP-filtered image-text pairs for training vision models.</p>
+          <div class="dataset-meta">
+            <span>🎨 Multimodal</span>
+            <span>5.85B pairs</span>
+            <span>Multiple languages</span>
+          </div>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-name">the_pile</div>
+          <p class="dataset-description">825 GiB diverse, open source language modeling dataset created by EleutherAI.</p>
+          <div class="dataset-meta">
+            <span>📚 Text</span>
+            <span>825 GB</span>
+            <span>22 sources</span>
+          </div>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-name">coco</div>
+          <p class="dataset-description">Common Objects in Context dataset for object detection, segmentation, and captioning.</p>
+          <div class="dataset-meta">
+            <span>🖼 Vision</span>
+            <span>330K images</span>
+            <span>80 categories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spaces Section -->
+  <section class="spaces" id="spaces">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Discover Spaces</h2>
+        <p class="section-subtitle">Interactive ML demos and applications built by the community</p>
+      </div>
+      <div class="space-grid">
+        <div class="space-card">
+          <div class="space-preview">🎨</div>
+          <div class="space-content">
+            <div class="space-name">DALL-E 3 Generator</div>
+            <p class="space-description">Create stunning images from text descriptions using OpenAI's DALL-E 3 model.</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">💬</div>
+          <div class="space-content">
+            <div class="space-name">ChatGPT Clone</div>
+            <p class="space-description">Open-source conversational AI powered by Llama 3.1 with streaming responses.</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">🎵</div>
+          <div class="space-content">
+            <div class="space-name">Music Generator</div>
+            <p class="space-description">Generate original music from text prompts using MusicGen transformer model.</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">🔍</div>
+          <div class="space-content">
+            <div class="space-name">Semantic Search</div>
+            <p class="space-description">Search through millions of documents using natural language queries.</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">🎭</div>
+          <div class="space-content">
+            <div class="space-name">Face Animator</div>
+            <p class="space-description">Animate faces from a single image using first-order motion model.</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">📊</div>
+          <div class="space-content">
+            <div class="space-name">Data Visualizer</div>
+            <p class="space-description">Upload and visualize your datasets with interactive charts and insights.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="community">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Join the Community</h2>
+        <p class="section-subtitle">The largest open-source AI community in the world</p>
+      </div>
+      <div class="community-grid">
+        <div class="community-stat">
+          <div class="community-number">10M+</div>
+          <div class="community-label">Community Members</div>
+        </div>
+        <div class="community-stat">
+          <div class="community-number">500K+</div>
+          <div class="community-label">Models Shared</div>
+        </div>
+        <div class="community-stat">
+          <div class="community-number">250K+</div>
+          <div class="community-label">Datasets Available</div>
+        </div>
+        <div class="community-stat">
+          <div class="community-number">50K+</div>
+          <div class="community-label">Organizations</div>
+        </div>
+      </div>
+      <div class="community-features">
+        <div class="community-feature">
+          <span class="community-icon">🤝</span>
+          <h3>Collaborate</h3>
+          <p>Work together on models, datasets, and applications. Share your work with the world.</p>
+        </div>
+        <div class="community-feature">
+          <span class="community-icon">🚀</span>
+          <h3>Deploy</h3>
+          <p>Host your ML applications with Spaces. From prototype to production in minutes.</p>
+        </div>
+        <div class="community-feature">
+          <span class="community-icon">📚</span>
+          <h3>Learn</h3>
+          <p>Access courses, tutorials, and documentation to master machine learning.</p>
+        </div>
+        <div class="community-feature">
+          <span class="community-icon">🌍</span>
+          <h3>Open Source</h3>
+          <p>Everything is open and transparent. Build on the shoulders of giants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="code-example">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple to Use</h2>
+        <p class="section-subtitle">Get started with just a few lines of code</p>
+      </div>
+      <div class="code-wrapper">
+        <div class="code-block">
+          <pre><code class="code-content">from transformers import pipeline
+
+# Load a pre-trained model
+generator = pipeline('text-generation', model='meta-llama/Llama-3.1-8B')
+
+# Generate text
+result = generator(
+    "The future of AI is",
+    max_length=100,
+    num_return_sequences=1
+)
+
+print(result[0]['generated_text'])
+
+# Or use it for classification
+classifier = pipeline('sentiment-analysis')
+result = classifier("Hugging Face is amazing!")
+print(result)  # [{'label': 'POSITIVE', 'score': 0.9998}]</code></pre>
+        </div>
+        <div class="code-actions">
+          <button class="btn-yellow" onclick="copyCode()">Copy Code</button>
+          <a href="#docs" class="btn-secondary">View Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="docs">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything You Need</h2>
+        <p class="section-subtitle">Tools and infrastructure for the entire ML lifecycle</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">Fast Inference</h3>
+          <p class="feature-description">Optimized inference with TGI and TEI. Deploy models at scale with low latency.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔒</span>
+          <h3 class="feature-title">Enterprise Ready</h3>
+          <p class="feature-description">SSO, audit logs, and private repositories. SOC 2 Type II certified.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎯</span>
+          <h3 class="feature-title">AutoTrain</h3>
+          <p class="feature-description">Train state-of-the-art models without writing code. Just upload your data.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📦</span>
+          <h3 class="feature-title">Model Hub</h3>
+          <p class="feature-description">Version control for ML models. Track experiments and collaborate seamlessly.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔧</span>
+          <h3 class="feature-title">Inference API</h3>
+          <p class="feature-description">Serverless inference for all models. Pay only for what you use.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌐</span>
+          <h3 class="feature-title">Multi-Framework</h3>
+          <p class="feature-description">PyTorch, TensorFlow, JAX, and more. Use your favorite framework.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Building Today</h2>
+        <p class="cta-subtitle">Join millions of developers and researchers building the future of AI</p>
+        <div class="cta-buttons">
+          <button class="btn-yellow btn-large" onclick="handleSignup()">Create Free Account</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Explore Models</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#models">Models</a></li>
+            <li><a href="#datasets">Datasets</a></li>
+            <li><a href="#spaces">Spaces</a></li>
+            <li><a href="#inference">Inference</a></li>
+            <li><a href="#autotrain">AutoTrain</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#papers">Papers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#pricing" id="pricing">Pricing</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#forums">Forums</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>🤗 © 2026 Hugging Face, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('This would navigate to the models page. In production, this would link to https://huggingface.co/models');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Code copied to clipboard!');
+      });
+    }
+
+    function handleSignup() {
+      alert('This would open the signup flow. In production, this would link to https://huggingface.co/join');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

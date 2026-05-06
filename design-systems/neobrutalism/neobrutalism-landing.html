@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neobrutalism Design System - Bold, Raw, Unapologetic</title>
+  <link rel="stylesheet" href="neobrutalism-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">NEOBRUTALISM</a>
+        <nav class="nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#colors" class="nav-link">Colors</a>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>BOLD. RAW. UNAPOLOGETIC.</h1>
+        <p>A modern take on brutalism with bold borders, vivid accent colors, and raw, high-contrast layouts that demand attention.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Download Now</a>
+          <a href="#" class="btn btn-secondary">View Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="features-header">
+        <h2>DESIGNED FOR IMPACT</h2>
+        <p>Every element crafted to make a statement. No compromises, no subtlety.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card card-primary">
+          <span class="feature-icon">⚡</span>
+          <h3>BOLD BORDERS</h3>
+          <p>Thick 4-8px borders that define boundaries with authority. No gentle curves, just raw edges.</p>
+        </div>
+        
+        <div class="card card-secondary">
+          <span class="feature-icon">🎨</span>
+          <h3>VIVID COLORS</h3>
+          <p>High-contrast color palette that refuses to blend in. Primary yellow, deep purple, and pure black.</p>
+        </div>
+        
+        <div class="card card-success">
+          <span class="feature-icon">📐</span>
+          <h3>HARD SHADOWS</h3>
+          <p>Offset shadows that create depth without gradients. Flat, bold, and unmistakably brutalist.</p>
+        </div>
+        
+        <div class="card card-warning">
+          <span class="feature-icon">🔤</span>
+          <h3>STRONG TYPE</h3>
+          <p>Inter at heavy weights for headlines. Clear hierarchy, maximum readability, zero ambiguity.</p>
+        </div>
+        
+        <div class="card card-danger">
+          <span class="feature-icon">⚙️</span>
+          <h3>SYSTEMATIC</h3>
+          <p>Consistent spacing scale, predictable grid, and design tokens that enforce visual discipline.</p>
+        </div>
+        
+        <div class="card">
+          <span class="feature-icon">♿</span>
+          <h3>ACCESSIBLE</h3>
+          <p>High contrast ratios, clear focus states, and semantic HTML. Bold doesn't mean broken.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">REAL-WORLD EXAMPLES</h2>
+      <p class="text-center mb-2xl">See how Neobrutalism transforms ordinary interfaces into bold statements.</p>
+      
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>E-COMMERCE</h3>
+          <p>Product cards that grab attention. CTAs that demand clicks. Shopping experiences that convert.</p>
+          <div class="mt-xl">
+            <span class="badge badge-primary">NEW</span>
+            <span class="badge badge-success">IN STOCK</span>
+            <span class="badge badge-danger">SALE</span>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3>SAAS PLATFORMS</h3>
+          <p>Dashboards with clear hierarchy. Forms that guide users. Interfaces that feel confident and capable.</p>
+          <div class="mt-xl">
+            <span class="badge badge-secondary">PRO</span>
+            <span class="badge badge-warning">BETA</span>
+            <span class="badge">STABLE</span>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3>PORTFOLIOS</h3>
+          <p>Creative work that stands out. Bold typography that speaks. Layouts that showcase without distraction.</p>
+          <a href="#" class="btn btn-outline mt-lg">View Gallery</a>
+        </div>
+        
+        <div class="card">
+          <h3>LANDING PAGES</h3>
+          <p>Hero sections that convert. Feature grids that inform. CTAs that drive action immediately.</p>
+          <a href="#" class="btn btn-outline mt-lg">See Templates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS SHOWCASE -->
+  <section id="components" class="components-showcase">
+    <div class="container">
+      <h2 class="text-center mb-2xl">COMPONENT LIBRARY</h2>
+      
+      <div class="component-demo">
+        <h4>Buttons</h4>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button class="btn btn-primary">Primary Action</button>
+          <button class="btn btn-secondary">Secondary Action</button>
+          <button class="btn btn-outline">Outline Button</button>
+          <button class="btn">Default Button</button>
+        </div>
+      </div>
+      
+      <div class="component-demo">
+        <h4>Form Elements</h4>
+        <div class="input-group">
+          <label class="label" for="email">Email Address</label>
+          <input type="email" id="email" class="input" placeholder="your@email.com">
+        </div>
+        <div class="input-group">
+          <label class="label" for="message">Message</label>
+          <textarea id="message" class="input textarea" placeholder="Tell us what you think..."></textarea>
+        </div>
+        <button class="btn btn-primary">Submit Form</button>
+      </div>
+      
+      <div class="component-demo">
+        <h4>Badges & Labels</h4>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge">Neutral</span>
+        </div>
+      </div>
+      
+      <div class="component-demo">
+        <h4>Typography Scale</h4>
+        <h1 style="color: var(--color-text);">Heading 1 - 64px</h1>
+        <h2 style="color: var(--color-text);">Heading 2 - 48px</h2>
+        <h3 style="color: var(--color-text);">Heading 3 - 35px</h3>
+        <h4 style="color: var(--color-text);">Heading 4 - 27px</h4>
+        <p style="color: var(--color-text); margin-bottom: 0;">Body text - 17px with optimal line height for readability and scanability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR PALETTE -->
+  <section id="colors" class="section">
+    <div class="container">
+      <h2 class="text-center">COLOR PALETTE</h2>
+      <p class="text-center mb-2xl">High-contrast colors that work together to create bold, accessible interfaces.</p>
+      
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #FDC800;"></div>
+          <div class="color-info">
+            <div class="color-name">Primary</div>
+            <div class="color-value">#FDC800</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #432DD7;"></div>
+          <div class="color-info">
+            <div class="color-name">Secondary</div>
+            <div class="color-value">#432DD7</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #16A34A;"></div>
+          <div class="color-info">
+            <div class="color-name">Success</div>
+            <div class="color-value">#16A34A</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #D97706;"></div>
+          <div class="color-info">
+            <div class="color-name">Warning</div>
+            <div class="color-value">#D97706</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #DC2626;"></div>
+          <div class="color-info">
+            <div class="color-name">Danger</div>
+            <div class="color-value">#DC2626</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #FBFBF9;"></div>
+          <div class="color-info">
+            <div class="color-name">Surface</div>
+            <div class="color-value">#FBFBF9</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #1C293C;"></div>
+          <div class="color-info">
+            <div class="color-name">Text</div>
+            <div class="color-value">#1C293C</div>
+          </div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-block" style="background-color: #000000;"></div>
+          <div class="color-info">
+            <div class="color-name">Black</div>
+            <div class="color-value">#000000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN PRINCIPLES -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">DESIGN PRINCIPLES</h2>
+      <p class="text-center mb-2xl">The rules that make Neobrutalism work.</p>
+      
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>NO GRADIENTS</h3>
+          <p>Flat colors only. Depth comes from shadows and borders, not smooth transitions. Every surface is solid and confident.</p>
+        </div>
+        
+        <div class="card">
+          <h3>THICK BORDERS</h3>
+          <p>4-8px borders define every element. Boundaries are clear, edges are sharp, and nothing bleeds together.</p>
+        </div>
+        
+        <div class="card">
+          <h3>HARD SHADOWS</h3>
+          <p>Offset shadows with no blur. 6-8px displacement creates depth without softness. Brutalist to the core.</p>
+        </div>
+        
+        <div class="card">
+          <h3>HIGH CONTRAST</h3>
+          <p>Text is readable, actions are obvious, and hierarchy is unmistakable. Accessibility through boldness.</p>
+        </div>
+        
+        <div class="card">
+          <h3>SYSTEMATIC SPACING</h3>
+          <p>4/8/12/16/24/32px scale keeps rhythm consistent. No arbitrary gaps, no visual chaos.</p>
+        </div>
+        
+        <div class="card">
+          <h3>BOLD TYPOGRAPHY</h3>
+          <p>Heavy weights for headlines, clear weights for body. Inter at 700-900 for impact, 400-500 for readability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section" style="background-color: var(--color-secondary); color: var(--color-surface);">
+    <div class="container text-center">
+      <h2 style="color: var(--color-surface); font-size: 48px;">READY TO GO BOLD?</h2>
+      <p style="color: var(--color-surface); font-size: 21px; max-width: 600px; margin: 0 auto 32px;">Download the complete design system with tokens, components, and documentation.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary">Download Design System</a>
+        <a href="#" class="btn" style="background-color: var(--color-surface); color: var(--color-text);">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Neobrutalism</h4>
+          <p>A modern design system that embraces bold borders, vivid colors, and raw aesthetics.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Component Library</a></li>
+            <li><a href="#" class="footer-link">Design Tokens</a></li>
+            <li><a href="#" class="footer-link">Figma Kit</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">Discord</a></li>
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">Contribute</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">License</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neobrutalism Design System. Bold, raw, and unapologetic.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

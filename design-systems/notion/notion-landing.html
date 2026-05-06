@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion - Your connected workspace for wiki, docs & projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="notion-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Notion</div>
+        <ul class="nav-links">
+          <li><a href="#product">Product</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Notion free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Write, plan, share. With AI at your side.</h1>
+        <p class="hero-subtitle">Notion is the connected workspace where better, faster work happens. Now with AI built right in.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Get Notion free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">See how it works</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by teams at thousands of companies worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-content">
+        <p class="trust-title">Powering the world's best teams</p>
+        <div class="trust-logos">
+          <span class="trust-logo">Figma</span>
+          <span class="trust-logo">Pixar</span>
+          <span class="trust-logo">Nike</span>
+          <span class="trust-logo">Spotify</span>
+          <span class="trust-logo">Amazon</span>
+          <span class="trust-logo">Uber</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-warm" id="product">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need. Nothing you don't.</h2>
+        <p class="section-subtitle">One tool for your whole team. Write, plan, and get organized.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h4 class="feature-title">Docs that bring ideas to life</h4>
+          <p class="feature-description">Beautiful, flexible pages that make it easy to capture your thoughts and share them with your team.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗂️</div>
+          <h4 class="feature-title">Projects that keep work moving</h4>
+          <p class="feature-description">Manage any type of project with customizable views, powerful filters, and seamless collaboration.</p>
+          <a href="#projects" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h4 class="feature-title">A wiki for your team's knowledge</h4>
+          <p class="feature-description">Centralize your company knowledge in one place. Easy to organize, easy to find, easy to update.</p>
+          <a href="#wiki" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h4 class="feature-title">AI that works with you</h4>
+          <p class="feature-description">Get instant answers, generate content, and automate tasks with AI built right into your workspace.</p>
+          <a href="#ai" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h4 class="feature-title">Connected to your tools</h4>
+          <p class="feature-description">Embed content from Figma, Google Drive, GitHub, and 100+ other tools you already use every day.</p>
+          <a href="#integrations" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h4 class="feature-title">Works everywhere you do</h4>
+          <p class="feature-description">Access your workspace on any device. Desktop, mobile, or web — your work syncs seamlessly.</p>
+          <a href="#platforms" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="section-white" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Start with a template</h2>
+        <p class="section-subtitle">Get a head start with thousands of templates for any use case</p>
+      </div>
+      <div class="template-grid">
+        <div class="template-card">
+          <div class="template-image">📋</div>
+          <div class="template-content">
+            <h4 class="template-title">Product Roadmap</h4>
+            <p class="template-description">Plan and track your product development with timeline views and status tracking.</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">📊</div>
+          <div class="template-content">
+            <h4 class="template-title">Meeting Notes</h4>
+            <p class="template-description">Capture decisions, action items, and key takeaways from every meeting.</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">📚</div>
+          <div class="template-content">
+            <h4 class="template-title">Company Wiki</h4>
+            <p class="template-description">Build a central hub for all your team's knowledge and documentation.</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">✅</div>
+          <div class="template-content">
+            <h4 class="template-title">Task List</h4>
+            <p class="template-description">Organize your to-dos with priorities, due dates, and custom properties.</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">🎯</div>
+          <div class="template-content">
+            <h4 class="template-title">OKRs & Goals</h4>
+            <p class="template-description">Set objectives, track key results, and align your team around shared goals.</p>
+          </div>
+        </div>
+        <div class="template-card">
+          <div class="template-image">💼</div>
+          <div class="template-content">
+            <h4 class="template-title">Project Tracker</h4>
+            <p class="template-description">Manage projects from start to finish with kanban boards and calendar views.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="section-warm" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for the way you work</h2>
+        <p class="section-subtitle">Teams of all sizes use Notion to do their best work</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">🚀</div>
+          <h4 class="use-case-title">For Startups</h4>
+          <p class="use-case-description">Move fast and stay organized. Notion gives your startup one place to build, plan, and collaborate as you grow.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🏢</div>
+          <h4 class="use-case-title">For Enterprise</h4>
+          <p class="use-case-description">Scale your operations with advanced permissions, security controls, and dedicated support for large teams.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">💻</div>
+          <h4 class="use-case-title">For Engineering</h4>
+          <p class="use-case-description">Document your systems, track sprints, and keep your technical knowledge organized and accessible.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🎨</div>
+          <h4 class="use-case-title">For Design</h4>
+          <p class="use-case-description">Centralize design specs, feedback, and assets. Embed Figma files and keep everyone aligned.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">📈</div>
+          <h4 class="use-case-title">For Product</h4>
+          <p class="use-case-description">Build roadmaps, write specs, and coordinate launches all in one connected workspace.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">👥</div>
+          <h4 class="use-case-title">For HR & Operations</h4>
+          <p class="use-case-description">Streamline onboarding, manage policies, and create a single source of truth for your team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="metrics">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by millions worldwide</h2>
+        <p class="section-subtitle">Join the teams already working better with Notion</p>
+      </div>
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-number">30M+</div>
+          <div class="metric-label">Users worldwide</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">4.8★</div>
+          <div class="metric-label">App Store rating</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100+</div>
+          <div class="metric-label">Integrations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">150+</div>
+          <div class="metric-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section-white" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find the plan that fits</h2>
+        <p class="section-subtitle">Start free and upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Free</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Collaborative workspace</li>
+            <li>✓ Unlimited pages & blocks</li>
+            <li>✓ Sync across devices</li>
+            <li>✓ Share with guests</li>
+            <li>✓ Basic page analytics</li>
+            <li>✓ 7 day page history</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h4 class="pricing-name">Plus</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$10</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Free, plus:</li>
+            <li>✓ Unlimited file uploads</li>
+            <li>✓ Unlimited guests</li>
+            <li>✓ 30 day page history</li>
+            <li>✓ Advanced permissions</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Try Plus free</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Business</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$18</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Plus, plus:</li>
+            <li>✓ SAML SSO</li>
+            <li>✓ Advanced security</li>
+            <li>✓ Audit log</li>
+            <li>✓ Bulk export</li>
+            <li>✓ Custom contracts</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Try Business free</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Enterprise</h4>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Business, plus:</li>
+            <li>✓ Dedicated success manager</li>
+            <li>✓ Custom onboarding</li>
+            <li>✓ Advanced admin tools</li>
+            <li>✓ Workspace analytics</li>
+            <li>✓ Unlimited page history</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="contactSales()">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Get started for free</h2>
+        <p class="cta-subtitle">Play around with it first. Pay and add your team later.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Try Notion free</button>
+          <button class="btn-ghost btn-large" onclick="openDemo()">Request a demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#wikis">Wikis</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="#ai">Notion AI</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Use Cases</h4>
+          <ul class="footer-links">
+            <li><a href="#teams">Team collaboration</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#hr">HR & Operations</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help center</a></li>
+            <li><a href="#guides">Guides & tutorials</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#api">API docs</a></li>
+            <li><a href="#status">System status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#media">Media kit</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Download</h4>
+          <ul class="footer-links">
+            <li><a href="#ios">iOS & Android</a></li>
+            <li><a href="#mac">Mac & Windows</a></li>
+            <li><a href="#web">Web Clipper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Notion Labs, Inc. • <a href="#privacy">Privacy</a> • <a href="#terms">Terms</a> • <a href="#security">Security</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    function contactSales() {
+      alert('Contact sales form would open here. In production, this would open a contact form or redirect to a sales page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

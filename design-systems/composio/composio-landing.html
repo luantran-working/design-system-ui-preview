@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composio - Tool Integration Platform for AI Agents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="composio-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">COMPOSIO</div>
+        <ul class="nav-links">
+          <li><a href="#integrations">Integrations</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Connect AI Agents to Every Tool</h1>
+        <p class="hero-subtitle">The integration platform built for developers. Connect your AI agents to 150+ tools with a single API call. No complex authentication flows, no maintenance overhead.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Building</button>
+          <button class="btn-secondary btn-large" onclick="openDocs()">View Documentation</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">150+</span>
+            <span class="stat-label">Integrations</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">10M+</span>
+            <span class="stat-label">API Calls/Month</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">99.9%</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Statement -->
+  <section class="brand-statement">
+    <div class="container">
+      <div class="brand-text">COMPOSIO</div>
+    </div>
+  </section>
+
+  <!-- Integrations Grid -->
+  <section class="integrations-showcase" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">150+ Integrations Ready to Use</h2>
+        <p class="section-subtitle">Connect to the tools your team already uses. Authentication, rate limiting, and error handling included.</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-card">GitHub</div>
+        <div class="integration-card">Slack</div>
+        <div class="integration-card">Linear</div>
+        <div class="integration-card">Notion</div>
+        <div class="integration-card">Jira</div>
+        <div class="integration-card">Salesforce</div>
+        <div class="integration-card">HubSpot</div>
+        <div class="integration-card">Gmail</div>
+        <div class="integration-card">Google Drive</div>
+        <div class="integration-card">Dropbox</div>
+        <div class="integration-card">Figma</div>
+        <div class="integration-card">Stripe</div>
+        <div class="integration-card">Shopify</div>
+        <div class="integration-card">Zendesk</div>
+        <div class="integration-card">Intercom</div>
+        <div class="integration-card">Discord</div>
+        <div class="integration-card">Trello</div>
+        <div class="integration-card">Asana</div>
+        <div class="integration-card">Monday</div>
+        <div class="integration-card">ClickUp</div>
+      </div>
+      <div class="integration-cta">
+        <a href="#all-integrations" class="text-link">View all 150+ integrations →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="code-section">
+    <div class="container">
+      <div class="code-header">
+        <div class="code-label">INTEGRATION IN 3 LINES</div>
+        <h2 class="section-title">Simple API, Powerful Results</h2>
+        <p class="section-subtitle">No complex OAuth flows. No webhook management. Just clean, simple code.</p>
+      </div>
+      <div class="code-container">
+        <div class="code-block">
+          <pre><code class="code-content">import { Composio } from 'composio-core';
+
+const client = new Composio({ apiKey: process.env.COMPOSIO_API_KEY });
+
+// Execute any action on any tool
+const result = await client.execute({
+  action: 'GITHUB_CREATE_ISSUE',
+  params: {
+    owner: 'composiohq',
+    repo: 'composio',
+    title: 'Bug: API timeout on large requests',
+    body: 'Detailed description of the issue...',
+    labels: ['bug', 'priority-high']
+  }
+});
+
+console.log(result.data);
+// { id: 12345, url: 'https://github.com/...', state: 'open' }</code></pre>
+        </div>
+        <div class="code-actions">
+          <button class="btn-primary" onclick="copyCode()">Copy Code</button>
+          <button class="btn-ghost" onclick="openDocs()">View Full Docs</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for Production AI Agents</h2>
+        <p class="section-subtitle">Everything you need to connect AI agents to external tools</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3 class="feature-title">Managed Authentication</h3>
+          <p class="feature-description">OAuth, API keys, and session management handled automatically. Your users authenticate once, we handle the rest.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Rate Limit Handling</h3>
+          <p class="feature-description">Automatic retry logic and rate limit management. Never worry about hitting API limits or handling backoff strategies.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Error Recovery</h3>
+          <p class="feature-description">Intelligent error handling with automatic retries. Detailed error messages help you debug faster.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Real-time Monitoring</h3>
+          <p class="feature-description">Track every API call, monitor performance, and debug issues with comprehensive logging and analytics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Webhook Management</h3>
+          <p class="feature-description">Subscribe to events from any tool. We handle webhook verification, retries, and delivery guarantees.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Zero Maintenance</h3>
+          <p class="feature-description">We keep integrations up to date as APIs change. Focus on building features, not maintaining integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Developer Tools You'll Love</h2>
+        <p class="section-subtitle">Built by developers, for developers</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">💻</div>
+            <h3 class="tool-title">CLI Tool</h3>
+          </div>
+          <p class="tool-description">Test integrations locally, manage connections, and debug issues from your terminal.</p>
+          <div class="tool-code">
+            <code>$ composio connect github<br>$ composio execute GITHUB_CREATE_ISSUE</code>
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🔍</div>
+            <h3 class="tool-title">API Explorer</h3>
+          </div>
+          <p class="tool-description">Browse all available actions, test endpoints, and see real responses before writing code.</p>
+          <div class="tool-badge">Interactive Playground</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">📚</div>
+            <h3 class="tool-title">SDK Libraries</h3>
+          </div>
+          <p class="tool-description">Native SDKs for Python, Node.js, Go, and Ruby. Type-safe, well-documented, and actively maintained.</p>
+          <div class="tool-badge">TypeScript Support</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🎯</div>
+            <h3 class="tool-title">Testing Suite</h3>
+          </div>
+          <p class="tool-description">Mock integrations for testing. Simulate API responses without hitting real endpoints.</p>
+          <div class="tool-badge">CI/CD Ready</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What You Can Build</h2>
+        <p class="section-subtitle">Real-world AI agent use cases powered by Composio</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-number">01</div>
+          <h3 class="use-case-title">Engineering Automation</h3>
+          <p class="use-case-description">AI agents that create GitHub issues, update Jira tickets, deploy code, and manage infrastructure across your entire stack.</p>
+          <div class="use-case-tools">GitHub • Jira • Linear • Slack</div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-number">02</div>
+          <h3 class="use-case-title">Sales Intelligence</h3>
+          <p class="use-case-description">Agents that enrich leads, update CRM records, schedule meetings, and send personalized outreach at scale.</p>
+          <div class="use-case-tools">Salesforce • HubSpot • Gmail • Calendar</div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-number">03</div>
+          <h3 class="use-case-title">Customer Support</h3>
+          <p class="use-case-description">Intelligent agents that search knowledge bases, create support tickets, and escalate issues to the right team.</p>
+          <div class="use-case-tools">Zendesk • Intercom • Slack • Notion</div>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-number">04</div>
+          <h3 class="use-case-title">Content Operations</h3>
+          <p class="use-case-description">Agents that manage content across platforms, schedule posts, analyze performance, and optimize campaigns.</p>
+          <div class="use-case-tools">Twitter • LinkedIn • Medium • Analytics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">API Calls Per Month</div>
+          <div class="stat-description">Trusted by production AI agents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Tool Integrations</div>
+          <div class="stat-description">Growing every week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime SLA</div>
+          <div class="stat-description">Enterprise-grade reliability</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">&lt;100ms</div>
+          <div class="stat-label">P95 Latency</div>
+          <div class="stat-description">Lightning-fast responses</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Start free, scale as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Developer</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>1,000 API calls/month</li>
+            <li>10 active connections</li>
+            <li>All 150+ integrations</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+          </ul>
+          <button class="btn-ghost btn-full" onclick="scrollToSection('get-started')">Start Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>100,000 API calls/month</li>
+            <li>Unlimited connections</li>
+            <li>All integrations</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Webhook management</li>
+            <li>Custom rate limits</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Pro Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited API calls</li>
+            <li>Unlimited connections</li>
+            <li>Dedicated support</li>
+            <li>99.9% SLA guarantee</li>
+            <li>Custom integrations</li>
+            <li>On-premise deployment</li>
+            <li>SSO & SAML</li>
+          </ul>
+          <button class="btn-ghost btn-full" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation Preview -->
+  <section class="docs-section" id="docs">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comprehensive Documentation</h2>
+        <p class="section-subtitle">Everything you need to integrate in minutes</p>
+      </div>
+      <div class="docs-grid">
+        <a href="#quickstart" class="doc-card">
+          <div class="doc-icon">🚀</div>
+          <h3 class="doc-title">Quickstart</h3>
+          <p class="doc-description">Get up and running in 5 minutes</p>
+          <span class="doc-link">Read guide →</span>
+        </a>
+        <a href="#api-reference" class="doc-card">
+          <div class="doc-icon">📖</div>
+          <h3 class="doc-title">API Reference</h3>
+          <p class="doc-description">Complete API documentation</p>
+          <span class="doc-link">Browse docs →</span>
+        </a>
+        <a href="#integrations" class="doc-card">
+          <div class="doc-icon">🔌</div>
+          <h3 class="doc-title">Integration Guides</h3>
+          <p class="doc-description">Tool-specific setup guides</p>
+          <span class="doc-link">View guides →</span>
+        </a>
+        <a href="#examples" class="doc-card">
+          <div class="doc-icon">💡</div>
+          <h3 class="doc-title">Code Examples</h3>
+          <p class="doc-description">Real-world implementation examples</p>
+          <span class="doc-link">See examples →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start Building Today</h2>
+        <p class="section-subtitle">Join thousands of developers building AI agents with Composio</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get API Key</button>
+        </div>
+        <p class="form-note">Free forever • No credit card required • 1,000 API calls/month</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#api-reference">API Reference</a></li>
+            <li><a href="#sdk">SDK Libraries</a></li>
+            <li><a href="#cli">CLI Tool</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Composio. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDocs() {
+      alert('Documentation would open here. In production, this would link to the full documentation site.');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Code copied to clipboard!');
+      });
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for your API key.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    function contactSales() {
+      alert('Sales contact form would open here. In production, this would link to a contact form or calendar booking.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

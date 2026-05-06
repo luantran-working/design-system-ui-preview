@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI - Creating safe AGI that benefits all of humanity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="openai-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">OpenAI</div>
+        <ul class="nav-links">
+          <li><a href="#models">Models</a></li>
+          <li><a href="#api">API</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#research">Research</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Creating safe AGI that benefits all of humanity</h1>
+        <p class="hero-subtitle">OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Try ChatGPT</button>
+          <button class="btn-secondary btn-large" onclick="scrollToSection('api')">Explore API</button>
+        </div>
+        <div class="hero-badge">
+          <span>Trusted by millions worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Weekly Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Developers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">92%</div>
+          <div class="stat-label">Fortune 500 Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">175+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Models</h2>
+        <p class="section-subtitle">State-of-the-art AI models for every use case</p>
+      </div>
+      <div class="model-grid">
+        <div class="model-card">
+          <div class="model-icon">🧠</div>
+          <h3 class="model-name">GPT-4</h3>
+          <p class="model-description">Our most capable model. Great for tasks that require creativity, advanced reasoning, and complex instruction following.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Context Window</span>
+              <span class="spec-value">128K tokens</span>
+            </li>
+            <li>
+              <span class="spec-label">Training Data</span>
+              <span class="spec-value">Up to Sep 2021</span>
+            </li>
+            <li>
+              <span class="spec-label">Modalities</span>
+              <span class="spec-value">Text, Vision</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">⚡</div>
+          <h3 class="model-name">GPT-3.5 Turbo</h3>
+          <p class="model-description">Fast and efficient model optimized for chat and traditional completion tasks. Great balance of capability and cost.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Context Window</span>
+              <span class="spec-value">16K tokens</span>
+            </li>
+            <li>
+              <span class="spec-label">Training Data</span>
+              <span class="spec-value">Up to Sep 2021</span>
+            </li>
+            <li>
+              <span class="spec-label">Modalities</span>
+              <span class="spec-value">Text</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">🎨</div>
+          <h3 class="model-name">DALL·E 3</h3>
+          <p class="model-description">Create realistic images and art from natural language descriptions. Built natively on ChatGPT for enhanced prompting.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Resolution</span>
+              <span class="spec-value">Up to 1024×1792</span>
+            </li>
+            <li>
+              <span class="spec-label">Style Control</span>
+              <span class="spec-value">Natural, Vivid</span>
+            </li>
+            <li>
+              <span class="spec-label">Modalities</span>
+              <span class="spec-value">Text to Image</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">🎵</div>
+          <h3 class="model-name">Whisper</h3>
+          <p class="model-description">Automatic speech recognition system trained on 680,000 hours of multilingual data. Robust to accents and background noise.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Languages</span>
+              <span class="spec-value">99+ languages</span>
+            </li>
+            <li>
+              <span class="spec-label">Accuracy</span>
+              <span class="spec-value">Human-level</span>
+            </li>
+            <li>
+              <span class="spec-label">Modalities</span>
+              <span class="spec-value">Audio to Text</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">🔢</div>
+          <h3 class="model-name">Embeddings</h3>
+          <p class="model-description">Convert text into numerical vectors for search, clustering, recommendations, and anomaly detection use cases.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Dimensions</span>
+              <span class="spec-value">1536</span>
+            </li>
+            <li>
+              <span class="spec-label">Performance</span>
+              <span class="spec-value">SOTA on MTEB</span>
+            </li>
+            <li>
+              <span class="spec-label">Use Cases</span>
+              <span class="spec-value">Search, RAG</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-icon">🔧</div>
+          <h3 class="model-name">Moderation</h3>
+          <p class="model-description">Fine-tuned model for detecting potentially harmful content. Helps ensure safe and compliant applications.</p>
+          <ul class="model-specs">
+            <li>
+              <span class="spec-label">Categories</span>
+              <span class="spec-value">11 types</span>
+            </li>
+            <li>
+              <span class="spec-label">Latency</span>
+              <span class="spec-value">&lt;200ms</span>
+            </li>
+            <li>
+              <span class="spec-label">Accuracy</span>
+              <span class="spec-value">99.5%+</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Section -->
+  <section class="api" id="api">
+    <div class="container">
+      <div class="api-content">
+        <div class="api-text">
+          <h2>Simple, powerful API</h2>
+          <p>Integrate OpenAI models into your applications with just a few lines of code. Our API is designed for developers who want to build AI-powered products quickly.</p>
+          <ul class="api-features">
+            <li>RESTful API with comprehensive documentation</li>
+            <li>Official SDKs for Python, Node.js, and more</li>
+            <li>Streaming responses for real-time applications</li>
+            <li>Function calling for structured outputs</li>
+            <li>Fine-tuning for custom use cases</li>
+            <li>Enterprise-grade security and compliance</li>
+          </ul>
+          <button class="btn-accent btn-large" onclick="scrollToSection('get-started')">Get API Key</button>
+        </div>
+        <div class="api-code">
+          <div class="code-block">
+            <pre><code class="code-content"><span class="code-comment"># Install the OpenAI Python library</span>
+pip install openai
+
+<span class="code-comment"># Import and configure</span>
+<span class="code-keyword">import</span> openai
+
+openai.api_key = <span class="code-string">"your-api-key"</span>
+
+<span class="code-comment"># Create a chat completion</span>
+response = openai.ChatCompletion.create(
+  model=<span class="code-string">"gpt-4"</span>,
+  messages=[
+    {<span class="code-string">"role"</span>: <span class="code-string">"system"</span>, <span class="code-string">"content"</span>: <span class="code-string">"You are a helpful assistant."</span>},
+    {<span class="code-string">"role"</span>: <span class="code-string">"user"</span>, <span class="code-string">"content"</span>: <span class="code-string">"Explain quantum computing"</span>}
+  ]
+)
+
+<span class="code-comment"># Print the response</span>
+print(response.choices[0].message.content)</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powering Innovation Across Industries</h2>
+        <p class="section-subtitle">See how organizations use OpenAI to transform their workflows</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">💬</div>
+          <h3 class="use-case-title">Customer Support</h3>
+          <p class="use-case-description">Build intelligent chatbots that understand context, provide accurate answers, and escalate complex issues to human agents when needed.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">✍️</div>
+          <h3 class="use-case-title">Content Creation</h3>
+          <p class="use-case-description">Generate high-quality content at scale. From marketing copy to technical documentation, create engaging content faster.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🔍</div>
+          <h3 class="use-case-title">Search & Discovery</h3>
+          <p class="use-case-description">Build semantic search engines that understand intent. Surface relevant information from large knowledge bases instantly.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">💻</div>
+          <h3 class="use-case-title">Code Generation</h3>
+          <p class="use-case-description">Accelerate development with AI-powered code completion, debugging assistance, and automated test generation.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">📊</div>
+          <h3 class="use-case-title">Data Analysis</h3>
+          <p class="use-case-description">Extract insights from unstructured data. Analyze documents, summarize reports, and identify patterns automatically.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🌍</div>
+          <h3 class="use-case-title">Translation</h3>
+          <p class="use-case-description">Break language barriers with accurate, context-aware translation. Support global customers in their native language.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🎓</div>
+          <h3 class="use-case-title">Education</h3>
+          <p class="use-case-description">Create personalized learning experiences. Provide instant feedback, generate practice problems, and adapt to student needs.</p>
+        </div>
+        
+        <div class="use-case-card">
+          <div class="use-case-icon">🏥</div>
+          <h3 class="use-case-title">Healthcare</h3>
+          <p class="use-case-description">Assist medical professionals with diagnosis support, patient communication, and medical record analysis while maintaining privacy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Section -->
+  <section class="safety" id="safety">
+    <div class="container">
+      <div class="safety-content">
+        <div class="section-header">
+          <h2 class="section-title">Safety at Our Core</h2>
+          <p class="section-subtitle">We're committed to building AI that is safe, beneficial, and aligned with human values</p>
+        </div>
+        <div class="safety-grid">
+          <div class="safety-item">
+            <div class="safety-icon">🛡️</div>
+            <div class="safety-label">Alignment Research</div>
+            <p class="safety-description">Developing techniques to ensure AI systems behave as intended and remain under human control.</p>
+          </div>
+          
+          <div class="safety-item">
+            <div class="safety-icon">🔒</div>
+            <div class="safety-label">Security & Privacy</div>
+            <p class="safety-description">Enterprise-grade security with SOC 2 compliance, data encryption, and privacy-first architecture.</p>
+          </div>
+          
+          <div class="safety-item">
+            <div class="safety-icon">⚖️</div>
+            <div class="safety-label">Responsible Deployment</div>
+            <p class="safety-description">Careful rollout of new capabilities with extensive testing and safety evaluations.</p>
+          </div>
+          
+          <div class="safety-item">
+            <div class="safety-icon">🤝</div>
+            <div class="safety-label">Collaboration</div>
+            <p class="safety-description">Working with researchers, policymakers, and organizations to address AI safety challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Pay only for what you use. No hidden fees or commitments.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">ChatGPT Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Access to GPT-3.5</li>
+            <li>Standard response speed</li>
+            <li>Regular model updates</li>
+            <li>Web browsing (limited)</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">ChatGPT Plus</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$20</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Access to GPT-4</li>
+            <li>Faster response times</li>
+            <li>Priority access to new features</li>
+            <li>DALL·E 3 image generation</li>
+            <li>Advanced data analysis</li>
+            <li>Web browsing & plugins</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Upgrade to Plus</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">API Usage</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Pay as you go</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>GPT-4: $0.03 / 1K tokens</li>
+            <li>GPT-3.5: $0.002 / 1K tokens</li>
+            <li>DALL·E 3: $0.04 / image</li>
+            <li>Whisper: $0.006 / minute</li>
+            <li>Embeddings: $0.0001 / 1K tokens</li>
+            <li>Volume discounts available</li>
+          </ul>
+          <button class="btn-accent btn-full" onclick="scrollToSection('get-started')">Get API Key</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited access to GPT-4</li>
+            <li>Extended context windows</li>
+            <li>Advanced admin controls</li>
+            <li>SSO & SAML authentication</li>
+            <li>Dedicated support team</li>
+            <li>Custom data retention</li>
+            <li>99.9% uptime SLA</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="openContact()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start Building with OpenAI</h2>
+        <p class="section-subtitle">Join millions of developers and businesses using OpenAI to build the future</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get Started</button>
+        </div>
+        <p class="form-note">Free to start • No credit card required • $5 free credit included</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#chatgpt">ChatGPT</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#dall-e">DALL·E</a></li>
+            <li><a href="#whisper">Whisper</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#api-reference">API Reference</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#playground">Playground</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OpenAI. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Welcome! Check ${email} for your API key and getting started guide.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    function openContact() {
+      alert('Enterprise sales contact form would open here. In production, this would link to a contact form or calendar booking.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards and sections
+    document.querySelectorAll('.model-card, .use-case-card, .pricing-card, .safety-item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

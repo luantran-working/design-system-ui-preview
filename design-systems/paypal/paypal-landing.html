@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPal - Send, Shop, Manage - Do it all with PayPal</title>
+  <link rel="stylesheet" href="paypal-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20H14L13 28H19L20 20H22C26.42 20 30 16.42 30 12C30 7.58 26.42 4 22 4H12Z" fill="#0070BA"/>
+            <path d="M10 8C8.34 8 7 9.34 7 11C7 12.66 8.34 14 10 14H12L11.5 18H14.5L15 14H17C18.66 14 20 12.66 20 11C20 9.34 18.66 8 17 8H10Z" fill="#003087"/>
+          </svg>
+          PayPal
+        </div>
+        <ul class="nav-links">
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#security">Security</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#login" class="btn-outline">Log In</a>
+          <a href="#signup" class="btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The safer, easier way to pay and get paid</h1>
+        <p class="hero-subtitle">Join millions of people and businesses worldwide who trust PayPal for secure online payments.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('signup')">Sign Up for Free</button>
+          <button class="btn-outline btn-large" onclick="openDemo()">See How It Works</button>
+        </div>
+        <div class="trust-badge">
+          <span>🔒</span>
+          <span>Trusted by 400+ million active accounts worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">400M+</div>
+          <div class="stat-label">Active Accounts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Markets Worldwide</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Currencies Supported</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Customer Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need in one place</h2>
+        <p class="section-subtitle">Send money, shop online, and manage your finances with confidence</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3 class="feature-title">Send & Request Money</h3>
+          <p class="feature-description">Send money to friends and family in seconds. Split bills, share costs, or send a gift - all with just an email address or mobile number.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3 class="feature-title">Shop Securely Online</h3>
+          <p class="feature-description">Shop at millions of online stores worldwide without sharing your financial information. Get purchase protection on eligible items.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3 class="feature-title">Advanced Security</h3>
+          <p class="feature-description">Your financial information is encrypted and monitored 24/7. Get fraud protection and dispute resolution when you need it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Mobile Payments</h3>
+          <p class="feature-description">Pay in stores, online, and in apps with the PayPal app. Use QR codes for contactless payments anywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">PayPal Credit</h3>
+          <p class="feature-description">Get flexible payment options with PayPal Credit. Pay over time with special financing on purchases of $99 or more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">International Payments</h3>
+          <p class="feature-description">Send and receive money in over 25 currencies. Pay in local currency at millions of merchants worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Section -->
+  <section class="personal" id="personal">
+    <div class="container">
+      <div class="personal-content">
+        <div class="personal-text">
+          <h2>PayPal for Personal Use</h2>
+          <p>The fast, secure way to pay online, in stores, and send money to friends and family.</p>
+          <ul class="personal-features">
+            <li>Send money to friends and family fast</li>
+            <li>Shop online without sharing financial info</li>
+            <li>Get purchase protection on eligible items</li>
+            <li>Pay in 4 interest-free payments with Pay in 4</li>
+            <li>Earn rewards with PayPal Rewards</li>
+            <li>Link your bank, debit, and credit cards</li>
+          </ul>
+          <button class="btn-primary btn-large" onclick="scrollToSection('signup')">Create Personal Account</button>
+        </div>
+        <div class="personal-image">
+          📱
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Section -->
+  <section class="business" id="business">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">PayPal for Business</h2>
+        <p class="section-subtitle">Accept payments online, in person, and around the world</p>
+      </div>
+      <div class="business-grid">
+        <div class="business-card">
+          <div class="business-icon">🏪</div>
+          <h3 class="business-title">Accept Online Payments</h3>
+          <p class="business-description">Add PayPal checkout to your website or online store. Accept credit cards, debit cards, and PayPal payments.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">📊</div>
+          <h3 class="business-title">Invoicing & Billing</h3>
+          <p class="business-description">Create and send professional invoices. Get paid faster with automated payment reminders and recurring billing.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">💼</div>
+          <h3 class="business-title">Point of Sale</h3>
+          <p class="business-description">Accept payments in person with PayPal Zettle. Take card payments, track inventory, and manage your business.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">🌐</div>
+          <h3 class="business-title">Sell Internationally</h3>
+          <p class="business-description">Reach customers in 200+ markets. Accept payments in 25+ currencies with competitive exchange rates.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">🔄</div>
+          <h3 class="business-title">Subscriptions</h3>
+          <p class="business-description">Set up recurring payments for memberships, subscriptions, and services. Automate billing and reduce churn.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+        <div class="business-card">
+          <div class="business-icon">📈</div>
+          <h3 class="business-title">Business Analytics</h3>
+          <p class="business-description">Track sales, monitor cash flow, and understand your customers with detailed reporting and insights.</p>
+          <a href="#learn-more" class="business-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <section class="security" id="security">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Your security is our priority</h2>
+        <p class="section-subtitle">Advanced encryption and fraud protection keep your money and information safe</p>
+      </div>
+      <div class="security-grid">
+        <div class="security-card">
+          <div class="security-icon">🛡️</div>
+          <h3 class="security-title">Purchase Protection</h3>
+          <p class="security-description">If an eligible item doesn't arrive or doesn't match the seller's description, we'll help you get your money back.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">🔒</div>
+          <h3 class="security-title">Data Encryption</h3>
+          <p class="security-description">Your financial information is encrypted with industry-leading security technology and never shared with sellers.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">👁️</div>
+          <h3 class="security-title">24/7 Monitoring</h3>
+          <p class="security-description">Our fraud detection systems monitor transactions around the clock to help protect your account from unauthorized activity.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">✅</div>
+          <h3 class="security-title">Two-Factor Authentication</h3>
+          <p class="security-description">Add an extra layer of security to your account with two-factor authentication via SMS or authenticator app.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">💬</div>
+          <h3 class="security-title">Dispute Resolution</h3>
+          <p class="security-description">If there's a problem with a transaction, our Resolution Center helps you work with the seller to resolve issues.</p>
+        </div>
+        <div class="security-card">
+          <div class="security-icon">🏦</div>
+          <h3 class="security-title">Bank-Level Security</h3>
+          <p class="security-description">We use the same security standards as leading financial institutions to protect your account and information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="signup">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to get started?</h2>
+        <p class="cta-subtitle">Join millions of people who trust PayPal for secure online payments. Sign up for free in minutes.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup('personal')">Sign Up for Personal</button>
+          <button class="btn-outline btn-large" onclick="handleSignup('business')">Sign Up for Business</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Personal</h4>
+          <ul class="footer-links">
+            <li><a href="#send-money">Send Money</a></li>
+            <li><a href="#request-money">Request Money</a></li>
+            <li><a href="#shop">Shop Online</a></li>
+            <li><a href="#pay-in-4">Pay in 4</a></li>
+            <li><a href="#credit">PayPal Credit</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Business</h4>
+          <ul class="footer-links">
+            <li><a href="#accept-payments">Accept Payments</a></li>
+            <li><a href="#invoicing">Invoicing</a></li>
+            <li><a href="#pos">Point of Sale</a></li>
+            <li><a href="#subscriptions">Subscriptions</a></li>
+            <li><a href="#international">International</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#security">Security Center</a></li>
+            <li><a href="#developers">Developers</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#social-impact">Social Impact</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#legal">Legal Agreements</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 1999-2026 PayPal. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would show how PayPal works with a video or interactive tour.');
+    }
+
+    function handleSignup(type) {
+      alert(`Redirecting to ${type} account signup. In production, this would take you to the PayPal registration page.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll animation for feature cards
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.feature-card, .business-card, .security-card');
+      cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>

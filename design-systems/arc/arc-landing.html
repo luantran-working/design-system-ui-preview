@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arc - The Browser That Browses For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="arc-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Arc</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#spaces">Spaces</a></li>
+          <li><a href="#boosts">Boosts</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('download')">Download Arc</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The browser that browses for you</h1>
+        <p class="hero-subtitle">Arc reimagines the web browser with spaces, boosts, and a sidebar-first design that puts your workflow first.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('download')">Download for Mac</button>
+          <button class="btn-glass btn-large" onclick="openVideo()">Watch Video</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Loved by 500,000+ users worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Tabs Organized</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Boosts Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-label">User Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">A browser designed for how you work</h2>
+        <p class="section-subtitle">Every detail crafted to help you focus on what matters</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Beautiful by Default</h3>
+          <p class="feature-description">Frosted glass surfaces, gradient warmth, and translucent design that adapts to your chosen theme color. Arc dissolves the boundary between browser and content.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Sidebar-First Layout</h3>
+          <p class="feature-description">Tabs, spaces, and bookmarks live on the left, not the top. Navigate your entire web with a glance, without losing vertical space.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Command Bar</h3>
+          <p class="feature-description">Press ⌘T to summon the command bar. Search tabs, history, bookmarks, or the web instantly. Your browser responds at the speed of thought.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Split View</h3>
+          <p class="feature-description">View multiple tabs side-by-side without juggling windows. Perfect for research, comparison, or keeping reference material visible.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Privacy First</h3>
+          <p class="feature-description">Built-in ad blocking, tracker prevention, and automatic HTTPS upgrades. Browse faster and safer without extensions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Chromium Powered</h3>
+          <p class="feature-description">All your favorite Chrome extensions work in Arc. Built on Chromium for compatibility, reimagined for productivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Command Bar Demo -->
+  <section class="command-demo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Command everything</h2>
+        <p class="section-subtitle">The fastest way to navigate your browser</p>
+      </div>
+      <div class="command-bar">
+        <span class="command-icon">🔍</span>
+        <input type="text" class="command-input" placeholder="Search tabs, bookmarks, or the web..." readonly>
+        <span class="command-shortcut">⌘T</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spaces Section -->
+  <section class="spaces" id="spaces">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Organize with Spaces</h2>
+        <p class="section-subtitle">Separate work, personal, and projects into distinct browsing contexts</p>
+      </div>
+      <div class="spaces-grid">
+        <div class="space-card">
+          <div class="space-pill">💼 Work</div>
+          <h3 class="feature-title">Work Space</h3>
+          <p class="feature-description">Keep all your work tabs, tools, and resources in one dedicated space. Switch contexts instantly without closing tabs.</p>
+        </div>
+        <div class="space-card">
+          <div class="space-pill">🏠 Personal</div>
+          <h3 class="feature-title">Personal Space</h3>
+          <p class="feature-description">Your personal browsing stays separate. Shopping, social media, and entertainment in their own organized space.</p>
+        </div>
+        <div class="space-card">
+          <div class="space-pill">🎨 Creative</div>
+          <h3 class="feature-title">Project Spaces</h3>
+          <p class="feature-description">Create unlimited spaces for different projects. Each space remembers its tabs, theme, and layout.</p>
+        </div>
+        <div class="space-card">
+          <div class="space-pill">📚 Research</div>
+          <h3 class="feature-title">Research Space</h3>
+          <p class="feature-description">Collect articles, references, and resources. Your research stays organized and accessible across sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs Demo -->
+  <section class="tabs-demo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tabs that make sense</h2>
+        <p class="section-subtitle">Vertical tabs with favicons, organized by space</p>
+      </div>
+      <div class="tabs-container">
+        <div class="tab-item active">
+          <div class="tab-favicon"></div>
+          <span>Gmail - Inbox</span>
+        </div>
+        <div class="tab-item">
+          <div class="tab-favicon"></div>
+          <span>Figma - Design System</span>
+        </div>
+        <div class="tab-item">
+          <div class="tab-favicon"></div>
+          <span>Notion - Project Notes</span>
+        </div>
+        <div class="tab-item">
+          <div class="tab-favicon"></div>
+          <span>GitHub - Pull Requests</span>
+        </div>
+        <div class="tab-item">
+          <div class="tab-favicon"></div>
+          <span>Slack - Team Chat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boosts Section -->
+  <section class="boosts" id="boosts">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Supercharge sites with Boosts</h2>
+        <p class="section-subtitle">Customize any website with CSS, JavaScript, or pre-built boosts</p>
+      </div>
+      <div class="boosts-grid">
+        <div class="boost-card">
+          <div class="boost-icon">🎨</div>
+          <h3 class="feature-title">Custom Themes</h3>
+          <p class="feature-description">Apply custom CSS to any site. Dark mode for sites that don't have it, custom fonts, or complete redesigns.</p>
+        </div>
+        <div class="boost-card">
+          <div class="boost-icon">🚀</div>
+          <h3 class="feature-title">Productivity Boosts</h3>
+          <p class="feature-description">Auto-fill forms, remove distractions, keyboard shortcuts, and automation. Make every site work the way you want.</p>
+        </div>
+        <div class="boost-card">
+          <div class="boost-icon">🔧</div>
+          <h3 class="feature-title">Developer Tools</h3>
+          <p class="feature-description">Inject scripts, modify headers, test responsive designs. Full control over how sites behave in your browser.</p>
+        </div>
+        <div class="boost-card">
+          <div class="boost-icon">📦</div>
+          <h3 class="feature-title">Boost Gallery</h3>
+          <p class="feature-description">Browse 50+ community-created boosts. Install with one click and customize to your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple pricing for everyone</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Arc</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited tabs & spaces</li>
+            <li>✓ Command bar</li>
+            <li>✓ Split view</li>
+            <li>✓ Basic boosts</li>
+            <li>✓ Privacy features</li>
+            <li>✓ Sync across devices</li>
+          </ul>
+          <button class="btn-glass btn-full" onclick="scrollToSection('download')">Download Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Arc Max</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$8</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Arc</li>
+            <li>✓ AI-powered search</li>
+            <li>✓ Smart tab organization</li>
+            <li>✓ Advanced boosts</li>
+            <li>✓ Custom themes</li>
+            <li>✓ Priority support</li>
+            <li>✓ Early access features</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('download')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Arc for Teams</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Arc Max</li>
+            <li>✓ Shared spaces</li>
+            <li>✓ Team boosts library</li>
+            <li>✓ Centralized billing</li>
+            <li>✓ Admin controls</li>
+            <li>✓ SSO integration</li>
+            <li>✓ Dedicated support</li>
+          </ul>
+          <button class="btn-glass btn-full" onclick="openContact()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loved by creators and builders</h2>
+        <p class="section-subtitle">See what people are saying about Arc</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <p class="feature-description">"Arc completely changed how I browse. Spaces keep my work organized, and the command bar is lightning fast. I can't go back to Chrome."</p>
+          <h3 class="feature-title">Sarah Chen</h3>
+          <p class="feature-description" style="margin-top: -12px; font-size: 13px; opacity: 0.7;">Product Designer</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description">"The sidebar layout was weird at first, but now I can't imagine tabs at the top. Vertical space matters, and Arc gets it."</p>
+          <h3 class="feature-title">Marcus Rodriguez</h3>
+          <p class="feature-description" style="margin-top: -12px; font-size: 13px; opacity: 0.7;">Software Engineer</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description">"Boosts are incredible. I've customized every site I use daily. Dark mode everywhere, custom shortcuts, and zero distractions."</p>
+          <h3 class="feature-title">Emily Park</h3>
+          <p class="feature-description" style="margin-top: -12px; font-size: 13px; opacity: 0.7;">Content Creator</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="download">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to browse differently?</h2>
+        <p class="cta-subtitle">Join hundreds of thousands of users who've made Arc their daily browser</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleDownload()">Download Arc for Mac</button>
+          <button class="btn-glass btn-large" onclick="openWaitlist()">Join Windows Waitlist</button>
+        </div>
+        <p class="hero-badge" style="margin-top: 24px;">
+          <span class="badge-icon">✓</span>
+          <span>Free forever • No credit card required • macOS 11.0+</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#spaces">Spaces</a></li>
+            <li><a href="#boosts">Boosts</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#boosts-gallery">Boosts Gallery</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Browser Company. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openVideo() {
+      alert('Video demo would open here. In production, this would show an Arc product tour video.');
+    }
+
+    function handleDownload() {
+      alert('Download would start here. In production, this would download Arc for macOS.');
+    }
+
+    function openWaitlist() {
+      alert('Windows waitlist form would open here. In production, this would show a signup form.');
+    }
+
+    function openContact() {
+      alert('Contact form would open here. In production, this would show a sales contact form.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Theme switcher (optional - demonstrates Arc's theme system)
+    let currentTheme = 0;
+    const themes = ['', 'theme-twilight', 'theme-aurora'];
+    
+    document.addEventListener('keydown', function(e) {
+      // Press 'T' to cycle through themes
+      if (e.key === 't' || e.key === 'T') {
+        currentTheme = (currentTheme + 1) % themes.length;
+        document.body.className = themes[currentTheme];
+      }
+    });
+
+    // Add subtle parallax effect to hero
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero-title');
+      if (hero && scrolled < 500) {
+        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        hero.style.opacity = 1 - (scrolled / 500);
+      }
+    });
+  </script>
+</body>
+</html>

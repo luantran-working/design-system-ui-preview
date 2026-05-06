@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cal.com - Open Source Scheduling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans:wght@300;400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cal-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Cal.com</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#integrations">Integrations</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#enterprise">Enterprise</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Scheduling infrastructure for everyone</h1>
+        <p class="hero-subtitle">The open source Calendly alternative. Take control of your own data, workflow and appearance with Cal.com.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start for free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Book a demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 1.5M+ users worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-content">
+        <p class="trust-label">Trusted by teams at</p>
+        <div class="trust-logos">
+          <div class="trust-logo">Vercel</div>
+          <div class="trust-logo">GitLab</div>
+          <div class="trust-logo">Shopify</div>
+          <div class="trust-logo">Linear</div>
+          <div class="trust-logo">Stripe</div>
+          <div class="trust-logo">Notion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Screenshot -->
+  <section class="product-showcase">
+    <div class="container">
+      <div class="product-image-container">
+        <div class="product-image-placeholder">
+          <div class="calendar-grid">
+            <div class="calendar-header">
+              <div class="calendar-month">May 2026</div>
+              <div class="calendar-controls">
+                <span>←</span>
+                <span>→</span>
+              </div>
+            </div>
+            <div class="calendar-days">
+              <div class="day-label">Mon</div>
+              <div class="day-label">Tue</div>
+              <div class="day-label">Wed</div>
+              <div class="day-label">Thu</div>
+              <div class="day-label">Fri</div>
+              <div class="day-label">Sat</div>
+              <div class="day-label">Sun</div>
+            </div>
+            <div class="calendar-dates">
+              <div class="date">1</div>
+              <div class="date">2</div>
+              <div class="date">3</div>
+              <div class="date">4</div>
+              <div class="date active">5</div>
+              <div class="date">6</div>
+              <div class="date">7</div>
+              <div class="date">8</div>
+              <div class="date">9</div>
+              <div class="date">10</div>
+              <div class="date">11</div>
+              <div class="date">12</div>
+              <div class="date">13</div>
+              <div class="date">14</div>
+            </div>
+            <div class="time-slots">
+              <div class="time-slot">9:00 AM</div>
+              <div class="time-slot">10:00 AM</div>
+              <div class="time-slot selected">11:00 AM</div>
+              <div class="time-slot">12:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to schedule meetings</h2>
+        <p class="section-subtitle">Powerful features for individuals and teams</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3 class="feature-title">Unlimited event types</h3>
+          <p class="feature-description">Create as many event types as you need. One-on-one, group, collective, and round-robin scheduling.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3 class="feature-title">Calendar integrations</h3>
+          <p class="feature-description">Connect Google Calendar, Outlook, Apple Calendar, and more. Two-way sync keeps everything in order.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Custom branding</h3>
+          <p class="feature-description">Make it yours with custom colors, logos, and domains. White-label scheduling for your brand.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Timezone detection</h3>
+          <p class="feature-description">Automatic timezone detection and conversion. Schedule across the globe without confusion.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📧</div>
+          <h3 class="feature-title">Email notifications</h3>
+          <p class="feature-description">Automated reminders and confirmations. Keep everyone informed with customizable email templates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Privacy first</h3>
+          <p class="feature-description">Your data stays yours. Self-host or use our cloud. GDPR compliant and SOC 2 Type II certified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scheduling Types -->
+  <section class="scheduling-types">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Flexible scheduling for every scenario</h2>
+        <p class="section-subtitle">From simple one-on-ones to complex team scheduling</p>
+      </div>
+      <div class="types-grid">
+        <div class="type-card">
+          <h3 class="type-title">One-on-One</h3>
+          <p class="type-description">Classic scheduling for individual meetings. Perfect for sales calls, interviews, and consultations.</p>
+        </div>
+        <div class="type-card">
+          <h3 class="type-title">Group Events</h3>
+          <p class="type-description">Allow multiple people to book the same time slot. Great for webinars and workshops.</p>
+        </div>
+        <div class="type-card">
+          <h3 class="type-title">Collective</h3>
+          <p class="type-description">Require all team members to be available. Perfect for panel interviews and team meetings.</p>
+        </div>
+        <div class="type-card">
+          <h3 class="type-title">Round Robin</h3>
+          <p class="type-description">Distribute meetings evenly across your team. Balance workload automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Works with your favorite tools</h2>
+        <p class="section-subtitle">Connect Cal.com with the apps you already use</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-item">Google Calendar</div>
+        <div class="integration-item">Zoom</div>
+        <div class="integration-item">Google Meet</div>
+        <div class="integration-item">Microsoft Teams</div>
+        <div class="integration-item">Outlook</div>
+        <div class="integration-item">Salesforce</div>
+        <div class="integration-item">HubSpot</div>
+        <div class="integration-item">Stripe</div>
+        <div class="integration-item">Zapier</div>
+        <div class="integration-item">Slack</div>
+        <div class="integration-item">Apple Calendar</div>
+        <div class="integration-item">PayPal</div>
+      </div>
+      <div class="integration-cta">
+        <p>Plus 30+ more integrations. <a href="#apps" class="text-link">View all apps</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teams Section -->
+  <section class="teams" id="teams">
+    <div class="container">
+      <div class="teams-content">
+        <div class="teams-text">
+          <h2 class="section-title">Built for teams of all sizes</h2>
+          <p class="teams-description">Coordinate schedules across your entire organization. Manage team availability, create shared event types, and get insights into your team's scheduling patterns.</p>
+          <ul class="teams-features">
+            <li>Team scheduling pages</li>
+            <li>Shared event types</li>
+            <li>Admin controls and permissions</li>
+            <li>Team analytics and insights</li>
+            <li>Custom workflows</li>
+          </ul>
+          <button class="btn-primary" onclick="scrollToSection('pricing')">Explore team plans</button>
+        </div>
+        <div class="teams-visual">
+          <div class="team-card">
+            <div class="team-header">
+              <div class="team-avatar">A</div>
+              <div class="team-info">
+                <div class="team-name">Alice Johnson</div>
+                <div class="team-role">Available</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-header">
+              <div class="team-avatar">B</div>
+              <div class="team-info">
+                <div class="team-name">Bob Smith</div>
+                <div class="team-role">In meeting</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-header">
+              <div class="team-avatar">C</div>
+              <div class="team-info">
+                <div class="team-name">Carol White</div>
+                <div class="team-role">Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section class="open-source">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Open source and self-hostable</h2>
+        <p class="section-subtitle">Take full control of your scheduling infrastructure</p>
+      </div>
+      <div class="opensource-content">
+        <div class="opensource-card">
+          <h3 class="opensource-title">Self-host anywhere</h3>
+          <p class="opensource-description">Deploy Cal.com on your own infrastructure. Full control over your data and customization.</p>
+        </div>
+        <div class="opensource-card">
+          <h3 class="opensource-title">Open source community</h3>
+          <p class="opensource-description">Join 1,000+ contributors building the future of scheduling. MIT licensed and transparent.</p>
+        </div>
+        <div class="opensource-card">
+          <h3 class="opensource-title">Developer friendly</h3>
+          <p class="opensource-description">Built with modern tech stack. Extensive API and webhooks for custom integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited event types</li>
+            <li>Calendar integrations</li>
+            <li>Basic customization</li>
+            <li>Email notifications</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Free</li>
+            <li>Custom branding</li>
+            <li>Remove Cal.com branding</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Custom workflows</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Pro trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Teams</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$15</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Pro</li>
+            <li>Team scheduling</li>
+            <li>Admin controls</li>
+            <li>Team analytics</li>
+            <li>SSO (SAML)</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Contact sales</button>
+        </div>
+      </div>
+      <div class="pricing-enterprise">
+        <p>Need enterprise features? <a href="#enterprise" class="text-link">Talk to our sales team</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise -->
+  <section class="enterprise" id="enterprise">
+    <div class="container">
+      <div class="enterprise-content">
+        <h2 class="section-title">Enterprise-grade scheduling</h2>
+        <p class="enterprise-subtitle">Custom solutions for large organizations</p>
+        <div class="enterprise-features">
+          <div class="enterprise-feature">
+            <h4>Dedicated infrastructure</h4>
+            <p>Self-hosted or dedicated cloud deployment</p>
+          </div>
+          <div class="enterprise-feature">
+            <h4>Advanced security</h4>
+            <p>SSO, SAML, custom security policies</p>
+          </div>
+          <div class="enterprise-feature">
+            <h4>Priority support</h4>
+            <p>Dedicated account manager and SLA</p>
+          </div>
+          <div class="enterprise-feature">
+            <h4>Custom integrations</h4>
+            <p>Build custom workflows and integrations</p>
+          </div>
+        </div>
+        <button class="btn-primary btn-large" onclick="scrollToSection('contact')">Contact sales</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Start scheduling for free</h2>
+        <p class="section-subtitle">Join 1.5M+ users who trust Cal.com for their scheduling needs</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get started free</button>
+        </div>
+        <p class="form-note">No credit card required • Free forever</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cal.com, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#discord" class="social-link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo booking would open here. In production, this would link to a Cal.com booking page.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox to get started.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

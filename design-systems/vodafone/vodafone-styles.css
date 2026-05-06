@@ -1,0 +1,407 @@
+/* Vodafone Design System - Following DESIGN.md specifications */
+
+/* CSS Variables based on DESIGN.md tokens */
+:root {
+  /* Primary - Vodafone Red */
+  --vodafone-red: #e60000;
+  --deep-brand-red: #ac1811;
+  
+  /* Surface & Background */
+  --white: #ffffff;
+  --neutral-cool: #f9f9f9;
+  --neutral-warm: #f2f0eb;
+  --ceramic: #edebe9;
+  --black: #000000;
+  --charcoal: #25282b;
+  
+  /* Text */
+  --text-black: rgba(0, 0, 0, 0.87);
+  --text-black-soft: rgba(0, 0, 0, 0.58);
+  --text-white: rgba(255, 255, 255, 1);
+  --text-white-soft: rgba(255, 255, 255, 0.70);
+  
+  /* Interactive */
+  --signal-blue: #3860be;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Spacing */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  
+  /* Border Radius */
+  --radius-tight: 2px;
+  --radius-card: 6px;
+  --radius-pill: 60px;
+  
+  /* Transitions */
+  --transition-base: 0.2s ease;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: var(--text-black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  line-height: 1.0;
+  color: var(--text-black);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1 { font-size: 90px; }
+h2 { font-size: 48px; }
+h3 { font-size: 32px; }
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-32);
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--white);
+  padding: var(--space-16) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--vodafone-red);
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-32);
+}
+
+.nav-links a {
+  color: var(--text-black);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color var(--transition-base);
+}
+
+.nav-links a:hover {
+  color: var(--vodafone-red);
+}
+
+/* Buttons - Two-tier system */
+.btn {
+  font-family: var(--font-primary);
+  font-size: 14.4px;
+  font-weight: 700;
+  letter-spacing: 0.144px;
+  padding: 12px 10px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary-rect {
+  background-color: var(--vodafone-red);
+  color: var(--white);
+  border-color: var(--vodafone-red);
+  border-radius: var(--radius-tight);
+}
+
+.btn-primary-rect:hover {
+  opacity: 0.9;
+}
+
+.btn-primary-pill {
+  background-color: var(--vodafone-red);
+  color: var(--white);
+  border-color: var(--vodafone-red);
+  border-radius: var(--radius-pill);
+  padding: 16px;
+}
+
+.btn-primary-pill:hover {
+  opacity: 0.9;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: var(--text-black);
+  border-color: var(--text-black);
+  border-radius: var(--radius-tight);
+}
+
+.btn-outlined:hover {
+  background-color: var(--text-black);
+  color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 0.93;
+  letter-spacing: -1px;
+  margin-bottom: var(--space-32);
+  color: var(--text-black);
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-black-soft);
+  margin-bottom: var(--space-48);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+}
+
+/* Red Divider Band */
+.red-band {
+  background-color: var(--vodafone-red);
+  height: 64px;
+  width: 100%;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -1px;
+  margin-bottom: var(--space-16);
+  color: var(--text-black);
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-black-soft);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-32);
+}
+
+.feature-card {
+  background-color: var(--white);
+  padding: var(--space-32);
+  border-radius: var(--radius-card);
+  transition: transform var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: var(--space-12);
+  color: var(--text-black);
+  text-transform: none;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: var(--text-black-soft);
+  line-height: 1.5;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 80px 0;
+  background-color: var(--neutral-warm);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-32);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background-color: var(--white);
+  padding: var(--space-32);
+  border-radius: var(--radius-card);
+  transition: transform var(--transition-base);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+.pricing-name {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: var(--space-16);
+  color: var(--text-black);
+  text-transform: uppercase;
+}
+
+.pricing-price {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--vodafone-red);
+  margin-bottom: var(--space-24);
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: var(--space-24);
+}
+
+.pricing-features li {
+  padding: var(--space-8) 0;
+  font-size: 16px;
+  color: var(--text-black-soft);
+}
+
+.pricing-features li:before {
+  content: "✓";
+  color: var(--vodafone-red);
+  font-weight: 700;
+  margin-right: var(--space-12);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--charcoal);
+  color: var(--text-white);
+  padding: 80px 0 32px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-48);
+  margin-bottom: var(--space-64);
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: var(--space-16);
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-12);
+}
+
+.footer-links a {
+  color: var(--text-white-soft);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color var(--transition-base);
+}
+
+.footer-links a:hover {
+  color: var(--text-white);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-32);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--text-white-soft);
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}

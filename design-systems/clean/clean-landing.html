@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Design System - Simple, Clear, Organized</title>
+  <link rel="stylesheet" href="clean-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Clean</a>
+        <nav class="nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#colors" class="nav-link">Colors</a>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Simplicity-Focused Design System</h1>
+      <p class="hero-subtitle">
+        Build beautiful, accessible interfaces with ample whitespace, legible typography, 
+        and a limited color palette that reduces visual clutter.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">View Documentation</a>
+        <a href="#" class="btn btn-secondary">Browse Components</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Core Principles</h2>
+      <p class="text-center text-muted">
+        Clean design system emphasizes clarity, organization, and usability
+      </p>
+      
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">W</div>
+          <h3 class="card-title">Ample Whitespace</h3>
+          <p class="card-description">
+            Generous spacing creates breathing room, making content easier to scan and understand. 
+            Built on an 8pt baseline grid for consistent vertical rhythm.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">T</div>
+          <h3 class="card-title">Legible Typography</h3>
+          <p class="card-description">
+            Clear type hierarchy using Poppins for headings and Roboto for body text. 
+            Optimized for readability with proper contrast and line height.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">C</div>
+          <h3 class="card-title">Limited Color Palette</h3>
+          <p class="card-description">
+            Focused color system with primary, secondary, and semantic colors. 
+            Reduces visual clutter while maintaining clear communication.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">A</div>
+          <h3 class="card-title">Accessible by Default</h3>
+          <p class="card-description">
+            Strong focus-visible states, clear labels, and predictable interactions. 
+            Built with WCAG guidelines in mind for inclusive design.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">M</div>
+          <h3 class="card-title">Minimal & Modern</h3>
+          <p class="card-description">
+            Clean aesthetic that prioritizes content over decoration. 
+            Subtle transitions and purposeful interactions enhance usability.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">O</div>
+          <h3 class="card-title">Organized Layouts</h3>
+          <p class="card-description">
+            Predictable grid system with consistent internal padding. 
+            Clear hierarchy guides users through content naturally.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Design in Action</h2>
+      <p class="text-center text-muted">
+        See how Clean design system creates clear, organized interfaces
+      </p>
+      
+      <div class="card-grid">
+        <div class="card">
+          <h3 class="card-title">Dashboard Interface</h3>
+          <p class="card-description">
+            Clean layouts make complex data easy to understand. Consistent spacing and 
+            clear typography help users focus on what matters.
+          </p>
+          <div style="margin-top: 16px;">
+            <span class="badge badge-primary">Analytics</span>
+            <span class="badge badge-success">Active</span>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3 class="card-title">Form Design</h3>
+          <p class="card-description">
+            Strong focus states and clear labels make forms intuitive. Predictable error 
+            messaging helps users complete tasks successfully.
+          </p>
+          <div class="form-group" style="margin-top: 16px;">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="you@example.com">
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3 class="card-title">Content Pages</h3>
+          <p class="card-description">
+            Ample whitespace and legible typography make long-form content enjoyable to read. 
+            Clear hierarchy guides readers through the narrative.
+          </p>
+          <div style="margin-top: 16px;">
+            <code>font-family: Roboto</code>
+            <code>line-height: 1.7</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section id="components" class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Component Library</h2>
+      <p class="text-center text-muted">
+        Consistent, accessible components built on design tokens
+      </p>
+      
+      <div style="margin-top: 48px;">
+        <!-- Buttons -->
+        <div class="component-demo">
+          <h3 class="component-title">Buttons</h3>
+          <div class="component-preview">
+            <button class="btn btn-primary">Primary Action</button>
+            <button class="btn btn-secondary">Secondary Action</button>
+            <button class="btn btn-primary" disabled>Disabled</button>
+          </div>
+        </div>
+        
+        <!-- Badges -->
+        <div class="component-demo">
+          <h3 class="component-title">Badges</h3>
+          <div class="component-preview">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-danger">Danger</span>
+          </div>
+        </div>
+        
+        <!-- Form Elements -->
+        <div class="component-demo">
+          <h3 class="component-title">Form Elements</h3>
+          <div style="max-width: 400px;">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="you@example.com">
+            </div>
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        
+        <!-- Cards -->
+        <div class="component-demo">
+          <h3 class="component-title">Cards</h3>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-icon">1</div>
+              <h4 class="card-title">Card Title</h4>
+              <p class="card-description">
+                Cards provide consistent elevation and spacing for grouped content.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">2</div>
+              <h4 class="card-title">Another Card</h4>
+              <p class="card-description">
+                Hover effects provide subtle feedback without overwhelming the interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Palette Section -->
+  <section id="colors" class="section">
+    <div class="container">
+      <h2 class="text-center">Color Palette</h2>
+      <p class="text-center text-muted">
+        Limited, purposeful colors that reduce visual clutter
+      </p>
+      
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #3B82F6;"></div>
+          <div class="color-name">Primary</div>
+          <div class="color-value">#3B82F6</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #8B5CF6;"></div>
+          <div class="color-name">Secondary</div>
+          <div class="color-value">#8B5CF6</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #16A34A;"></div>
+          <div class="color-name">Success</div>
+          <div class="color-value">#16A34A</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #D97706;"></div>
+          <div class="color-name">Warning</div>
+          <div class="color-value">#D97706</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #DC2626;"></div>
+          <div class="color-name">Danger</div>
+          <div class="color-value">#DC2626</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #FFFFFF; border: 2px solid #E5E7EB;"></div>
+          <div class="color-name">Surface</div>
+          <div class="color-value">#FFFFFF</div>
+        </div>
+        
+        <div class="color-swatch">
+          <div class="color-box" style="background-color: #111827;"></div>
+          <div class="color-name">Text</div>
+          <div class="color-value">#111827</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Typography Scale</h2>
+      <p class="text-center text-muted">
+        Clear hierarchy with Poppins for headings and Roboto for body text
+      </p>
+      
+      <div style="margin-top: 48px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="margin-bottom: 32px;">
+          <h1>Heading 1 - 48px Poppins Bold</h1>
+          <p class="text-muted">Used for hero sections and primary page titles</p>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <h2>Heading 2 - 32px Poppins Bold</h2>
+          <p class="text-muted">Used for section headings and major divisions</p>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <h3>Heading 3 - 24px Poppins Semibold</h3>
+          <p class="text-muted">Used for subsections and card titles</p>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <h4>Heading 4 - 20px Poppins Semibold</h4>
+          <p class="text-muted">Used for component titles and smaller headings</p>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <p style="font-size: 16px;">Body Text - 16px Roboto Regular</p>
+          <p class="text-muted">Optimized for readability with 1.7 line height. Body text should maintain high contrast against backgrounds for maximum legibility.</p>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <p style="font-size: 14px;">Small Text - 14px Roboto Regular</p>
+          <p class="text-muted">Used for captions, labels, and supporting information</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <h2>Start Building with Clean</h2>
+        <p class="text-muted" style="margin-bottom: 32px;">
+          Create beautiful, accessible interfaces with a design system that prioritizes 
+          simplicity, clarity, and usability.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#" class="btn btn-secondary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Clean Design System</h4>
+          <p style="color: #D1D5DB; line-height: 1.6;">
+            A simplicity-focused design system with ample whitespace, legible typography, 
+            and a limited color palette.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Components</a></li>
+            <li><a href="#" class="footer-link">Design Tokens</a></li>
+            <li><a href="#" class="footer-link">Guidelines</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">Discussions</a></li>
+            <li><a href="#" class="footer-link">Contributing</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Report Issue</a></li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Clean Design System. Built with simplicity and clarity in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

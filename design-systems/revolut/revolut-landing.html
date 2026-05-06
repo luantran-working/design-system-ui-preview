@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolut - Digital Banking for the Modern Era</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="revolut-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Revolut</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#global">Global</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Banking Built for You</h1>
+        <p class="hero-subtitle">One app for all things money. Spend, save, invest, and manage your finances with confidence.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Open Account</button>
+          <button class="btn-outlined btn-large" onclick="openDemo()">See How It Works</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>50M+ customers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50M+</div>
+          <div class="stat-label">Global Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Countries Supported</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$1B+</div>
+          <div class="stat-label">Daily Transactions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Currencies</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything You Need</h2>
+        <p class="section-subtitle">All your financial services in one powerful app</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3 class="feature-title">Smart Cards</h3>
+          <p class="feature-description">Physical and virtual cards with instant spending notifications. Control everything from your phone.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💱</div>
+          <h3 class="feature-title">Currency Exchange</h3>
+          <p class="feature-description">Exchange 40+ currencies at interbank rates. No hidden fees, no markups.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Investments</h3>
+          <p class="feature-description">Trade stocks, crypto, and commodities. Commission-free investing for everyone.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Security First</h3>
+          <p class="feature-description">Bank-grade security with biometric authentication and real-time fraud detection.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">Savings Vaults</h3>
+          <p class="feature-description">Automated savings with competitive interest rates. Reach your goals faster.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Global Transfers</h3>
+          <p class="feature-description">Send money worldwide instantly. Low fees, fast delivery, transparent pricing.</p>
+          <a href="#products" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Products for Every Need</h2>
+        <p class="section-subtitle">From everyday banking to advanced investing</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-header">
+            <h3 class="product-title">Personal Banking</h3>
+            <div class="product-icon">👤</div>
+          </div>
+          <p class="product-description">Complete banking solution for individuals. Spend, save, and manage your money with ease.</p>
+          <ul class="product-features">
+            <li>Free account opening</li>
+            <li>Virtual & physical cards</li>
+            <li>Instant notifications</li>
+            <li>Budget analytics</li>
+            <li>Fee-free ATM withdrawals</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="product-card featured">
+          <div class="product-badge">Most Popular</div>
+          <div class="product-header">
+            <h3 class="product-title">Premium</h3>
+            <div class="product-icon">⭐</div>
+          </div>
+          <p class="product-description">Enhanced features for power users. Travel insurance, cashback, and priority support.</p>
+          <ul class="product-features">
+            <li>Everything in Personal</li>
+            <li>Travel insurance included</li>
+            <li>Airport lounge access</li>
+            <li>Cashback on purchases</li>
+            <li>Priority customer support</li>
+            <li>Exclusive exchange rates</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Upgrade Now</button>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-header">
+            <h3 class="product-title">Business</h3>
+            <div class="product-icon">🏢</div>
+          </div>
+          <p class="product-description">Banking built for businesses. Manage expenses, pay invoices, and grow your company.</p>
+          <ul class="product-features">
+            <li>Multi-user accounts</li>
+            <li>Corporate cards</li>
+            <li>Expense management</li>
+            <li>Invoice payments</li>
+            <li>Accounting integrations</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Section -->
+  <section class="global" id="global">
+    <div class="container">
+      <div class="global-content">
+        <div class="global-text">
+          <h2 class="section-title">Banking Without Borders</h2>
+          <p class="global-description">Send, receive, and exchange money in 40+ currencies. Travel the world with confidence knowing your money works everywhere you go.</p>
+          <div class="global-stats">
+            <div class="global-stat">
+              <div class="global-stat-number">200+</div>
+              <div class="global-stat-label">Countries</div>
+            </div>
+            <div class="global-stat">
+              <div class="global-stat-number">40+</div>
+              <div class="global-stat-label">Currencies</div>
+            </div>
+            <div class="global-stat">
+              <div class="global-stat-number">24/7</div>
+              <div class="global-stat-label">Support</div>
+            </div>
+          </div>
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Banking Globally</button>
+        </div>
+        <div class="global-visual">
+          <div class="currency-card">EUR</div>
+          <div class="currency-card">USD</div>
+          <div class="currency-card">GBP</div>
+          <div class="currency-card">JPY</div>
+          <div class="currency-card">CHF</div>
+          <div class="currency-card">AUD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <section class="security">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Your Money, Protected</h2>
+        <p class="section-subtitle">Bank-grade security with cutting-edge technology</p>
+      </div>
+      <div class="security-grid">
+        <div class="security-item">
+          <div class="security-icon">🔐</div>
+          <h3 class="security-title">Biometric Auth</h3>
+          <p class="security-description">Face ID and fingerprint authentication for secure access.</p>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">🛡️</div>
+          <h3 class="security-title">Fraud Detection</h3>
+          <p class="security-description">Real-time monitoring and instant alerts for suspicious activity.</p>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">🔒</div>
+          <h3 class="security-title">Encryption</h3>
+          <p class="security-description">Military-grade encryption protects all your data.</p>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">✓</div>
+          <h3 class="security-title">Regulated</h3>
+          <p class="security-description">Licensed and regulated by financial authorities worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your lifestyle</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Standard</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Free account</li>
+            <li>✓ Virtual card</li>
+            <li>✓ Currency exchange</li>
+            <li>✓ Budget analytics</li>
+            <li>✓ Instant notifications</li>
+            <li>✓ 5 free ATM withdrawals/month</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Premium</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$9.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Standard</li>
+            <li>✓ Physical card</li>
+            <li>✓ Travel insurance</li>
+            <li>✓ Airport lounge access</li>
+            <li>✓ 1% cashback</li>
+            <li>✓ Unlimited ATM withdrawals</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Premium</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Metal</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$16.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Premium</li>
+            <li>✓ Metal card</li>
+            <li>✓ Comprehensive insurance</li>
+            <li>✓ 2% cashback</li>
+            <li>✓ Exclusive rates</li>
+            <li>✓ Concierge service</li>
+            <li>✓ Commission-free trading</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Metal</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Millions</h2>
+        <p class="section-subtitle">See what our customers are saying</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Revolut changed how I manage money. The currency exchange alone saves me hundreds when traveling. Best banking app I've ever used."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div class="author-info">
+              <div class="author-name">James Martinez</div>
+              <div class="author-title">Frequent Traveler</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "The business account is incredible. Managing expenses, paying invoices, and tracking spending has never been easier. Highly recommend."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Kim</div>
+              <div class="author-title">Small Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Finally, a bank that understands modern life. Instant notifications, great exchange rates, and the app is beautiful. Can't imagine going back."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">DP</div>
+            <div class="author-info">
+              <div class="author-name">David Patel</div>
+              <div class="author-title">Digital Nomad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about Revolut</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">How do I open an account?</h3>
+          <p class="faq-answer">Download the Revolut app, verify your identity with a photo ID, and you're ready to go. The entire process takes less than 5 minutes.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Are there any hidden fees?</h3>
+          <p class="faq-answer">No hidden fees. We're transparent about all costs. Standard accounts are free, and Premium/Metal plans have clear monthly fees with no surprises.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is my money safe?</h3>
+          <p class="faq-answer">Yes. Revolut is licensed and regulated by financial authorities. Your deposits are protected, and we use bank-grade security to keep your money safe.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I use Revolut abroad?</h3>
+          <p class="faq-answer">Absolutely. Revolut works in 200+ countries. Exchange currencies at interbank rates, withdraw cash from ATMs, and pay with your card anywhere.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How does currency exchange work?</h3>
+          <p class="faq-answer">Exchange 40+ currencies at the real interbank rate with no markup. Premium and Metal customers get even better rates and unlimited exchanges.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I cancel anytime?</h3>
+          <p class="faq-answer">Yes. Premium and Metal subscriptions can be canceled anytime with no penalties. Your Standard account is always free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="get-started-content">
+        <h2 class="section-title">Ready to Join 50M+ Customers?</h2>
+        <p class="section-subtitle">Open your account in minutes and start banking smarter</p>
+        <div class="get-started-form">
+          <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Get Started</button>
+        </div>
+        <p class="form-note">No credit check required • Free to open • Cancel anytime</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Personal</a></li>
+            <li><a href="#products">Premium</a></li>
+            <li><a href="#products">Metal</a></li>
+            <li><a href="#products">Business</a></li>
+            <li><a href="#products">Junior</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#terms">Terms & Conditions</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Revolut Ltd. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a product demo or video.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for your interest! We'll send account setup instructions to ${email}.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBM - Enterprise Technology Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ibm-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">IBM</div>
+        <ul class="nav-links">
+          <li><a href="#features">Products</a></li>
+          <li><a href="#carbon">Carbon Design</a></li>
+          <li><a href="#enterprise">Solutions</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Enterprise Technology Built for Scale</h1>
+        <p class="hero-subtitle">Transform your business with AI-powered solutions, hybrid cloud infrastructure, and enterprise-grade security. Built on the Carbon Design System for consistency and reliability.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Get Started</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Explore Solutions</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by Fortune 500 companies worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Fortune 100 Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">175+</div>
+          <div class="stat-label">Countries Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.99%</div>
+          <div class="stat-label">Uptime Guarantee</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Enterprise Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Enterprise Solutions That Scale</h2>
+        <p class="section-subtitle">Comprehensive technology solutions designed for mission-critical operations</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 class="feature-title">AI & Watson</h3>
+          <p class="feature-description">Deploy enterprise AI with Watson. Natural language processing, machine learning, and cognitive computing at scale.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3 class="feature-title">Hybrid Cloud</h3>
+          <p class="feature-description">Seamless integration across public, private, and on-premises infrastructure with Red Hat OpenShift.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Security & Compliance</h3>
+          <p class="feature-description">Enterprise-grade security with zero-trust architecture, encryption, and compliance certifications.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Data & Analytics</h3>
+          <p class="feature-description">Transform data into insights with advanced analytics, data warehousing, and business intelligence.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3 class="feature-title">Automation</h3>
+          <p class="feature-description">Streamline operations with intelligent automation, workflow orchestration, and process optimization.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Quantum Computing</h3>
+          <p class="feature-description">Access quantum computing resources for complex problem-solving and advanced research applications.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carbon Design System Section -->
+  <section class="carbon-design" id="carbon">
+    <div class="container">
+      <div class="carbon-content">
+        <div class="carbon-text">
+          <h2>Built on Carbon Design System</h2>
+          <p>Carbon is IBM's open-source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.</p>
+          <p>Every component follows strict accessibility standards, ensuring your applications work for everyone. The 2x grid system provides mathematical precision and visual consistency across all screen sizes.</p>
+          <div class="hero-cta">
+            <button class="btn-primary" onclick="openCarbon()">Explore Carbon</button>
+            <button class="btn-ghost" onclick="viewDocs()">View Documentation</button>
+          </div>
+        </div>
+        <div class="carbon-visual">
+          <div class="carbon-grid">
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+            <div class="carbon-grid-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Solutions Section -->
+  <section class="enterprise" id="enterprise">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Industry-Leading Enterprise Solutions</h2>
+        <p class="section-subtitle">Tailored solutions for every industry and business challenge</p>
+      </div>
+      <div class="enterprise-grid">
+        <div class="enterprise-card">
+          <div class="enterprise-icon">🏦</div>
+          <h3 class="enterprise-title">Financial Services</h3>
+          <p class="enterprise-description">Secure, compliant solutions for banking, insurance, and capital markets with real-time transaction processing.</p>
+          <ul class="enterprise-list">
+            <li>Risk management and fraud detection</li>
+            <li>Core banking modernization</li>
+            <li>Regulatory compliance automation</li>
+            <li>Customer experience platforms</li>
+          </ul>
+        </div>
+        <div class="enterprise-card">
+          <div class="enterprise-icon">🏥</div>
+          <h3 class="enterprise-title">Healthcare</h3>
+          <p class="enterprise-description">Transform patient care with AI-powered diagnostics, electronic health records, and clinical decision support.</p>
+          <ul class="enterprise-list">
+            <li>Clinical data analytics</li>
+            <li>Patient engagement platforms</li>
+            <li>Medical imaging AI</li>
+            <li>HIPAA-compliant infrastructure</li>
+          </ul>
+        </div>
+        <div class="enterprise-card">
+          <div class="enterprise-icon">🏭</div>
+          <h3 class="enterprise-title">Manufacturing</h3>
+          <p class="enterprise-description">Optimize operations with IoT, predictive maintenance, and supply chain intelligence for Industry 4.0.</p>
+          <ul class="enterprise-list">
+            <li>Smart factory automation</li>
+            <li>Supply chain optimization</li>
+            <li>Quality control AI</li>
+            <li>Asset performance management</li>
+          </ul>
+        </div>
+        <div class="enterprise-card">
+          <div class="enterprise-icon">🛒</div>
+          <h3 class="enterprise-title">Retail & Commerce</h3>
+          <p class="enterprise-description">Deliver personalized experiences with omnichannel commerce, inventory management, and customer insights.</p>
+          <ul class="enterprise-list">
+            <li>Personalization engines</li>
+            <li>Inventory optimization</li>
+            <li>Point-of-sale systems</li>
+            <li>Customer analytics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Enterprise Pricing</h2>
+        <p class="section-subtitle">Flexible pricing models designed for organizations of all sizes</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$2,500</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Up to 100 users</li>
+            <li>✓ 500 GB storage</li>
+            <li>✓ Basic support (24/5)</li>
+            <li>✓ Standard SLA</li>
+            <li>✓ Core platform access</li>
+            <li>✓ API integration</li>
+          </ul>
+          <button class="btn-tertiary" onclick="scrollToSection('cta')">Contact Sales</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Professional</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$7,500</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Up to 500 users</li>
+            <li>✓ 2 TB storage</li>
+            <li>✓ Priority support (24/7)</li>
+            <li>✓ 99.9% SLA guarantee</li>
+            <li>✓ Advanced analytics</li>
+            <li>✓ Custom integrations</li>
+            <li>✓ Dedicated account manager</li>
+            <li>✓ Training & onboarding</li>
+          </ul>
+          <button class="btn-primary" onclick="scrollToSection('cta')">Contact Sales</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited users</li>
+            <li>✓ Unlimited storage</li>
+            <li>✓ White-glove support</li>
+            <li>✓ 99.99% SLA guarantee</li>
+            <li>✓ On-premises deployment</li>
+            <li>✓ Custom development</li>
+            <li>✓ Security audit & compliance</li>
+            <li>✓ Executive business reviews</li>
+          </ul>
+          <button class="btn-tertiary" onclick="scrollToSection('cta')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your Enterprise?</h2>
+        <p class="cta-subtitle">Join thousands of organizations worldwide that trust IBM for their mission-critical operations. Our experts are ready to help you build the future.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleContact()">Contact Sales</button>
+          <button class="btn-secondary btn-large" onclick="requestDemo()">Request Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="#ai">AI & Watson</a></li>
+            <li><a href="#cloud">Hybrid Cloud</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#data">Data & Analytics</a></li>
+            <li><a href="#automation">Automation</a></li>
+            <li><a href="#quantum">Quantum Computing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#financial">Financial Services</a></li>
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#government">Government</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#carbon">Carbon Design System</a></li>
+            <li><a href="#training">Training & Certification</a></li>
+            <li><a href="#support">Support Center</a></li>
+            <li><a href="#community">Developer Community</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About IBM</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#investors">Investor Relations</a></li>
+            <li><a href="#contact" id="contact">Contact Us</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#cookies">Cookie Preferences</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 IBM Corporation. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#github" class="social-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would link to an interactive product demonstration.');
+    }
+
+    function openCarbon() {
+      alert('This would navigate to the Carbon Design System website: https://carbondesignsystem.com');
+    }
+
+    function viewDocs() {
+      alert('This would navigate to the Carbon Design System documentation.');
+    }
+
+    function handleContact() {
+      alert('Contact form would open here. In production, this would connect to IBM sales team.');
+    }
+
+    function requestDemo() {
+      alert('Demo request form would open here. In production, this would schedule a personalized demo.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add active state to navigation on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

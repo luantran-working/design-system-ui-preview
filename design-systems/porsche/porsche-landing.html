@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche - Engineered for Excellence</title>
+  <link rel="stylesheet" href="porsche-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">PORSCHE</div>
+        <ul class="nav-links">
+          <li><a href="#models">Models</a></li>
+          <li><a href="#engineering">Engineering</a></li>
+          <li><a href="#heritage">Heritage</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">There Is No Substitute</h1>
+        <p class="hero-subtitle">For over 75 years, Porsche has defined the sports car. Every model embodies our relentless pursuit of perfection, combining precision German engineering with timeless design and exhilarating performance.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('models')">Explore Models</button>
+          <button class="btn-secondary btn-large" onclick="openConfigurator()">Configure Your Porsche</button>
+        </div>
+        <div class="hero-badge">
+          <span>Est. 1948 • Stuttgart, Germany</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Porsche Lineup</h2>
+        <p class="section-subtitle">From the iconic 911 to the versatile Cayenne, discover the perfect Porsche for your driving passion.</p>
+      </div>
+      <div class="models-grid">
+        <div class="model-card">
+          <div class="model-image">911</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche 911</h3>
+            <p class="model-description">The icon. The legend. The sports car that defines all others. Rear-engine perfection refined over seven decades.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">379-640 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">2.6s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Top Speed</div>
+                <div class="spec-value">205 MPH</div>
+              </div>
+            </div>
+            <a href="#911" class="model-link">Explore 911 →</a>
+          </div>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-image">Taycan</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche Taycan</h3>
+            <p class="model-description">The future of performance. Pure electric power meets Porsche DNA. Zero emissions, maximum driving pleasure.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">up to 750 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">2.4s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Range</div>
+                <div class="spec-value">227 mi</div>
+              </div>
+            </div>
+            <a href="#taycan" class="model-link">Explore Taycan →</a>
+          </div>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-image">Cayenne</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche Cayenne</h3>
+            <p class="model-description">The sports car of SUVs. Commanding presence with unmistakable Porsche performance and versatility.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">335-631 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">3.7s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Towing</div>
+                <div class="spec-value">7,716 lbs</div>
+              </div>
+            </div>
+            <a href="#cayenne" class="model-link">Explore Cayenne →</a>
+          </div>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-image">Panamera</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche Panamera</h3>
+            <p class="model-description">The luxury sports sedan. Executive comfort meets sports car performance in perfect harmony.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">325-690 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">2.9s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Top Speed</div>
+                <div class="spec-value">196 MPH</div>
+              </div>
+            </div>
+            <a href="#panamera" class="model-link">Explore Panamera →</a>
+          </div>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-image">Macan</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche Macan</h3>
+            <p class="model-description">The compact sports SUV. Agile, dynamic, and unmistakably Porsche in every detail.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">261-434 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">4.3s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Handling</div>
+                <div class="spec-value">Sport+</div>
+              </div>
+            </div>
+            <a href="#macan" class="model-link">Explore Macan →</a>
+          </div>
+        </div>
+        
+        <div class="model-card">
+          <div class="model-image">718</div>
+          <div class="model-content">
+            <h3 class="model-name">Porsche 718</h3>
+            <p class="model-description">The pure roadster. Mid-engine precision, open-air exhilaration, and legendary handling balance.</p>
+            <div class="model-specs">
+              <div class="spec-item">
+                <div class="spec-label">Power</div>
+                <div class="spec-value">300-414 HP</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">0-60 MPH</div>
+                <div class="spec-value">3.7s</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Weight</div>
+                <div class="spec-value">2,944 lbs</div>
+              </div>
+            </div>
+            <a href="#718" class="model-link">Explore 718 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engineering Section -->
+  <section class="engineering" id="engineering">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Precision Engineering</h2>
+        <p class="section-subtitle">Every Porsche is the result of relentless innovation, meticulous craftsmanship, and uncompromising standards.</p>
+      </div>
+      <div class="engineering-grid">
+        <div class="engineering-card">
+          <div class="engineering-icon">⚙️</div>
+          <h3 class="engineering-title">Intelligent Performance</h3>
+          <p class="engineering-description">Advanced engine technology, adaptive suspension systems, and precision-tuned powertrains deliver exhilarating performance with exceptional efficiency.</p>
+        </div>
+        
+        <div class="engineering-card">
+          <div class="engineering-icon">🏁</div>
+          <h3 class="engineering-title">Racing Heritage</h3>
+          <p class="engineering-description">Born on the racetrack, refined for the road. Every innovation is tested at the limits of motorsport before reaching your driveway.</p>
+        </div>
+        
+        <div class="engineering-card">
+          <div class="engineering-icon">🔧</div>
+          <h3 class="engineering-title">Handcrafted Excellence</h3>
+          <p class="engineering-description">Master craftsmen in Stuttgart and Leipzig assemble each Porsche with precision and passion, ensuring perfection in every detail.</p>
+        </div>
+        
+        <div class="engineering-card">
+          <div class="engineering-icon">🛡️</div>
+          <h3 class="engineering-title">Advanced Safety</h3>
+          <p class="engineering-description">Cutting-edge driver assistance systems, reinforced chassis design, and intelligent safety features protect what matters most.</p>
+        </div>
+        
+        <div class="engineering-card">
+          <div class="engineering-icon">⚡</div>
+          <h3 class="engineering-title">Electric Innovation</h3>
+          <p class="engineering-description">Leading the electric revolution with the Taycan. High-performance batteries, 800V architecture, and rapid charging technology.</p>
+        </div>
+        
+        <div class="engineering-card">
+          <div class="engineering-icon">🎯</div>
+          <h3 class="engineering-title">Aerodynamic Precision</h3>
+          <p class="engineering-description">Wind tunnel-tested designs, active aerodynamics, and intelligent cooling systems optimize performance and efficiency at every speed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Section -->
+  <section class="heritage" id="heritage">
+    <div class="container">
+      <div class="heritage-content">
+        <div class="heritage-text">
+          <h2>75 Years of Excellence</h2>
+          <p>In 1948, Ferry Porsche created the first car to bear his family name. The 356 was a lightweight, nimble sports car that established the Porsche philosophy: performance through efficiency, innovation through engineering.</p>
+          <p>From Le Mans victories to everyday driving pleasure, Porsche has remained true to its founding principles. Every model carries forward this legacy of excellence, combining timeless design with cutting-edge technology.</p>
+          <p>Today, Porsche continues to push boundaries, leading the transition to electric mobility while preserving the soul of the sports car. The future is electric, but the passion remains pure Porsche.</p>
+          <div class="heritage-stats">
+            <div class="stat-item">
+              <div class="stat-number">30,000+</div>
+              <div class="stat-label">Race Victories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1,000,000+</div>
+              <div class="stat-label">911s Produced</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">75+</div>
+              <div class="stat-label">Years of Innovation</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">70%</div>
+              <div class="stat-label">Still on the Road</div>
+            </div>
+          </div>
+        </div>
+        <div class="heritage-image">
+          Heritage Gallery
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Porsche Experience</h2>
+        <p class="section-subtitle">Owning a Porsche is more than driving a car. It's joining a community of enthusiasts who share your passion.</p>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-number">01</div>
+          <h3 class="experience-title">Porsche Exclusive</h3>
+          <p class="experience-description">Personalize every detail of your Porsche. From custom paint colors to bespoke interior materials, create a truly unique masterpiece.</p>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-number">02</div>
+          <h3 class="experience-title">Driving Experience</h3>
+          <p class="experience-description">Master your Porsche at our world-class driving centers. Professional instruction on legendary racetracks around the globe.</p>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-number">03</div>
+          <h3 class="experience-title">Porsche Connect</h3>
+          <p class="experience-description">Stay connected to your Porsche from anywhere. Remote vehicle management, navigation, and exclusive digital services.</p>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-number">04</div>
+          <h3 class="experience-title">Heritage Tours</h3>
+          <p class="experience-description">Visit the Porsche Museum in Stuttgart. Explore 75 years of innovation and witness the evolution of the sports car.</p>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-number">05</div>
+          <h3 class="experience-title">Concierge Service</h3>
+          <p class="experience-description">White-glove service for every need. From maintenance scheduling to travel planning, we're here to enhance your ownership experience.</p>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-number">06</div>
+          <h3 class="experience-title">Porsche Clubs</h3>
+          <p class="experience-description">Join a global community of Porsche enthusiasts. Exclusive events, track days, and rallies around the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Find Your Porsche</h2>
+        <p class="cta-subtitle">Schedule a test drive at your nearest Porsche Center and experience the thrill of precision engineering.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="scheduleTestDrive()">Schedule Test Drive</button>
+          <button class="btn-secondary btn-large" onclick="findDealer()">Find a Dealer</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Models</h4>
+          <ul class="footer-links">
+            <li><a href="#911">911</a></li>
+            <li><a href="#taycan">Taycan</a></li>
+            <li><a href="#cayenne">Cayenne</a></li>
+            <li><a href="#panamera">Panamera</a></li>
+            <li><a href="#macan">Macan</a></li>
+            <li><a href="#718">718</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Porsche</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#motorsport">Motorsport</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Ownership</h4>
+          <ul class="footer-links">
+            <li><a href="#configurator">Car Configurator</a></li>
+            <li><a href="#dealers">Find a Dealer</a></li>
+            <li><a href="#service">Service & Parts</a></li>
+            <li><a href="#financing">Financing</a></li>
+            <li><a href="#insurance">Insurance</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Experience</h4>
+          <ul class="footer-links">
+            <li><a href="#museum">Porsche Museum</a></li>
+            <li><a href="#driving">Driving Experience</a></li>
+            <li><a href="#exclusive">Porsche Exclusive</a></li>
+            <li><a href="#clubs">Porsche Clubs</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#manuals">Owner's Manuals</a></li>
+            <li><a href="#recall">Recall Information</a></li>
+            <li><a href="#warranty">Warranty</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Ing. h.c. F. Porsche AG. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openConfigurator() {
+      alert('Porsche Car Configurator would open here. In production, this would link to the official Porsche configurator tool.');
+    }
+
+    function scheduleTestDrive() {
+      alert('Test Drive Scheduler would open here. In production, this would connect to the Porsche dealer network scheduling system.');
+    }
+
+    function findDealer() {
+      alert('Dealer Locator would open here. In production, this would show a map of nearby Porsche Centers.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll effect to navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+      } else {
+        navbar.style.backgroundColor = 'var(--porsche-black)';
+        navbar.style.backdropFilter = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

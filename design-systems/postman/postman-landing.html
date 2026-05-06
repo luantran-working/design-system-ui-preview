@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postman - API Platform for Building and Using APIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="postman-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="6" fill="#FF6C37"/>
+            <path d="M16 8L24 16L16 24L8 16L16 8Z" fill="white"/>
+          </svg>
+          Postman
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Product</a></li>
+          <li><a href="#workspaces">Workspaces</a></li>
+          <li><a href="#integrations">Integrations</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Sign Up Free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🚀</span>
+          <span>Trusted by 25+ Million Developers</span>
+        </div>
+        <h1 class="hero-title">The API Platform for Developers</h1>
+        <p class="hero-subtitle">Simplify API development, testing, and collaboration. Build better APIs faster with Postman's comprehensive platform trusted by millions of developers worldwide.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Start Free Trial</button>
+          <button class="btn-outline btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">25M+</span>
+            <span class="hero-stat-label">Developers</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">500K+</span>
+            <span class="hero-stat-label">Organizations</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">1B+</span>
+            <span class="hero-stat-label">API Requests/Month</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">99.99%</span>
+            <span class="hero-stat-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything You Need to Work with APIs</h2>
+        <p class="section-subtitle">From design and testing to documentation and monitoring, Postman provides a complete API development environment.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">API Testing</h3>
+          <p class="feature-description">Send requests, inspect responses, and validate API behavior with our intuitive testing interface. Support for REST, GraphQL, WebSocket, and more.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">Auto Documentation</h3>
+          <p class="feature-description">Generate beautiful, interactive API documentation automatically from your collections. Keep docs in sync with your API effortlessly.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3 class="feature-title">Team Collaboration</h3>
+          <p class="feature-description">Share collections, environments, and workspaces with your team. Real-time collaboration for distributed API development.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Automated Testing</h3>
+          <p class="feature-description">Write test scripts in JavaScript, run collections with Newman CLI, and integrate with CI/CD pipelines for continuous testing.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">API Monitoring</h3>
+          <p class="feature-description">Schedule collection runs to monitor API health and performance. Get alerts when things go wrong, before your users notice.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">API Design</h3>
+          <p class="feature-description">Design APIs with OpenAPI, RAML, or GraphQL schemas. Validate designs and generate mock servers for early testing.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workspaces Section -->
+  <section class="workspaces" id="workspaces">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Workspaces for Every Team</h2>
+        <p class="section-subtitle">Organize your API work in personal, team, or public workspaces. Collaborate seamlessly across your organization.</p>
+      </div>
+      <div class="workspace-showcase">
+        <div class="workspace-image">
+          <span>Workspace Preview</span>
+        </div>
+        <div class="workspace-content">
+          <h3>Powerful Workspace Features</h3>
+          <ul class="workspace-features">
+            <li>Personal workspaces for individual projects and experimentation</li>
+            <li>Team workspaces with role-based access control and permissions</li>
+            <li>Public workspaces to share APIs with the developer community</li>
+            <li>Version control and history tracking for all API artifacts</li>
+            <li>Real-time sync across desktop, web, and mobile apps</li>
+            <li>Activity feed to track team changes and updates</li>
+          </ul>
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Create Workspace</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Methods Section -->
+  <section class="api-methods">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Support for All HTTP Methods</h2>
+        <p class="section-subtitle">Test any API endpoint with full support for all standard HTTP methods and custom headers.</p>
+      </div>
+      <div class="method-grid">
+        <div class="method-card get">
+          <div class="method-badge">GET</div>
+          <p class="method-description">Retrieve data from a server</p>
+        </div>
+        <div class="method-card post">
+          <div class="method-badge">POST</div>
+          <p class="method-description">Send data to create resources</p>
+        </div>
+        <div class="method-card put">
+          <div class="method-badge">PUT</div>
+          <p class="method-description">Update existing resources</p>
+        </div>
+        <div class="method-card delete">
+          <div class="method-badge">DELETE</div>
+          <p class="method-description">Remove resources from server</p>
+        </div>
+        <div class="method-card patch">
+          <div class="method-badge">PATCH</div>
+          <p class="method-description">Partially modify resources</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="code-example">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powerful Scripting Capabilities</h2>
+        <p class="section-subtitle">Write pre-request and test scripts in JavaScript to automate your API workflows</p>
+      </div>
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+        </div>
+        <div class="code-block">
+          <pre><code class="code-content"><span class="code-comment">// Test script example</span>
+<span class="code-keyword">pm</span>.<span class="code-function">test</span>(<span class="code-string">"Status code is 200"</span>, <span class="code-keyword">function</span> () {
+    <span class="code-keyword">pm</span>.<span class="code-keyword">response</span>.<span class="code-function">to</span>.<span class="code-function">have</span>.<span class="code-keyword">status</span>(<span class="code-string">200</span>);
+});
+
+<span class="code-comment">// Parse JSON response</span>
+<span class="code-keyword">const</span> response = <span class="code-keyword">pm</span>.<span class="code-keyword">response</span>.<span class="code-function">json</span>();
+
+<span class="code-comment">// Validate response structure</span>
+<span class="code-keyword">pm</span>.<span class="code-function">test</span>(<span class="code-string">"Response has user data"</span>, <span class="code-keyword">function</span> () {
+    <span class="code-keyword">pm</span>.<span class="code-function">expect</span>(response).<span class="code-function">to</span>.<span class="code-function">have</span>.<span class="code-keyword">property</span>(<span class="code-string">'user'</span>);
+    <span class="code-keyword">pm</span>.<span class="code-function">expect</span>(response.<span class="code-keyword">user</span>).<span class="code-function">to</span>.<span class="code-function">have</span>.<span class="code-keyword">property</span>(<span class="code-string">'email'</span>);
+});
+
+<span class="code-comment">// Set environment variable for next request</span>
+<span class="code-keyword">pm</span>.<span class="code-keyword">environment</span>.<span class="code-function">set</span>(<span class="code-string">"userId"</span>, response.<span class="code-keyword">user</span>.<span class="code-keyword">id</span>);
+
+<span class="code-comment">// Check response time</span>
+<span class="code-keyword">pm</span>.<span class="code-function">test</span>(<span class="code-string">"Response time is less than 500ms"</span>, <span class="code-keyword">function</span> () {
+    <span class="code-keyword">pm</span>.<span class="code-function">expect</span>(<span class="code-keyword">pm</span>.<span class="code-keyword">response</span>.<span class="code-keyword">responseTime</span>).<span class="code-function">to</span>.<span class="code-function">be</span>.<span class="code-function">below</span>(<span class="code-string">500</span>);
+});</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Integrates With Your Workflow</h2>
+        <p class="section-subtitle">Connect Postman with your favorite tools and services for seamless API development</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-item">GitHub</div>
+        <div class="integration-item">GitLab</div>
+        <div class="integration-item">Bitbucket</div>
+        <div class="integration-item">Jenkins</div>
+        <div class="integration-item">CircleCI</div>
+        <div class="integration-item">Travis CI</div>
+        <div class="integration-item">Azure DevOps</div>
+        <div class="integration-item">AWS</div>
+        <div class="integration-item">Slack</div>
+        <div class="integration-item">Microsoft Teams</div>
+        <div class="integration-item">Datadog</div>
+        <div class="integration-item">New Relic</div>
+        <div class="integration-item">PagerDuty</div>
+        <div class="integration-item">Splunk</div>
+        <div class="integration-item">Jira</div>
+        <div class="integration-item">Confluence</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Plans for Teams of All Sizes</h2>
+        <p class="section-subtitle">Start free and scale as your team grows. All plans include core API testing features.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited API requests</li>
+            <li>Personal workspace</li>
+            <li>Collection runner</li>
+            <li>Basic API documentation</li>
+            <li>Community support</li>
+            <li>Postman API access</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('cta')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Team</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Free, plus:</li>
+            <li>Team workspaces (unlimited)</li>
+            <li>Role-based access control</li>
+            <li>Advanced API documentation</li>
+            <li>Mock servers (1,000 calls/month)</li>
+            <li>API monitoring (10,000 requests/month)</li>
+            <li>Version control & history</li>
+            <li>Priority email support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Team, plus:</li>
+            <li>SSO & SAML authentication</li>
+            <li>Advanced security & compliance</li>
+            <li>Dedicated support & SLA</li>
+            <li>Custom integrations</li>
+            <li>Audit logs & reporting</li>
+            <li>On-premise deployment option</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="section-title">Ready to Build Better APIs?</h2>
+        <p class="section-subtitle">Join 25 million developers using Postman to simplify API development. Start free, no credit card required.</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your work email" class="email-input" id="emailInput">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Sign Up Free</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#desktop">Desktop App</a></li>
+            <li><a href="#cli">CLI</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#learning">Learning Center</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#gdpr">GDPR</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Postman, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#discord" class="social-link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo showcasing Postman features.');
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox to get started with Postman.`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll animation for feature cards
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all feature cards
+    document.querySelectorAll('.feature-card, .pricing-card, .method-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe XD - Design. Prototype. Share. All in one app.</title>
+  <meta name="description" content="Adobe XD is the all-in-one UX/UI solution for designing websites, mobile apps, and more. Design, prototype, and share — all in one app.">
+  <link rel="stylesheet" href="adobe-xd-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Adobe XD</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#prototyping">Prototyping</a></li>
+          <li><a href="#collaboration">Collaboration</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Design. Prototype. Share.<br>All in one app.</h1>
+        <p class="hero-subtitle">Adobe XD is the all-in-one UX/UI solution for designing websites, mobile apps, and more. Create stunning designs, interactive prototypes, and share them with your team — all in one powerful tool.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('cta')">Start Free Trial</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>✨</span>
+          <span>Trusted by millions of designers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Active Designers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Prototypes Created</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need to design amazing experiences</h2>
+        <p class="section-subtitle">From wireframes to interactive prototypes, Adobe XD has all the tools you need to bring your ideas to life.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3 class="feature-title">Intuitive Design Tools</h3>
+          <p class="feature-description">Create stunning designs with powerful vector tools, repeat grids, and responsive resize. Design faster with reusable components and design systems.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">Lightning Fast Performance</h3>
+          <p class="feature-description">Work at the speed of thought with a tool built for performance. Switch between design and prototype modes instantly without lag.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔗</span>
+          <h3 class="feature-title">Interactive Prototypes</h3>
+          <p class="feature-description">Create realistic prototypes with auto-animate, voice prototyping, and advanced interactions. Test your designs before development.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎯</span>
+          <h3 class="feature-title">Pixel-Perfect Precision</h3>
+          <p class="feature-description">Design with precision using smart guides, alignment tools, and a powerful grid system. Export assets at any resolution.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔄</span>
+          <h3 class="feature-title">Seamless Workflow</h3>
+          <p class="feature-description">Integrate with Creative Cloud apps, plugins, and third-party tools. Import from Sketch, Figma, and Photoshop effortlessly.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <h3 class="feature-title">Multi-Platform Design</h3>
+          <p class="feature-description">Design for web, mobile, tablet, and desktop all in one place. Preview your designs on actual devices in real-time.</p>
+          <a href="#learn-more" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prototyping Section -->
+  <section class="prototyping" id="prototyping">
+    <div class="container">
+      <div class="prototyping-content">
+        <div class="prototyping-text">
+          <h2>Bring your designs to life with interactive prototypes</h2>
+          <p>Create realistic, interactive prototypes that feel like the real thing. Add micro-interactions, animations, and voice commands to showcase your vision.</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+            <li style="padding: 12px 0; font-size: 16px; color: var(--text-gray);">
+              <span style="color: var(--xd-magenta); font-weight: 700; margin-right: 8px;">✓</span>
+              Auto-animate for smooth transitions
+            </li>
+            <li style="padding: 12px 0; font-size: 16px; color: var(--text-gray);">
+              <span style="color: var(--xd-magenta); font-weight: 700; margin-right: 8px;">✓</span>
+              Voice prototyping and speech playback
+            </li>
+            <li style="padding: 12px 0; font-size: 16px; color: var(--text-gray);">
+              <span style="color: var(--xd-magenta); font-weight: 700; margin-right: 8px;">✓</span>
+              Advanced interactions and triggers
+            </li>
+            <li style="padding: 12px 0; font-size: 16px; color: var(--text-gray);">
+              <span style="color: var(--xd-magenta); font-weight: 700; margin-right: 8px;">✓</span>
+              Preview on actual devices
+            </li>
+          </ul>
+          <button class="btn-primary" onclick="scrollToSection('cta')">Start Prototyping</button>
+        </div>
+        <div class="prototyping-image">
+          <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #FF2BC2 0%, #6B4FFF 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 600;">
+            Interactive Prototype Preview
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section class="collaboration" id="collaboration">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Collaborate seamlessly with your team</h2>
+        <p class="section-subtitle">Share designs, gather feedback, and iterate faster with powerful collaboration features built for modern design teams.</p>
+      </div>
+      <div class="collaboration-grid">
+        <div class="collaboration-card">
+          <div class="collaboration-icon">💬</div>
+          <h3 class="collaboration-title">Real-Time Feedback</h3>
+          <p class="collaboration-description">Stakeholders can comment directly on designs. Get contextual feedback exactly where you need it.</p>
+        </div>
+        <div class="collaboration-card">
+          <div class="collaboration-icon">🔗</div>
+          <h3 class="collaboration-title">Share with a Link</h3>
+          <p class="collaboration-description">Share prototypes and design specs with a simple link. No downloads or accounts required for viewers.</p>
+        </div>
+        <div class="collaboration-card">
+          <div class="collaboration-icon">📐</div>
+          <h3 class="collaboration-title">Design Specs</h3>
+          <p class="collaboration-description">Automatically generate design specs for developers. Export assets and CSS with one click.</p>
+        </div>
+        <div class="collaboration-card">
+          <div class="collaboration-icon">🎨</div>
+          <h3 class="collaboration-title">Shared Libraries</h3>
+          <p class="collaboration-description">Create and share component libraries across your team. Keep everyone in sync with design systems.</p>
+        </div>
+        <div class="collaboration-card">
+          <div class="collaboration-icon">🔄</div>
+          <h3 class="collaboration-title">Version History</h3>
+          <p class="collaboration-description">Never lose work with automatic version history. Restore previous versions anytime.</p>
+        </div>
+        <div class="collaboration-card">
+          <div class="collaboration-icon">👥</div>
+          <h3 class="collaboration-title">Co-Editing</h3>
+          <p class="collaboration-description">Work together in real-time with cloud documents. See who's editing and collaborate live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose the plan that's right for you</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready. All plans include core features.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>1 active shared document</li>
+            <li>2 GB cloud storage</li>
+            <li>Unlimited prototypes</li>
+            <li>Basic design tools</li>
+            <li>Mobile preview</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSignup('free')">Get Started Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Individual</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$9.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited shared documents</li>
+            <li>100 GB cloud storage</li>
+            <li>Advanced prototyping</li>
+            <li>Design specs</li>
+            <li>Version history</li>
+            <li>Creative Cloud integration</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="handleSignup('individual')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Business</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$33.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Individual</li>
+            <li>Unlimited cloud storage</li>
+            <li>Shared libraries</li>
+            <li>Co-editing</li>
+            <li>Admin controls</li>
+            <li>SSO & advanced security</li>
+            <li>Dedicated support</li>
+            <li>Training resources</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSignup('business')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to design your next big idea?</h2>
+        <p class="cta-subtitle">Join millions of designers who trust Adobe XD to bring their creative visions to life. Start your free trial today — no credit card required.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup('trial')">Start Free Trial</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#prototyping">Prototyping</a></li>
+            <li><a href="#collaboration">Collaboration</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#updates">What's New</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#plugins">Plugins</a></li>
+            <li><a href="#templates">Templates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Adobe</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#status">System Status</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adobe. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#behance" class="social-link">Behance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to an interactive demo or video showcase of Adobe XD features.');
+    }
+
+    function handleSignup(plan) {
+      alert(`Starting signup for ${plan} plan. In production, this would redirect to Adobe's signup flow.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll animation effects
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe feature cards and other elements for animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.feature-card, .collaboration-card, .pricing-card');
+      animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

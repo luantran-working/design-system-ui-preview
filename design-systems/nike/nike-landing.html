@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike - Just Do It</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nike-styles.css">
+</head>
+<body>
+  <!-- Promotional Banner -->
+  <div class="promo-banner">
+    Free Shipping on Orders Over $50 | Members Get Free Returns
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">NIKE</div>
+      <ul class="nav-links">
+        <li><a href="#new">New & Featured</a></li>
+        <li><a href="#products">Men</a></li>
+        <li><a href="#products">Women</a></li>
+        <li><a href="#products">Kids</a></li>
+        <li><a href="#categories">Sale</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-primary">Join Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1920&h=1080&fit=crop" alt="Nike Shoes" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">JUST DO IT</h1>
+      <p class="hero-subtitle">Move the world forward with every step. Discover the latest innovations in athletic performance.</p>
+      <div class="hero-cta">
+        <button class="btn-primary btn-large" onclick="scrollToSection('products')">Shop Now</button>
+        <button class="btn-secondary btn-large" onclick="scrollToSection('innovation')">Explore Innovation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">FEATURED PRODUCTS</h2>
+        <p class="section-subtitle">The latest drops and best sellers</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=800&fit=crop" alt="Air Max 270" class="product-image">
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Just In</div>
+            <h4 class="product-name">Nike Air Max 270</h4>
+            <p class="product-description">Men's Shoes</p>
+            <div class="product-price">$160</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=800&fit=crop" alt="React Infinity Run" class="product-image">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Running</div>
+            <h4 class="product-name">Nike React Infinity Run</h4>
+            <p class="product-description">Women's Running Shoe</p>
+            <div class="product-price">$160</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=800&fit=crop" alt="Blazer Mid '77" class="product-image">
+            <span class="product-badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Lifestyle</div>
+            <h4 class="product-name">Nike Blazer Mid '77</h4>
+            <p class="product-description">Vintage Sneakers</p>
+            <div class="product-price">$100</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop" alt="Air Force 1" class="product-image">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Classics</div>
+            <h4 class="product-name">Nike Air Force 1 '07</h4>
+            <p class="product-description">Men's Shoe</p>
+            <div class="product-price">$110</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=800&h=800&fit=crop" alt="Pegasus 40" class="product-image">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Running</div>
+            <h4 class="product-name">Nike Pegasus 40</h4>
+            <p class="product-description">Men's Road Running Shoes</p>
+            <div class="product-price">$140</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&h=800&fit=crop" alt="Dunk Low" class="product-image">
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Sportswear</div>
+            <h4 class="product-name">Nike Dunk Low Retro</h4>
+            <p class="product-description">Men's Shoes</p>
+            <div class="product-price">$115</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Section -->
+  <section class="innovation" id="innovation">
+    <div class="container">
+      <div class="innovation-grid">
+        <div class="innovation-content">
+          <h3>NIKE AIR TECHNOLOGY</h3>
+          <p>Revolutionary cushioning that changed the game. Experience unparalleled comfort and responsiveness with every stride. Air units are pressurized with gas and embedded in the midsole to provide lightweight, durable cushioning.</p>
+          <button class="btn-primary btn-large">Learn More</button>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=1200&h=800&fit=crop" alt="Nike Air Technology" class="innovation-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Athletes Section -->
+  <section class="athletes" id="athletes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">NIKE ATHLETES</h2>
+        <p class="section-subtitle">Champions who inspire greatness</p>
+      </div>
+      <div class="athlete-grid">
+        <div class="athlete-card">
+          <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&h=800&fit=crop" alt="Basketball Athlete" class="athlete-image">
+          <div class="athlete-overlay">
+            <h4 class="athlete-name">LeBron James</h4>
+            <p class="athlete-sport">Basketball</p>
+          </div>
+        </div>
+
+        <div class="athlete-card">
+          <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&h=800&fit=crop" alt="Running Athlete" class="athlete-image">
+          <div class="athlete-overlay">
+            <h4 class="athlete-name">Eliud Kipchoge</h4>
+            <p class="athlete-sport">Marathon</p>
+          </div>
+        </div>
+
+        <div class="athlete-card">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&h=800&fit=crop" alt="Soccer Athlete" class="athlete-image">
+          <div class="athlete-overlay">
+            <h4 class="athlete-name">Cristiano Ronaldo</h4>
+            <p class="athlete-sport">Football</p>
+          </div>
+        </div>
+
+        <div class="athlete-card">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=800&fit=crop" alt="Tennis Athlete" class="athlete-image">
+          <div class="athlete-overlay">
+            <h4 class="athlete-name">Serena Williams</h4>
+            <p class="athlete-sport">Tennis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">SHOP BY SPORT</h2>
+        <p class="section-subtitle">Find your perfect gear</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=900&fit=crop" alt="Running" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-name">RUNNING</h3>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=1200&h=900&fit=crop" alt="Basketball" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-name">BASKETBALL</h3>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&h=900&fit=crop" alt="Training" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-name">TRAINING</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">WHY NIKE</h2>
+        <p class="section-subtitle">Performance meets innovation</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <h4 class="feature-title">FREE SHIPPING</h4>
+          <p class="feature-description">Free standard shipping on orders over $50. Nike Members enjoy free returns.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🔄</div>
+          <h4 class="feature-title">60-DAY RETURNS</h4>
+          <p class="feature-description">Not satisfied? Return your purchase within 60 days for a full refund.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">⭐</div>
+          <h4 class="feature-title">NIKE MEMBERSHIP</h4>
+          <p class="feature-description">Join for free and get exclusive access to products, events, and rewards.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🎯</div>
+          <h4 class="feature-title">EXPERT GUIDANCE</h4>
+          <p class="feature-description">Get personalized recommendations from our team of sports experts.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🏆</div>
+          <h4 class="feature-title">PROVEN QUALITY</h4>
+          <p class="feature-description">Trusted by world-class athletes and millions of everyday champions.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🌍</div>
+          <h4 class="feature-title">SUSTAINABILITY</h4>
+          <p class="feature-description">Committed to reducing our environmental impact through innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">BECOME A NIKE MEMBER</h2>
+        <p class="cta-subtitle">Get access to exclusive products, events, and offers. Join the Nike community today.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleJoin()">Join Us</button>
+          <button class="btn-secondary btn-large" onclick="scrollToSection('products')">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">GET HELP</h4>
+          <ul class="footer-links">
+            <li><a href="#order-status">Order Status</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#returns">Returns</a></li>
+            <li><a href="#payment">Payment Options</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">ABOUT NIKE</h4>
+          <ul class="footer-links">
+            <li><a href="#news">News</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">SHOP</h4>
+          <ul class="footer-links">
+            <li><a href="#men">Men</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#kids">Kids</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#gift-cards">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">FOLLOW US</h4>
+          <ul class="footer-links">
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nike, Inc. All Rights Reserved</p>
+        <div class="footer-social">
+          <a href="#guides" class="social-link">Guides</a>
+          <a href="#terms" class="social-link">Terms of Sale</a>
+          <a href="#terms-use" class="social-link">Terms of Use</a>
+          <a href="#privacy" class="social-link">Nike Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleJoin() {
+      alert('Join Nike Membership! In production, this would open the registration form.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Product card hover effect - swap images
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.opacity = '0.8';
+      });
+      card.addEventListener('mouseleave', function() {
+        this.style.opacity = '1';
+      });
+    });
+  </script>
+</body>
+</html>

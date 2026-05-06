@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Design System - Premium Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="luxury-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">LUXURY</div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#showcase" class="nav-link">Showcase</a>
+        <a href="#components" class="nav-link">Components</a>
+        <a href="#design" class="nav-link">Design</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Premium Design System</span>
+      <h1 class="hero-title">LUXURY</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">A high-end dark aesthetic with bold headings, monochromatic palette, and premium feel for luxury brand experiences. Modern, bold, and unmistakably exclusive.</p>
+      <button class="btn-primary" onclick="scrollToSection('features')">Explore the System</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Core Principles</span>
+        <h2 class="section-title">Designed for Excellence</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Every element crafted with precision, every detail considered. The Luxury design system embodies sophistication through minimalist elegance and bold typography.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Bold Typography</h3>
+          <p class="feature-description">Oswald font family with expressive scale. Headlines carry personality while body text optimizes scanability and contrast for maximum impact.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Monochromatic Palette</h3>
+          <p class="feature-description">Pure black and white foundation with subtle grays. Primary color #FAFAFA for emphasis, creating timeless elegance and visual clarity.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18"/>
+              <path d="M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">8pt Grid System</h3>
+          <p class="feature-description">Consistent vertical rhythm across all sections. Predictable spacing and alignment create harmonious layouts without ad-hoc offsets.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Premium Components</h3>
+          <p class="feature-description">Consistent radii, spacing, and elevation strategy. Strong focus states and predictable interactions ensure professional user experience.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Purposeful Motion</h3>
+          <p class="feature-description">Subtle transitions with stable easing. 150-250ms duration emphasizes primary actions without distraction or unnecessary flourish.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Clear Hierarchy</h3>
+          <p class="feature-description">Obvious content structure: headline, support text, primary action. Whitespace separates concerns before adding borders or shadows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="showcase" id="showcase">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Visual Examples</span>
+        <h2 class="section-title">Premium Aesthetics</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Experience the power of bold typography and monochromatic elegance. Each example demonstrates the system's versatility and sophistication.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-image-placeholder">
+            <div class="showcase-overlay">
+              <h3 class="showcase-overlay-title">BOLD HEADLINES</h3>
+              <p class="showcase-overlay-text">Desktop-first expressive scale</p>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3 class="showcase-name">Typography Scale</h3>
+            <p class="showcase-description">Oswald font family with weights from 100 to 900. Headings carry style personality while maintaining exceptional readability.</p>
+          </div>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-image-placeholder">
+            <div class="showcase-overlay">
+              <div class="color-swatch" style="background: #FAFAFA;"></div>
+              <div class="color-swatch" style="background: #000000;"></div>
+              <div class="color-swatch" style="background: #FFFFFF;"></div>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3 class="showcase-name">Color Foundation</h3>
+            <p class="showcase-description">Primary #FAFAFA for CTA emphasis, Surface #000000 for backgrounds, Text #FFFFFF for legibility. Pure and timeless.</p>
+          </div>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-image-placeholder">
+            <div class="showcase-overlay">
+              <div class="spacing-demo">
+                <div class="spacing-bar" style="width: 8px;"></div>
+                <div class="spacing-bar" style="width: 16px;"></div>
+                <div class="spacing-bar" style="width: 24px;"></div>
+                <div class="spacing-bar" style="width: 40px;"></div>
+                <div class="spacing-bar" style="width: 64px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3 class="showcase-name">Spacing System</h3>
+            <p class="showcase-description">8pt baseline grid ensures consistent vertical rhythm. Predictable spacing creates visual harmony across all components.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section class="components" id="components">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">UI Elements</span>
+        <h2 class="section-title">Component Library</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Comprehensive set of components designed for luxury brand experiences. Each element follows the system's principles of clarity and sophistication.</p>
+      </div>
+
+      <div class="components-showcase">
+        <!-- Buttons -->
+        <div class="component-section">
+          <h3 class="component-section-title">Buttons</h3>
+          <div class="component-demo">
+            <button class="btn-primary">Primary Action</button>
+            <button class="btn-secondary">Secondary Action</button>
+            <button class="btn-primary" disabled>Disabled State</button>
+          </div>
+          <p class="component-description">Primary actions use #FAFAFA emphasis. Secondary actions stay neutral. All states are explicit and accessible.</p>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="component-section">
+          <h3 class="component-section-title">Input Fields</h3>
+          <div class="component-demo">
+            <div class="input-group">
+              <label class="input-label">Email Address</label>
+              <input type="email" class="input-field" placeholder="your@email.com">
+            </div>
+            <div class="input-group">
+              <label class="input-label">Message</label>
+              <textarea class="input-field" rows="4" placeholder="Your message here..."></textarea>
+            </div>
+          </div>
+          <p class="component-description">Strong focus-visible states, clear labels, and predictable error messaging ensure excellent user experience.</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="component-section">
+          <h3 class="component-section-title">Cards</h3>
+          <div class="component-demo component-demo-cards">
+            <div class="demo-card">
+              <h4 class="demo-card-title">Card Title</h4>
+              <p class="demo-card-text">Consistent radii, spacing, and elevation strategy across all card components.</p>
+              <button class="btn-secondary btn-small">Learn More</button>
+            </div>
+            <div class="demo-card">
+              <h4 class="demo-card-title">Another Card</h4>
+              <p class="demo-card-text">Clear content blocks with consistent internal padding maintain visual harmony.</p>
+              <button class="btn-secondary btn-small">Explore</button>
+            </div>
+          </div>
+          <p class="component-description">Cards use consistent spacing and subtle borders. Hover states provide clear interaction feedback.</p>
+        </div>
+
+        <!-- Typography Samples -->
+        <div class="component-section">
+          <h3 class="component-section-title">Typography Hierarchy</h3>
+          <div class="component-demo component-demo-typography">
+            <h1 class="type-sample-h1">Display Heading</h1>
+            <h2 class="type-sample-h2">Section Heading</h2>
+            <h3 class="type-sample-h3">Subsection Heading</h3>
+            <p class="type-sample-body">Body text optimizes scanability and contrast. Line height and letter spacing ensure comfortable reading at all sizes.</p>
+            <p class="type-sample-caption">Caption text for supporting information and metadata.</p>
+          </div>
+          <p class="component-description">Desktop-first expressive scale with Oswald for headings. Clear hierarchy prevents flattened visual structure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Tokens Section -->
+  <section class="design-tokens" id="design">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Design System</span>
+        <h2 class="section-title">Design Tokens</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Foundation tokens that define the Luxury design system. Use these values to maintain consistency across all implementations.</p>
+      </div>
+
+      <div class="tokens-grid">
+        <div class="token-category">
+          <h3 class="token-category-title">Colors</h3>
+          <div class="token-list">
+            <div class="token-item">
+              <div class="token-swatch" style="background: #FAFAFA;"></div>
+              <div class="token-info">
+                <div class="token-name">Primary</div>
+                <div class="token-value">#FAFAFA</div>
+              </div>
+            </div>
+            <div class="token-item">
+              <div class="token-swatch" style="background: #000000; border: 1px solid #333;"></div>
+              <div class="token-info">
+                <div class="token-name">Surface</div>
+                <div class="token-value">#000000</div>
+              </div>
+            </div>
+            <div class="token-item">
+              <div class="token-swatch" style="background: #FFFFFF;"></div>
+              <div class="token-info">
+                <div class="token-name">Text</div>
+                <div class="token-value">#FFFFFF</div>
+              </div>
+            </div>
+            <div class="token-item">
+              <div class="token-swatch" style="background: #16A34A;"></div>
+              <div class="token-info">
+                <div class="token-name">Success</div>
+                <div class="token-value">#16A34A</div>
+              </div>
+            </div>
+            <div class="token-item">
+              <div class="token-swatch" style="background: #D97706;"></div>
+              <div class="token-info">
+                <div class="token-name">Warning</div>
+                <div class="token-value">#D97706</div>
+              </div>
+            </div>
+            <div class="token-item">
+              <div class="token-swatch" style="background: #DC2626;"></div>
+              <div class="token-info">
+                <div class="token-name">Danger</div>
+                <div class="token-value">#DC2626</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="token-category">
+          <h3 class="token-category-title">Typography</h3>
+          <div class="token-list">
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">Primary Font</div>
+                <div class="token-value">Oswald</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">Display Font</div>
+                <div class="token-value">Oswald</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">Mono Font</div>
+                <div class="token-value">JetBrains Mono</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">Weights</div>
+                <div class="token-value">100-900</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="token-category">
+          <h3 class="token-category-title">Spacing</h3>
+          <div class="token-list">
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">XS</div>
+                <div class="token-value">8px</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">SM</div>
+                <div class="token-value">16px</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">MD</div>
+                <div class="token-value">24px</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">LG</div>
+                <div class="token-value">40px</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">XL</div>
+                <div class="token-value">64px</div>
+              </div>
+            </div>
+            <div class="token-item-text">
+              <div class="token-info">
+                <div class="token-name">2XL</div>
+                <div class="token-value">96px</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <span class="section-eyebrow">Get Started</span>
+      <h2 class="contact-title">Implement Luxury</h2>
+      <div class="section-divider"></div>
+      <p class="contact-description">Ready to elevate your brand with premium design? The Luxury design system provides everything you need to create sophisticated, high-end experiences.</p>
+      <div class="contact-buttons">
+        <button class="btn-primary">Download System</button>
+        <button class="btn-secondary">View Documentation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4 class="footer-section-title">Design System</h4>
+        <ul class="footer-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#design">Design Tokens</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#guidelines">Guidelines</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Support</h4>
+        <ul class="footer-links">
+          <li><a href="#help">Help Center</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Luxury Design System. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#privacy" class="legal-link">Privacy Policy</a>
+        <a href="#terms" class="legal-link">Terms of Use</a>
+        <a href="#license" class="legal-link">License</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 100) {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.98)';
+        navbar.style.borderBottom = '1px solid rgba(250, 250, 250, 0.1)';
+      } else {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+        navbar.style.borderBottom = '1px solid transparent';
+      }
+    });
+
+    // Hero parallax effect
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero-content');
+      if (hero && scrolled < window.innerHeight) {
+        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        hero.style.opacity = 1 - (scrolled / window.innerHeight);
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for fade-in
+    document.querySelectorAll('.feature-card, .showcase-card, .component-section, .token-category').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

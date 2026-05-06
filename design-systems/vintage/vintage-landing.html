@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vintage Design System - 1950s-1990s nostalgia with retro aesthetics and pixel-perfect typography">
+  <title>Vintage Design System - Retro & Nostalgic UI Components</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="vintage-styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">VINTAGE</div>
+        <nav>
+          <ul class="nav">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#docs">Docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Vintage Design System</h1>
+        <p class="hero-subtitle">
+          Experience 1950s-1990s nostalgia with retro color palettes, pixel-style typography, and timeless design patterns that bring old-world charm to modern interfaces.
+        </p>
+        <div class="hero-cta">
+          <a href="#components" class="btn btn-primary">Explore Components</a>
+          <a href="#docs" class="btn btn-secondary">View Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Vintage?</h2>
+      <div class="grid grid-3">
+        
+        <div class="card feature-card">
+          <span class="card-icon">🎨</span>
+          <h3 class="card-title">Retro Aesthetics</h3>
+          <p class="card-text">
+            Authentic 1950s-1990s design language with carefully curated color palettes, grainy textures, and skeuomorphic touches that evoke nostalgia.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Pixel-Perfect Typography</h3>
+          <p class="card-text">
+            Classic pixel-style fonts and retro typography that maintain readability while delivering unmistakable vintage character to every interface.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <span class="card-icon">⚡</span>
+          <h3 class="card-title">Modern Performance</h3>
+          <p class="card-text">
+            Nostalgic design meets contemporary web standards. Fully responsive, accessible, and optimized for today's browsers and devices.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <span class="card-icon">🎯</span>
+          <h3 class="card-title">Design Tokens</h3>
+          <p class="card-text">
+            Systematic color palette with primary teal (#008080), neutral silver, and semantic colors for success, warning, and danger states.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <span class="card-icon">📐</span>
+          <h3 class="card-title">Consistent Spacing</h3>
+          <p class="card-text">
+            Predictable 4/8/12/16/24/32 spacing scale ensures vertical rhythm and visual harmony across all components and layouts.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <span class="card-icon">♿</span>
+          <h3 class="card-title">Accessible by Default</h3>
+          <p class="card-text">
+            Strong focus states, clear labels, high contrast ratios, and semantic HTML ensure usability for all users and assistive technologies.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="section examples">
+    <div class="container">
+      <h2 class="section-title">Design in Action</h2>
+      <div class="grid grid-2">
+        
+        <div class="card example-card">
+          <div class="example-preview">
+            <button class="btn btn-primary">Primary Action</button>
+          </div>
+          <div class="example-code">
+&lt;button class="btn btn-primary"&gt;
+  Primary Action
+&lt;/button&gt;</div>
+        </div>
+
+        <div class="card example-card">
+          <div class="example-preview">
+            <input type="text" class="input" placeholder="Enter text...">
+          </div>
+          <div class="example-code">
+&lt;input type="text" 
+       class="input" 
+       placeholder="Enter text..."&gt;</div>
+        </div>
+
+        <div class="card example-card">
+          <div class="example-preview">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-warning">Warning</span>
+          </div>
+          <div class="example-code">
+&lt;span class="badge badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;</div>
+        </div>
+
+        <div class="card example-card">
+          <div class="example-preview" style="background: #C0C0C0; padding: 24px;">
+            <div class="card" style="max-width: 300px;">
+              <h3 class="card-title">Card Component</h3>
+              <p class="card-text">Clean content blocks with consistent padding and elevation.</p>
+            </div>
+          </div>
+          <div class="example-code">
+&lt;div class="card"&gt;
+  &lt;h3 class="card-title"&gt;Card Component&lt;/h3&gt;
+  &lt;p class="card-text"&gt;Content here&lt;/p&gt;
+&lt;/div&gt;</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="section components">
+    <div class="container">
+      <h2 class="section-title">Component Library</h2>
+
+      <!-- Buttons -->
+      <div class="component-demo">
+        <h3 class="component-title">Buttons</h3>
+        <div class="component-group">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-primary" disabled>Disabled Button</button>
+        </div>
+      </div>
+
+      <!-- Form Inputs -->
+      <div class="component-demo">
+        <h3 class="component-title">Form Inputs</h3>
+        <div class="component-group" style="flex-direction: column; align-items: stretch; max-width: 400px;">
+          <input type="text" class="input" placeholder="Text input">
+          <input type="email" class="input" placeholder="Email input">
+          <input type="text" class="input" placeholder="Disabled input" disabled>
+        </div>
+      </div>
+
+      <!-- Badges -->
+      <div class="component-demo">
+        <h3 class="component-title">Badges</h3>
+        <div class="component-group">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-demo">
+        <h3 class="component-title">Cards</h3>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4 class="card-title">Card Title 1</h4>
+            <p class="card-text">Cards provide consistent content containers with built-in spacing and elevation effects.</p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Card Title 2</h4>
+            <p class="card-text">Hover effects add subtle interactivity while maintaining the retro aesthetic.</p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Card Title 3</h4>
+            <p class="card-text">Perfect for feature lists, product cards, or any grouped content.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography -->
+      <div class="component-demo">
+        <h3 class="component-title">Typography Scale</h3>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div>
+            <h1 style="margin-bottom: 8px;">Heading 1 - 32px</h1>
+            <code>font-size: var(--font-size-2xl)</code>
+          </div>
+          <div>
+            <h2 style="margin-bottom: 8px;">Heading 2 - 24px</h2>
+            <code>font-size: var(--font-size-xl)</code>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 8px;">Heading 3 - 20px</h3>
+            <code>font-size: var(--font-size-lg)</code>
+          </div>
+          <div>
+            <p style="margin-bottom: 8px;">Body Text - 16px</p>
+            <code>font-size: var(--font-size-base)</code>
+          </div>
+          <div>
+            <p style="font-size: 14px; margin-bottom: 8px;">Small Text - 14px</p>
+            <code>font-size: var(--font-size-sm)</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color Palette -->
+      <div class="component-demo">
+        <h3 class="component-title">Color Palette</h3>
+        <div class="grid grid-3">
+          <div style="text-align: center;">
+            <div style="background: #008080; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Primary</strong><br>
+            <code>#008080</code>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #C0C0C0; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Surface</strong><br>
+            <code>#C0C0C0</code>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #000000; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Text</strong><br>
+            <code>#000000</code>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #16A34A; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Success</strong><br>
+            <code>#16A34A</code>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #D97706; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Warning</strong><br>
+            <code>#D97706</code>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #DC2626; height: 80px; border: 3px solid #000; border-radius: 4px; margin-bottom: 8px;"></div>
+            <strong>Danger</strong><br>
+            <code>#DC2626</code>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Documentation Section -->
+  <section id="docs" class="section" style="background: #F5F5F5;">
+    <div class="container">
+      <h2 class="section-title">Getting Started</h2>
+      <div class="grid grid-2">
+        
+        <div class="card">
+          <h3 class="card-title">Installation</h3>
+          <p class="card-text" style="margin-bottom: 16px;">
+            Include the Vintage CSS file and required fonts in your HTML:
+          </p>
+          <div class="example-code">
+&lt;link href="vintage-styles.css" rel="stylesheet"&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"&gt;</div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Design Principles</h3>
+          <ul style="font-size: 14px; line-height: 1.8; padding-left: 20px;">
+            <li>Use Primary (#008080) for CTA emphasis</li>
+            <li>Keep body copy on Text (#000000) for legibility</li>
+            <li>Maintain consistent vertical rhythm with spacing scale</li>
+            <li>Ensure clear hierarchy: headline → support → action</li>
+            <li>Use whitespace before adding borders or shadows</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Typography Guidelines</h3>
+          <ul style="font-size: 14px; line-height: 1.8; padding-left: 20px;">
+            <li>Headings use Silkscreen for personality</li>
+            <li>Body text optimized for scanability</li>
+            <li>Scale: 12/14/16/20/24/32px</li>
+            <li>Weights: 400 (normal), 700 (bold)</li>
+            <li>Monospace code uses JetBrains Mono</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Anti-patterns to Avoid</h3>
+          <ul style="font-size: 14px; line-height: 1.8; padding-left: 20px;">
+            <li>Don't introduce off-palette colors</li>
+            <li>Don't flatten hierarchy with same type sizes</li>
+            <li>Don't add decorative effects that reduce readability</li>
+            <li>Don't mix unrelated visual metaphors</li>
+            <li>Don't skip focus-visible states</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>About Vintage</h3>
+          <p style="font-size: 14px; line-height: 1.6;">
+            A design system celebrating 1950s-1990s nostalgia with retro aesthetics, pixel-perfect typography, and timeless design patterns.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#components">Components</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#design-tokens">Design Tokens</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Community</h3>
+          <ul class="footer-links">
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vintage Design System. Built with nostalgia and modern web standards.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

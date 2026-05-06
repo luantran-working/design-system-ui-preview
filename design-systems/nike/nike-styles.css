@@ -1,0 +1,821 @@
+/* Nike Design System - Following DESIGN.md specifications */
+
+/* CSS Variables based on DESIGN.md tokens */
+:root {
+  /* Primary Colors */
+  --nike-black: #111111;
+  --nike-white: #FFFFFF;
+  
+  /* Surface & Background */
+  --snow: #FAFAFA;
+  --light-gray: #F5F5F5;
+  --hover-gray: #E5E5E5;
+  --dark-surface: #28282A;
+  --deep-charcoal: #1F1F21;
+  --dark-hover: #39393B;
+  
+  /* Neutrals & Text */
+  --primary-text: #111111;
+  --secondary-text: #707072;
+  --disabled-text: #9E9EA0;
+  --disabled-inverse: #4B4B4D;
+  --border-primary: #707072;
+  --border-secondary: #CACACB;
+  --border-disabled: #CACACB;
+  --border-active: #111111;
+  
+  /* Semantic & Accent */
+  --nike-red: #D30005;
+  --bright-red: #EE0005;
+  --nike-orange-badge: #D33918;
+  --orange-flash: #FF5000;
+  --success-green: #007D48;
+  --success-inverse: #1EAA52;
+  --link-blue: #1151FF;
+  --info-inverse: #1190FF;
+  --warning-yellow: #FEDF35;
+  --focus-ring: rgba(39, 93, 197, 1);
+  
+  /* Typography */
+  --font-display: 'Helvetica Neue', 'Helvetica Now Display', Helvetica, Arial, sans-serif;
+  --font-body: 'Helvetica Neue', 'Helvetica Now Text', Helvetica, Arial, sans-serif;
+  --font-body-medium: 'Helvetica Neue', 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+  
+  /* Spacing: 4px base unit, 8px primary grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+  --space-9: 64px;
+  --space-10: 80px;
+  
+  /* Transitions */
+  --transition-base: 200ms ease;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--primary-text);
+  background-color: var(--nike-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography - Nike's aggressive hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+  color: var(--primary-text);
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 0.90;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.20;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.20;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.50;
+}
+
+p {
+  margin-bottom: var(--space-4);
+  line-height: 1.75;
+}
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+
+/* Navigation - Sticky white bar */
+.navbar {
+  background-color: var(--nike-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--hover-gray);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 var(--space-8);
+}
+
+.logo {
+  font-family: var(--font-body-medium);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--nike-black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-6);
+}
+
+.nav-links a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-family: var(--font-body-medium);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color var(--transition-base);
+}
+
+.nav-links a:hover {
+  color: var(--secondary-text);
+}
+
+.nav-actions {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+/* Buttons - Pill-shaped (30px radius) */
+.btn-primary,
+.btn-secondary {
+  font-family: var(--font-body-medium);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.50;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--nike-black);
+  color: var(--nike-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-text);
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--nike-black);
+  border: 1.5px solid var(--border-secondary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-primary);
+  background-color: var(--hover-gray);
+}
+
+.btn-large {
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Promotional Banner - Dark strip */
+.promo-banner {
+  background-color: var(--nike-black);
+  color: var(--nike-white);
+  text-align: center;
+  padding: var(--space-2) 0;
+  font-family: var(--font-body-medium);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.50;
+}
+
+/* Hero Section - Full-bleed photography */
+.hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: var(--space-10) var(--space-6);
+  color: var(--nike-white);
+}
+
+.hero-title {
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 0.90;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+  color: var(--nike-white);
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--space-8);
+  color: var(--nike-white);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.hero .btn-primary {
+  background-color: var(--nike-white);
+  color: var(--nike-black);
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--border-secondary);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: var(--space-3);
+  color: var(--primary-text);
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--secondary-text);
+  font-weight: 400;
+}
+
+/* Products Section */
+.products {
+  padding: var(--space-10) 0;
+  background-color: var(--nike-white);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+/* Product Cards - No border radius on images */
+.product-card {
+  background-color: var(--nike-white);
+  transition: opacity var(--transition-base);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  opacity: 0.8;
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.product-badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  background-color: var(--nike-white);
+  color: var(--nike-black);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 30px;
+  font-family: var(--font-body-medium);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.product-info {
+  padding: var(--space-3) 0;
+}
+
+.product-category {
+  font-family: var(--font-body-medium);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--nike-orange-badge);
+  margin-bottom: var(--space-1);
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-family: var(--font-body-medium);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+  margin-bottom: var(--space-1);
+}
+
+.product-description {
+  font-size: 14px;
+  color: var(--secondary-text);
+  margin-bottom: var(--space-2);
+}
+
+.product-price {
+  font-family: var(--font-body-medium);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+/* Innovation Section - Dark background */
+.innovation {
+  padding: var(--space-10) 0;
+  background-color: var(--nike-black);
+  color: var(--nike-white);
+}
+
+.innovation .section-title,
+.innovation .section-subtitle {
+  color: var(--nike-white);
+}
+
+.innovation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.innovation-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.innovation-content h3 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  color: var(--nike-white);
+}
+
+.innovation-content p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--nike-white);
+  margin-bottom: var(--space-6);
+}
+
+/* Athletes Section */
+.athletes {
+  padding: var(--space-10) 0;
+  background-color: var(--light-gray);
+}
+
+.athlete-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.athlete-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.athlete-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform var(--transition-base);
+}
+
+.athlete-card:hover .athlete-image {
+  transform: scale(1.05);
+}
+
+.athlete-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: var(--space-6) var(--space-4);
+}
+
+.athlete-name {
+  font-family: var(--font-body-medium);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--nike-white);
+  margin-bottom: var(--space-1);
+}
+
+.athlete-sport {
+  font-size: 14px;
+  color: var(--nike-white);
+  opacity: 0.8;
+}
+
+/* Categories Section */
+.categories {
+  padding: var(--space-10) 0;
+  background-color: var(--nike-white);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.category-card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform var(--transition-base);
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.05);
+}
+
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-6);
+}
+
+.category-name {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--nike-white);
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Features Section */
+.features {
+  padding: var(--space-10) 0;
+  background-color: var(--snow);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-4);
+}
+
+.feature-title {
+  font-family: var(--font-body-medium);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: var(--space-3);
+  color: var(--primary-text);
+  text-transform: uppercase;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: var(--secondary-text);
+  line-height: 1.75;
+}
+
+/* CTA Section */
+.cta {
+  padding: var(--space-10) 0;
+  background-color: var(--nike-black);
+  color: var(--nike-white);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  color: var(--nike-white);
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  margin-bottom: var(--space-8);
+  color: var(--nike-white);
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.cta .btn-primary {
+  background-color: var(--nike-white);
+  color: var(--nike-black);
+}
+
+.cta .btn-primary:hover {
+  background-color: var(--border-secondary);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-10) 0 var(--space-6);
+  background-color: var(--nike-black);
+  color: var(--nike-white);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.footer-title {
+  font-family: var(--font-body-medium);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+  color: var(--nike-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-2);
+}
+
+.footer-links a {
+  color: var(--nike-white);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity var(--transition-base);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--dark-hover);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.social-link {
+  color: var(--nike-white);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity var(--transition-base);
+}
+
+.social-link:hover {
+  opacity: 1;
+}
+
+/* Focus States */
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+/* Disabled State */
+button:disabled {
+  background-color: var(--hover-gray);
+  color: var(--disabled-text);
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--space-6);
+  }
+  
+  .nav-content {
+    padding: 0 var(--space-6);
+  }
+  
+  .hero-title {
+    font-size: 64px;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .athlete-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .innovation-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .athlete-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-cta,
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  .nav-content {
+    padding: 0 var(--space-4);
+  }
+}
+
+@media (max-width: 640px) {
+  .athlete-grid {
+    grid-template-columns: 1fr;
+  }
+}

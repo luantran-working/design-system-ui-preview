@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Design System - Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.">
+  <title>Modern Design System - Contemporary Editorial Design</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="modern-styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">Modern</a>
+      <ul class="nav-menu">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#components" class="nav-link">Components</a></li>
+        <li><a href="#colors" class="nav-link">Colors</a></li>
+        <li><a href="#typography" class="nav-link">Typography</a></li>
+        <li><a href="#" class="btn btn-primary">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1 class="hero-title fade-in">Contemporary Editorial Design</h1>
+      <p class="hero-subtitle fade-in">
+        A modern design system featuring serif typography, minimal color palettes, and clean layouts for polished digital products that demand sophistication.
+      </p>
+      <div class="hero-cta fade-in">
+        <a href="#components" class="btn btn-primary btn-large">Explore Components</a>
+        <a href="#" class="btn btn-secondary btn-large">View Documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+    <div class="container">
+      <div class="features-header">
+        <h2 class="features-title">Built for Modern Products</h2>
+        <p class="features-subtitle">
+          Every element is crafted with contemporary design principles, ensuring your digital products feel polished and professional.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card feature-card">
+          <div class="card-icon">✦</div>
+          <h3 class="card-title">Editorial Typography</h3>
+          <p class="card-description">
+            IBM Plex Serif brings editorial sophistication to your interfaces, with carefully selected weights and scales for optimal hierarchy.
+          </p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="card-icon">◆</div>
+          <h3 class="card-title">Minimal Palette</h3>
+          <p class="card-description">
+            A refined color system centered on deep purple (#553F83) with semantic tokens for success, warning, and danger states.
+          </p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="card-icon">◇</div>
+          <h3 class="card-title">Clean Layouts</h3>
+          <p class="card-description">
+            Consistent spacing scales and grid systems ensure predictable, scannable layouts that prioritize content and clarity.
+          </p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="card-icon">✧</div>
+          <h3 class="card-title">Purposeful Motion</h3>
+          <p class="card-description">
+            Subtle transitions (150-250ms) with stable easing emphasize interactions without overwhelming the experience.
+          </p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="card-icon">◈</div>
+          <h3 class="card-title">Accessible by Default</h3>
+          <p class="card-description">
+            Strong focus-visible states, clear labels, and predictable error messaging ensure usability for all users.
+          </p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="card-icon">✶</div>
+          <h3 class="card-title">Responsive Design</h3>
+          <p class="card-description">
+            Fluid typography and adaptive grids ensure your interfaces look exceptional on every device and screen size.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="showcase section">
+    <div class="container">
+      <div class="showcase-header">
+        <h2>Component Library</h2>
+        <p class="text-muted">
+          A comprehensive set of components designed with consistency and usability in mind.
+        </p>
+      </div>
+
+      <!-- Buttons Demo -->
+      <div class="component-demo">
+        <h3 class="component-demo-title">Buttons</h3>
+        <div class="button-group">
+          <button class="btn btn-primary">Primary Action</button>
+          <button class="btn btn-secondary">Secondary Action</button>
+          <button class="btn btn-primary btn-large">Large Button</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+        </div>
+      </div>
+
+      <!-- Form Elements Demo -->
+      <div class="component-demo">
+        <h3 class="component-demo-title">Form Elements</h3>
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Demo -->
+      <div class="component-demo">
+        <h3 class="component-demo-title">Cards</h3>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-description">
+              Cards provide a flexible container for grouping related content with consistent padding and elevation.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Interactive</h4>
+            <p class="card-description">
+              Hover over cards to see subtle elevation changes and border color transitions.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Responsive</h4>
+            <p class="card-description">
+              Cards adapt seamlessly to different screen sizes using flexible grid layouts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Palette Section -->
+  <section id="colors" class="section">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>Color System</h2>
+        <p class="text-muted">
+          A minimal palette designed for clarity and emphasis, with semantic tokens for common UI states.
+        </p>
+      </div>
+
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #553F83;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Primary</div>
+            <div class="color-swatch-value">#553F83</div>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #111111;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Secondary</div>
+            <div class="color-swatch-value">#111111</div>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #16A34A;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Success</div>
+            <div class="color-swatch-value">#16A34A</div>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #D97706;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Warning</div>
+            <div class="color-swatch-value">#D97706</div>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #DC2626;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Danger</div>
+            <div class="color-swatch-value">#DC2626</div>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-swatch-color" style="background-color: #FFFFFF;"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Text</div>
+            <div class="color-swatch-value">#FFFFFF</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section id="typography" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>Typography Scale</h2>
+        <p class="text-muted">
+          IBM Plex Serif provides editorial sophistication with a modular scale from 12px to 56px.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h1 style="margin-bottom: 0.5rem;">Heading 1</h1>
+          <p class="text-muted" style="margin: 0;">56px / Bold / -0.02em</p>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-bottom: 0.5rem;">Heading 2</h2>
+          <p class="text-muted" style="margin: 0;">48px / Extra Bold / -0.01em</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 0.5rem;">Heading 3</h3>
+          <p class="text-muted" style="margin: 0;">32px / Bold</p>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom: 0.5rem;">Heading 4</h4>
+          <p class="text-muted" style="margin: 0;">24px / Semibold</p>
+        </div>
+
+        <div class="card">
+          <p style="margin-bottom: 0.5rem; font-size: var(--font-size-lg);">Body Large</p>
+          <p class="text-muted" style="margin: 0;">20px / Regular / 1.7 line height</p>
+        </div>
+
+        <div class="card">
+          <p style="margin-bottom: 0.5rem;">Body Regular</p>
+          <p class="text-muted" style="margin: 0;">16px / Regular / 1.7 line height</p>
+        </div>
+
+        <div class="card">
+          <p style="margin-bottom: 0.5rem; font-size: var(--font-size-sm);">Body Small</p>
+          <p class="text-muted" style="margin: 0;">14px / Regular / 1.6 line height</p>
+        </div>
+
+        <div class="card">
+          <code style="display: block; margin-bottom: 0.5rem;">Monospace Code</code>
+          <p class="text-muted" style="margin: 0;">JetBrains Mono / 14px</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Principles Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2>Design Principles</h2>
+        <p class="text-muted">
+          Core guidelines that shape every decision in the Modern design system.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card-title">Clear Hierarchy</h3>
+          <p class="card-description">
+            Every layout follows a predictable pattern: headline → support text → primary action. Whitespace separates concerns before adding borders or shadows.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Consistent Rhythm</h3>
+          <p class="card-description">
+            Vertical rhythm remains consistent across sections using a modular spacing scale (4/8/12/16/24/32px) aligned to a predictable grid.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Purposeful Color</h3>
+          <p class="card-description">
+            Primary (#553F83) emphasizes CTAs and interactions. Surface tokens create depth. Text (#FFFFFF) ensures legibility on dark backgrounds.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Explicit States</h3>
+          <p class="card-description">
+            Every interactive element has clear hover, focus-visible, active, disabled, and loading states with consistent transition timing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2 class="mb-4">Ready to Build Something Modern?</h2>
+      <p class="text-muted mb-8" style="font-size: var(--font-size-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+        Start creating polished digital products with the Modern design system today.
+      </p>
+      <div class="button-group" style="justify-content: center;">
+        <a href="#" class="btn btn-primary btn-large">Get Started</a>
+        <a href="#" class="btn btn-secondary btn-large">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 class="footer-section-title">Modern</h3>
+          <p class="text-muted">
+            Contemporary editorial design system for polished digital products.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Component Library</a></li>
+            <li><a href="#" class="footer-link">Design Tokens</a></li>
+            <li><a href="#" class="footer-link">Figma Kit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">Discord</a></li>
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Modern Design System. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

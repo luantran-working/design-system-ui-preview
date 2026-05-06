@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUTALISM — Raw Design System</title>
+    <link rel="stylesheet" href="brutalism-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">BRUTALISM</h1>
+                <nav class="nav">
+                    <a href="#features">FEATURES</a>
+                    <a href="#examples">EXAMPLES</a>
+                    <a href="#components">COMPONENTS</a>
+                    <a href="#docs">DOCS</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">RAW.<br>UNPOLISHED.<br>FUNCTIONAL.</h1>
+                <p class="hero-subtitle">A design system inspired by concrete architecture. No decoration. No compromise. Pure function.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">GET STARTED</button>
+                    <button class="btn btn-secondary">VIEW DOCS</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="concrete-block block-1"></div>
+                <div class="concrete-block block-2"></div>
+                <div class="concrete-block block-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">FEATURES</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">ANTI-DESIGN</h3>
+                    <p class="feature-text">No gradients. No shadows. No rounded corners. Just raw, functional elements that serve their purpose.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">HARSH CONTRAST</h3>
+                    <p class="feature-text">Bold colors against stark backgrounds. Typography that demands attention. Layouts that refuse to blend in.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">SYSTEM FONTS</h3>
+                    <p class="feature-text">Darker Grotesque for display. JetBrains Mono for code. No decorative typefaces. Function over form.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">BRUTAL HONESTY</h3>
+                    <p class="feature-text">What you see is what you get. No hidden complexity. No visual tricks. Pure structural integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2 class="section-title">EXAMPLES</h2>
+            <div class="examples-grid">
+                <div class="example-block">
+                    <div class="example-header">FORM ELEMENTS</div>
+                    <div class="example-content">
+                        <label class="label">EMAIL ADDRESS</label>
+                        <input type="email" class="input" placeholder="user@example.com">
+                        <label class="label">PASSWORD</label>
+                        <input type="password" class="input" placeholder="••••••••">
+                        <button class="btn btn-primary btn-full">SUBMIT</button>
+                    </div>
+                </div>
+                <div class="example-block">
+                    <div class="example-header">ALERT STATES</div>
+                    <div class="example-content">
+                        <div class="alert alert-success">SUCCESS: Operation completed</div>
+                        <div class="alert alert-warning">WARNING: Check your input</div>
+                        <div class="alert alert-danger">DANGER: Critical error occurred</div>
+                    </div>
+                </div>
+                <div class="example-block">
+                    <div class="example-header">DATA DISPLAY</div>
+                    <div class="example-content">
+                        <div class="data-row">
+                            <span class="data-label">USERS:</span>
+                            <span class="data-value">1,247</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">SESSIONS:</span>
+                            <span class="data-value">8,932</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">UPTIME:</span>
+                            <span class="data-value">99.9%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <h2 class="section-title">COMPONENTS</h2>
+            <div class="components-showcase">
+                <!-- Buttons -->
+                <div class="component-group">
+                    <h3 class="component-title">BUTTONS</h3>
+                    <div class="component-demo">
+                        <button class="btn btn-primary">PRIMARY</button>
+                        <button class="btn btn-secondary">SECONDARY</button>
+                        <button class="btn btn-success">SUCCESS</button>
+                        <button class="btn btn-warning">WARNING</button>
+                        <button class="btn btn-danger">DANGER</button>
+                        <button class="btn btn-primary" disabled>DISABLED</button>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <div class="component-group">
+                    <h3 class="component-title">TYPOGRAPHY</h3>
+                    <div class="component-demo">
+                        <h1 class="type-h1">HEADING 1</h1>
+                        <h2 class="type-h2">HEADING 2</h2>
+                        <h3 class="type-h3">HEADING 3</h3>
+                        <p class="type-body">Body text optimized for readability and contrast. No decorative flourishes.</p>
+                        <code class="type-code">const brutalism = true;</code>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="component-group">
+                    <h3 class="component-title">CARDS</h3>
+                    <div class="component-demo">
+                        <div class="card">
+                            <div class="card-header">CARD TITLE</div>
+                            <div class="card-body">
+                                <p>Raw content block with consistent padding and clear hierarchy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">ACTION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Palette -->
+                <div class="component-group">
+                    <h3 class="component-title">COLOR PALETTE</h3>
+                    <div class="component-demo">
+                        <div class="color-grid">
+                            <div class="color-swatch color-primary">
+                                <span class="color-label">PRIMARY</span>
+                                <span class="color-hex">#DD614C</span>
+                            </div>
+                            <div class="color-swatch color-secondary">
+                                <span class="color-label">SECONDARY</span>
+                                <span class="color-hex">#DAA144</span>
+                            </div>
+                            <div class="color-swatch color-success">
+                                <span class="color-label">SUCCESS</span>
+                                <span class="color-hex">#16A34A</span>
+                            </div>
+                            <div class="color-swatch color-warning">
+                                <span class="color-label">WARNING</span>
+                                <span class="color-hex">#D97706</span>
+                            </div>
+                            <div class="color-swatch color-danger">
+                                <span class="color-label">DANGER</span>
+                                <span class="color-hex">#DC2626</span>
+                            </div>
+                            <div class="color-swatch color-text">
+                                <span class="color-label">TEXT</span>
+                                <span class="color-hex">#111827</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">BRUTALISM</h4>
+                    <p class="footer-text">Raw design system for functional interfaces.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">RESOURCES</h4>
+                    <ul class="footer-links">
+                        <li><a href="#docs">DOCUMENTATION</a></li>
+                        <li><a href="#github">GITHUB</a></li>
+                        <li><a href="#examples">EXAMPLES</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">PRINCIPLES</h4>
+                    <ul class="footer-links">
+                        <li>NO DECORATION</li>
+                        <li>HARSH CONTRAST</li>
+                        <li>PURE FUNCTION</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BRUTALISM DESIGN SYSTEM — UNPOLISHED BY DESIGN</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

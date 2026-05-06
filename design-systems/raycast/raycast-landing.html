@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raycast - Supercharged Productivity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="raycast-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          Raycast
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#extensions">Extensions</a></li>
+          <li><a href="#productivity">Productivity</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('cta')">Download</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Your shortcut to everything</h1>
+        <p class="hero-subtitle">A blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="handleDownload()">Download for Mac</button>
+          <button class="btn-secondary btn-large" onclick="scrollToSection('features')">Explore Features</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Free for personal use</span>
+        </div>
+        <div class="hero-visual">
+          <div class="command-palette">
+            <div class="keyboard-shortcut">
+              <span class="key">⌘</span>
+              <span class="key">Space</span>
+              <span style="color: var(--medium-gray); margin-left: 8px;">to launch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Extensions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50M+</div>
+          <div class="stat-label">Commands Run</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-label">App Store Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for speed and efficiency</h2>
+        <p class="section-subtitle">Everything you need to be more productive, right at your fingertips</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Lightning Fast</h3>
+          <p class="feature-description">Launch apps, search files, and run commands in milliseconds. Built with performance as the top priority.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3 class="feature-title">Extensible</h3>
+          <p class="feature-description">Access 1000+ extensions from the Store or build your own with our powerful API and TypeScript SDK.</p>
+          <a href="#" class="feature-link">Browse extensions →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Context Aware</h3>
+          <p class="feature-description">Smart suggestions based on your workflow. Raycast learns what you need and surfaces it instantly.</p>
+          <a href="#" class="feature-link">See how it works →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⌨️</div>
+          <h3 class="feature-title">Keyboard First</h3>
+          <p class="feature-description">Navigate everything with your keyboard. Custom shortcuts, aliases, and hotkeys for maximum efficiency.</p>
+          <a href="#" class="feature-link">View shortcuts →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Privacy Focused</h3>
+          <p class="feature-description">Your data stays on your device. No tracking, no analytics, no cloud sync unless you want it.</p>
+          <a href="#" class="feature-link">Privacy policy →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Native Experience</h3>
+          <p class="feature-description">Designed for macOS with native performance. Feels like it's part of the operating system.</p>
+          <a href="#" class="feature-link">Design principles →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extensions Section -->
+  <section class="extensions" id="extensions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powerful extensions ecosystem</h2>
+        <p class="section-subtitle">Connect your favorite tools and services</p>
+      </div>
+      <div class="extension-grid">
+        <div class="extension-card">
+          <div class="extension-icon">📝</div>
+          <div class="extension-info">
+            <div class="extension-name">Notion</div>
+            <div class="extension-description">Search and create pages instantly</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">💬</div>
+          <div class="extension-info">
+            <div class="extension-name">Slack</div>
+            <div class="extension-description">Send messages and search channels</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">🐙</div>
+          <div class="extension-info">
+            <div class="extension-name">GitHub</div>
+            <div class="extension-description">Manage repos, issues, and PRs</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">📊</div>
+          <div class="extension-info">
+            <div class="extension-name">Linear</div>
+            <div class="extension-description">Create and track issues</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">🎵</div>
+          <div class="extension-info">
+            <div class="extension-name">Spotify</div>
+            <div class="extension-description">Control playback and search music</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">📅</div>
+          <div class="extension-info">
+            <div class="extension-name">Calendar</div>
+            <div class="extension-description">View and create events</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">🔐</div>
+          <div class="extension-info">
+            <div class="extension-name">1Password</div>
+            <div class="extension-description">Quick access to passwords</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">🌐</div>
+          <div class="extension-info">
+            <div class="extension-name">Translate</div>
+            <div class="extension-description">Instant translation in 100+ languages</div>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-icon">🧮</div>
+          <div class="extension-info">
+            <div class="extension-name">Calculator</div>
+            <div class="extension-description">Advanced calculations and conversions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productivity Section -->
+  <section class="productivity" id="productivity">
+    <div class="container">
+      <div class="productivity-content">
+        <div class="productivity-text">
+          <h2>Supercharge your workflow</h2>
+          <p>Raycast replaces dozens of apps and tools with a single, unified interface. Everything you need is just a keystroke away.</p>
+          <ul class="productivity-features">
+            <li>Launch apps and find files instantly</li>
+            <li>Manage windows and control system settings</li>
+            <li>Search the web without opening a browser</li>
+            <li>Run scripts and automate repetitive tasks</li>
+            <li>Access clipboard history and snippets</li>
+            <li>Calculate, convert, and translate on the fly</li>
+          </ul>
+          <button class="btn-primary btn-large" onclick="handleDownload()">Get Started Free</button>
+        </div>
+        <div class="productivity-visual">
+          <div style="padding: 40px; text-align: center;">
+            <div style="font-size: 80px; margin-bottom: 20px;">⌘</div>
+            <div style="color: var(--light-gray); font-size: 18px; line-height: 1.6;">
+              Press <span class="keyboard-shortcut"><span class="key">⌘</span><span class="key">K</span></span> to open the command palette from anywhere
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade when you need more</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Personal</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited commands</li>
+            <li>✓ 1000+ extensions</li>
+            <li>✓ Keyboard shortcuts</li>
+            <li>✓ Clipboard history</li>
+            <li>✓ Window management</li>
+            <li>✓ File search</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleDownload()">Download Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$8</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Personal</li>
+            <li>✓ Cloud sync across devices</li>
+            <li>✓ AI-powered commands</li>
+            <li>✓ Unlimited snippets</li>
+            <li>✓ Custom themes</li>
+            <li>✓ Priority support</li>
+            <li>✓ Advanced automation</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="handleUpgrade()">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Team</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Pro</li>
+            <li>✓ Shared extensions</li>
+            <li>✓ Team snippets library</li>
+            <li>✓ Centralized billing</li>
+            <li>✓ Admin controls</li>
+            <li>✓ Usage analytics</li>
+            <li>✓ Dedicated support</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('cta')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to supercharge your productivity?</h2>
+        <p class="cta-subtitle">Join 500,000+ users who have transformed their workflow with Raycast</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleDownload()">Download for Mac</button>
+          <button class="btn-ghost btn-large" onclick="openDocs()">View Documentation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#extensions">Extensions</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#store">Extension Store</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press Kit</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Raycast Technologies Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#discord" class="social-link">Discord</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleDownload() {
+      alert('Download would start here. In production, this would trigger the macOS app download.');
+    }
+
+    function handleUpgrade() {
+      alert('Upgrade flow would start here. In production, this would open the Pro subscription page.');
+    }
+
+    function openDocs() {
+      alert('Documentation would open here. In production, this would link to the developer docs.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add keyboard shortcut listener for demo
+    document.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        alert('⌘K pressed! In the actual Raycast app, this would open the command palette.');
+      }
+    });
+  </script>
+</body>
+</html>

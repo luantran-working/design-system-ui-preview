@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB - Developer Data Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mongodb-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">🍃</span>
+          <span>MongoDB</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#developers">Developers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Try Free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Dark forest-black with neon green -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build faster. Scale <span class="highlight">smarter</span>.</h1>
+        <p class="hero-subtitle">The developer data platform that gives you the flexibility to build, the scalability to grow, and the performance to innovate.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Start Free</button>
+          <button class="btn-dark btn-large" onclick="openDemo()">View Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span>✓</span>
+          <span>Trusted by 45,000+ customers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">45K+</div>
+          <div class="stat-label">Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200M+</div>
+          <div class="stat-label">Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.995%</div>
+          <div class="stat-label">Uptime SLA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Cloud Regions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="tech-label tech-label-light">PLATFORM CAPABILITIES</span>
+        <h3 class="section-title">Everything you need to build <span class="accent-underline">modern applications</span></h3>
+        <p class="section-subtitle">A complete data platform with the flexibility developers love and the capabilities enterprises need</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h4 class="feature-title">Document Database</h4>
+          <p class="feature-description">Store data in flexible, JSON-like documents. Schema-less design means you can iterate faster and adapt to changing requirements.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h4 class="feature-title">Atlas Search</h4>
+          <p class="feature-description">Build fast, relevant search experiences with integrated full-text search powered by Apache Lucene.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h4 class="feature-title">Analytics</h4>
+          <p class="feature-description">Run complex analytics queries on operational data without impacting performance or moving data.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h4 class="feature-title">Change Streams</h4>
+          <p class="feature-description">React to data changes in real-time. Build event-driven architectures with native change data capture.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h4 class="feature-title">Multi-Cloud</h4>
+          <p class="feature-description">Deploy on AWS, Azure, or Google Cloud. Avoid vendor lock-in with true multi-cloud flexibility.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h4 class="feature-title">Enterprise Security</h4>
+          <p class="feature-description">Built-in encryption, authentication, and compliance certifications. Security that scales with your business.</p>
+          <a href="#docs" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atlas Section - Dark mode showcase -->
+  <section class="atlas" id="atlas">
+    <div class="container">
+      <div class="atlas-content">
+        <div class="atlas-text">
+          <span class="tech-label">MONGODB ATLAS</span>
+          <h2>The database that developers choose</h2>
+          <p>MongoDB Atlas is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice.</p>
+          <ul class="atlas-features">
+            <li>Automated backups and point-in-time recovery</li>
+            <li>Built-in monitoring and performance optimization</li>
+            <li>Global clusters for low-latency access worldwide</li>
+            <li>Serverless instances that scale automatically</li>
+            <li>Free tier to get started in seconds</li>
+          </ul>
+          <div class="hero-cta">
+            <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Try Atlas Free</button>
+            <button class="btn-dark btn-large" onclick="openDemo()">Watch Video</button>
+          </div>
+        </div>
+        <div class="atlas-image">
+          <div style="text-align: center; color: var(--cool-gray);">
+            <div style="font-size: 64px; margin-bottom: 16px;">🗄️</div>
+            <div>Atlas Dashboard Preview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <span class="tech-label tech-label-light">USE CASES</span>
+        <h3 class="section-title">Built for every <span class="accent-underline">workload</span></h3>
+        <p class="section-subtitle">From mobile apps to enterprise systems, MongoDB powers applications at any scale</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">📱</div>
+          <h4 class="use-case-title">Mobile & IoT</h4>
+          <p class="use-case-description">Build responsive mobile apps with offline-first sync. Handle millions of IoT devices with flexible data models and real-time processing.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🛒</div>
+          <h4 class="use-case-title">E-Commerce</h4>
+          <p class="use-case-description">Power product catalogs, inventory management, and personalized recommendations. Scale seamlessly during peak shopping seasons.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">💰</div>
+          <h4 class="use-case-title">Financial Services</h4>
+          <p class="use-case-description">Process transactions at scale with ACID guarantees. Meet compliance requirements with enterprise-grade security and audit logs.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🎮</div>
+          <h4 class="use-case-title">Gaming</h4>
+          <p class="use-case-description">Store player profiles, game state, and leaderboards. Handle millions of concurrent players with low-latency global clusters.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">🏥</div>
+          <h4 class="use-case-title">Healthcare</h4>
+          <p class="use-case-description">Manage patient records, medical imaging, and clinical data. HIPAA-compliant infrastructure with encryption at rest and in transit.</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">📡</div>
+          <h4 class="use-case-title">Real-Time Analytics</h4>
+          <p class="use-case-description">Analyze streaming data as it arrives. Build dashboards and reports without moving data to a separate analytics system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="code-example" id="developers">
+    <div class="container">
+      <div class="section-header">
+        <span class="tech-label">DEVELOPER EXPERIENCE</span>
+        <h3 class="section-title section-title-dark">Simple, powerful, <span class="accent-underline">intuitive</span></h3>
+        <p class="section-subtitle section-subtitle-dark">Get started in minutes with drivers for your favorite programming language</p>
+      </div>
+      <div class="code-block">
+        <code class="code-content"><span class="comment">// Connect to MongoDB Atlas</span>
+<span class="keyword">const</span> { MongoClient } = <span class="keyword">require</span>(<span class="string">'mongodb'</span>);
+
+<span class="keyword">const</span> client = <span class="keyword">new</span> MongoClient(process.env.MONGODB_URI);
+
+<span class="keyword">async function</span> run() {
+  <span class="keyword">try</span> {
+    <span class="comment">// Connect to the database</span>
+    <span class="keyword">await</span> client.connect();
+    
+    <span class="comment">// Access your database and collection</span>
+    <span class="keyword">const</span> database = client.db(<span class="string">'sample_db'</span>);
+    <span class="keyword">const</span> users = database.collection(<span class="string">'users'</span>);
+    
+    <span class="comment">// Insert a document</span>
+    <span class="keyword">const</span> result = <span class="keyword">await</span> users.insertOne({
+      name: <span class="string">'Alice Developer'</span>,
+      email: <span class="string">'alice@example.com'</span>,
+      role: <span class="string">'engineer'</span>,
+      createdAt: <span class="keyword">new</span> Date()
+    });
+    
+    console.log(<span class="string">`Document inserted with _id: ${result.insertedId}`</span>);
+    
+    <span class="comment">// Query documents</span>
+    <span class="keyword">const</span> engineers = <span class="keyword">await</span> users.find({ role: <span class="string">'engineer'</span> }).toArray();
+    console.log(<span class="string">'Engineers:'</span>, engineers);
+    
+  } <span class="keyword">finally</span> {
+    <span class="keyword">await</span> client.close();
+  }
+}
+
+run().catch(console.error);</code>
+      </div>
+      <div class="code-actions">
+        <button class="btn-primary" onclick="copyCode()">Copy Code</button>
+        <button class="btn-dark" onclick="window.location.href='#docs'">View Documentation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="tech-label tech-label-light">PRICING</span>
+        <h3 class="section-title">Start free, scale as you <span class="accent-underline">grow</span></h3>
+        <p class="section-subtitle">Flexible pricing for teams of all sizes</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Free</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/forever</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 512 MB storage</li>
+            <li>✓ Shared RAM</li>
+            <li>✓ Basic monitoring</li>
+            <li>✓ Community support</li>
+            <li>✓ Perfect for learning</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h4 class="pricing-name">Serverless</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$0.10</span>
+              <span class="price-period">/million reads</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Pay only for what you use</li>
+            <li>✓ Auto-scaling</li>
+            <li>✓ 1 GB minimum storage</li>
+            <li>✓ Advanced monitoring</li>
+            <li>✓ Email support</li>
+            <li>✓ Ideal for variable workloads</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Start Serverless</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4 class="pricing-name">Dedicated</h4>
+            <div class="pricing-price">
+              <span class="price-amount">$57</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Dedicated resources</li>
+            <li>✓ 10 GB - 4 TB storage</li>
+            <li>✓ 99.995% uptime SLA</li>
+            <li>✓ Advanced security</li>
+            <li>✓ Priority support</li>
+            <li>✓ Multi-region clusters</li>
+            <li>✓ Production workloads</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('get-started')">Start Dedicated</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to build something amazing?</h2>
+        <p class="cta-subtitle">Join thousands of developers building with MongoDB. Start free, no credit card required.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleSignup()">Start Free Today</button>
+          <button class="btn-dark btn-large" onclick="window.location.href='#contact'">Talk to Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#atlas">MongoDB Atlas</a></li>
+            <li><a href="#products">Atlas Search</a></li>
+            <li><a href="#products">Atlas Data Lake</a></li>
+            <li><a href="#products">Realm</a></li>
+            <li><a href="#products">Charts</a></li>
+            <li><a href="#products">Compass</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#solutions">Mobile</a></li>
+            <li><a href="#solutions">E-Commerce</a></li>
+            <li><a href="#solutions">Financial Services</a></li>
+            <li><a href="#solutions">Gaming</a></li>
+            <li><a href="#solutions">Healthcare</a></li>
+            <li><a href="#solutions">IoT</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#developers">Drivers</a></li>
+            <li><a href="#developers">University</a></li>
+            <li><a href="#developers">Community Forums</a></li>
+            <li><a href="#developers">Code Examples</a></li>
+            <li><a href="#developers">Developer Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MongoDB, Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a MongoDB Atlas demo video.');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Code copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy code:', err);
+      });
+    }
+
+    function handleSignup() {
+      alert('Redirecting to MongoDB Atlas signup. In production, this would navigate to: https://www.mongodb.com/cloud/atlas/register');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll-based animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe feature cards and use case cards
+    document.querySelectorAll('.feature-card, .use-case-card, .pricing-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

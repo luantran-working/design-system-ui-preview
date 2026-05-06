@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Music for Everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="spotify-styles.css">
+  <style>
+    /* Using Montserrat as CircularSp substitute */
+    body {
+      font-family: 'Montserrat', 'Helvetica Neue', helvetica, arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">Spotify</div>
+        <ul class="nav-links">
+          <li><a href="#premium">Premium</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#artists">Artists</a></li>
+          <li><a href="#pricing">Plans</a></li>
+          <li><a href="#playlists">Playlists</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('pricing')">Get Premium</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Music for Everyone</h1>
+        <p class="hero-subtitle">Millions of songs. No credit card needed. Listen to the music you love, discover new tracks, and build the perfect playlist.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('pricing')">Get Premium Free</button>
+          <button class="btn-secondary btn-large" onclick="openDemo()">Explore Plans</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">♪</span>
+          <span>100M+ songs available worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Songs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500M+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5M+</div>
+          <div class="stat-label">Podcasts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">180+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Go Premium?</h2>
+        <p class="section-subtitle">Unlock the full Spotify experience with Premium features</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎵</div>
+          <h3 class="feature-title">Ad-Free Music</h3>
+          <p class="feature-description">Enjoy uninterrupted music listening. No ads, just pure music experience from start to finish.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Offline Playback</h3>
+          <p class="feature-description">Download your favorite songs and listen anywhere, even without internet connection.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎧</div>
+          <h3 class="feature-title">High Quality Audio</h3>
+          <p class="feature-description">Experience music in premium quality with up to 320kbps audio streaming.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏭️</div>
+          <h3 class="feature-title">Unlimited Skips</h3>
+          <p class="feature-description">Skip as many tracks as you want. Take full control of your listening experience.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎼</div>
+          <h3 class="feature-title">Play Any Song</h3>
+          <p class="feature-description">Choose exactly what you want to listen to. Play any song, any time, on any device.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Personalized Playlists</h3>
+          <p class="feature-description">Get custom playlists based on your taste. Discover new music tailored just for you.</p>
+          <a href="#premium" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Section -->
+  <section class="premium" id="premium">
+    <div class="container">
+      <div class="premium-content">
+        <div class="premium-text">
+          <h2>Get Premium Free for 3 Months</h2>
+          <p>Experience the best of Spotify with Premium. Listen ad-free, offline, and with unlimited skips. Cancel anytime.</p>
+          <ul class="premium-features">
+            <li>Ad-free music listening</li>
+            <li>Download to listen offline</li>
+            <li>Play songs in any order</li>
+            <li>High quality audio</li>
+            <li>Listen with friends in real time</li>
+            <li>Organize listening queue</li>
+          </ul>
+          <button class="btn-primary btn-large" onclick="scrollToSection('pricing')">Get Premium</button>
+        </div>
+        <div class="premium-visual">
+          <div class="album-art">🎸</div>
+          <p style="color: var(--text-secondary); font-size: var(--text-caption);">Premium unlocks the full music experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artists Section -->
+  <section class="artists" id="artists">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Top Artists on Spotify</h2>
+        <p class="section-subtitle">Listen to your favorite artists and discover new ones</p>
+      </div>
+      <div class="artist-grid">
+        <div class="artist-card">
+          <div class="artist-image">🎤</div>
+          <div class="artist-name">Taylor Swift</div>
+          <div class="artist-genre">Pop</div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-image">🎸</div>
+          <div class="artist-name">The Weeknd</div>
+          <div class="artist-genre">R&B</div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-image">🎹</div>
+          <div class="artist-name">Bad Bunny</div>
+          <div class="artist-genre">Latin</div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-image">🎵</div>
+          <div class="artist-name">Drake</div>
+          <div class="artist-genre">Hip-Hop</div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-image">🎧</div>
+          <div class="artist-name">Ed Sheeran</div>
+          <div class="artist-genre">Pop</div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-image">🎼</div>
+          <div class="artist-name">Ariana Grande</div>
+          <div class="artist-genre">Pop</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playlists Section -->
+  <section class="playlists" id="playlists">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Made For You</h2>
+        <p class="section-subtitle">Personalized playlists based on your listening habits</p>
+      </div>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🔥
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Today's Top Hits</div>
+          <div class="playlist-description">The hottest tracks right now</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🌙
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Chill Vibes</div>
+          <div class="playlist-description">Relax and unwind with these tracks</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            💪
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Workout Mix</div>
+          <div class="playlist-description">Get pumped with high-energy music</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🎸
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Rock Classics</div>
+          <div class="playlist-description">Timeless rock anthems</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🎹
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Jazz Essentials</div>
+          <div class="playlist-description">Smooth jazz for any mood</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🌟
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Discover Weekly</div>
+          <div class="playlist-description">Your personal music discovery</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            🎤
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Rap Caviar</div>
+          <div class="playlist-description">The biggest hip-hop hits</div>
+        </div>
+        <div class="playlist-card">
+          <div class="playlist-cover">
+            💃
+            <div class="play-overlay"></div>
+          </div>
+          <div class="playlist-name">Dance Party</div>
+          <div class="playlist-description">Turn up the energy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Premium Plan</h2>
+        <p class="section-subtitle">Listen free or go Premium. Cancel anytime.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Play music on shuffle</li>
+            <li>✓ Listen to playlists</li>
+            <li>✓ Discover new music</li>
+            <li>✓ Ad-supported</li>
+            <li>✓ Basic audio quality</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSignup('free')">Sign Up Free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Premium Individual</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$10.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Ad-free music</li>
+            <li>✓ Download to listen offline</li>
+            <li>✓ Play songs in any order</li>
+            <li>✓ High quality audio</li>
+            <li>✓ Unlimited skips</li>
+            <li>✓ 1 Premium account</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="handleSignup('individual')">Get Premium</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Premium Family</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$16.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ All Premium Individual features</li>
+            <li>✓ Up to 6 Premium accounts</li>
+            <li>✓ Family Mix playlist</li>
+            <li>✓ Block explicit music</li>
+            <li>✓ Spotify Kids app</li>
+            <li>✓ For family members at same address</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSignup('family')">Get Family Plan</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Premium Student</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$5.99</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ All Premium Individual features</li>
+            <li>✓ Special student discount</li>
+            <li>✓ Verify student status</li>
+            <li>✓ 1 verified Premium account</li>
+            <li>✓ Cancel anytime</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="handleSignup('student')">Get Student Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#for-the-record">For the Record</a></li>
+            <li><a href="#communities">Communities</a></li>
+            <li><a href="#developers">Developers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Communities</h4>
+          <ul class="footer-links">
+            <li><a href="#artists">For Artists</a></li>
+            <li><a href="#brands">For Brands</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#vendors">Vendors</a></li>
+            <li><a href="#advertising">Advertising</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#support">Support</a></li>
+            <li><a href="#web-player">Web Player</a></li>
+            <li><a href="#mobile-app">Mobile App</a></li>
+            <li><a href="#free-mobile">Free Mobile App</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#legal">Legal</a></li>
+            <li><a href="#privacy">Privacy Center</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#about-ads">About Ads</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Spotify AB</p>
+        <div class="footer-social">
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Explore our plans below to find the perfect fit for your music needs!');
+      scrollToSection('pricing');
+    }
+
+    function handleSignup(plan) {
+      const planNames = {
+        'free': 'Free',
+        'individual': 'Premium Individual',
+        'family': 'Premium Family',
+        'student': 'Premium Student'
+      };
+      alert(`You selected the ${planNames[plan]} plan! In production, this would redirect to the signup flow.`);
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll effect to navbar
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+      } else {
+        navbar.style.backgroundColor = 'var(--near-black)';
+        navbar.style.backdropFilter = 'none';
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

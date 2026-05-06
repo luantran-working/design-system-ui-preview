@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HashiCorp - Infrastructure Automation Platform</title>
+  <link rel="stylesheet" href="hashicorp-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">HashiCorp</div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#enterprise">Enterprise</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Dark Mode -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Provision, Secure, Connect, and Run Any Infrastructure</h1>
+        <p class="hero-subtitle">HashiCorp provides infrastructure automation software for multi-cloud environments, enabling enterprises to unlock the cloud operating model.</p>
+        <div class="hero-cta">
+          <button class="btn-secondary btn-large" onclick="scrollToSection('products')">Explore Products</button>
+          <button class="btn-primary btn-large" onclick="scrollToSection('cloud')">Try HCP Free</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2,800+</div>
+          <div class="stat-label">Enterprise Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Fortune 10</div>
+          <div class="stat-label">Companies Trust Us</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Global</div>
+          <div class="stat-label">Multi-Cloud Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section-light" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase">Infrastructure Lifecycle</p>
+        <h2 class="section-title">Products Built for the Cloud</h2>
+        <p class="section-subtitle">A suite of products to provision, secure, connect, and run any infrastructure for any application</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-icon">🟣</div>
+          <h5 class="product-title">Terraform</h5>
+          <p class="product-description">Provision and manage any cloud, infrastructure, or service with a consistent workflow. Infrastructure as code for multi-cloud environments.</p>
+          <button class="btn-terraform" onclick="openProduct('terraform')">Learn More</button>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🟡</div>
+          <h5 class="product-title">Vault</h5>
+          <p class="product-description">Manage secrets and protect sensitive data. Secure, store, and tightly control access to tokens, passwords, certificates, and encryption keys.</p>
+          <button class="btn-vault" onclick="openProduct('vault')">Learn More</button>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🔵</div>
+          <h5 class="product-title">Consul</h5>
+          <p class="product-description">Automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.</p>
+          <button class="btn-primary" onclick="openProduct('consul')">Learn More</button>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🟢</div>
+          <h5 class="product-title">Nomad</h5>
+          <p class="product-description">Deploy and manage applications across on-prem and cloud at scale. A simple and flexible workload orchestrator.</p>
+          <button class="btn-primary" onclick="openProduct('nomad')">Learn More</button>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🔷</div>
+          <h5 class="product-title">Waypoint</h5>
+          <p class="product-description">Build, deploy, and release applications across any platform. A consistent developer workflow for any application.</p>
+          <button class="btn-waypoint" onclick="openProduct('waypoint')">Learn More</button>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🔶</div>
+          <h5 class="product-title">Vagrant</h5>
+          <p class="product-description">Build and manage development environments. Create reproducible and portable work environments for developers.</p>
+          <button class="btn-vagrant" onclick="openProduct('vagrant')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Platform Section - Dark -->
+  <section class="section-dark" id="cloud">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase" style="color: var(--mid-gray);">HashiCorp Cloud Platform</p>
+        <h2 class="section-title">Fully Managed Infrastructure Automation</h2>
+        <p class="section-subtitle">Run HashiCorp products as managed services on AWS, Azure, and Google Cloud</p>
+      </div>
+      <div class="cloud-grid">
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Terraform</h6>
+          <p class="cloud-description">Collaborative infrastructure as code workflows. Provision, manage, and automate infrastructure across clouds with a unified workflow.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Vault</h6>
+          <p class="cloud-description">Secrets management as a service. Centrally manage secrets and protect sensitive data with encryption as a service.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Consul</h6>
+          <p class="cloud-description">Service networking as a service. Discover and securely connect services across any runtime and cloud.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Packer</h6>
+          <p class="cloud-description">Image management as a service. Track and manage machine images across multiple clouds and regions.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Boundary</h6>
+          <p class="cloud-description">Secure remote access. Provide just-in-time access to critical systems with identity-based security.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">HCP Waypoint</h6>
+          <p class="cloud-description">Application delivery as a service. Build, deploy, and release applications with a consistent developer experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-gray">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase">Why HashiCorp</p>
+        <h2 class="section-title">Enterprise-Grade Infrastructure Automation</h2>
+        <p class="section-subtitle">Built for scale, security, and multi-cloud complexity</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h6 class="feature-title">Multi-Cloud</h6>
+          <p class="feature-description">Provision and manage infrastructure across AWS, Azure, Google Cloud, and 1000+ providers with a single workflow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h6 class="feature-title">Security First</h6>
+          <p class="feature-description">Built-in security controls, encryption, and compliance features to protect your infrastructure and applications.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h6 class="feature-title">Enterprise Scale</h6>
+          <p class="feature-description">Proven at scale with Fortune 500 companies managing millions of resources across global infrastructure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h6 class="feature-title">Workflow Automation</h6>
+          <p class="feature-description">Automate infrastructure provisioning, security policies, and application deployment with declarative configuration.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h6 class="feature-title">Open Source</h6>
+          <p class="feature-description">Built on open source foundations with active communities and extensive ecosystem integrations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h6 class="feature-title">Developer Experience</h6>
+          <p class="feature-description">Intuitive CLI, comprehensive APIs, and rich documentation for developers and operators.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="section-light" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase">Solutions</p>
+        <h2 class="section-title">Infrastructure Automation for Every Team</h2>
+        <p class="section-subtitle">From startups to Fortune 500 enterprises</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-icon">🏢</div>
+          <h5 class="product-title">Platform Engineering</h5>
+          <p class="product-description">Build internal developer platforms with self-service infrastructure provisioning, standardized workflows, and governance controls.</p>
+          <a href="#platform" class="link-light">Explore solution →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🔐</div>
+          <h5 class="product-title">Security & Compliance</h5>
+          <p class="product-description">Implement zero-trust security, manage secrets at scale, and maintain compliance across multi-cloud environments.</p>
+          <a href="#security" class="link-light">Explore solution →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">⚡</div>
+          <h5 class="product-title">DevOps Transformation</h5>
+          <p class="product-description">Accelerate application delivery with infrastructure as code, automated workflows, and collaborative tooling.</p>
+          <a href="#devops" class="link-light">Explore solution →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🌍</div>
+          <h5 class="product-title">Multi-Cloud Strategy</h5>
+          <p class="product-description">Adopt a consistent operating model across AWS, Azure, Google Cloud, and on-premises infrastructure.</p>
+          <a href="#multicloud" class="link-light">Explore solution →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🚀</div>
+          <h5 class="product-title">Application Modernization</h5>
+          <p class="product-description">Migrate legacy applications to cloud-native architectures with service mesh, orchestration, and automation.</p>
+          <a href="#modernization" class="link-light">Explore solution →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">📊</div>
+          <h5 class="product-title">FinOps & Cost Management</h5>
+          <p class="product-description">Optimize cloud spending with infrastructure visibility, policy enforcement, and automated cost controls.</p>
+          <a href="#finops" class="link-light">Explore solution →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Section - Dark -->
+  <section class="section-dark" id="enterprise">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase" style="color: var(--mid-gray);">Enterprise</p>
+        <h2 class="section-title">Built for the World's Largest Organizations</h2>
+        <p class="section-subtitle">Enterprise support, advanced features, and dedicated success teams</p>
+      </div>
+      <div class="feature-grid">
+        <div class="cloud-card">
+          <h6 class="cloud-title">24/7 Support</h6>
+          <p class="cloud-description">Global support teams with SLA guarantees, dedicated technical account managers, and priority response times.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">Advanced Security</h6>
+          <p class="cloud-description">SSO/SAML integration, audit logging, role-based access control, and compliance certifications (SOC 2, FedRAMP).</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">Private Networking</h6>
+          <p class="cloud-description">Deploy in your VPC, air-gapped environments, or on-premises with private connectivity options.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">Custom Training</h6>
+          <p class="cloud-description">Onboarding programs, certification paths, and hands-on workshops tailored to your organization.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">Professional Services</h6>
+          <p class="cloud-description">Architecture reviews, migration planning, and implementation support from HashiCorp experts.</p>
+        </div>
+        <div class="cloud-card">
+          <h6 class="cloud-title">Success Programs</h6>
+          <p class="cloud-description">Dedicated customer success managers, quarterly business reviews, and strategic planning sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase">Customer Stories</p>
+        <h2 class="section-title">Trusted by Industry Leaders</h2>
+        <p class="section-subtitle">See how enterprises use HashiCorp to transform their infrastructure</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <h5 class="product-title">Financial Services</h5>
+          <p class="product-description">"HashiCorp Vault enabled us to centralize secrets management across 50+ applications, reducing security incidents by 80% and accelerating compliance audits."</p>
+          <p style="font-size: 14px; color: var(--dark-gray); margin-top: 16px;">— CISO, Fortune 100 Bank</p>
+        </div>
+        <div class="product-card">
+          <h5 class="product-title">Healthcare</h5>
+          <p class="product-description">"With Terraform, we reduced infrastructure provisioning time from weeks to hours while maintaining HIPAA compliance across our multi-cloud environment."</p>
+          <p style="font-size: 14px; color: var(--dark-gray); margin-top: 16px;">— VP Engineering, Healthcare Provider</p>
+        </div>
+        <div class="product-card">
+          <h5 class="product-title">Technology</h5>
+          <p class="product-description">"Consul service mesh gave us the observability and security we needed to confidently migrate 200+ microservices to Kubernetes across three cloud providers."</p>
+          <p style="font-size: 14px; color: var(--dark-gray); margin-top: 16px;">— CTO, SaaS Platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-enterprise" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Automate Your Infrastructure?</h2>
+        <p class="cta-subtitle">Start with HashiCorp Cloud Platform free tier or download open source products</p>
+        <div class="cta-buttons">
+          <button class="btn-secondary btn-large" onclick="handleSignup()">Start Free Trial</button>
+          <button class="btn-primary btn-large" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section class="section-gray">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-uppercase">Resources</p>
+        <h2 class="section-title">Learn Infrastructure Automation</h2>
+        <p class="section-subtitle">Documentation, tutorials, and certification programs</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h6 class="feature-title">Documentation</h6>
+          <p class="feature-description">Comprehensive guides, API references, and best practices for every HashiCorp product.</p>
+          <a href="#docs" class="link-light">Browse docs →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h6 class="feature-title">Tutorials</h6>
+          <p class="feature-description">Step-by-step tutorials from beginner to advanced, covering real-world use cases and scenarios.</p>
+          <a href="#tutorials" class="link-light">Start learning →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h6 class="feature-title">Certifications</h6>
+          <p class="feature-description">Industry-recognized certifications for Terraform, Vault, and Consul to validate your expertise.</p>
+          <a href="#certifications" class="link-light">Get certified →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h6 class="feature-title">Community</h6>
+          <p class="feature-description">Join thousands of practitioners in forums, user groups, and events worldwide.</p>
+          <a href="#community" class="link-light">Join community →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📺</div>
+          <h6 class="feature-title">Webinars & Events</h6>
+          <p class="feature-description">Live demos, technical deep-dives, and HashiConf sessions from infrastructure experts.</p>
+          <a href="#events" class="link-light">View events →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h6 class="feature-title">Blog & News</h6>
+          <p class="feature-description">Product updates, technical articles, and industry insights from the HashiCorp team.</p>
+          <a href="#blog" class="link-light">Read blog →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#terraform">Terraform</a></li>
+            <li><a href="#vault">Vault</a></li>
+            <li><a href="#consul">Consul</a></li>
+            <li><a href="#nomad">Nomad</a></li>
+            <li><a href="#waypoint">Waypoint</a></li>
+            <li><a href="#vagrant">Vagrant</a></li>
+            <li><a href="#packer">Packer</a></li>
+            <li><a href="#boundary">Boundary</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Cloud Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#hcp-terraform">HCP Terraform</a></li>
+            <li><a href="#hcp-vault">HCP Vault</a></li>
+            <li><a href="#hcp-consul">HCP Consul</a></li>
+            <li><a href="#hcp-packer">HCP Packer</a></li>
+            <li><a href="#hcp-boundary">HCP Boundary</a></li>
+            <li><a href="#hcp-waypoint">HCP Waypoint</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#platform-engineering">Platform Engineering</a></li>
+            <li><a href="#security">Security & Compliance</a></li>
+            <li><a href="#devops">DevOps</a></li>
+            <li><a href="#multi-cloud">Multi-Cloud</a></li>
+            <li><a href="#modernization">Modernization</a></li>
+            <li><a href="#finops">FinOps</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HashiCorp. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openProduct(product) {
+      alert(`Opening ${product} product page. In production, this would navigate to the ${product} documentation.`);
+    }
+
+    function handleSignup() {
+      alert('Starting free trial signup. In production, this would redirect to HCP registration.');
+    }
+
+    function contactSales() {
+      alert('Opening contact sales form. In production, this would open a sales inquiry form.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

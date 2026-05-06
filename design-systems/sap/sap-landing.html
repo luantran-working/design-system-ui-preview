@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP - The Intelligent Enterprise Platform</title>
+  <link rel="stylesheet" href="sap-styles.css">
+</head>
+<body>
+  <!-- Navigation - SAP Shell Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">SAP</div>
+        <ul class="nav-links">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('contact')">Contact Sales</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Run Your Business Better with SAP</h1>
+        <p class="hero-subtitle">Transform your enterprise with intelligent ERP solutions that connect every part of your business. From finance to supply chain, SAP helps you make better decisions faster.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('contact')">Request a Demo</button>
+          <button class="btn-secondary btn-large" onclick="openVideo()">Watch Overview</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 440,000+ customers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">440K+</div>
+          <div class="stat-label">Global Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">87%</div>
+          <div class="stat-label">Fortune 500 Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Cloud Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comprehensive Business Solutions</h2>
+        <p class="section-subtitle">End-to-end enterprise software for every business function</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-icon">💼</div>
+          <h3 class="solution-title">SAP S/4HANA</h3>
+          <p class="solution-description">Next-generation ERP suite built on our advanced in-memory platform. Real-time insights, simplified processes, and intelligent automation.</p>
+          <a href="#s4hana" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">📊</div>
+          <h3 class="solution-title">SAP Analytics Cloud</h3>
+          <p class="solution-description">Unified analytics platform combining BI, planning, and predictive analytics. Make data-driven decisions with confidence.</p>
+          <a href="#analytics" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🔗</div>
+          <h3 class="solution-title">SAP Integration Suite</h3>
+          <p class="solution-description">Connect applications, data, and processes across your enterprise landscape. Seamless integration for hybrid environments.</p>
+          <a href="#integration" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">👥</div>
+          <h3 class="solution-title">SAP SuccessFactors</h3>
+          <p class="solution-description">Cloud-based HCM suite for talent management, HR, and payroll. Empower your workforce and optimize HR processes.</p>
+          <a href="#successfactors" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🛒</div>
+          <h3 class="solution-title">SAP Ariba</h3>
+          <p class="solution-description">Procurement and supply chain collaboration platform. Connect with suppliers and optimize spend management.</p>
+          <a href="#ariba" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">💰</div>
+          <h3 class="solution-title">SAP Concur</h3>
+          <p class="solution-description">Travel, expense, and invoice management solutions. Simplify business spending and improve compliance.</p>
+          <a href="#concur" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🤖</div>
+          <h3 class="solution-title">SAP AI Business Services</h3>
+          <p class="solution-description">Embedded AI and machine learning capabilities. Automate processes and unlock intelligent insights.</p>
+          <a href="#ai" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🏭</div>
+          <h3 class="solution-title">SAP Digital Manufacturing</h3>
+          <p class="solution-description">Smart manufacturing solutions for Industry 4.0. Optimize production, quality, and maintenance operations.</p>
+          <a href="#manufacturing" class="solution-link">Learn more →</a>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🛡️</div>
+          <h3 class="solution-title">SAP GRC</h3>
+          <p class="solution-description">Governance, risk, and compliance management. Ensure regulatory compliance and mitigate business risks.</p>
+          <a href="#grc" class="solution-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Industry-Specific Solutions</h2>
+        <p class="section-subtitle">Tailored software for your industry's unique challenges</p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon">🏭</div>
+          <h3 class="industry-title">Manufacturing</h3>
+          <p class="industry-description">Smart factories, supply chain optimization, and quality management</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🛒</div>
+          <h3 class="industry-title">Retail</h3>
+          <p class="industry-description">Omnichannel commerce, merchandising, and customer engagement</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏦</div>
+          <h3 class="industry-title">Banking</h3>
+          <p class="industry-description">Core banking, risk management, and digital transformation</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏥</div>
+          <h3 class="industry-title">Healthcare</h3>
+          <p class="industry-description">Patient care, clinical operations, and healthcare analytics</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">⚡</div>
+          <h3 class="industry-title">Utilities</h3>
+          <p class="industry-description">Energy management, grid operations, and customer service</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🚚</div>
+          <h3 class="industry-title">Logistics</h3>
+          <p class="industry-description">Transportation management, warehouse operations, and tracking</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏗️</div>
+          <h3 class="industry-title">Construction</h3>
+          <p class="industry-description">Project management, resource planning, and cost control</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">✈️</div>
+          <h3 class="industry-title">Aerospace</h3>
+          <p class="industry-description">MRO operations, supply chain, and compliance management</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🎓</div>
+          <h3 class="industry-title">Education</h3>
+          <p class="industry-description">Student management, financial operations, and research</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏛️</div>
+          <h3 class="industry-title">Public Sector</h3>
+          <p class="industry-description">Citizen services, financial management, and transparency</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">📱</div>
+          <h3 class="industry-title">Telecommunications</h3>
+          <p class="industry-description">Network operations, billing, and customer experience</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🎬</div>
+          <h3 class="industry-title">Media</h3>
+          <p class="industry-description">Content management, advertising, and monetization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Section -->
+  <section class="cloud" id="cloud">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">SAP Business Technology Platform</h2>
+        <p class="section-subtitle">Build, extend, and integrate with the intelligent enterprise platform</p>
+      </div>
+      <div class="cloud-features">
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">☁️</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">Multi-Cloud Foundation</h3>
+            <p class="cloud-feature-description">Deploy on AWS, Azure, Google Cloud, or SAP infrastructure. Flexibility to run where your business needs it.</p>
+          </div>
+        </div>
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">🔌</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">Integration & Extension</h3>
+            <p class="cloud-feature-description">Connect SAP and non-SAP systems seamlessly. Extend applications with low-code/no-code tools.</p>
+          </div>
+        </div>
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">📊</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">Data & Analytics</h3>
+            <p class="cloud-feature-description">Unified data management with SAP HANA. Real-time analytics and intelligent insights across your enterprise.</p>
+          </div>
+        </div>
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">🤖</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">AI & Automation</h3>
+            <p class="cloud-feature-description">Embedded AI services and RPA capabilities. Automate processes and enhance decision-making with machine learning.</p>
+          </div>
+        </div>
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">🔐</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">Security & Compliance</h3>
+            <p class="cloud-feature-description">Enterprise-grade security with ISO, SOC, and GDPR compliance. Identity management and data protection built-in.</p>
+          </div>
+        </div>
+        <div class="cloud-feature">
+          <div class="cloud-feature-icon">⚙️</div>
+          <div class="cloud-feature-content">
+            <h3 class="cloud-feature-title">DevOps & Lifecycle</h3>
+            <p class="cloud-feature-description">CI/CD pipelines, monitoring, and lifecycle management. Accelerate development and deployment cycles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Flexible Pricing for Every Business</h2>
+        <p class="section-subtitle">Choose the deployment model that fits your needs</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">SAP Business One</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$73</span>
+              <span class="price-period">/user/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Complete ERP for small businesses</li>
+            <li>Financial management</li>
+            <li>Sales & customer management</li>
+            <li>Inventory & operations</li>
+            <li>Reporting & analytics</li>
+            <li>Cloud or on-premise</li>
+            <li>Up to 100 users</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">SAP S/4HANA Cloud</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Next-generation cloud ERP</li>
+            <li>Real-time analytics with HANA</li>
+            <li>AI-powered automation</li>
+            <li>Industry best practices</li>
+            <li>Quarterly innovation updates</li>
+            <li>Global compliance & localization</li>
+            <li>99.9% uptime SLA</li>
+            <li>24/7 enterprise support</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('contact')">Request Quote</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">SAP S/4HANA On-Premise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Enterprise</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Full control & customization</li>
+            <li>On-premise or private cloud</li>
+            <li>Unlimited users & modules</li>
+            <li>Advanced integration options</li>
+            <li>Custom development support</li>
+            <li>Dedicated implementation team</li>
+            <li>Premium support packages</li>
+            <li>Long-term maintenance</li>
+          </ul>
+          <button class="btn-secondary btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Success Section -->
+  <section class="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by Industry Leaders</h2>
+        <p class="section-subtitle">See how global enterprises transform with SAP</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-icon">🚗</div>
+          <h3 class="solution-title">BMW Group</h3>
+          <p class="solution-description">"SAP S/4HANA enables us to manage our global operations with unprecedented efficiency and real-time visibility across our entire value chain."</p>
+          <span class="status status-success">Manufacturing</span>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">✈️</div>
+          <h3 class="solution-title">Lufthansa</h3>
+          <p class="solution-description">"With SAP, we've transformed our maintenance operations and improved aircraft availability while reducing costs by 15%."</p>
+          <span class="status status-info">Aviation</span>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🏪</div>
+          <h3 class="solution-title">Walmart</h3>
+          <p class="solution-description">"SAP's retail solutions help us manage inventory across 11,000 stores, ensuring products are always available for our customers."</p>
+          <span class="status status-warning">Retail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section class="industries" id="resources">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resources & Support</h2>
+        <p class="section-subtitle">Everything you need to succeed with SAP</p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon">📚</div>
+          <h3 class="industry-title">Documentation</h3>
+          <p class="industry-description">Comprehensive guides, API references, and technical documentation</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🎓</div>
+          <h3 class="industry-title">SAP Learning Hub</h3>
+          <p class="industry-description">Training courses, certifications, and learning paths</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">💬</div>
+          <h3 class="industry-title">SAP Community</h3>
+          <p class="industry-description">Connect with experts, ask questions, and share knowledge</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🔧</div>
+          <h3 class="industry-title">Support Portal</h3>
+          <p class="industry-description">24/7 technical support and incident management</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">📊</div>
+          <h3 class="industry-title">Best Practices</h3>
+          <p class="industry-description">Industry templates and proven implementation methodologies</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🚀</div>
+          <h3 class="industry-title">Innovation Hub</h3>
+          <p class="industry-description">Explore emerging technologies and future roadmaps</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your Business?</h2>
+        <p class="cta-subtitle">Join 440,000+ customers running their intelligent enterprise on SAP</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-large" onclick="handleContact()">Request a Demo</button>
+          <button class="btn-secondary btn-large" onclick="handleTrial()">Start Free Trial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#s4hana">SAP S/4HANA</a></li>
+            <li><a href="#successfactors">SAP SuccessFactors</a></li>
+            <li><a href="#ariba">SAP Ariba</a></li>
+            <li><a href="#concur">SAP Concur</a></li>
+            <li><a href="#analytics">SAP Analytics Cloud</a></li>
+            <li><a href="#btp">Business Technology Platform</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Industries</h4>
+          <ul class="footer-links">
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#retail">Retail</a></li>
+            <li><a href="#banking">Banking</a></li>
+            <li><a href="#healthcare">Healthcare</a></li>
+            <li><a href="#utilities">Utilities</a></li>
+            <li><a href="#public-sector">Public Sector</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#learning">SAP Learning Hub</a></li>
+            <li><a href="#community">SAP Community</a></li>
+            <li><a href="#support">Support Portal</a></li>
+            <li><a href="#events">Events & Webinars</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About SAP</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#investors">Investor Relations</a></li>
+            <li><a href="#news">News & Press</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#legal">Legal Disclosure</a></li>
+            <li><a href="#trademark">Trademark</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SAP SE. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#facebook" class="social-link">Facebook</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openVideo() {
+      alert('SAP overview video would open here. In production, this would link to a product demo video.');
+    }
+
+    function handleContact() {
+      alert('Contact form would open here. In production, this would open a modal or redirect to a contact page.');
+    }
+
+    function handleTrial() {
+      alert('Trial signup would open here. In production, this would redirect to the trial registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

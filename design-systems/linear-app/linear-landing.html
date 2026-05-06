@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear - The Issue Tracking Tool You'll Enjoy Using</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="linear-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#5e6ad2"/>
+            <path d="M2 17L12 22L22 17" stroke="#5e6ad2" stroke-width="2"/>
+            <path d="M2 12L12 17L22 12" stroke="#5e6ad2" stroke-width="2"/>
+          </svg>
+          <span>Linear</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#method">Method</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#changelog">Changelog</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-ghost">Sign in</button>
+          <button class="btn-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Linear is a better way to build products</h1>
+        <p class="hero-subtitle">Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large">Get started</button>
+          <button class="btn-ghost btn-large">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M5 3.5L11 8L5 12.5V3.5Z"/>
+            </svg>
+            Watch video
+          </button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Used by thousands of high-impact teams</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-preview">
+          <div class="preview-header">
+            <div class="preview-tabs">
+              <div class="preview-tab active">Issues</div>
+              <div class="preview-tab">Projects</div>
+              <div class="preview-tab">Roadmap</div>
+            </div>
+          </div>
+          <div class="preview-content">
+            <div class="issue-item">
+              <span class="issue-id">LIN-123</span>
+              <span class="issue-title">Improve keyboard navigation</span>
+              <span class="issue-status in-progress">In Progress</span>
+            </div>
+            <div class="issue-item">
+              <span class="issue-id">LIN-124</span>
+              <span class="issue-title">Add dark mode support</span>
+              <span class="issue-status todo">Todo</span>
+            </div>
+            <div class="issue-item">
+              <span class="issue-id">LIN-125</span>
+              <span class="issue-title">Optimize bundle size</span>
+              <span class="issue-status done">Done</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.99%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50ms</div>
+          <div class="stat-label">Response time</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Issues tracked</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for modern product teams</h2>
+        <p class="section-subtitle">Purpose-built tools that help you move faster</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Built for speed</h3>
+          <p class="feature-description">Keyboard shortcuts, command menu, and lightning-fast search. Linear is designed to be the fastest issue tracker.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Cycles</h3>
+          <p class="feature-description">Set your team's pace with cycles. Plan sprints, track progress, and hit your deadlines consistently.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Projects</h3>
+          <p class="feature-description">Group issues into projects to track initiatives and milestones. See progress at a glance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Roadmaps</h3>
+          <p class="feature-description">Plan your product roadmap and communicate progress to stakeholders with beautiful, shareable roadmaps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Triage</h3>
+          <p class="feature-description">Automatically organize incoming issues with smart filters and custom views. Keep your backlog clean.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="9" y1="9" x2="15" y2="15"/>
+              <line x1="15" y1="9" x2="9" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Integrations</h3>
+          <p class="feature-description">Connect Linear with GitHub, Slack, Figma, and more. Sync your workflow across all your tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Designed for how you work</h2>
+        <p class="section-subtitle">A seamless workflow from issue to deployment</p>
+      </div>
+      <div class="workflow-steps">
+        <div class="workflow-step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Create</h3>
+          <p class="step-description">Create issues in seconds with keyboard shortcuts or integrations. Add context with descriptions, attachments, and links.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Plan</h3>
+          <p class="step-description">Organize issues into cycles and projects. Set priorities, assign owners, and estimate effort.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Build</h3>
+          <p class="step-description">Track progress as your team works. Automatic updates from Git keep everyone in sync.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Ship</h3>
+          <p class="step-description">Close issues automatically when code is merged. Generate release notes and communicate progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Integrates with your stack</h2>
+        <p class="section-subtitle">Connect Linear with the tools you use every day</p>
+      </div>
+      <div class="integration-grid">
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 2L2 9v14l14 7 14-7V9L16 2z"/>
+            </svg>
+          </div>
+          <div class="integration-name">GitHub</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <rect x="4" y="4" width="24" height="24" rx="4"/>
+            </svg>
+          </div>
+          <div class="integration-name">Slack</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <circle cx="16" cy="16" r="12"/>
+            </svg>
+          </div>
+          <div class="integration-name">Figma</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 4L4 10v12l12 6 12-6V10L16 4z"/>
+            </svg>
+          </div>
+          <div class="integration-name">GitLab</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <rect x="6" y="6" width="20" height="20" rx="2"/>
+            </svg>
+          </div>
+          <div class="integration-name">Notion</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M8 8h16v16H8z"/>
+            </svg>
+          </div>
+          <div class="integration-name">Zendesk</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <circle cx="16" cy="16" r="10"/>
+            </svg>
+          </div>
+          <div class="integration-name">Sentry</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+              <rect x="4" y="8" width="24" height="16" rx="2"/>
+            </svg>
+          </div>
+          <div class="integration-name">Intercom</div>
+        </div>
+      </div>
+      <div class="integration-cta">
+        <a href="#integrations" class="text-link">View all integrations →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 10 team members</li>
+            <li>Unlimited issues</li>
+            <li>Unlimited viewers</li>
+            <li>Basic integrations</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-ghost btn-full">Start for free</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Standard</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$8</span>
+              <span class="price-period">/member/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited team members</li>
+            <li>Unlimited issues</li>
+            <li>Advanced integrations</li>
+            <li>Custom views & filters</li>
+            <li>Priority support</li>
+            <li>Advanced roadmaps</li>
+            <li>Triage automation</li>
+          </ul>
+          <button class="btn-primary btn-full">Start free trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Plus</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$16</span>
+              <span class="price-period">/member/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Standard</li>
+            <li>SAML SSO</li>
+            <li>Advanced security</li>
+            <li>Custom SLA</li>
+            <li>Dedicated support</li>
+            <li>Insights & analytics</li>
+            <li>Audit logs</li>
+          </ul>
+          <button class="btn-ghost btn-full">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by high-impact teams</h2>
+        <p class="section-subtitle">See what product teams are saying about Linear</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Linear has completely transformed how we build products. The speed and simplicity are unmatched. Our team is more productive than ever."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">KS</div>
+            <div class="author-info">
+              <div class="author-name">Karri Saarinen</div>
+              <div class="author-title">Co-founder, Linear</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "We switched from Jira to Linear and never looked back. The difference in speed and user experience is night and day."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JR</div>
+            <div class="author-info">
+              <div class="author-name">Jane Rodriguez</div>
+              <div class="author-title">VP Engineering, Vercel</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            "Linear's keyboard shortcuts and command menu make issue tracking feel effortless. It's the tool I always wanted."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div class="author-info">
+              <div class="author-name">Michael Kim</div>
+              <div class="author-title">Product Lead, Stripe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start building better products today</h2>
+        <p class="cta-subtitle">Join thousands of high-impact teams using Linear to streamline their workflow</p>
+        <div class="cta-actions">
+          <button class="btn-primary btn-large">Get started for free</button>
+          <button class="btn-ghost-light btn-large">Schedule a demo</button>
+        </div>
+        <p class="cta-note">No credit card required • Free for up to 10 members</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#docs">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#brand">Brand</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#status">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#dpa">DPA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>Linear</span>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Linear. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

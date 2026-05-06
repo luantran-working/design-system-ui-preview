@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plaid - The Financial Infrastructure for the Internet</title>
+  <link rel="stylesheet" href="plaid-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Plaid
+        </div>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#developers">Developers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+        </ul>
+        <button class="btn-primary" onclick="scrollToSection('get-started')">Get API Keys</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Trusted by 8,000+ companies</span>
+        </div>
+        <h1 class="hero-title">The easiest way to build fintech</h1>
+        <p class="hero-subtitle">One API to connect your app to thousands of financial institutions. Build everything from payments to lending with Plaid's financial infrastructure.</p>
+        <div class="hero-cta">
+          <button class="btn-primary btn-large" onclick="scrollToSection('get-started')">Get Started Free</button>
+          <button class="btn-outline btn-large" onclick="openDemo()">View Demo</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">12K+</div>
+            <div class="stat-label">Financial Institutions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8K+</div>
+            <div class="stat-label">Companies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200M+</div>
+            <div class="stat-label">Connected Accounts</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">VENMO</div>
+        <div class="trust-item">ROBINHOOD</div>
+        <div class="trust-item">COINBASE</div>
+        <div class="trust-item">BETTERMENT</div>
+        <div class="trust-item">CHIME</div>
+        <div class="trust-item">ACORNS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Products built for developers</h2>
+        <p class="section-subtitle">Everything you need to build powerful financial applications. Simple APIs, comprehensive documentation, and world-class support.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-icon">🔗</div>
+          <h3 class="product-title">Auth</h3>
+          <p class="product-description">Instantly authenticate bank accounts and verify account ownership. Reduce fraud and streamline onboarding with real-time account verification.</p>
+          <a href="#auth" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">💰</div>
+          <h3 class="product-title">Transactions</h3>
+          <p class="product-description">Access enriched transaction data from thousands of financial institutions. Build budgeting, expense tracking, and financial insights.</p>
+          <a href="#transactions" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">💳</div>
+          <h3 class="product-title">Identity</h3>
+          <p class="product-description">Verify user identity with bank-level data. Access name, address, phone number, and email directly from financial institutions.</p>
+          <a href="#identity" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">📊</div>
+          <h3 class="product-title">Balance</h3>
+          <p class="product-description">Check real-time and available balances. Prevent failed transactions and provide better user experiences with up-to-date balance data.</p>
+          <a href="#balance" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">💸</div>
+          <h3 class="product-title">Transfer</h3>
+          <p class="product-description">Move money between accounts with ACH transfers. Fast, secure, and reliable payment infrastructure for your application.</p>
+          <a href="#transfer" class="product-link">Learn more →</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">📈</div>
+          <h3 class="product-title">Income</h3>
+          <p class="product-description">Verify income and employment data for lending decisions. Access payroll data, tax documents, and bank statements in one place.</p>
+          <a href="#income" class="product-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why developers choose Plaid</h2>
+        <p class="section-subtitle">Built with developers in mind. Fast integration, reliable infrastructure, and comprehensive tools.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Fast Integration</h3>
+          <p class="feature-description">Get up and running in minutes with our SDKs and comprehensive documentation. Support for all major languages and frameworks.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Bank-Level Security</h3>
+          <p class="feature-description">SOC 2 Type II certified with 256-bit encryption. Your users' data is protected with industry-leading security standards.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Global Coverage</h3>
+          <p class="feature-description">Connect to 12,000+ financial institutions across the US, Canada, and Europe. Expanding coverage every month.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Mobile-First</h3>
+          <p class="feature-description">Optimized for mobile with native SDKs for iOS and Android. Seamless user experience across all devices.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Real-Time Data</h3>
+          <p class="feature-description">Access up-to-date financial data with webhooks and real-time updates. Build responsive applications that react instantly.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🛠️</div>
+          <h3 class="feature-title">Developer Tools</h3>
+          <p class="feature-description">Sandbox environment, detailed logs, and debugging tools. Everything you need to build and test with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for every fintech use case</h2>
+        <p class="section-subtitle">From consumer apps to enterprise platforms, Plaid powers the financial infrastructure for thousands of companies.</p>
+      </div>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">💳</div>
+            <h3 class="use-case-title">Personal Finance</h3>
+          </div>
+          <p class="use-case-description">Build budgeting apps, expense trackers, and financial wellness tools with enriched transaction data and real-time balance information.</p>
+          <ul class="use-case-benefits">
+            <li>Automatic transaction categorization</li>
+            <li>Multi-account aggregation</li>
+            <li>Spending insights and analytics</li>
+            <li>Budget tracking and alerts</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">🏦</div>
+            <h3 class="use-case-title">Lending</h3>
+          </div>
+          <p class="use-case-description">Streamline loan origination with instant income verification, bank account validation, and automated underwriting decisions.</p>
+          <ul class="use-case-benefits">
+            <li>Instant income verification</li>
+            <li>Cash flow analysis</li>
+            <li>Automated risk assessment</li>
+            <li>Faster loan approvals</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">💸</div>
+            <h3 class="use-case-title">Payments</h3>
+          </div>
+          <p class="use-case-description">Enable bank-to-bank transfers, ACH payments, and instant account funding with our secure payment infrastructure.</p>
+          <ul class="use-case-benefits">
+            <li>Instant account verification</li>
+            <li>Same-day ACH transfers</li>
+            <li>Payment status tracking</li>
+            <li>Reduced payment failures</li>
+          </ul>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-header">
+            <div class="use-case-icon">📊</div>
+            <h3 class="use-case-title">Wealth Management</h3>
+          </div>
+          <p class="use-case-description">Aggregate accounts, track investments, and provide holistic financial advice with comprehensive financial data access.</p>
+          <ul class="use-case-benefits">
+            <li>Investment account aggregation</li>
+            <li>Portfolio tracking</li>
+            <li>Net worth calculations</li>
+            <li>Asset allocation insights</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="code-example" id="developers">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, powerful API</h2>
+        <p class="section-subtitle">Get started in minutes with our developer-friendly API and comprehensive SDKs</p>
+      </div>
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+        </div>
+        <div class="code-block">
+          <pre><code class="code-content">// Initialize Plaid client
+const plaid = require('plaid');
+
+const client = new plaid.PlaidApi(
+  new plaid.Configuration({
+    basePath: plaid.PlaidEnvironments.production,
+    baseOptions: {
+      headers: {
+        'PLAID-CLIENT-ID': process.env.PLAID_CLIENT_ID,
+        'PLAID-SECRET': process.env.PLAID_SECRET,
+      },
+    },
+  })
+);
+
+// Create a Link token
+const createLinkToken = async (userId) => {
+  const response = await client.linkTokenCreate({
+    user: { client_user_id: userId },
+    client_name: 'Your App Name',
+    products: ['auth', 'transactions'],
+    country_codes: ['US'],
+    language: 'en',
+  });
+  
+  return response.data.link_token;
+};
+
+// Exchange public token for access token
+const exchangeToken = async (publicToken) => {
+  const response = await client.itemPublicTokenExchange({
+    public_token: publicToken,
+  });
+  
+  const accessToken = response.data.access_token;
+  const itemId = response.data.item_id;
+  
+  return { accessToken, itemId };
+};
+
+// Get account balances
+const getBalances = async (accessToken) => {
+  const response = await client.accountsBalanceGet({
+    access_token: accessToken,
+  });
+  
+  return response.data.accounts;
+};</code></pre>
+        </div>
+      </div>
+      <div class="code-actions">
+        <button class="btn-primary" onclick="copyCode()">Copy Code</button>
+        <a href="#docs" class="btn-outline">View Documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Transparent, usage-based pricing</h2>
+        <p class="section-subtitle">Start free and scale as you grow. No hidden fees, no surprises.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Development</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$0</span>
+            </div>
+            <p class="pricing-description">Free sandbox environment</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited sandbox requests</li>
+            <li>100 live Link connections</li>
+            <li>All products available</li>
+            <li>Community support</li>
+            <li>Full API documentation</li>
+            <li>Test with sample data</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="scrollToSection('get-started')">Start Building</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Launch</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Pay as you go</span>
+            </div>
+            <p class="pricing-description">Usage-based pricing</p>
+          </div>
+          <ul class="pricing-features">
+            <li>$0.50 per Link connection</li>
+            <li>$0.10 per API call (after free tier)</li>
+            <li>1,000 free API calls/month</li>
+            <li>Email support</li>
+            <li>99.9% uptime SLA</li>
+            <li>Webhook notifications</li>
+            <li>Dashboard analytics</li>
+          </ul>
+          <button class="btn-primary btn-full" onclick="scrollToSection('get-started')">Get Started</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Scale</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <p class="pricing-description">Enterprise solutions</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Volume discounts</li>
+            <li>Dedicated support team</li>
+            <li>Custom SLAs</li>
+            <li>Priority API access</li>
+            <li>Advanced security features</li>
+            <li>Custom integrations</li>
+            <li>Quarterly business reviews</li>
+          </ul>
+          <button class="btn-outline btn-full" onclick="contactSales()">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="get-started">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to build the future of fintech?</h2>
+        <p class="cta-subtitle">Join thousands of developers building with Plaid. Get your API keys and start integrating today.</p>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your work email" class="email-input" id="emailInput">
+          <button class="btn-secondary btn-large" onclick="handleSignup()">Get API Keys</button>
+        </div>
+        <p class="form-note">Free sandbox access • No credit card required • 100 free Link connections</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="#auth">Auth</a></li>
+            <li><a href="#transactions">Transactions</a></li>
+            <li><a href="#identity">Identity</a></li>
+            <li><a href="#balance">Balance</a></li>
+            <li><a href="#transfer">Transfer</a></li>
+            <li><a href="#income">Income</a></li>
+            <li><a href="#assets">Assets</a></li>
+            <li><a href="#investments">Investments</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Use Cases</h4>
+          <ul class="footer-links">
+            <li><a href="#personal-finance">Personal Finance</a></li>
+            <li><a href="#lending">Lending</a></li>
+            <li><a href="#payments">Payments</a></li>
+            <li><a href="#wealth">Wealth Management</a></li>
+            <li><a href="#banking">Banking</a></li>
+            <li><a href="#crypto">Crypto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Developers</h4>
+          <ul class="footer-links">
+            <li><a href="#docs" id="docs">Documentation</a></li>
+            <li><a href="#quickstart">Quickstart</a></li>
+            <li><a href="#api-reference">API Reference</a></li>
+            <li><a href="#sdks">SDKs & Libraries</a></li>
+            <li><a href="#sandbox">Sandbox</a></li>
+            <li><a href="#status">API Status</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Plaid Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#linkedin" class="social-link">LinkedIn</a>
+          <a href="#github" class="social-link">GitHub</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo would open here. In production, this would show an interactive demo of Plaid Link.');
+    }
+
+    function copyCode() {
+      const codeContent = document.querySelector('.code-content').textContent;
+      navigator.clipboard.writeText(codeContent).then(() => {
+        alert('Code copied to clipboard!');
+      });
+    }
+
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        alert(`Thanks for signing up with ${email}! Check your inbox for your API keys and getting started guide.`);
+      } else {
+        alert('Please enter a valid work email address.');
+      }
+    }
+
+    function contactSales() {
+      alert('Redirecting to sales contact form...');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll animation for hero stats
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.product-card, .feature-item, .use-case-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

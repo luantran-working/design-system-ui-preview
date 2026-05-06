@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch - Design Tools for Mac</title>
+  <link rel="stylesheet" href="sketch-styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Sketch
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#plugins">Plugins</a></li>
+          <li><a href="#collaboration">Collaboration</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="btn btn-primary" onclick="scrollToSection('cta')">Try Sketch Free</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Design Tools Built for Professionals</h1>
+        <p class="hero-subtitle">Create stunning interfaces, collaborate with your team, and bring your ideas to life with the design platform trusted by thousands of designers worldwide.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-large" onclick="scrollToSection('cta')">Start Free Trial</button>
+          <button class="btn btn-secondary btn-large" onclick="openDemo()">Watch Demo</button>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">✓</span>
+          <span>Trusted by 2M+ designers at companies like Apple, Google, and Facebook</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Active Designers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Plugins Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100M+</div>
+          <div class="stat-label">Designs Created</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Everything You Need to Design Better</h2>
+        <p class="section-subtitle">Powerful tools that help you create, iterate, and deliver exceptional design work faster than ever before.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <h3 class="feature-title">Vector Editing</h3>
+          <p class="feature-description">Precision vector tools with boolean operations, path editing, and advanced shape manipulation. Create pixel-perfect designs with ease.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Symbols & Styles</h3>
+          <p class="feature-description">Build reusable design systems with symbols, shared styles, and libraries. Keep your designs consistent across projects.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Prototyping</h3>
+          <p class="feature-description">Create interactive prototypes with transitions, animations, and hotspots. Test your designs before development.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Version Control</h3>
+          <p class="feature-description">Track changes, restore previous versions, and collaborate without fear. Your design history is always preserved.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Lightning Fast</h3>
+          <p class="feature-description">Native Mac performance optimized for Apple Silicon. Work with massive files without slowdown.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3 class="feature-title">Extensible</h3>
+          <p class="feature-description">50,000+ plugins to extend functionality. Automate workflows, integrate tools, and customize your experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section class="collaboration" id="collaboration">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Collaboration</div>
+        <h2 class="section-title">Design Together, Deliver Faster</h2>
+        <p class="section-subtitle">Real-time collaboration tools that keep your team in sync from concept to delivery.</p>
+      </div>
+      
+      <div class="collab-content">
+        <div class="collab-text">
+          <h3>Real-Time Collaboration</h3>
+          <p>Work together in the same document simultaneously. See cursors, edits, and comments as they happen.</p>
+          <ul class="collab-features">
+            <li>Live multiplayer editing with presence indicators</li>
+            <li>Inline comments and feedback threads</li>
+            <li>Smart conflict resolution</li>
+            <li>Activity history and notifications</li>
+          </ul>
+        </div>
+        <div class="collab-image">
+          <div class="collab-image-placeholder">👥</div>
+        </div>
+      </div>
+
+      <div class="collab-content reverse" style="margin-top: 80px;">
+        <div class="collab-text">
+          <h3>Developer Handoff</h3>
+          <p>Bridge the gap between design and development with automatic specs, assets, and code snippets.</p>
+          <ul class="collab-features">
+            <li>Automatic CSS, iOS, and Android code generation</li>
+            <li>Export assets in multiple formats and resolutions</li>
+            <li>Inspect mode for precise measurements</li>
+            <li>Design tokens and style guide export</li>
+          </ul>
+        </div>
+        <div class="collab-image">
+          <div class="collab-image-placeholder">💻</div>
+        </div>
+      </div>
+
+      <div class="collab-content" style="margin-top: 80px;">
+        <div class="collab-text">
+          <h3>Cloud Libraries</h3>
+          <p>Share design systems, components, and assets across your entire organization with cloud-synced libraries.</p>
+          <ul class="collab-features">
+            <li>Centralized component libraries</li>
+            <li>Automatic updates across all documents</li>
+            <li>Team-wide style guides and brand assets</li>
+            <li>Permission controls and access management</li>
+          </ul>
+        </div>
+        <div class="collab-image">
+          <div class="collab-image-placeholder">☁️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plugins Section -->
+  <section class="plugins" id="plugins">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Plugins</div>
+        <h2 class="section-title">Extend Your Workflow</h2>
+        <p class="section-subtitle">Discover thousands of plugins to automate tasks, integrate tools, and supercharge your design process.</p>
+      </div>
+      <div class="plugin-grid">
+        <div class="plugin-card">
+          <div class="plugin-icon">🖼️</div>
+          <h4 class="plugin-title">Unsplash</h4>
+          <p class="plugin-author">by Unsplash</p>
+          <p class="plugin-description">Insert beautiful, free photos from Unsplash directly into your designs.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">📊</div>
+          <h4 class="plugin-title">Chart</h4>
+          <p class="plugin-author">by Sketch Team</p>
+          <p class="plugin-description">Create beautiful, data-driven charts and graphs with real data.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🎭</div>
+          <h4 class="plugin-title">Rename It</h4>
+          <p class="plugin-author">by Rodi Kivisto</p>
+          <p class="plugin-description">Batch rename layers with powerful find and replace patterns.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🎨</div>
+          <h4 class="plugin-title">Stark</h4>
+          <p class="plugin-author">by Stark Lab</p>
+          <p class="plugin-description">Check color contrast and simulate color blindness for accessible designs.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">📝</div>
+          <h4 class="plugin-title">Content Generator</h4>
+          <p class="plugin-author">by Sketch Team</p>
+          <p class="plugin-description">Fill your designs with realistic placeholder content and data.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+        <div class="plugin-card">
+          <div class="plugin-icon">🔗</div>
+          <h4 class="plugin-title">Automate</h4>
+          <p class="plugin-author">by Sketch Team</p>
+          <p class="plugin-description">Create custom workflows and automate repetitive design tasks.</p>
+          <button class="btn btn-primary">Install</button>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 48px;">
+        <button class="btn btn-secondary btn-large" onclick="alert('Browse all plugins')">Browse All 50,000+ Plugins</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Flexible pricing for individuals, teams, and enterprises. Start with a free trial.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Standard</h3>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">10</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited Cloud Documents</li>
+            <li>Unlimited version history</li>
+            <li>Shared Libraries</li>
+            <li>Real-time collaboration</li>
+            <li>Developer handoff</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-secondary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Business</h3>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">20</span>
+              <span class="price-period">/editor/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Standard</li>
+            <li>Unlimited Workspaces</li>
+            <li>Advanced permissions</li>
+            <li>SSO & SAML</li>
+            <li>Design system analytics</li>
+            <li>Dedicated account manager</li>
+            <li>Custom onboarding</li>
+          </ul>
+          <button class="btn btn-primary btn-full" onclick="scrollToSection('cta')">Start Free Trial</button>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Business</li>
+            <li>Unlimited editors & viewers</li>
+            <li>Advanced security controls</li>
+            <li>Custom integrations</li>
+            <li>SLA guarantees</li>
+            <li>Training & workshops</li>
+            <li>24/7 premium support</li>
+          </ul>
+          <button class="btn btn-secondary btn-full" onclick="alert('Contact sales')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">Loved by Design Teams Worldwide</h2>
+        <p class="section-subtitle">See what designers are saying about Sketch</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: 24px;">"Sketch transformed how our design team works. The symbol system and cloud libraries keep our design system consistent across 50+ products."</p>
+          <h4 class="feature-title" style="font-size: 16px; margin-bottom: 4px;">Sarah Chen</h4>
+          <p class="feature-description" style="font-size: 14px; color: var(--medium-gray); margin: 0;">Design Director, Airbnb</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: 24px;">"The plugin ecosystem is incredible. We've automated so much of our workflow that we're shipping designs 3x faster than before."</p>
+          <h4 class="feature-title" style="font-size: 16px; margin-bottom: 4px;">Marcus Rodriguez</h4>
+          <p class="feature-description" style="font-size: 14px; color: var(--medium-gray); margin: 0;">Lead Product Designer, Stripe</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-description" style="font-style: italic; margin-bottom: 24px;">"Real-time collaboration changed everything. Our remote team feels like we're all in the same room working together."</p>
+          <h4 class="feature-title" style="font-size: 16px; margin-bottom: 4px;">Emily Watson</h4>
+          <p class="feature-description" style="font-size: 14px; color: var(--medium-gray); margin: 0;">VP of Design, Shopify</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Start Designing Better Today</h2>
+        <p>Join 2 million designers who trust Sketch to bring their ideas to life. Try it free for 30 days.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-large" onclick="handleSignup()">Start Free Trial</button>
+          <button class="btn btn-secondary btn-large" onclick="alert('Contact sales')">Talk to Sales</button>
+        </div>
+        <p style="font-size: 14px; margin-top: 24px; opacity: 0.8;">No credit card required • Cancel anytime • Mac, iPad, and Web</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#plugins">Plugins</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#updates">What's New</a></li>
+            <li><a href="#releases">Releases</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#licenses">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sketch B.V. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#twitter" class="social-link">Twitter</a>
+          <a href="#instagram" class="social-link">Instagram</a>
+          <a href="#youtube" class="social-link">YouTube</a>
+          <a href="#github" class="social-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for interactions -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openDemo() {
+      alert('Demo video would open here. In production, this would link to a video or interactive demo.');
+    }
+
+    function handleSignup() {
+      alert('Sign up flow would start here. In production, this would redirect to the registration page.');
+    }
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add active state to navigation links on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
